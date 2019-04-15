@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    {:W('Public/_meta')}
+
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/collect_seed.css">
+
+    <!--<link rel="stylesheet" href="__HOME_CSS__/collect_select.css">-->
+    <link rel="stylesheet" href="__PUBLIC_STATIC__/select2-4.0.6/css/select2.css">
+
+
+
+    <style>
+
+        .selectClass{
+            width:200px;
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+    <div id=loading style="position:absolute;width:100%;z-index:9999">
+        {:W('Header/loading')}
+    </div>
+
+
+    <div class="right-top">
+        <h1>苗情统计</h1>
+        <p>发生在2017-7-4 19::20:15 至今的数据</p>
+    </div>
+    <div class="right-search">
+        <form>
+            <div  style="font-size: 15px;">
+                <span id="sumData" class="pmr">
+                    汇总:
+                    年:<select class="selectClass" name="year[]" multiple="multiple">
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                    </select>
+                    月:<select class="selectClass" name="month[]" multiple="multiple">
+                        <option value="1">1月</option>
+                        <option value="2">2月</option>
+                        <option value="3">3月</option>
+                    </select>
+                    日:<select class="selectClass" name="day[]" multiple="multiple">
+                        <option value="1">1日</option>
+                        <option value="2">2日</option>
+                        <option value="3">3日</option>
+                    </select>
+
+                </span>
+
+
+                <button type="button" id="envChartsButton" name="envCharts" class="btn btn-primary radius" style="margin-left:25px;">执行</button>
+
+                <button type="reset" class="btn btn-warning radius">重置</button>
+            </div>
+        </form>
+        <div class="cl"></div>
+
+    </div>
+    <div class="right-bottom">
+        <div id="main" style="width: 1000px;height:600px; margin:30px auto;"></div>
+    </div>
+    {:W('Header/footer')}
+</body>
+{:W('Public/_footer')} 
+
+<script type="text/javascript" src="__HOME_JS__/echarts.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/select2-4.0.6/js/select2.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.selectClass').select2();
+    });
+</script>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    var data = [
+        {
+            value: 17623,
+            name: '健康'
+        }, {
+            value: 3661,
+            name: '杨树溃疡病'
+        }, {
+            value: 5713,
+            name: '杨树黑斑病'
+        }, {
+            value: 3299,
+            name: '杨树黄叶病'
+        }, {
+            value: 9938,
+            name: '法桐白粉病'
+        }, {
+            value: 1250,
+            name: '法桐霉斑病'
+        }, {
+            value: 2105,
+            name: '其他病害'
+        }, ];
+    var data1 = [
+        {
+            value: 12012,
+            name: '健康'
+        }, {
+            value: 3520,
+            name: '杨树溃疡病'
+        }, {
+            value: 5210,
+            name: '杨树黑斑病'
+        }, {
+            value: 2601,
+            name: '杨树黄叶病'
+        }, {
+            value: 5480,
+            name: '法桐白粉病'
+        }, {
+            value: 630,
+            name: '法桐霉斑病'
+        }, {
+            value: 1500,
+            name: '其他病害'
+        }, ];
+    option = {
+
+        title: {
+            text: '苗情状况',
+            x: 'center',
+            y: 'center',
+            textStyle: {
+                fontWeight: 'normal',
+                fontSize: 16
+            }
+        },
+        tooltip: {
+            show: true,
+            trigger: 'item',
+            formatter: "{b}: {c} ({d}%)"
+        },
+        legend: {
+            orient: 'horizontal',
+            data: ['健康', '杨树溃疡病', '杨树黑斑病', '杨树黄叶病', '法桐白粉病', '法桐霉斑病', '其他病害']
+        },
+        series: [{
+                type: 'pie',
+//        selectedMode: 'single',
+                radius: ['25%', '58%'],
+                color: ['#CD5B45', '#86D560', '#AF89D6', '#59ADF3', '#FF999A', '#FFCC67', '#FFA500'],
+
+                label: {
+                    normal: {
+                        position: 'inner',
+                        formatter: '{b}\n{d}%',
+
+                        textStyle: {
+                            color: '#fff',
+                            fontWeight: 'bold',
+                            fontSize: 14
+                        }
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                data: data
+            }, {
+                type: 'pie',
+                radius: ['58%', '83%'],
+
+                itemStyle: {
+                    normal: {
+                        color: '#F2F2F2'
+                    },
+                    emphasis: {
+                        color: '#ADADAD'
+                    }
+                },
+                label: {
+                    normal: {
+                        position: 'inner',
+                        formatter: '{c}处',
+                        textStyle: {
+                            color: '#777777',
+                            fontWeight: 'bold',
+                            fontSize: 14
+                        }
+                    }
+                },
+                data: data
+            }]
+
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+<script>
+
+    window.onload = setTimeout(function () {
+        $("#loading").hide();
+    }, 1);
+</script>
+</html>
+
+
+
+
+
+

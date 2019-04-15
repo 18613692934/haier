@@ -1,0 +1,100 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <title>{$arr['webname']['info_value']}</title>
+    {:W('Public/_meta')}
+    <meta name=GENERATOR content="MShtml 8.00.7601.17514">
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/login.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC_STATIC__/font-awesome/css/font-awesome.min.css">
+     <script>
+        if(window.top!==window.self){window.top.location=window.location};
+    </script>
+</head>
+    <body class="signin cl" >
+        
+   
+    <div class="signintitle">
+        <div class="row cl text-c">
+            <div class="col-sm-12 ">
+                <div class="logopanel mb-20">
+                    <h1>{$arr['webname']['info_value']}</h1>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+    <div class="signinpanel">
+        
+        <div class="row cl">
+            <div class="col-sm-12">
+                <form id=loginForm method="post" action="">
+                    <input type="text" id="username" class="input-text mt-15 uname" name="uname" placeholder="用户名" />
+                    <input type="password" id="password" class="input-text mt-15 mb-15 pword" name="password" placeholder="密码" />
+                    <button class="btn btn-primary radius btn-block">登录</button>
+                </form>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="signup-footer">
+            <div class="text-c">
+                {$arr['copyright']['info_value']} {$arr['company']['info_value']}
+            </div>
+        </div>
+{:W('Public/_footer')}
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script> 
+</body>
+    <script>
+        $(function(){
+	$("#loginForm").validate({
+                rules:{
+			username:{
+				required:true,
+				minlength:4,
+				maxlength:16,
+                                
+			},
+			password:{
+				required:true,
+			},
+		},
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){                   
+                    $(form).ajaxSubmit({
+                            type: 'post',
+                            url: "{:U('Login/login')}" ,
+                            success: function(data){
+                                if(!data){
+                                    layer.msg("账号密码错误",{icon:2,time:1000})
+                                }else{
+                                    layer.msg("登录成功",{icon:1,time:1000});
+                                    setTimeout(function(){
+                                        window.location.href="{:U('Index/index')}";
+                                    },1000);
+                                }  
+                            },
+                            error: function(XmlHttpRequest, textStatus, errorThrown){
+                                    layer.msg('程序出错，请联系管理员!',{icon:3,time:2000});                                                           
+                            }
+			});         
+                        return false;
+		},
+	});
+});
+    </script>
+<script type="text/javascript">
+ $(function(){
+           // 动态调整地图的高度以适应不同高度的显示器
+//        $('#loginWrap').height($(window).height()-100);
+        setTimeout( function(){
+            $("#loading").hide();
+            slideOut();
+        },1);
+ })
+</script>
+</html>

@@ -1,0 +1,101 @@
+<link rel="stylesheet" type="text/css" href="__HOME_CSS__/header.css">
+
+<div class="index-head ">
+    <div class="index-h-center ">
+<!--        <div class="index-h-logo f-l">
+            <img style='height:100%;width:100%' src="{$logo['info_value']}"/>
+        </div>-->
+        <div class="index-h-title ">
+            
+            <div class="wrap">
+                <div class="index-h-logo f-l">
+                    <img style='height:100%;width:100%' src="__HOME_IMG__/logo.png"/>
+                </div>
+                <span class="top f-l">{$arr['webname']['info_value']}</span>
+                <div class="right-top f-r mr-20 mt-5">
+                    <div class="btn btn-primary-outline radius con">
+                        <a href="{:U('User/index')}" title="欢迎您：{$user['uname']}">欢迎您：{$user['uname']}</a>
+                    </div>
+                    <a href="{:U('Login/logout')}">退出</a>
+
+                </div>
+            </div>
+            
+            
+        </div>
+        <div id='index-h-nav' class="index-h-nav cl">
+            <ul>
+                <li >
+                    <div >
+                        <a href="{:U('Index/index')}" controller="Index/index"  >
+                       
+                        <img  class="nav-img" src="__HOME_IMG__/header/010-map-location.png"/><p>地图标注</p>
+                        </a>
+                    </div>
+                    
+                </li>
+                
+                <li>
+                    <div>
+                    <a href="{:U('Collect/index')}" controller="Collect/index"  >
+                       
+                        <img class="nav-img" src="__HOME_IMG__/header/009-stats.png"/> <p>汇总分析</p></a>
+                    </div>
+                </li>
+<!--                <li>
+                    <div>
+                    <a href="#"   >
+                        
+                        <img class="nav-img" src="__HOME_IMG__/header/nav-mj.png"/> <p>面积统计</p></a>
+                        </div>
+                </li>-->
+<!--                <li>
+                    <div>
+                   <a target="_blank" href="http://222.173.147.202:50021/irrigation"  >
+                        
+                        <img class="nav-img" src="__HOME_IMG__/header/nav-dg.png"/> <p>滴 灌 溉</p></a>
+                        </div>
+                </li>-->
+                <li>
+                    <div>
+                    <a href="{:U('User/index')}" controller="User/index" >
+                        <img class="nav-img" src="__HOME_IMG__/header/008-boy.png"/> <p>个人中心</p></a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <a href="{:U('System/index')}" controller="System/index"   >
+                        
+                        <img class="nav-img" src="__HOME_IMG__/header/006-cogwheel.png"/> <p>系统设置</p></a>
+                        </div>
+                </li>
+            </ul>
+<!--            <div class="right-tq f-r">
+                    <iframe width="210" scrolling="no" height="100" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=2&icon=1&num=1&site=14"></iframe>
+            </div>-->
+                
+        </div>
+        
+    </div>
+</div>
+<script>
+    var nav = document.getElementById("index-h-nav");
+    var links = nav.getElementsByTagName("li");
+    var lilen = nav.getElementsByTagName("a");
+    var currenturl = window.location.href;
+    currenturl = currenturl.toLowerCase();  //转为小写字母
+    var last = 0;
+    for(var i=0;i<links.length;i++){
+        var controller = lilen[i].getAttribute("href"); 
+        if(controller != null){
+            controller = controller.toLowerCase();
+            conStr = controller.toString();
+            controller = conStr.replace(".html","");  
+            if(currenturl.indexOf(controller)!==-1){
+                last = i;
+            }
+        }
+    }
+    links[last].className = "hl";
+</script>
+

@@ -1,0 +1,225 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<include file='Public/_meta'/>
+<title>报警列表</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 设备管理 <span class="c-gray en">&gt;</span> 报警信息 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+<!--	<div class="text-c">
+            <form method="post" action="{:U('Device/alarmSearch')}">
+                <input type="text" class="input-text" style="width:250px" placeholder="输入报警命令" id="" name="alarm_code">
+                日期范围：
+                <input type="text" name='startTime' onfocus=<literal>"WdatePicker({ maxDate:'#F{$dp.$D(\'logmax\')||\'%y-%M-%d\'}' })"</literal> id="logmin" class="input-text Wdate" style="width:120px;">
+		-
+                <input type="text" name='endTime' onfocus=<literal>"WdatePicker({ minDate: '#F{$dp.$D(\'logmin\')}',maxDate:'%y-%M-%d' })"</literal> id="logmax" class="input-text Wdate" style="width:120px;">
+		<button name='btnType' id="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜报警信息</button>
+            </form>
+	</div>-->
+	<div class="cl pd-5 bg-1 bk-gray mt-20"> 
+ 
+            <span class="r">共有数据：<strong> {$count} </strong> 条</span> 
+        </div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-hover table-sort">
+			<thead>
+				<tr class="text-c">
+					<th >编号</th>
+					<th>报警命令</th>
+					<th width="80">所属设备</th>
+					<th width="80">报警时间</th>
+					<th width="120">状态</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>	
+			</tbody>
+                        <tfoot>
+				<tr class="text-c">
+					<th >编号</th>
+					<th>报警命令</th>
+					<th width="80">所属设备</th>
+					<th width="80">报警时间</th>
+					<th width="120">状态</th>
+					<th>操作</th>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</div>
+<include file='Public/_footer'/>
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+   //window.location.href = "alarmList";
+   
+}
+    
+    
+var table;
+    $("button[name='btnType']").bind("click", function () { //按钮 触发table重新请求服务器     
+        table.fnDraw();
+        });
+
+    $(function () {           
+        table = $('.table-sort').dataTable({
+        "ordering": true,
+        "bStateSave": true,
+        "aaSorting": [[ 1, "asc" ]],//默认第几个排序
+        "bStateSave": true,//状态保存
+        "aoColumnDefs": [
+          //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+            {"orderable":false,"aTargets":[0]},// 不参与排序的列
+            {"sClass":"text-c" , "aTargets":["_all"]},
+            
+        ],
+        "retrieve": true,
+        "processing": true,
+        "serverSide": true,
+         ajax:{
+            url:"{:U('Device/alarmList')}",
+            type:"post",  
+            data:function(d){
+                d.startDate = $("#logmin").val();
+                d.endDate = $("#logmax").val();
+                d.status =  $("#status").val();
+                d.device = $("#device_id").val();
+                d.area = $("#area").val();
+                d.gps = $("#gps").val();
+                d.address = $("#address").val();
+                d.model = $("#model").val();
+            }
+        },
+        "aoColumns": [ //这个属性下的设置会应用到所有列，按顺序没有是空
+            {
+                "data": "alarm_id",
+                "bSortable": false
+             }, //mData 表示发请求时候本列的列明，返回的数据中相同下标名字的数据会填充到这一列
+            {
+                "mData": 'alarm_code',
+                
+            },
+            {
+                "mData": 'device_code',
+                
+            },
+            {
+                "mData": 'unix_addtime',
+                "render":function(data,type,full,meta){
+                    var newDate = new Date();
+                    newDate.setTime(data*1000);
+                    return newDate.toLocaleDateString();
+                }
+            },
+            
+            {
+              "mData": "state",
+              "render":function(data,type,full,meta){
+                  if(data==0){
+                      return "<td class='td-status'><span class='label radius label-danger'>已收到</span></td>";
+                  }else if(data==1){
+                     return "<td class='td-status'><span class='label radius label-success'>已处理</span></td>";
+                  } 
+              }
+            },
+            
+            {
+                "sClass" : "f-14 text-c",
+                "mData" : {
+                    "alarm_id":"alarm_id",
+                    "state" : "state",
+                },
+                "render":function(data,type,full,meta){
+                    if(data['state']==1){
+                        return "<a title='删除' href='javascript:;' onclick=\"alarm_del(this,'"+data['alarm_id']+"')\" class='ml-5' style='text-decoration:none'>删除</a>";
+                    }
+                       return "<a title='报警处理' href='javascript:;' onclick=\"alarm_Handle(this,'"+data['alarm_id']+"')\" style='text-decoration:none'>报警处理</a> &nbsp;<a title='删除' href='javascript:;' onclick=\"alarm_del(this,'"+data['alarm_id']+"')\" class='ml-5' style='text-decoration:none'>删除</a>";
+                },
+   
+            },
+        ],
+    });
+});
+
+
+
+
+
+/*报警-展示*/
+function device_show(title,url,id,w,h){
+    var id = id;
+    var index = layer.open({
+            type: 2,
+            title: title,
+            content: url+"/id/"+id
+    });
+    layer.full(index);
+}
+/**
+ * 报警处理
+ * @returns {undefined}
+ */
+function alarm_Handle(obj,id){
+    var id = id;
+    layer.confirm('确认要处理吗？',function(index){
+        $.ajax({
+            type: 'POST',
+            url: "{:U('Device/alarmHandle')}",
+            data: {
+                "id":id,
+            },
+            dataType: 'json',
+            success: function(data){
+               if(data){
+                    layer.msg('已处理!',{icon:1,time:2000});
+                    location.replace(location.href);
+               }else{
+                   layer.msg('处理失败!',{icon:1,time:2000});
+               }	
+            },
+            error:function(data) {
+                    layer.msg('数据异常!',{icon:1,time:2000});
+                    console.log(data.msg);
+            },
+        });		
+    });
+}
+/**
+ * 报警删除
+ * @param {object} obj 
+ * @param {int} id
+ * @returns {undefined}
+ */
+function alarm_del(obj,id){
+    var id = id;
+	layer.confirm('确认要删除吗？',function(index){
+		$.ajax({
+			type: 'POST',
+			url: "{:U('Device/alarmDel')}",
+                        data: {
+                            "id":id,
+                        },
+			dataType: 'json',
+			success: function(data){
+                           if(data){
+                               $(obj).parents("tr").remove();
+				layer.msg('已删除!',{icon:1,time:2000});
+                           }else{
+                               layer.msg('删除失败!',{icon:1,time:2000});
+                           }	
+			},
+			error:function(data) {
+                                layer.msg('数据异常!',{icon:1,time:2000});
+				console.log(data.msg);
+			},
+		});		
+	});
+}
+
+</script> 
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{$arr['webname']['info_value']}</title>
+        {:W('Public/_meta')}
+        <meta name=GENERATOR content="MShtml 8.00.7601.17514">
+            <meta name="keywords" />
+                
+              
+    </head>
+    <body  style="overflow-y: hidden;">
+    <div id=loading style="position:absolute;width:100%;z-index:9999">
+        {:W('Header/loading')}
+    </div>
+        {:W('Header/device_header')}
+        <div class="pest-wrap">
+            <div class="pest_middle">
+                <div class="middle_center">
+                    <style>
+            #myPlayer{
+                
+                width:700px;
+                height:400px;
+                margin-top:50px;
+                margin-right: auto;
+                margin-left: auto;
+                
+            }
+            
+        </style>
+               <script src="__PUBLIC_STATIC__/EZUIKit-1.4/ezuikit.js"></script>
+        
+            
+
+        <video id="myPlayer" poster="[这里可以填入封面图片URL]" controls playsInline webkit-playsinline autoplay>
+            <source src="{$rtmp}" type="" />
+        </video>
+
+        <script>
+            var player = new EZUIPlayer('myPlayer');
+        </script>
+                </div>   
+            </div>
+            <!--<include file="Public/codeing"/>-->
+            
+        </div>
+        {:W('Header/footer')}
+    </body>
+{:W('Public/_footer')}
+<script>
+        window.onload = setTimeout( function(){
+            $("#loading").hide();
+        },1);
+    </script>
+    <script>
+    $(function(){
+        // 动态调整iframe的高度以适应不同高度的显示器
+//        $('.middle_center').height($(window).height()-100);
+       $('.center').height($(window).height()-100);
+
+       
+    })
+</script>
+</html>

@@ -1,0 +1,46 @@
+/* 
+    Created on : 2017-10-26, 14:23:34
+    Author     : zhang
+*/
+
+/*右侧内容显示*/
+ .right-top{
+    width:100%;
+    height:80px;
+}
+ .right-top h1{
+    font-size: 24px;
+    line-height: 10px;
+}
+ .right-top p{
+    font-size: 13px;
+    line-height: 30px;
+}
+.right-bottom{
+    width:100%;
+
+}
+
+/*右侧内容中的搜索*/
+.right-search{
+    width:100%;
+    height:50px;
+}
+.right-search .active {
+    background: #0066cc;
+    color:#fff;
+}
+
+/*美化select*/
+.select {
+    width: auto;
+    height:30px;
+    background-color: #fff;
+}
+.select-box {
+    border: 0;
+    width: auto;
+}
+.select-box, .select-box.size-M {
+    padding: 0 5px;
+}

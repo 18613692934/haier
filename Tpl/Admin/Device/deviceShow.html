@@ -1,0 +1,322 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<include file="Public/_meta"/>
+<title></title>
+</head>
+<body>
+<div class="cl pd-20" style=" background-color:#5bacb6">
+    <dl style="margin-left:80px; color:#fff">
+        <dt>
+            <span class="f-18">自定义设备名称：</span>
+            <span class="f-18">{$only['custom_name']}</span>
+        </dt>
+        <dt>
+            <span class="f-18">设备型号：</span>
+            <span class="f-18">{$only['demodel']}</span>
+        </dt>
+        <dt>
+            <span class="f-18">设备编号：</span>
+            <span class="f-18">{$only['device_code']}</span>
+        </dt>
+        
+    </dl>
+</div>
+<div class="page-container">
+    <div class="pd-20">
+	<table class="table">
+            <tbody>
+                <tr>
+                        <th class="text-r" width="80">购买时间：</th>
+                        <td>{$only['depurchase_date']|date='Y-m-d H:i;s',###}</td>
+                </tr>
+                <tr>
+                        <th class="text-r" width="80">安装时间：</th>
+                        <td>{$only['deinst_time']|date='Y-m-d H:i;s',###}</td>
+                </tr>
+                <tr>
+                        <th class="text-r">拆除时间：</th>
+                        <td>{$only['deremove_time']|date='Y-m-d H:i;s',###}</td>
+                </tr>
+                <tr>
+                        <th class="text-r">区域：</th>
+                        <td>{$only['rnname']}</td>
+                </tr>
+                <tr>
+                        <th class="text-r">具体位置：</th>
+                        <td>{$only['deaddress']}</td>
+                </tr>
+                <tr>
+                        <th class="text-r">使用者：</th>
+                        <td>{$only['uname']}</td>
+                </tr>
+                <tr>
+                    <th class="text-r">单位：</th>
+                    <td>{$only['un_name']}</td>
+                </tr>
+                
+                <tr>
+                        <th class="text-r">gps：</th>
+                        <td>{$only['degps']}</td>
+                </tr>
+                <tr>
+                        <th class="text-r">设备来源：</th>
+                        <td>{$only['desource']}</td>
+                </tr>
+                <tr>
+                        <th class="text-r">网络IP地址：</th>
+                        <td>{$only['ip_end_point']}</td>
+                </tr>
+                <tr>
+                        <th class="text-r">最后一次在线时间：</th>
+                        <td>{$only['lastunix_online']|date='Y-m-d H:i;s',###}</td>
+                </tr>
+                <tr>
+                        <th class="text-r">最后一次离线时间：</th>
+                        <td>{$only['lastunix_offline']|date='Y-m-d H:i;s',###}</td>
+                </tr>
+            </tbody>
+	</table>
+    </div>
+    
+
+</div>
+<!--<script type="text/javascript">
+var otb = null;
+var isLoaded = false;
+window.onload=function(){
+    otb = new oTreeTable('otb', document.getElementById('tb1'), 
+            //{skin:'default',showIcon:true,cellIndex:0,rowNumber:{setRowNumber:true,cellIndex:1,rowIndex:1}}
+            {skin:'default',showIcon:true,cellIndex:0}
+    );
+    otb.collapseAll();
+    isLoaded = true;
+}
+function expandAll(){
+    if(isLoaded){
+        otb.expandAll();
+    }
+}
+function collapseAll(){
+    if(isLoaded){
+        otb.collapseAll();
+    }
+}
+function expandLevel(){
+    var level = parseInt(document.getElementById('txtLevel').value, 10);
+    if(isLoaded){
+        otb.expandLevel(isNaN(level) ? -1 : level);
+    }
+}
+</script>-->
+<include file="Public/_footer"/>
+<!--请在下方写此页面业务相关的脚本-->
+<!--<script type="text/javascript" src="__PUBLIC_STATIC__/oTreeTable/otreetable.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/datatables/1.10.0/jquery.dataTables.min.js"></script>-->
+<!--<script type="text/javascript">
+    //填充表格内容
+    var fillTable = function(row, rowdata) {
+        for (var i in rowdata) {
+            var cell = row.insertCell(i);
+            cell.innerHTML = rowdata[i].html;
+            cell.title = rowdata[i].title != undefined ? rowdata[i].title: '';
+            cell.lang = rowdata[i].lang != undefined ? rowdata[i].lang: '';
+            cell.className = rowdata[i].css != undefined ? rowdata[i].css: '';
+            var style = rowdata[i].style;
+            if (style != undefined && typeof(style) == 'object') {
+                for (var j = 0,
+                c = style.length; j < c; j++) {
+                        cell.style[style[j][0]] = style[j][1];
+                }
+            }
+            if (rowdata[i].action != undefined && rowdata[i].action.func != undefined) {
+                var func = rowdata[i].action.func;
+                var param = rowdata[i].action.param;
+                if (typeof func == 'string') {
+                        func = eval(func);
+                }
+                if (param != undefined) {
+                        cell.onclick = function(param) {
+                                func(param);
+                        }
+                } else {
+                        cell.onclick = function() {
+                                func();
+                        }
+                }
+            }
+        }
+        rowdata = null;
+        return true;
+    };
+</script>-->
+<!--<script type="text/javascript">
+
+/*栏目-添加*/
+function cat_add(title,url,w,h){
+	layer_show(title,url,w,h);
+}
+/*栏目-删除*/
+function cat_del(obj,id){
+    var id = id;
+	layer.confirm('角色删除须谨慎，确认要删除吗？',function(index){
+		$.ajax({
+			type: 'POST',
+			url: "{:U('Category/catDel')}",
+                        data:{
+                            "id":id,
+                        },
+			success: function(data){
+                            if(data){
+                                
+				layer.msg('已删除!',{icon:1,time:1000});
+                            }else{
+                                layer.msg('删除失败!',{icon:1,time:1000});
+                            };
+                            setTimeout(function () {
+                                location.reload();                                  
+                            },1500); 	
+                            },
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+	});
+}
+/*栏目-停用（完成）*/
+function cat_stop(obj,id){
+    var id = id;
+	layer.confirm('确认要停用吗？',function(index){
+		//此处请求后台程序，下方是成功后的前台处理……
+		$.ajax({
+			type: 'POST',
+			url: "{:U('Category/catStop')}",
+			dataType: 'json',
+                        data:{
+                          "id":id,  
+                        },
+			success: function(data){
+                            
+                                if(data){
+                                    
+                                    layer.msg('已停用!',{icon: 5,time:1000});
+                                }else{
+                                    
+                                    layer.msg('停用失败!',{icon:1,time:1000});
+                                };
+                                   setTimeout(function(){
+                                        window.location.reload()
+                                   },1000);
+                                
+                               
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+		
+	});
+}
+
+/*栏目-启用（完成）*/
+function cat_start(obj,id){
+    var id = id;
+	layer.confirm('确认要启用吗？',function(index){
+		//此处请求后台程序，下方是成功后的前台处理……
+		$.ajax({
+			type: 'POST',
+			url: "{:U('Category/catStart')}",
+			dataType: 'json',
+                        data:{
+                          "id":id,  
+                        },
+			success: function(data){
+                            
+                                if(data){
+                                    
+                                    layer.msg('已启用!', {icon: 6,time:1000});
+                                }else{
+                                    layer.msg('启用失败!',{icon:1,time:1000});
+                                };
+                                setTimeout(function(){
+                                        window.location.reload()
+                                   },1000);
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+		
+		
+	});
+}
+/*导航-停用（完成）*/
+function nav_stop(obj,id){
+    var id = id;
+	layer.confirm('确认要取消导航吗？',function(index){
+		//此处请求后台程序，下方是成功后的前台处理……
+		$.ajax({
+			type: 'POST',
+			url: "{:U('Category/navStop')}",
+			dataType: 'json',
+                        data:{
+                          "id":id,  
+                        },
+			success: function(data){
+                            
+                                if(data){
+                                    
+                                    layer.msg('已停用!',{icon: 5,time:1000});
+                                }else{
+                                    
+                                    layer.msg('停用失败!',{icon:1,time:1000});
+                                };
+                                   setTimeout(function(){
+                                        window.location.reload()
+                                   },1000);
+                                
+                               
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+		
+	});
+}
+
+/*导航-启用（完成）*/
+function nav_start(obj,id){
+    var id = id;
+	layer.confirm('确认要启用导航吗？',function(index){
+		//此处请求后台程序，下方是成功后的前台处理……
+		$.ajax({
+			type: 'POST',
+			url: "{:U('Category/navStart')}",
+			dataType: 'json',
+                        data:{
+                          "id":id,  
+                        },
+			success: function(data){
+                            
+                                if(data){
+                                    
+                                    layer.msg('已启用!', {icon: 6,time:1000});
+                                }else{
+                                    layer.msg('启用失败!',{icon:1,time:1000});
+                                };
+                                setTimeout(function(){
+                                        window.location.reload()
+                                   },1000);
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+		
+		
+	});
+}
+</script>-->
+</body>
+</html>

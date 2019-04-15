@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    {:W('Public/_meta')}
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/collect_home.css">
+    <link rel="stylesheet" href="__PUBLIC_STATIC__/select2-4.0.6/css/select2.css">
+</head>
+<body>
+
+    <div class="col-sm-12">
+        <div class="bk-gray  radius  pd-10">
+            <div class="bk-gray  radius  pd-10">
+                <span class="f-20">今日数据</span> 
+                <a id="btn-refresh" class="hidden-xs btn  btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+                <a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
+                <div class="f-14 c-error">
+                    <span>区域:<foreach name="region" item="vo" >
+                            [ {$vo} ] 
+                        </foreach>
+                    </span>
+                </div>
+            </div>
+            <!--                <div class="bk-gray  radius  pd-10 mt-5">
+                               <form method="post" action="{:U('Collect/home')}">
+                                        <div class="row cl">
+                                            <div class="col-sm-3">
+                                                <label>开始时间</label>
+                                                <input type="text" name='statrTime' value="{$time['firstTime']}" onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', maxDate:'#F{$dp.$D(\'chartsLogmax\')||\'%y-%M-%d %H:%m:%s\'}' })"</literal> id="chartsLogmin" class="input-text radius Wdate" style="width:170px;">
+                                            
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <label>结束时间</label>
+                                                <input type="text" name='endTime' value="{$time['lastTime']}" onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', minDate: '#F{$dp.$D(\'chartsLogmin\')}',maxDate:'%y-%M-%d %H:%m:%s' })"</literal> id="chartsLogmax" class="input-text radius Wdate" style="width:170px;">
+                                            
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <label>区域选择</label>
+                                                        <select  id="selectClass" class="selectClass" name="region[]" multiple="multiple">
+                                                            <foreach name='region' item='v'>
+                                                                <option value="{$v}">{$v}</option>
+                                                            </foreach>
+                                                        </select>
+                                            </div>
+                                        </div>
+                                        <div class="row cl">
+                                            <div class="col-sm-4">
+                                                <label>汇总</label> 
+                                            <span id="listSumData" class=" btn-group va-m">
+                                                <span class="btn   btn-secondary-outline radius active" id="" >不汇总</span>
+                                                <span class="btn  btn-secondary-outline radius" id="hours">小时</span>
+                                                <span class="btn  btn-secondary-outline radius"  id="day">天</span>
+                                                <span class="btn  btn-secondary-outline radius"  id="week">周</span>
+                                                <span class="btn  btn-secondary-outline radius"  id="month">月</span>
+                                                <span class="btn  btn-secondary-outline radius"  id="year">年</span>
+                                            </span>
+                                            </div>
+                                            <div class="col-sm-2">
+                                               <button type="submit" id="homeButton"  class="btn btn-primary radius" style="margin-left:25px;">执行</button>
+                                                <button type="button" id="homeReset"  class="btn btn-warning radius">重置</button>
+                            
+                                            </div>
+                                        </div>
+                                            
+                                               
+                                    </form>
+                                </div>   -->
+            <div class="bk-gray  radius  pd-10 mt-10">
+
+                <div class="main-content">
+                    <div class="row cl">
+                        <div class="col-sm-2">
+                            <div class="panel  panel-secondary radius">
+                                <div class="panel-body">
+                                    <h6>今日平均温度</h6>
+
+                                    <h1>{$avg_temp}℃</h1>
+                                    <if condition="$temp_lv eq 0">
+                                        <p>与昨日持平</p>
+                                        <else/>
+                                        <p>比昨日
+                                        <if condition="$temp_lv lt 0">下降{-$temp_lv}
+                                            <else/>上升{$temp_lv}
+                                        </if>
+                                        </p>
+                                    </if>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="panel  panel-success radius">
+                                <div class="panel-body">
+                                    <h6>今日平均光照</h6>
+                                    <h1>{$avg_beam}Lx</h1>
+                                    <if condition="$beam_lv eq 0">
+                                        <p>与昨日持平</p>
+                                        <else/>
+                                        <p>比昨日
+                                        <if condition="$beam_lv lt 0">下降{-$beam_lv}
+                                            <else/>上升{$beam_lv}
+                                        </if></p>
+                                    </if>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="panel  panel-success radius">
+                                <div class="panel-body"> 
+                                    <h6>今日平均湿度</h6>
+                                    <h1>{$avg_humidity}%</h1>
+                                    <if condition="$humidity_lv eq 0">
+                                        <p>与昨日持平</p>
+                                        <else/>
+                                        <p>比昨日
+                                        <if condition="$humidity_lv lt 0">下降{-$humidity_lv}
+                                            <else/>上升{$humidity_lv}
+                                        </if></p>
+                                    </if>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-sm-2">
+                            <div class="panel  panel-success radius">
+                                <div class="panel-body"><h6>今日虫害数量</h6>
+                                    <h1>{$sum_pest}只</h1>
+                                    <if condition="$pest_lv eq 0">
+                                        <p>与昨日持平</p>
+                                        <else/>
+                                        <p>比昨日
+                                        <if condition="$pest_lv lt 0">下降{-$pest_lv}
+                                            <else/>上升{$pest_lv}
+                                        </if></p>
+                                    </if>     
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2"><div class="panel  panel-warning  radius">
+                                <div class="panel-body"><h6>今日苗木情况</h6>
+                                    <h1>{$health}%</h1>
+                                    <if condition="$health_lv eq 0">
+                                        <p>与昨日持平</p>
+                                        <else/>
+                                        <p>比昨日
+                                        <if condition="$health_lv lt 0">下降{-$health_lv}
+                                            <else/>上升{$health_lv}
+                                        </if></p>
+                                    </if>     
+
+                                </div>
+                            </div></div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div id="main" style="width:100%;height:400px;"></div>
+            </div>
+        </div>
+    </div>
+
+    {:W('Header/footer')}
+
+
+
+
+</body>
+{:W('Public/_footer')} 
+<script type="text/javascript" src="__HOME_JS__/echarts.js"></script>
+<!--<script type="text/javascript" src="__PUBLIC_STATIC__/select2-4.0.6/js/select2.js"></script>-->
+<script>
+    $(document).ready(function () {
+//        $('.selectClass').select2();
+//        $("#homeReset").click(function() { $('#selectClass').val(null).trigger('change'); });
+    });
+</script>
+<script type="text/javascript">
+    function homeCharts(data, myChart) {
+        // 基于准备好的dom，初始化echarts实例
+        var colors = ['#5793f3', '#d14a61', '#675bba'];
+        option = {
+            color: colors,
+            title: {
+                text: "七日综合信息走势图",
+                subtext: "病虫害及生长环境7日数据",
+                left: 'center',
+                top: "50",
+                textStyle: {
+                    fontWeight: '200',
+                    color: '#000',
+
+                },
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {type: 'cross'}
+            },
+            grid: {
+                right: '10%',
+                left: '5%',
+                top: "30%"
+
+            },
+            toolbox: {
+//                    itemSize:20,
+                right: 30,
+                feature: {
+                    dataView: {show: true, readOnly: false},
+                    restore: {show: true},
+                    saveAsImage: {show: true}
+                }
+            },
+            legend: {
+                data: ['总数量', '美国白蛾', '杨小舟蛾', '草履蚧', '舞毒蛾', '春尺蠖', '其他', '平均温度', '平均湿度', '健康度'],
+                align: 'left',
+                left: 10,
+            },
+            xAxis: [
+                {
+                    type: 'category',
+                    axisTick: {
+                        alignWithLabel: true
+                    },
+//                        data: ['2017-10-21','2017-10-22','2017-10-23','2017-10-24','2017-10-25','2017-10-26','2017-10-27']
+                    data: data["time"],
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value',
+                    name: '数量',
+                    position: 'left',
+                    axisLine: {
+                        lineStyle: {
+                            color: colors[0]
+                        }
+                    },
+                    axisLabel: {
+                        formatter: '{value}只'
+                    }
+                },
+                {
+                    type: 'value',
+                    name: '平均温度',
+                    position: 'right',
+
+                    axisLine: {
+                        lineStyle: {
+                            color: colors[1]
+                        }
+                    },
+                    axisLabel: {
+                        formatter: '{value}℃'
+                    }
+                },
+                {
+                    type: 'value',
+                    name: '平均湿度\n健康度',
+                    position: 'right',
+                    offset: 50,
+                    axisLine: {
+                        lineStyle: {
+                            color: colors[2]
+                        }
+                    },
+                    axisLabel: {
+                        formatter: '{value}%'
+                    }
+                }
+            ],
+            series: [
+                {
+                    name: '总数量',
+                    type: 'bar',
+
+//                        data:[2, 4, 7, 3, 5, 6, 5]
+                    data: data["pest_num"],
+                },
+                {
+                    name: '美国白蛾',
+                    type: 'bar',
+
+//                        data:[2, 4, 7, 3, 5, 6, 5]
+                    data: data["baie_num"],
+                },
+                {
+                    name: '杨小舟蛾',
+                    type: 'bar',
+
+//                        data:[2, 4, 7, 3, 5, 6, 5]
+                    data: data["yxz_num"],
+                },
+                {
+                    name: '草履蚧',
+                    type: 'bar',
+
+//                        data:[2, 4, 7, 3, 5, 6, 5]
+                    data: data["clj_num"],
+                },
+                {
+                    name: '舞毒蛾',
+                    type: 'bar',
+
+//                        data:[2, 4, 7, 3, 5, 6, 5]
+                    data: data["wde_num"],
+                },
+                {
+                    name: '春尺蠖',
+                    type: 'bar',
+
+//                        data:[2, 4, 7, 3, 5, 6, 5]
+                    data: data["cch_num"],
+                },
+                {
+                    name: '其他',
+                    type: 'bar',
+
+//                        data:[2, 4, 7, 3, 5, 6, 5]
+                    data: data["other_num"],
+                },
+
+                {
+                    name: '平均温度',
+                    type: 'line',
+                    smooth: true,
+                    yAxisIndex: 1,
+//                        data:[26, 25, 19, 26, 28, 27, 17]
+                    data: data["temp"],
+                },
+                {
+                    name: '平均湿度',
+                    type: 'line',
+                    smooth: true,
+                    yAxisIndex: 2,
+//                        data:[20, 22, 33, 45, 63, 92, 23,]
+                    data: data["humidity"],
+                },
+                {
+                    name: '健康度',
+                    type: 'line',
+                    smooth: true,
+                    yAxisIndex: 2,
+//                        data:[90, 92, 93, 95, 93, 92, 93,]
+                    data: data["health"]
+                }
+            ]
+        };
+
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        window.onresize = myChart.resize;
+        myChart.hideLoading();
+    }
+
+</script>
+<script>
+    $(function () {
+
+        var myChart = echarts.init(document.getElementById('main'));
+        myChart.showLoading({
+            text: '数据量较大\n拼命刷新中',
+            effect: 'bubble',
+            textStyle: {
+                fontSize: 30
+            }
+        });
+        $.ajax({
+            type: "post",
+            url: "{:U('Collect/homeCharts')}",
+            data: {
+                "time": Math.round(new Date().getTime() / 1000),
+            },
+            success: function (data) {
+                if ("" == data) {
+                    document.getElementById('main').innerHTML = "<div class='va-m' style='margin-top:20px;font-size:24px;text-align:center;'>暂无数据</div>";
+                } else {
+                    homeCharts(data, myChart);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                document.getElementById('main').innerHTML = "<div class='va-m' style='margin-top:20px;font-size:24px;text-align:center;'>请求出错，请重新刷新</div>";
+            }
+        });
+
+
+    });
+
+</script>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,181 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<include file='Public/_meta' />
+		<title>修改设备 - 设备管理 </title>
+	</head>
+
+	<body>
+		<article class="page-container">
+			<form class="form form-horizontal" id="form-article-add">
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>设备唯一编号：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" disabled="disabled" class="input-text" value="{$device['device_code']}" placeholder="" id="code" name="code">
+					</div>
+				</div>
+                            <div class="row cl">
+                                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>设备自定义名称：</label>
+                                <div class="formControls col-xs-8 col-sm-9">
+                                        <input type="text" class="input-text" value="{$device['custom_name']}" placeholder="" id="custom" name="custom">
+                                </div>
+                            </div> 
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>设备型号：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" class="input-text" value="{$device['demodel']}" placeholder="" id="model" name="model">
+						<input type="hidden" name='eid' value="{$device['device_id']}">
+					</div>
+				</div>
+				
+
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>购买日期：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input value="{$device['depurchase_date']|date='Y-m-d',###}" type="text" name='depurchase_date' onfocus=<literal>"WdatePicker({ maxDate:'#F{$dp.$D(\'deinst_time\')||\'%y-%M-%d\'}' })"</literal> id="depurchase_date" class="input-text Wdate" style="width:120px;">
+					</div>
+				</div>
+
+				
+
+                            <div class="row cl">
+                                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>使用者：</label>
+                                <div class="formControls col-xs-8 col-sm-9">
+                                    <span class="select-box">
+                                        <select id='uid' name="uid" class="select">
+                                           <option value="0" selected>==请选择==</option>
+                                           <foreach name="userdata" item="v">
+                                               <option value="{$v['user_id']}"<if condition="$v['user_id'] eq $device['uid']">selected</if> >{$v['uname']}</option>
+                                           </foreach>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row cl">
+                                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>设备内置手机号:</label>
+                                <div class="formControls col-xs-8 col-sm-9">
+                                        <input type="text" class="input-text" value="{$device['dephone']}" placeholder="" id="phone" name="phone">
+                                </div>
+                            </div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-2">设备来源：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" class="input-text" value="{$device['desource']}" placeholder="" id="source" name="source">
+					</div>
+				</div>
+<!--				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-2">设备模块：<br></label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<dl class="permission-list">
+							
+							<foreach name="moduledata" item="v">
+								<dd style="float: left">
+									
+									<label class="ml-10">
+                                            <input type="checkbox"<if condition="$v['check'] eq 1">checked="checked"<else/></if>   value="{$v['module_id']}" name="checkbox[]" class="checkbox">
+                                            {$v['momodel']}
+                                        </label>
+								</dd>
+							</foreach>
+
+							
+						</dl>
+					</div>
+				</div>-->
+				<div class="row cl">
+					<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+						<button onClick="device_save();" class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+						<button onClick="remove();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+					</div>
+				</div>
+			</form>
+		</article>
+
+		<include file="Public/_footer" />
+
+		<!--请在下方写此页面业务相关的脚本-->
+		<script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script>
+		<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script>
+		<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script>
+		<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+		<script type="text/javascript">
+			/**
+			 * 取消按钮
+			 */
+			function remove() {
+				var index = parent.layer.getFrameIndex(window.name);
+				window.parent.location.reload(); //刷新父页面
+				parent.layer.close(index); // 关闭layer  
+
+			}
+			/**
+			 * 设备保存按钮
+			 */
+			function device_save() {
+
+			}
+
+			$(function() {
+				
+				//表单验证
+				$("#form-article-add").validate({
+					rules: {
+						
+						code: {
+							required: true,
+						},
+						custom: {
+							required: true,
+						},
+						depurchase_date: {
+							required: true,
+						},
+	
+						model: {
+							required: true,
+						},
+						uid: {
+							min: 1,
+						},
+
+					},
+					messages: {
+						uid: {
+							min: '这是必填字段',
+						},
+					},
+					onkeyup: false,
+					focusCleanup: true,
+					success: "valid",
+					submitHandler: function(form) {
+						$(form).ajaxSubmit({
+							type: 'post',
+							url: "{:U('Device/deviceEdit')}",
+							success: function(data) {
+				
+                                                            layer.msg(data, {icon: 1,time: 1000});
+                                                            var index = parent.layer.getFrameIndex(window.name);
+                                                            setTimeout(function() {
+                                                                    window.parent.location.reload(); //刷新父页面
+                                                                    parent.layer.close(index); // 关闭layer  
+                                                            }, 1000);
+
+							},
+							error: function(XmlHttpRequest, textStatus, errorThrown) {
+								layer.msg('请联系管理员', {
+									icon: 1,
+									time: 1000
+								});
+							},
+						});
+						
+
+					}
+				});
+                    });
+		</script>
+		<!--/请在上方写此页面业务相关的脚本-->
+	</body>
+
+</html>

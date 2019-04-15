@@ -1,0 +1,259 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<include file='Public/_meta'/>
+<title></title>
+<style>
+
+#preview{ 
+    position: absolute;
+    padding:5px;
+    display:none;
+    color:#fff;
+   
+}
+#preview img{
+     width: 300px;
+    height: 300px;
+}
+</style>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 列表展示 <span class="c-gray en">&gt;</span> 虫害列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+        <div class="text-c">
+            <div id="province"></div>
+             <span class="select-box inline">
+                 <select id="type" name="type" onchange="res()" class="select">
+                        <option value="0">按种类</option>
+                        <foreach name="type" item="t">
+                            <option value="{$t['pt_id']}">{$t['type_name']}</option>
+                        </foreach>
+                </select>
+                 <select id="device_code"  name="device_code" class="select">
+                        <option value="">按设备编号</option>
+                        <foreach name="device" item="d">
+                            <option value="{$d['device_code']}">{$d['device_code']}</option>
+                        </foreach>
+                        
+                </select>
+                 <select id="region"  name="region" class="select">
+                        <option value="">按区域</option>
+                        <foreach name='region' item='r'>
+                            <option value="{$r['region_id']}">{$r['rnname']}</option>
+                        </foreach>
+                </select>
+            </span> 日期范围：
+                    <input type="text"  name='statrTime' onfocus=<literal>"WdatePicker({ maxDate:'#F{$dp.$D(\'logmax\')||\'%y-%M-%d\'}' })"</literal> id="logmin" class="input-text Wdate" style="width:120px;">
+                    -
+                    <input type="text"  name='endTime' onfocus=<literal>"WdatePicker({ minDate: '#F{$dp.$D(\'logmin\')}',maxDate:'%y-%M-%d' })"</literal> id="logmax" class="input-text Wdate" style="width:120px;">
+                    
+                    <button name="btnType" id="submit" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜虫害</button>
+                    <button onclick="reset()" class="btn btn-primary radius">重置</button>
+        </div>
+	<div class="cl pd-5 bg-1 bk-gray mt-20"><span class="r">共有数据：<strong>{$count}</strong> 条</span> </div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-hover table-sort">
+			<thead>
+				<tr class="text-c">
+					<th width="5%">ID</th>
+                                        <th width="8%">设备编号</th>
+					<th width="8%">区域</th>
+                                        <th width="8%">详细位置</th>
+					<th width="6%">美国白蛾数量</th>
+					<th width="5%">春尺蠖数量</th>
+                                        <th width="6%">杨小舟蛾数量</th>
+                                        <th width="5%">舞毒蛾数量</th>
+                                        <th width="5%">草履蚧数量</th>
+                                        <th width="5%">温度℃</th>
+                                        <th width="5%">湿度%</th>
+                                        <th width="4%">风向</th>
+                                        <th width="4%">风速</th>
+                                        <th width="4%">光照</th>
+                                        <th width="8%">图片</th>
+					<th width="14%">添加时间</th>
+				</tr>
+			</thead>
+
+                        <tfoot>
+				<tr class="text-c">
+					<th>ID</th>
+                                        <th>设备编号</th>
+					<th>区域</th>
+                                        <th>详细位置</th>
+					<th>美国白蛾数量</th>
+					<th>春尺蠖数量</th>
+                                        <th>杨小舟蛾数量</th>
+                                        <th>舞毒蛾数量</th>
+                                        <th>草履蚧数量</th>
+                                        <th>温度℃</th>
+                                        <th>湿度%</th>
+                                        <th>风向</th>
+                                        <th>风速</th>
+                                        <th>光照</th>
+                                        <th>图片</th>
+					<th>添加时间</th>
+				</tr>
+			</tfoot>
+		</table>
+            
+	</div>
+</div>
+
+<include file='Public/_footer'/>
+
+    <!--请在下方写此页面业务相关的脚本-->
+<!--    <script type="text/javascript" src="__PUBLIC_JS__/jquery-1.9.1.min.js"></script>-->
+<!--    <script type="text/javascript" src="jquery.provincesCity.js"></script>
+    <script type="text/javascript" src="provincesData.js"></script>-->
+    <script type="text/javascript" src="__PUBLIC_JS__/jquery.form.js"></script>  
+    <script type="text/javascript" src="__PUBLIC_JS__/my-utils.js"></script> 
+    <script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script> 
+    <script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script> 
+    <script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+    <script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script> 
+    <script type="text/javascript" src="__PUBLIC_STATIC__/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+    <script type="text/javascript" src="__PUBLIC_STATIC__/laypage/1.2/laypage.js"></script>
+
+<script type="text/javascript">
+    var table;
+    function res(){
+        var resapi = $( '.table-sort' ).dataTable().api();
+        var column = resapi.column();
+        column.visible( true );
+        
+    }
+    $("button[name='btnType']").bind("click", function () { //按钮 触发table重新请求服务器     
+        table.fnDraw();
+        var api = $( '.table-sort' ).dataTable().api();
+       
+        var type = document.getElementById("type");
+
+        var typeVal = parseInt(type.value);
+
+        var objs = type.getElementsByTagName("option");
+       
+        if(typeVal != 0){
+            window.console.log(typeVal);
+            for (var i = 1; i < objs.length; i++) {
+                var obj = objs[i];
+                var objVal = parseInt(obj.value);
+                var  val = parseInt(objVal)+3;
+                if(objVal === typeVal|| 0 === typeVal){
+                    continue;
+                }else{
+                    var column = api.column(val);
+                    column.visible(false); 
+                }   
+            } 
+        }  
+    }); 
+
+    $(function () {           
+        table = $('.table-sort').dataTable({
+        
+        "aaSorting": [[ 0, "asc" ]],//默认第几个排序
+//        "bStateSave": true,//状态保存
+        "aoColumnDefs": [
+          //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+            {"orderable":false,"aTargets":[]}// 不参与排序的列
+        ],
+//        "scrollX":true,  //允许表中的水平滚动
+        "destroy": true,
+        "retrieve": true,
+        "processing": true,
+        "serverSide": true,
+        "searching": false, //关闭本地搜索
+
+        ajax:{
+            url:"{:U('Pests/pestList')}",
+            type:"post", 
+            data:function(d){
+                d.startTime = $("#logmin").val();
+                d.endTime = $("#logmax").val();
+                d.device_code = $("#device_code").val();
+                d.region = $("#region").val();
+                },
+            },
+
+        
+            
+
+        "aoColumns": [ //这个属性下的设置会应用到所有列，按顺序没有是空
+             //mData 表示发请求时候本列的列明，返回的数据中相同下标名字的数据会填充到这一列
+            {
+                "sClass": "text-c",
+                "mData": 'pd_id'
+            },
+            {"sClass": "text-c","mData": 'device_code'},
+            {"sClass": "text-c","mData": 'rnname'},
+            {"sClass": "text-c","mData": 'deaddress'},
+            {"sClass": "text-c","mData": 'baie_num'},
+            {"sClass": "text-c","mData": 'cch_num'},
+            {"sClass": "text-c","mData": 'yxz_num'},
+            {"sClass": "text-c","mData": 'clj_num'},
+            {"sClass": "text-c","mData": 'wde_num'},
+            {"sClass": "text-c","mData": 'temp'},
+            {"sClass": "text-c","mData": 'humidity'},
+            {"sClass": "text-c","mData": 'wind_direction'},
+            {"sClass": "text-c","mData": 'wind_speed'},
+            {"sClass": "text-c","mData": 'lum'},
+            
+            {
+                "sClass": "text-c",
+                "mData": 'image',
+                "render" : function(data,type,full,meta){
+                    return "<a href='javascript:' onmouseover='imagePreview()' rel='"+data+"' class='preview'><img  src='"+data+"' alt='暂无图片' width='40' height='40' /></a>";
+                }
+            },
+            {
+                "sClass": "text-c",
+                "mData": 'addtime',
+               
+            },
+        ],
+    });
+
+   
+}); 
+
+
+ 
+/*下拉菜单-时间控件 重置按钮*/
+this.reset = function(){
+    document.getElementById("logmin").value = "";
+    document.getElementById("logmax").value = "";
+    document.getElementById("type").value = "0";
+    document.getElementById("device_code").value = "";
+    document.getElementById("region").value = "";
+}
+
+//缩略图的放大代码  js
+this.imagePreview = function(){
+    /* CONFIG */
+    xOffset = 250;
+    yOffset = -350;	
+    /* END CONFIG */
+    $("a.preview").hover(function(e){   
+            this.t = this.title;
+            this.title = "";	
+            var c = (this.t != "") ? "<br/>" + this.t : "";
+            $("body").append("<div id='preview'><img src='"+ this.rel +"' alt='Image preview' />"+ c +"</div>");								 
+            $("#preview")
+                    .css("top",(e.pageY - xOffset) + "px")
+                    .css("left",(e.pageX + yOffset) + "px")
+                    .fadeIn("fast");						
+    },
+    function(){
+            this.title = this.t;	
+            $("#preview").remove();
+    });	
+    $("a.preview").mousemove(function(e){
+            $("#preview")
+                    .css("top",(e.pageY - xOffset) + "px")
+                    .css("left",(e.pageX + yOffset)+ "px");
+    });			
+}; 
+</script> 
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+.history_list table .text-c{
+    background-color: #d8ecf3;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.history_list .list_top p{
+    font-size: 12px;
+    color: #5494dc;
+    letter-spacing:2px;
+    text-align: center;
+    margin: 5px auto;
+    
+}
+.history_list .list_left img{
+    width: 149px;
+    background-color: red;
+}
+
+.history_list .list_right{
+    width: 90px;
+    margin-left: 10px;
+       
+}
+

@@ -1,0 +1,38 @@
+<style>
+#right-bottom-footer .right-bottom{
+    height:30px;
+    /*background-color: #0044cc;*/
+    width:100%;
+    text-align: center;
+    line-height:30px;
+    font-size:12px;
+    
+}
+#right-bottom-footer .right-bottom ul{
+    display: table; /*重点就是这个属性,这个样式会告知浏览器当前元素的宽度,采用最小的宽度.不是默认全宽*/
+    margin: 0 auto; 
+}
+#right-bottom-footer .right-bottom ul li{
+    float: left;
+}
+</style>
+<div id="right-bottom-footer">
+    <div class="right-bottom">
+    <ul>
+        <foreach name="result" item="v">
+            <li>{$v['info_value']}</li>
+            <li>&nbsp;</li>
+        </foreach>
+<!--        <li>{$copyright['info_value']}</li>
+        <li>&nbsp;</li>  
+        <li>{$url['info_value']}</li>
+        <li>&nbsp;</li>
+        <li>{$icp['info_value']}</li>
+        <li>&nbsp;</li>
+        <li>{$CSH['info_remark']}:{$CSH['info_value']}</li>
+        -->
+        
+    </ul>
+           
+</div>
+</div>

@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>设备查看</title>
+</head>
+<style>
+    .form-horizontal .form-label {
+        text-align: right;
+    }
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+</style>
+{:W('Public/_meta')}
+<body>
+<article class="page-container form form-horizontal">
+    <!--<div class="pd-20">-->
+    
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">自定义设备名称:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div  class="input-text">{$only['custom_name']}</div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">设备型号:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div  class="input-text">{$only['demodel']}</div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">设备唯一编号:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div  class="input-text">{$only['device_code']}</div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">购买时间:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div  class="input-text">{$only['depurchase_date']|date='Y-m-d H:i:s',###}</div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">安装时间:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div  class="input-text">{$only['deinst_time']|date='Y-m-d H:i:s',###}</div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">拆除时间:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div  class="input-text">{$only['deremove_time']|date='Y-m-d H:i:s',###}</div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">区域:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div  class="input-text">{$only['rnname']}</div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">具体位置:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div  class="input-text">{$only['deaddress']}</div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">百度坐标:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div  class="input-text">{$only['degps']}</div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">设备来源:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div  class="input-text">{$only['desource']}</div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">网络IP地址:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div  class="input-text">{$only['ip_end_point']}</div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">最后一次在线时间:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div  class="input-text">{$only['lastunix_online']|date='Y-m-d H:i:s',###}</div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">最后一次离线时间:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div  class="input-text">{$only['lastunix_offline']|date='Y-m-d H:i:s',###}</div>
+            </div>
+        </div>
+    <!--</div>-->
+</article>
+
+{:W('Public/_footer')}
+<!--请在下方写此页面业务相关的脚本-->
+</body>
+</html>

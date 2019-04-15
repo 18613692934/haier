@@ -1,0 +1,74 @@
+﻿<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<include file='Public/_meta'/>
+<title>添加病虫害 - 病虫害管理 - H-ui.admin v3.0</title>
+</head>
+<body>
+<article class="page-container">
+	<form  class="form form-horizontal" id="form-admin-role-add">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>病虫害名称：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="type_name" name="type_name">
+
+			</div>
+		</div>
+                
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">备注：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="pt_remark" name="pt_remark">
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+				<button type="submit" class="btn btn-success radius" id="admin-role-save" name="admin-role-save"><i class="icon-ok"></i> 确定</button>
+			</div>
+		</div>
+	</form>
+</article>
+
+<include file='Public/_footer'/>
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#form-admin-role-add").validate({
+		rules:{
+			type_name:{
+				required:true,
+			},
+		},
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){
+                   
+			$(form).ajaxSubmit({
+                            type: 'post',
+                            url: "{:U('Pests/typeAdd')}" ,
+                            success: function(data){
+                                if(data){layer.msg('添加成功!',{icon:1,time:2000});}
+                                else{layer.msg('添加失败!',{icon:1,time:2000});}        
+                            },
+                            error: function(XmlHttpRequest, textStatus, errorThrown){
+                                    layer.msg('error!',{icon:1,time:2000});                                                           
+                            }
+                        });
+			var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+                        setTimeout(function () {
+                            window.parent.location.reload(); //刷新父页面
+                            parent.layer.close(index);   // 关闭layer  
+                        },2500); 
+		}
+	});
+});
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

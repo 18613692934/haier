@@ -1,0 +1,27 @@
+[ 2017-02-24T09:15:48+08:00 ] 127.0.0.1 /images/cwa-logo.png
+ERR: 无法加载模块:Images
+
+[ 2017-02-24T09:15:48+08:00 ] 127.0.0.1 /images/footer-logo.png
+ERR: 无法加载模块:Images
+
+[ 2017-02-24T09:15:49+08:00 ] 127.0.0.1 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2017-02-24T09:16:55+08:00 ] 127.0.0.1 /images/cwa-logo.png
+ERR: 无法加载模块:Images
+
+[ 2017-02-24T09:16:55+08:00 ] 127.0.0.1 /images/footer-logo.png
+ERR: 无法加载模块:Images
+
+[ 2017-02-24T09:16:56+08:00 ] 127.0.0.1 /Static/admin/css/H-ui.min.js
+ERR: 无法加载模块:Static
+
+[ 2017-02-24T09:16:56+08:00 ] 127.0.0.1 /Static/admin/css/H-ui.min.js
+ERR: 无法加载模块:Static
+
+[ 2017-02-24T09:47:34+08:00 ] 127.0.0.1 /industry/detail/1_4.html
+ERR: 无法加载模块:Industry
+
+[ 2017-02-24T09:47:34+08:00 ] 127.0.0.1 /industry/detail/1_4.html
+ERR: 无法加载模块:Industry
+

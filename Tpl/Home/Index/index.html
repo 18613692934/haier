@@ -1,0 +1,187 @@
+<!DOCTYPE html> 
+<head>
+    <title>{$arr['webname']['info_value']}</title>
+    {:W('Public/_meta')}
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/index.css">
+     <link rel="stylesheet" type="text/css" href="__HOME_CSS__/index-iframe.css">
+</head>
+<body>
+
+    <div id=loading style="position:absolute;width:100%;z-index:999">
+        {:W('Header/loading')}
+    </div>
+    {:W('Header/header')}
+<aside class="Hui-aside" >
+	<input runat="server" id="divScrollValue" type="hidden" value="" />
+	<div class="menu_dropdown bk_2">
+            <div id='table_dome' style=" overflow: auto;">
+                <table class="table table-border " >
+                    <thead>
+                        <tr class="text-c ">
+
+                            <th width="">编号</th>
+<!--                            <th width="35%">最近图片时间</th>-->
+                            <th  width="75">最近数据时间</th>
+                            <th  width="">详情</th>
+
+                        </tr>
+
+                    </thead>
+                    <foreach name="deviceData" item="data">
+                        <tr id="list-{$data['device_code']}" class="text-c parent">
+                            <td>{$data["device_code"]}</td>
+                            <!--<td>{$data["maxDate"]}</td>-->
+                            <td>
+                                
+                                     {$data["env_maxDate"]}
+                                
+                               </td>
+                            <td><a data-href="javascript:;" data-title="查看" href="{:U('Device/env',array(id=>$data['device_id']))}" class="btn-link">查看</a></td>
+                        </tr>
+
+                    </foreach>
+                </table>
+           </div>
+	</div>
+</aside>
+<div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+    <section class="Hui-article-box">
+        <div id="iframe_box" class="Hui-article">
+            <div class="show_iframe">
+                    <div class="bk-gray box-shadow radius  pd-10">
+                        <div class="bk-gray box-shadow radius text-c  pd-10">
+                            <div style="width: 100%;" id="allmap">
+                                <!--<div style="display:none" class="loading"></div>-->
+                                    <div id="mapLoading" >地图加载中...</div>
+                                    
+                            </div>
+                             {:W('Header/footer')}
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+     
+</body>
+  
+{:W('Public/_footer')} 
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=WkC72RXn71XyvV2emFZxg6p79XgjpuUU"></script>
+
+<script>
+    function changeSize() { 
+        var _ch = 170;
+        $('#allmap').height($(window).height()-_ch);
+        $('#mapLoading').height($(window).height()-_ch);
+    }  
+//    window.onresize = changeSize; //改变大小的时候，div也占满全屏   
+    
+</script>
+<script>
+//    $(function(){
+       setTimeout( function(){
+        $("#loading").hide();
+        },1);
+        changeSize(); 
+//    })
+</script>
+ 
+<script type="text/javascript">  
+        var array = new Array();
+        var points = new Array();
+        $.ajax({
+            url:"{:U('Index/map')}",
+            type:"post",
+            success:function(data){
+                map_init(data);
+                
+            },
+            error:function(){
+            }
+        });
+     
+    function map_init(markerArr) {
+        var markerArr = markerArr;
+//        changeSize();
+        var map = new BMap.Map("allmap"); // 创建Map实例
+        for (var x = 0; x < markerArr.length; x++) {    
+           var point =  markerArr[x].degps;
+               var arr = point.split(",");
+                points[x] = new BMap.Point(arr[0],arr[1]);
+        }
+        var view = map.getViewport(eval(points)); 
+
+        var mapZoom = view.zoom;   
+        var centerPoint = view.center;   
+        map.centerAndZoom(centerPoint,mapZoom);  
+        map.enableScrollWheelZoom();     
+        map.enableDoubleClickZoom();
+        //地图、卫星、混合模式切换
+        map.addControl( new BMap.MapTypeControl({mapTypes: [BMAP_NORMAL_MAP,BMAP_HYBRID_MAP]}));
+        
+        var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+	var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+        
+        map.addControl(top_left_control);        
+        map.addControl(top_left_navigation);  
+
+        var point = new Array(); //存放标注点经纬信息的数组
+        var marker = new Array(); //存放标注点对象的数组
+        for (var i = 0; i < markerArr.length; i++) {
+            code = markerArr[i].device_code;
+            address = markerArr[i].rnprovince+markerArr[i].rncity+markerArr[i].rncounty+markerArr[i].deaddress;
+            de_id = markerArr[i].device_id;
+            last_online = markerArr[i].last_online;
+             last_offline = markerArr[i].last_offline;  
+              count = markerArr[i].count;  
+              sum = markerArr[i].sum;
+              env_maxDate = markerArr[i].env_maxDate;
+              maxDate = markerArr[i].maxDate;
+            var url = "{:U('Device/env',array(id=>'de_id1'))}";
+            var imUrl = "{:U('Device/info',array(id=>'de_id2'))}"
+            var sContent =
+                    
+                    "<div class='row cl'><div class='col-sm-12'>设备编号："+code+"</div></div>"+
+                     "<div class='row cl'><div class='col-sm-12'>地址："+address+"</div></div>"+
+                     "<div class='row cl'><div class='col-sm-12'>环境："+env_maxDate+"</div></div>"+
+                     "<div class='row cl'><div class='col-sm-12'>害虫总数量："+sum+"头</div></div>"+
+                     "<div class='row cl'><div class='col-sm-12'>未处理虫害图片："+count+"张</div></div>"+
+//                     "<div class='row cl'><div class='col-sm-12'>图片："+maxDate+"</div></div>"+
+                    "<div class='row cl'><div class='col-sm-6'>"+
+                        "<a href='"+url+"' class='btn btn-secondary-outline radius'>数据查看</a></div>"+
+                        "<div class='col-sm-6'><a href='"+imUrl+"' class='btn btn-secondary-outline radius'>图片处理</a></div>"+
+                    "</div></div>" ;
+    
+             var sContent = sContent.replace("de_id1",de_id);
+              var sContent = sContent.replace("de_id2",de_id);
+            var p0 = markerArr[i].degps.split(",")[0]; //
+            var p1 = markerArr[i].degps.split(",")[1]; //按照原数组的point格式将地图点坐标的经纬度分别提出来
+            point[i] = new window.BMap.Point(p0, p1); //循环生成新的地图点
+            var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
+            marker[i] = new window.BMap.Marker(point[i]); //按照地图点坐标生成标记
+            map.addOverlay(marker[i]);
+            addClickHandler(infoWindow,marker[i],code)  ;
+        }
+      
+    }
+    function addClickHandler(infoWindow,marker,code){
+        marker.addEventListener("click", function(){          
+            this.openInfoWindow(infoWindow);
+        });
+         $("#list-"+code+"").click(function(){
+//             console.log(marker);
+             marker.V.click();
+         });
+    }
+</script>
+<script>
+    window.onload = function(){
+        setTimeout( function(){
+            var mapLoading =  document.getElementById("mapLoading");
+//            mapLoading.text = "";
+            mapLoading.innerHTML = "网络繁忙-请稍后重试";        
+        },1000);
+      
+    };
+    </script>
+</html>

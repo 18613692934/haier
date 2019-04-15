@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+   <head>
+	<meta charset="UTF-8">
+	<title>图片左右轮播</title>
+	<style>
+		body, div, ul, li {
+			margin: 0;
+			padding: 0;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+
+		body {
+			text-align: center;
+			font: 12px/20px Arial;
+		}
+                .clear{clear:both; height: 0; line-height: 0; font-size: 0}
+                
+                #content{
+                    width: 600px;
+                    margin: 0 auto;
+                }
+		#box {
+                    width: 500px;
+                    height: 500px;
+                    background: #fff;
+                    border-radius: 5px;
+                    border: 8px solid #fff;
+                    margin: 10px auto;
+		}
+
+		#box .list {
+                    border: 1px solid #ccc;
+		}
+
+		#box .list li {
+			position: absolute;
+			width: 490px;
+			height: 170px;
+			opacity: 0;
+			transition: opacity 0.5s linear
+		}
+
+		#box .list li.current {
+                    opacity: 1;
+		}
+                #box .list li.hide{
+                    opacity: 0;
+                }
+                
+		#box1 .count {
+                    width:275px;
+                    margin: 0 auto;
+			
+                       
+		}
+
+		#box1 .count li {			
+			float: left;
+			width: 50px;
+			height: 50px;
+			cursor: pointer;
+			margin-right: 5px;
+			overflow: hidden;
+			background: #F90;
+			opacity: 0.5;
+		}
+		#box1 .count li.current {
+			color: #fff;
+			opacity: 1;
+			font-weight: 700;
+			background: #f60
+		}
+                #box2{
+                  width: 305px;
+                  margin: 0 auto;
+                }
+                #box2 ul li {
+                    float: left;
+                }  
+	</style>
+</head>
+<body>
+    <div id="content">
+    <form method="post" action="slidenew.html" >
+       
+	<div id="box">
+		<ul class="list">
+                    <foreach name="all" item="v">
+                        <li class="" value="{$v['pest_id']}" style="opacity: 0;"><img src="__UPLOAD_IMAGES__/pest/{$v['img']}.jpg" width="500" height="500"></li>
+                    </foreach>
+		</ul>
+            
+	</div>
+	<div id="box1">
+		<ul class="count">
+                    <foreach name="all" item="a">
+                        <li class="" value="{$a['pest_id']}"><img src="__UPLOAD_IMAGES__/pest/{$a['img']}.jpg" width="50" height="50"></li>
+                    </foreach>			
+		</ul>
+            <div class="clear"></div>
+	</div>
+        <div id="box2">
+            <input type="hidden" id="hidden_img" name="img" value=""/>
+                <ul>
+                    <li><select name='type'>
+                            <option value='1'>美国白蛾</option>
+                            <option value='2'>杨小舟蛾</option>
+                            <option value='3'>舞毒蛾</option>
+                            <option value='4'>春尺蠖</option>
+                            <option value='5'>草履蚧</option>
+                        </select></li>
+                    <li>数量:<input type="text" name="num" value=""/></li>
+                    <li><input onclick="getImgNum()" type="submit" value="提交" /></li>
+                </ul>  
+            <div class="clear"></div>
+        </div>
+        
+    </form>
+         <div class="clear"></div>
+    </div>
+<script>
+    function getImgNum(){
+        var currents = document.getElementsByClassName("current");
+        var current = currents[0];
+        var va = current.value;
+        var img = document.getElementById("hidden_img");
+        img.value = va;
+    }
+    
+    
+    var box=document.getElementById('box');
+    var uls=document.getElementsByTagName('ul');
+    var imgs=uls[0].getElementsByTagName('li');
+    var btn=uls[1].getElementsByTagName('li');
+    var i=index=0; //中间量，统一声明；
+    var play=null;
+    console.log(box,uls,imgs,btn);//获取正确
+
+    //图片切换, 淡入淡出效果（transition: opacity 0.8s linear）做的
+    function show(a){        //方法定义的是当传入一个下标时，按钮和图片做出对的反应
+            for(i=0;i<btn.length;i++ ){
+                    btn[i].className='';    //每个缩略图都先设置成看不见，然后把当前缩略图设置成可见。
+                    btn[a].className='current';
+            }
+            for(i=0;i<imgs.length;i++){ //把图片的效果设置和缩略图片相同
+                    imgs[i].style.opacity=0;
+                    imgs[a].style.opacity=1;
+            }
+    }
+    //切换按钮功能，响应对应图片
+    for(i=0;i<btn.length;i++){
+            btn[i].index=i;  
+            btn[i].onmouseover=function(){
+                    show(this.index);
+                    clearInterval(play); 
+            }
+    }
+    //div的鼠标移入移出事件
+    box1.onmouseover=function(){
+            clearInterval(play);
+    };
+    box1.onmouseout=function(){
+            autoPlay();
+    };
+</script>
+</body>
+</html>

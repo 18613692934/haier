@@ -1,0 +1,182 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<include file="Public/_meta"/>
+<title>病虫害管理</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 病虫害管理 <span class="c-gray en">&gt;</span> 病虫害种类列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+<!--    <div class="text-c"> 
+        <input type="text" class="input-text" style="width:250px" placeholder="输入病虫害名称" id="" name="">
+        <button type="submit" class="btn btn-success" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 按名称</button>
+        <input type="text" class="input-text" style="width:250px" placeholder="输入层级" id="txtLevel" name="">
+        <button type="submit" class="btn btn-success" id="" onclick="expandLevel();" name=""><i class="Hui-iconfont">&#xe665;</i> 按层级</button>
+    </div>-->
+    <div class="cl pd-5 bg-1 bk-gray"> 
+        <span class="l"> 
+            <a class="btn btn-primary radius" href="javascript:;" onclick="type_add('添加病虫害','{:U(\'Pests/typeAdd\',array(\'rpid\'=>0))}','800')">
+                <i class="Hui-iconfont">&#xe600;</i> 添加病虫害
+            </a> 
+<!--             <a class="btn btn-danger radius" href="javascript:;" onclick="expandAll();">
+                全部展开
+            </a> 
+            <a class="btn btn-danger radius" href="javascript:;" onclick="collapseAll();">
+                全部收缩
+            </a> -->
+        </span> 
+        <span class="r">共有数据：<strong>{$count}</strong> 条</span> 
+    </div>
+<div class="mt-20">
+<table id="tb1"class="table table-border table-bordered table-bg table-hover table-sort"  >
+    <thead>
+        <tr class="text-c" style="background:#f1f1f1;">
+            <th>ID</th>
+            <th>病虫害名称</th>
+<!--            <th>父级ID</th>
+            <th>层级</th>       -->
+            <th>说明</th>
+            <th>操作</th>
+	</tr>
+        </thead>
+        <tbody class="text-c">
+        <foreach name="all" item="v">
+            <tr class="text-c" lang="{id:{$v['pt_id']},pid:{$v['pid']},level:{$v['level']}}">
+                <td style="color:#f00;width: 50px">{$v['pt_id']}</td>
+		<td>{$v[type_name]}</td>
+<!--		<td style="width: 50px" class="red">{$v['pid']}</td>
+		<td style="width: 30px" >{$v['level']}</td>-->
+             
+                <td style="width: 200px">{$v['pt_remark']}</td>
+                <td>
+                    <a style="text-decoration:none" class="ml-5" onClick="type_edit('病虫害编辑','typeEdit','{$v[\'pt_id\']}')" href="javascript:;" title="编辑">编辑</a>
+<!--                    <a title="子病虫害添加" href="javascript:;" onclick="type_add('子病虫害添加','typeAdd?cpid={$v[\'pt_id\']}','800','500')" class="ml-5" style="text-decoration:none">
+                        子病虫害添加
+                    </a>-->
+                    <a title="删除" href="javascript:;" onclick="type_del(this,'{$v[\'pt_id\']}')" class="ml-5" style="text-decoration:none">
+                        删除
+                    </a>
+
+                </td>
+          
+            </tr>
+        </foreach>
+        </tbody>
+
+</table>
+</div>
+<script type="text/javascript">
+var otb = null;
+var isLoaded = false;
+window.onload=function(){
+    otb = new oTreeTable('otb', document.getElementById('tb1'), 
+            //{skin:'default',showIcon:true,cellIndex:0,rowNumber:{setRowNumber:true,cellIndex:1,rowIndex:1}}
+            {skin:'default',showIcon:true,cellIndex:0}
+    );
+    otb.collapseAll();
+    isLoaded = true;
+}
+function expandAll(){
+    if(isLoaded){
+        otb.expandAll();
+    }
+}
+function collapseAll(){
+    if(isLoaded){
+        otb.collapseAll();
+    }
+}
+function expandLevel(){
+    var level = parseInt(document.getElementById('txtLevel').value, 10);
+    if(isLoaded){
+        otb.expandLevel(isNaN(level) ? -1 : level);
+    }
+}
+</script>
+<include file="Public/_footer"/>
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC_STATIC__/oTreeTable/otreetable.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript">
+    //填充表格内容
+    var fillTable = function(row, rowdata) {
+        for (var i in rowdata) {
+            var cell = row.insertCell(i);
+            cell.innerHTML = rowdata[i].html;
+            cell.title = rowdata[i].title != undefined ? rowdata[i].title: '';
+            cell.lang = rowdata[i].lang != undefined ? rowdata[i].lang: '';
+            cell.className = rowdata[i].css != undefined ? rowdata[i].css: '';
+            var style = rowdata[i].style;
+            if (style != undefined && typeof(style) == 'object') {
+                for (var j = 0,
+                c = style.length; j < c; j++) {
+                        cell.style[style[j][0]] = style[j][1];
+                }
+            }
+            if (rowdata[i].action != undefined && rowdata[i].action.func != undefined) {
+                var func = rowdata[i].action.func;
+                var param = rowdata[i].action.param;
+                if (typeof func == 'string') {
+                        func = eval(func);
+                }
+                if (param != undefined) {
+                        cell.onclick = function(param) {
+                                func(param);
+                        }
+                } else {
+                        cell.onclick = function() {
+                                func();
+                        }
+                }
+            }
+        }
+        rowdata = null;
+        return true;
+    };
+</script>
+<script type="text/javascript">
+
+/*病虫害类型-添加*/
+function type_add(title,url,w,h){
+	layer_show(title,url,w,h);
+}
+/*病虫害类型-编辑*/
+function type_edit(title,url,id,w,h){
+    var id = id;
+	var index = layer.open({
+            type: 2,
+            title: title,
+            content: url+"/id/"+id
+	}); 
+       
+	layer.full(index);
+}
+/*病虫害类型-删除*/
+function type_del(obj,id){
+    var id = id;
+	layer.confirm('类型删除须谨慎，确认要删除吗？',function(index){
+		$.ajax({
+			type: 'POST',
+			url: "{:U('Pests/typeDel')}",
+                        data:{
+                            "id":id,
+                        },
+			success: function(data){
+                            if(data){
+                                $(obj).parents("tr").remove();
+				layer.msg('已删除!',{icon:1,time:1000});
+                            }else{
+                                layer.msg('删除失败!',{icon:1,time:1000});
+                            };	
+                            },
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+	});
+}
+
+
+</script>
+</body>
+</html>

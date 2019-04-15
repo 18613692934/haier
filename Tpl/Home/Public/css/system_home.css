@@ -1,0 +1,53 @@
+/* 
+    Created on : 2017-10-26, 14:23:34
+    Author     : zhang
+*/
+
+/*右侧内容显示*/
+
+
+.right-middle{
+    width:100%;
+    margin-top:30px;
+    margin-bottom: 30px;
+
+}
+.right-middle .panel {
+   margin: 0 25px;
+
+}
+.right-middle .panel-primary {
+    border-color: transparent;
+    /*background-color: transparent;*/
+}
+.right-middle .panel-danger {
+    border-color: #dd514c;
+    background-color: #dd514c;
+}
+.right-middle .panel-success {
+    border-color: #5eb95e;
+    background-color: #5eb95e;
+}
+.right-middle .panel .panel-body{
+padding:0px;
+  font-size: 18px;
+text-align: center;
+}
+.right-middle .panel h1{
+    text-align: center;
+    line-height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.right-middle .panel p{
+   font-size: 16px;
+}
+
+/*h-ui css修改*/
+.marquee {
+    height: 100px;
+    overflow: hidden;
+    /*line-height: 30px;*/
+}
+

@@ -1,0 +1,206 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+    <head>
+
+        {:W('Public/_meta')}
+        <title>修改安装信息 - 设备管理 </title>
+    </head>
+    <style>
+        .form-horizontal .form-label {
+            text-align: right;
+        }
+        .row {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    </style>
+    <body>
+        <article class="page-container">
+            <form class="form form-horizontal" id="form-article-add">
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>设备唯一编码：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <div  class="input-text">{$item['device_code']}</div>
+                    </div>
+                </div>
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>设备购买时间：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <div  class="input-text">{$item['depurchase_date']|date='Y-m-d H:i:s',###}</div>
+                    </div>
+                </div>
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>设备内置手机号：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <div  class="input-text">{$item['dephone']}</div>
+                    </div>
+                </div>
+
+                <input type="hidden" name='eid' value="{$item['device_id']}">
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>设备自定义名称：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <input type="text" class="input-text" value="{$item['custom_name']}" placeholder="" id="custom_name" name="custom_name">
+                    </div>
+                </div>
+                <!--购买日期-->
+                <input  value="{$item['depurchase_date']|date='Y-m-d H:i:s',###}" type="hidden" name='purchase_date' onfocus=<literal>"WdatePicker({ maxDate:'#F{$dp.$D(\'deinst_time\')||\'%y-%M-%d\'}' })"</literal> id="purchase_date" class="input-text Wdate" style="width:120px;">
+
+
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>安装日期：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <input value="{$item['deinst_time']|date='Y-m-d H:i:s',###}" type="text" name='deinst_time' onfocus=<literal>"WdatePicker({ minDate: '#F{$dp.$D(\'purchase_date\')}',maxDate:'%y-%M-%d' })"</literal> id="deinst_time" class="input-text Wdate" style="width:120px;">
+                    </div>
+                </div>
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-2">移除日期：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <input type="text" value="{$item['deremove_time']|date='Y-m-d H:i:s',###}" name='deremove_time' onfocus=<literal>"WdatePicker({ minDate: '#F{$dp.$D(\'deinst_time\')}',maxDate:'%y-%M-%d' })"</literal> id="deremove_time" class="input-text Wdate" style="width:120px;">
+                    </div>
+                </div>
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>区域：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <span class="select-box">
+                            <select id='re_id' name="re_id" class="select">
+                                <option value="0" selected>==请选择==</option>
+                                <foreach name="re_data" item="v">
+                                    <option value="{$v['region_id']}"<if condition="$v['region_id'] eq $item['re_id']">selected</if> >{$v['rnname']}</option>
+                                </foreach>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>具体位置：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <input type="text" class="input-text" value="{$item['deaddress']}" placeholder="" id="deaddress" name="deaddress">
+                    </div>
+                </div>
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>百度地图坐标：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <input type="text" class="input-text" value="{$item['degps']}" placeholder="" id="degps" name="degps">
+                        <span style="color:red"><p>说明:经度在前,纬度在后,用英文逗号分隔,使用百度坐标</p>
+                            <p>示例:116.6150951594,35.4477172811</p>
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="row cl">
+                    <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                        <button onClick="device_save();" class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+                        <button onClick="remove();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                    </div>
+                </div>
+            </form>
+        </article>
+
+        {:W('Public/_footer')}
+
+        <!--请在下方写此页面业务相关的脚本-->
+        <script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script>
+        <script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script>
+        <script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script>
+        <script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+
+        <script type="text/javascript">
+                            /**
+                             * 取消按钮
+                             */
+                            function remove() {
+                                var index = parent.layer.getFrameIndex(window.name);
+
+                                parent.layer.close(index); // 关闭layer  
+
+                            }
+                            /**
+                             * 设备保存按钮
+                             */
+                            function device_save() {
+
+                            }
+
+                            $(function () {
+                                $('.skin-minimal input').iCheck({
+                                    checkboxClass: 'icheckbox-blue',
+                                    radioClass: 'iradio-blue',
+                                    increaseArea: '20%'
+                                });
+                                //表单验证
+                                $("#form-article-add").validate({
+                                    rules: {
+                                        re_id: {
+                                            required: true,
+                                            min: 1,
+                                        },
+                                        device_code: {
+                                            required: true,
+                                        },
+                                        custom_name: {
+                                            required: true,
+                                        },
+                                        depurchase_date: {
+                                            required: true,
+                                        },
+                                        deinst_time: {
+                                            required: true,
+                                        },
+                                        deaddress: {
+                                            required: true,
+                                        },
+                                        degps: {
+                                            required: true,
+                                        },
+                                        demodel: {
+                                            required: true,
+                                        },
+
+                                    },
+                                    messages: {
+                                        re_id: {
+                                            min: '这是必填字段',
+                                        },
+
+                                    },
+                                    onkeyup: false,
+                                    focusCleanup: true,
+                                    success: "valid",
+                                    submitHandler: function (form) {
+                                        $(form).ajaxSubmit({
+                                            type: 'post',
+                                            url: "{:U('User/deviceEdit')}",
+                                            success: function (data) {
+                                                layer.msg(data, {
+                                                    icon: 1,
+                                                    time: 1000
+                                                });
+                                                var index = parent.layer.getFrameIndex(window.name);
+                                                setTimeout(function () {
+                                                    window.parent.location.reload(); //刷新父页面
+                                                    parent.layer.close(index); // 关闭layer  
+                                                }, 1000);
+
+                                            },
+                                            error: function (XmlHttpRequest, textStatus, errorThrown) {
+                                                layer.msg('error!', {
+                                                    icon: 1,
+                                                    time: 1000
+                                                });
+                                            },
+                                        });
+
+
+                                    }
+                                });
+
+
+                            });
+        </script>
+        <!--/请在上方写此页面业务相关的脚本-->
+    </body>
+
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    {:W('Public/_meta')}
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/collect_pest.css">
+    <link rel="stylesheet" href="__PUBLIC_STATIC__/select2-4.0.6/css/select2.css">
+</head>
+<body>
+    <section class="Hui-article-box">
+        <div class="Hui-article">
+            <article class="cl pd-20">
+                <div class="bk-gray  radius  pd-10">
+                    <div class="bk-gray  radius  pd-10">
+                        <span class="f-20">虫害汇总分析</span> 
+                        <a id="btn-refresh" class="btn  btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+                        <div class="f-14 c-error">
+                            <span>区域:<foreach name="region" item="vo" >
+                                    [ {$vo} ]  
+                                </foreach>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bk-gray  radius  pd-10 mt-5">
+                        <form class="form" method="post" action="{:U('Collect/envSearch')}">
+                            <div class="row cl">
+                                <div class="col-sm-3">
+                                    <label>开始时间</label>
+                                    <input type="text" name='statrTime' value="{$time['firstTime']}"  onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', maxDate:'#F{$dp.$D(\'chartsLogmax\')||\'%y-%M-%d %H:%m:%s\'}' })"</literal> id="chartsLogmin" class="input-text radius Wdate" style="width:170px;">
+
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <label>结束时间</label>
+                                    <input type="text" name='endTime' value="{$time['lastTime']}" onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', minDate: '#F{$dp.$D(\'chartsLogmin\')}',maxDate:'%y-%M-%d %H:%m:%s' })"</literal> id="chartsLogmax" class="input-text radius Wdate" style="width:170px;">
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <label>区域选择</label>
+                                    <select style="width:170px;display:none" id="selectClass" class="selectClass" name="region" multiple="multiple">
+                                        <foreach name='region' item='v'>
+                                            <option value="{$v}">{$v}</option>
+                                        </foreach>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row cl">
+                                <div class="col-sm-5">
+                                    <label>汇总</label> 
+                                    <span id="listSumData" class=" btn-group va-m"  >
+                                        <span class="btn   btn-secondary-outline radius active" id="" >不汇总</span>
+                                        <span class="btn  btn-secondary-outline radius" id="hours">小时</span>
+                                        <span class="btn  btn-secondary-outline radius"  id="day">天</span>
+                                        <span class="btn  btn-secondary-outline radius"  id="week">周</span>
+                                        <span class="btn  btn-secondary-outline radius"  id="month">月</span>
+                                        <span class="btn  btn-secondary-outline radius"  id="year">年</span>
+                                    </span>
+
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="button" id="pestChartsButton" name="envCharts" class="btn btn-primary radius">执行</button>
+
+                                    <button type="button" id="pestReset" class="btn btn-warning radius">重置</button>
+
+                                </div>
+                            </div>
+
+                    </div>
+
+
+
+                    </form>
+                    <div class="bk-gray  radius  pd-10 mt-10">
+                        <div id="main" style="width:100%;height:700px;"></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    {:W('Header/footer')}
+</body>
+{:W('Public/_footer')} 
+<script type="text/javascript" src="__PUBLIC_STATIC__/echarts/3.4.0/echarts.min.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/select2-4.0.6/js/select2.js"></script>
+
+<script type="text/javascript">
+
+    $(function () {
+        $("#pestReset").click(function () {
+            $('#selectClass').val(null).trigger('change');
+            $('#chartsLogmax ').val("");
+            $('#chartsLogmin ').val("");
+        });
+
+        // 基于准备好的dom，初始化echarts实例
+
+        $('#pestChartsButton').click(function () {
+            var myChart = echarts.init(document.getElementById('main'));
+//            myChart.showLoading({
+//                        text : '数据量较大\n拼命刷新中',
+//                        effect : 'bubble',
+//                        textStyle : {
+//                            fontSize : 30
+//                        }
+//                    });
+            $.ajax({
+                type: "post",
+                url: "{:U('Collect/pest')}",
+                data: {
+                    "startTime": $("#chartsLogmin").val(),
+                    "endTime": $("#chartsLogmax").val(),
+                    "region": $("#selectClass").val(),
+                },
+                success: function (data) {
+
+                    if ("" == data) {
+//                    document.getElementById("main").style.height = "auto";
+                        document.getElementById('main').innerHTML = "<div class='text-c f-20'>暂无数据</div>";
+                    } else {
+
+
+                        pestCharts(data, myChart);
+//                    document.getElementById("main").style.height = "700px";
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+//                document.getElementById("main").style.height = "auto";
+                    document.getElementById('main').innerHTML = "<div class='text-c f-20'>请求出错，请重新刷新</div>";
+                }
+            });
+        });
+
+        $('#pestChartsButton').click(
+                $('#pestChartsButton').click()
+                );
+
+    });
+
+
+
+    function pestCharts(data, myChart) {
+// var myChart = echarts.init(document.getElementById('main'));
+        var timeData = data.time;
+        timeData = timeData.map(function (str) {
+            return str.replace(' ', '\n');
+        });
+
+        option = {
+
+            title: {
+                bottom: 5,
+                text: '',
+                x: 'center'
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow',
+                    label: {
+                        show: true,
+                        backgroundColor: '#333'
+                    }
+                }
+            },
+            toolbox: {
+
+                feature: {
+                    dataView: {show: true, readOnly: false},
+                    restore: {show: true},
+                    saveAsImage: {show: true}
+                }
+            },
+            axisPointer: {
+                link: {xAxisIndex: 'all'}
+            },
+            legend: {
+                data: [],
+
+            },
+            dataZoom: [
+                {
+                    show: true,
+                    realtime: true,
+                    start: 0,
+                    end: 100,
+                    xAxisIndex: [0, 1]
+                },
+                {
+                    type: 'inside',
+                    realtime: true,
+                    start: 0,
+                    end: 100,
+                    xAxisIndex: [0, 1]
+                }
+            ],
+            grid: [{
+                    left: 50,
+                    right: 50,
+                    top: '10%',
+                    height: '35%'
+                }, {
+                    left: 50,
+                    right: 50,
+                    top: '55%',
+                    height: '35%'
+                }],
+            xAxis: [
+                {
+                    type: 'category',
+                    boundaryGap: true,
+                    axisLine: {onZero: false},
+                    data: timeData
+                },
+                {
+                    gridIndex: 1,
+                    type: 'category',
+                    boundaryGap: true,
+                    axisLine: {onZero: false},
+                    data: timeData,
+                    position: 'top'
+                }
+            ],
+            yAxis: [
+                {
+                    name: '温度/℃\n湿度/%',
+                    type: 'value',
+
+                },
+                {
+                    gridIndex: 1,
+                    name: '害虫数量/头',
+                    type: 'value',
+                },
+            ],
+            series: []
+        };
+
+        var Item = function () {
+            return {
+                name: '',
+                smooth: true,
+                type: '',
+                hoverAnimation: false,
+                data: []
+            }
+        };// series中的每一项为一个item,所有的属性均可以在此处定义  
+        var legends = [];// 准备存放图例数据  
+        var Series = []; // 准备存放图表数据  
+        var json = data.data;// 后台返回的json  
+        for (var i = 0; i < json.length; i++) {
+            var it = new Item();
+            it.name = json[i].name;// 先将每一项填充数据  
+            it.type = json[i].type;
+            if (json[i].xAxisIndex) {
+                it.xAxisIndex = json[i].xAxisIndex;
+            }
+            if (json[i].yAxisIndex) {
+                it.yAxisIndex = json[i].yAxisIndex;
+            }
+
+            legends.push(json[i].name);// 将每一项的图例名称也放到图例的数组中  
+            it.data = json[i].data;
+            Series.push(it);// 将item放在series中  
+        }
+
+        option.xAxis[0].data = timeData;// 这一步是设置X轴数据了，需要注意：option.xAxis.data = json.xcontent这样不行  
+        // 折线图可设置上下两个X轴，所以必须是option.xAxis[0].data = json.xcontent  
+        var legend = {data: legends};
+
+        option.legend = legend;// 设置图例  
+        option.series = Series; // 设置图表  
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        window.onresize = myChart.resize;
+        myChart.hideLoading();
+    }
+    $('.selectClass').select2();
+</script>
+
+<script>
+    $("#listSumData span").click(function () {
+        $('#listSumData span').removeClass("active");
+        $(this).addClass("active");
+    });
+
+</script>
+</html>
+
+
+
+
+
+

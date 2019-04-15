@@ -1,0 +1,113 @@
+#loginWrap {
+    
+    width: 100%; 
+    height: 100%;
+    background: url(../img/login/background.png) repeat; 
+}
+.cl{
+    clear: both;
+}
+.loginTitle{
+    width: 900px;
+    margin:0 auto;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing:4px;
+    color: #f0f0f0;
+}
+.loginTitle span{
+    font-size: 40px;
+    color: #ffcc33;
+}
+.login_yunBox {
+   
+    width: 900px; 
+   
+    margin:0 auto;
+}
+.loginForm {
+	width: 100%; background: url(../img/login/tableBg.png) no-repeat left top; height: 220px
+}
+.loginTable {
+	text-align: left;
+        width: 100%; 
+        border-collapse: collapse; 
+        font-family: Verdana, "����"; 
+        color: #686868; 
+        font-size: 12px
+}
+.loginTable tr {
+	height: 50px
+}
+.loginTable td {
+	font-size: 16px; 
+}
+.rightimg img{
+    width:600px;
+    height:400px;
+}
+.rightimg{
+    margin-top:10px;
+}
+.formipt {
+	padding-bottom: 5px; 
+        line-height: 21px; 
+        padding-left: 5px; 
+        width: 147px; 
+        padding-right: 5px;
+        background: url(../img/login/long.png) no-repeat left top;
+        height: 16px; 
+        color: #333; 
+        font-size: 16px; 
+        padding-top: 4px
+}
+.yzmIpt {
+	position: relative; padding-bottom: 5px; line-height: 21px; padding-left: 5px; width: 86px; padding-right: 5px; background: url(../img/login/sm.png) no-repeat left top; height: 21px; color: #333; font_size: 14px; top: -10px; padding-top: 4px
+}
+.yzmImg {
+	
+}
+.loginFormBtn {
+	text-align: center; margin-bottom: 5px; background: url(../img/login/btnBoxBg.png) no-repeat left top; height: 57px; padding-top: 20px
+}
+/*.btn {
+	text-align: center;
+        line-height: 30px;
+        width: 78px; 
+        font-family: Verdana, "����"; 
+        background: url(../img/login/loginBtn_bg.png) no-repeat left top; 
+        height: 33px; 
+        color: #fff; 
+        font-size: 12px; 
+        vertical-align: baseline; 
+        cursor: pointer; 
+        margin-right: 15px
+}*/
+.login_yunBox p.copyright {
+	text-align: left;
+        line-height: 23px;
+        padding-left: 10px;
+        font-family: "����"; 
+        background: url(../img/login/copyrightBg.png) no-repeat left top; 
+        height: 60px; 
+        color: #a6a6a6; 
+        font-size: 12px;
+        padding-top: 15px
+}
+.rightImg {
+	width: 625px; height: 380px; padding-top:  20px
+}
+.loginCont {
+	width: 258px
+}
+.loginTit {
+    text-align: center;
+    line-height: 90px; 
+    padding-left:  20px; 
+    font-family:  Verdana, "Microsoft YaHei"; 
+    background:  url(../img/login/titBg.png) no-repeat left top; 
+    height: 80px; 
+    color: #0082cc; 
+    font-size: 24px; 
+    padding-top:  10px
+}

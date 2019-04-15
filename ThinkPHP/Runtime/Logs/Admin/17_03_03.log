@@ -1,0 +1,513 @@
+[ 2017-03-03T09:02:49+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-03T09:02:51+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-03T09:03:49+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-03T09:03:51+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-03T09:04:06+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-03T09:04:07+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0824s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-03T09:04:18+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-03T09:04:19+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-03T09:13:09+08:00 ] 127.0.0.1 /admin.php/Test/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:Test
+
+[ 2017-03-03T09:14:05+08:00 ] 127.0.0.1 /admin.php/Test/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:Test
+
+[ 2017-03-03T09:14:21+08:00 ] 127.0.0.1 /admin.php/Test/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:Test
+
+[ 2017-03-03T09:14:46+08:00 ] 127.0.0.1 /admin.php/Test/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:Test
+
+[ 2017-03-03T09:15:02+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-03T09:15:37+08:00 ] 127.0.0.1 /admin.php/Test/Tree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Tree - assumed 'Tree' E:\Zend Studio\iot\Runtime\Cache\Admin\1507fe0ebeebb57904c26842507b3336.php 第 13 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-03T09:15:55+08:00 ] 127.0.0.1 /admin.php/Test/Tree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Tree - assumed 'Tree' E:\Zend Studio\iot\Runtime\Cache\Admin\1507fe0ebeebb57904c26842507b3336.php 第 13 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-03T09:18:00+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-03T09:30:17+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-03T09:30:59+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-03T09:32:00+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-03T09:32:12+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-03T09:32:51+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-03T09:33:27+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0010s ]
+
+[ 2017-03-03T09:33:36+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-03T09:34:10+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-03T09:34:12+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-03T09:34:33+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-03T09:34:47+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-03T09:35:11+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-03T09:35:23+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-03T09:35:50+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-03T12:06:43+08:00 ] 127.0.0.1 /admin.php/Inform/informZhang.html
+ERR: 非法操作:informZhang
+
+[ 2017-03-03T12:07:26+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('nidaoshi sajs aslksl;k','','0','','','0','','&lt;p&gt;&lt;em&gt;&lt;strong&gt;我的世界没有了你 &amp;nbsp;你的世界没有个了我 &amp;nbsp;我们如何才能成为一个不被人导致的时报的一些生无可恋加链接抗裂砂浆&amp;nbsp;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;','1','1488514046','1') [ RunTime:0.1300s ]
+
+[ 2017-03-03T13:48:08+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('关于公开征求《中华人民共和国森林法（2016年修改征求意见稿）》意见的公告','关于公开征求《中华人民共和国森林法（2016年修改征求意见稿）》意见的公告','20','森林法','','0','','<p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"box-sizing: border-box;\">为了适应林业改革发展的需要，我局开展了森林法修改工作，并形成了《中华人民共和国森林法（2016年修改征求意见稿）》，现公布向社会征求意见。有关单位和各界人士可以在2016年10月25日前，通过以下方式提出意见。<br style=\"box-sizing: border-box;\"/>　　一、通过信函方式将意见寄至：北京市和平里东街18号国家林业局政法司（邮政编码：100714），并请在信封上注明“森林法修改意见”字样。<br style=\"box-sizing: border-box;\"/>　　二、通过电子邮件方式发送至：<a href=\"mailto:zhangshaomin@forestry.gov.cn\" style=\"box-sizing: border-box; background-color: transparent; text-decoration: none; transition: all 0.2s ease-out 0s; color: rgb(51, 51, 51);\">zhangshaomin@forestry.gov.cn</a>。</span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"box-sizing: border-box;\">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<br style=\"box-sizing: border-box;\"/>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　2016年9月27日<br style=\"box-sizing: border-box;\"/><br style=\"box-sizing: border-box;\"/><br style=\"box-sizing: border-box;\"/>&nbsp;</span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"box-sizing: border-box;\"><span id=\"forestry_content\" style=\"box-sizing: border-box;\"><strong style=\"box-sizing: border-box;\">中华人民共和国森林法<br style=\"box-sizing: border-box;\"/>（2016年修改征求意见稿）</strong></span></span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"box-sizing: border-box;\"><strong style=\"box-sizing: border-box;\">第一章　总　则</strong><br style=\"box-sizing: border-box;\"/>&nbsp;</span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"box-sizing: border-box;\">　　第一条　为保护、培育和合理利用森林资源，加快国土绿化，发挥森林蓄水保土、调节气候、改善环境和提供林产品的作用，保障森林生态安全，建设生态文明，促进经济社会可持续发展，特制定本法。<br style=\"box-sizing: border-box;\"/>　　第二条　在中华人民共和国领域内从事森林、林木的培育种植、采伐利用和森林、林木、林地的经营管理活动，都必须遵守本法。<br style=\"box-sizing: border-box;\"/>　　第三条　森林资源属于国家所有，由法律规定属于集体所有的除外。<br style=\"box-sizing: border-box;\"/>　　国家所有的和集体所有的森林、林木和林地，单位和个人所有的林木和使用的林地，由县级以上地方人民政府不动产登记机构登记造册，发放证书，确认所有权或者使用权。国务院确定的国家所有的重点林区的森林、林木和林地由国务院国土资源主管部门会同林业主管部门登记造册、发放证书，并通知有关地方人民政府。<br style=\"box-sizing: border-box;\"/>　　森林、林木、林地的所有者和使用者的合法权益，受法律保护，任何单位和个人不得侵犯。<br style=\"box-sizing: border-box;\"/>　　第四条　森林分为以下五类：<br style=\"box-sizing: border-box;\"/>　　（一）防护林：以防护为主要目的的森林、林木和灌木丛，包括水源涵养林，水土保持林，防风固沙林，农田、牧场防护林，护岸林，护路林；<br style=\"box-sizing: border-box;\"/>　　（二）用材林：以生产木材为主要目的的森林和林木，包括以生产竹材为主要目的的竹林；<br style=\"box-sizing: border-box;\"/>　　（三）经济林：以生产果品，食用油料、饮料、调料、工业原料和食用菌、药材等为主要目的的森林和林木；<br style=\"box-sizing: border-box;\"/>　　（四）能源林：以生产燃料和其他生物质能源为主要目的的森林和林木,包括薪炭林；<br style=\"box-sizing: border-box;\"/>　　（五）特种用途林：以国防、物种保护、环境保护、良种繁育、科学实验等为主要目的的森林和林木，包括国防林、实验林、母树林、种子园、采穗圃、种质资源保存林、血防林、环境保护林、风景林、古树名木，名胜古迹和革命纪念地的林木，自然保护区、国家公园、森林公园的森林。<br style=\"box-sizing: border-box;\"/>　　第五条　林业建设实行以营林为基础，生态优先，严格保护，科学经营，永续利用的方针。<br style=\"box-sizing: border-box;\"/>　　第六条　国家鼓励林业科学研究，推广林业先进技术，提高林业科学技术水平。<br style=\"box-sizing: border-box;\"/>　　第七条　国家保护林农的合法权益，依法减轻林农的负担，禁止向林农违法收费、罚款，禁止向林农进行摊派和强制集资。<br style=\"box-sizing: border-box;\"/>　　国家保护承包造林的集体和个人的合法权益，任何单位和个人不得侵犯承包造林的集体和个人依法享有的林木所有权和其他合法权益。<br style=\"box-sizing: border-box;\"/>　　第八条　国家对森林资源实行以下保护性措施：<br style=\"box-sizing: border-box;\"/>　　（一）对森林实行限额采伐，对林地实行用途管制和定额管理制度；<br style=\"box-sizing: border-box;\"/>　　（二）大力造林绿化，加强森林经营，提高森林质量，对林木良种生产、造林、育林给予扶持；<br style=\"box-sizing: border-box;\"/>　　（三）发展林下经济和非木质产业，提高森林资源综合利用率；<br style=\"box-sizing: border-box;\"/>　　（四）煤炭、造纸等部门，按照煤炭和木浆纸张等产品的产量提取一定数额的资金，专门用于营造坑木、造纸等用材林；<br style=\"box-sizing: border-box;\"/>　　（五）发展碳汇林业，积极推动森林碳汇交易；<br style=\"box-sizing: border-box;\"/>　　（六）提倡全社会采取投资、投劳、捐赠、认养、志愿服务等多种方式参与造林绿化；<br style=\"box-sizing: border-box;\"/>　　（七）森林经营单位和个人应当参加森林保险，提高抗风险能力。<br style=\"box-sizing: border-box;\"/>　　国家设立森林生态效益补偿基金，用于提供生态效益的防护林和特种用途林的森林资源、林木的营造、抚育、保护和管理。森林生态效益补偿基金必须专款专用，不得挪作他用。具体办法由国务院规定。<br style=\"box-sizing: border-box;\"/>　　第九条　国家和省、自治区人民政府，对民族自治地方的林业生产建设，依照国家对民族自治地方自治权的规定，在森林开发、木材分配和林业基金使用方面，给予比一般地区更多的自主权和经济利益。<br style=\"box-sizing: border-box;\"/>　　第十条　国务院林业主管部门主管全国林业及其生态建设工作。<br style=\"box-sizing: border-box;\"/>　　县级以上地方人民政府林业主管部门主管本行政区域的林业及其生态建设工作。<br style=\"box-sizing: border-box;\"/>　　乡镇林业工作站按照有关规定承担辖区内的政策宣传、资源管护、林政执法、生产组织、科技推广和社会化服务等工作。<br style=\"box-sizing: border-box;\"/>　　第十一条　国务院林业主管部门代表国家行使重点国有林区森林资源的所有权，履行出资人职责，负责重点国有林区的国有森林资源管理和森林资源资产产权变动审批。<br style=\"box-sizing: border-box;\"/>　　县级以上人民政府林业主管部门依法对国家所有的其他森林、林木、林地行使所有权，组织开展森林经营活动。<br style=\"box-sizing: border-box;\"/>　　第十二条　林业及其生态建设工作实行人民政府任期目标责任制，并由同级人民代表大会及其常务委员会监督执行。<br style=\"box-sizing: border-box;\"/>　　第十三条　县级以上人民政府应当依据森林资源和生态建设状况，制定林业发展及其生态建设、林地保护利用、森林经营等规划，将森林资源培育和管护经费纳入预算。<br style=\"box-sizing: border-box;\"/>　　第十四条　县级以上人民政府应当加大林区基础设施建设投入，有计划地开展林区道路、森林防火、管护站点用房、有害生物防治、供水、供电、供热、住宅、通讯、信息网络等建设和维护，改善林区生产生活条件。<br style=\"box-sizing: border-box;\"/>　　第十五条　植树造林、保护森林，是公民应尽的义务。各级人民政府应当组织全民义务植树，开展植树造林活动。<br style=\"box-sizing: border-box;\"/>　　第十六条　在植树造林、保护森林、森林管理以及林业科学研究等方面成绩显著的单位或者个人，由各级人民政府给予奖励。<br style=\"box-sizing: border-box;\"/>　　</span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"box-sizing: border-box;\"><span id=\"forestry_content\" style=\"box-sizing: border-box;\"><strong style=\"box-sizing: border-box;\">第二章　林权管理</strong></span></span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"box-sizing: border-box;\">　<br style=\"box-sizing: border-box;\"/>　　第十七条　林权包括森林、林木、林地的所有权和使用权，林地承包权、经营权以及法律法规规定的其他权利等。<br style=\"box-sizing: border-box;\"/>　　第十八条　国家所有的森林、林木、林地由国有林场、国有林业局等国有林业单位依法开展经营管理活动，法律、行政法规另有规定的从其规定。<br style=\"box-sizing: border-box;\"/>　　国有林业单位的合法权益受法律保护。未经省级以上林业主管部门或者原批准单位同意，不得撤销国有林场、国有林业局等国有林业单位或者改变其经营管理范围。<br style=\"box-sizing: border-box;\"/>　　第十九条　国有企业事业单位、机关、团体、部队营造的林木，由营造单位经营并按照国家规定支配林木收益。<br style=\"box-sizing: border-box;\"/>　　集体经济组织和前款以外的其他单位、组织营造的林木，归该单位所有，合同另有约定的除外。<br style=\"box-sizing: border-box;\"/>　　农村居民在房前屋后、自留地、自留山种植的林木，归个人所有。城镇居民和职工在自有房屋的庭院内种植的林木，归个人所有。<br style=\"box-sizing: border-box;\"/>　　集体或者个人承包国家所有和集体所有的宜林荒山荒地造林的，承包后种植的林木归承包的集体或者个人所有；承包合同另有约定的，按照承包合同的约定执行。<br style=\"box-sizing: border-box;\"/>　　第二十条　林权可以依法采取转包、出租、互换、转让、入股、作价出资或者合作等方式流转，也可以依法抵押，但不得改变林地用途和防护林、特种用途林的性质。<br style=\"box-sizing: border-box;\"/>　　依照前款规定流转的，已经取得的林木采伐许可证可以同时流转，但是双方应当遵守本法关于林木采伐和更新的规定。<br style=\"box-sizing: border-box;\"/>　　第二十一条　林权流转应当签订书面合同。<br style=\"box-sizing: border-box;\"/>　　县级以上地方人民政府林业主管部门应当明确林权流转服务机构，提供林权流转信息发布、政策咨询、林权保护、档案管理等服务。<br style=\"box-sizing: border-box;\"/>　　第二十二条　国家所有的森林、林木、林地和集体所有并由集体统一经营的森林、林木、林地流转、抵押的，应当进行评估。<br style=\"box-sizing: border-box;\"/>　　森林资源资产评估办法由国务院林业主管部门和财政主管部门另行规定。<br style=\"box-sizing: border-box;\"/>　　第二十三条　单位之间发生的林木、林地所有权和使用权争议，由县级以上人民政府依法处理。<br style=\"box-sizing: border-box;\"/>　　个人之间、个人与单位之间发生的林木所有权和林地使用权争议，由当地县级或者乡级人民政府依法处理。<br style=\"box-sizing: border-box;\"/>　　当事人对人民政府的处理决定不服的，可以在接到通知之日起一个月内，向人民法院起诉。<br style=\"box-sizing: border-box;\"/>　　在林木、林地权属争议解决以前，除国家建设项目需要以外，任何一方不得砍伐有争议的林木或者改变林地现状。<br style=\"box-sizing: border-box;\"/>　　</span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"box-sizing: border-box;\"><span id=\"forestry_content\" style=\"box-sizing: border-box;\"><strong style=\"box-sizing: border-box;\">第三章　森林保护</strong></span></span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"box-sizing: border-box;\">　　<br style=\"box-sizing: border-box;\"/>　　第二十四条　各级林业主管部门依照本法规定，对森林资源的保护、利用、更新，实行管理和监督。<br style=\"box-sizing: border-box;\"/>　　第二十五条　各级林业主管部门负责组织森林资源清查，建立资源档案制度，掌握资源变化情况，开展森林资源及生态状况监测评价并定期公布。<br style=\"box-sizing: border-box;\"/>　　第二十六条　县级以上人民政府应当组织编制林地保护利用规划，明确林地总量、范围、保护任务和措施。<br style=\"box-sizing: border-box;\"/>　　林地保护利用规划实行分级编制、审批。县级、省级林地保护利用规划的制定和修改应当经上级林业主管部门审核同意后报同级人民政府批准。<br style=\"box-sizing: border-box;\"/>　　第二十七条　国家实行基本林地保护制度。下列林地应当根据林地保护利用规划划入基本林地，严格保护，可持续经营。<br style=\"box-sizing: border-box;\"/>　　（一）用于森林可持续经营的林地；<br style=\"box-sizing: border-box;\"/>　　（二）禁止开发区和重点生态功能区域的林地；<br style=\"box-sizing: border-box;\"/>　　（三）生态区位重要、生态脆弱、生态敏感区域的林地；<br style=\"box-sizing: border-box;\"/>　　（四）国家重要的天然林地及生物多样性保护地；<br style=\"box-sizing: border-box;\"/>　　（五）国务院规定应当划入基本林地的其他林地。<br style=\"box-sizing: border-box;\"/>　　基本林地的保护管理办法，由国务院制定。<br style=\"box-sizing: border-box;\"/>　　第二十八条　国家对林地实行总量控制，建设项目占用林地实行定额管理。<br style=\"box-sizing: border-box;\"/>　　省、自治区、直辖市人民政府林业主管部门编制建设项目占用林地定额，经同级人民政府审核后，报国务院批准。国有重点林区的占用林地定额，由国务院林业主管部门组织编制，报国务院批准。<br style=\"box-sizing: border-box;\"/>　　审核、审批占用林地的部门不得超过国务院批准的定额审核、审批占用林地。<br style=\"box-sizing: border-box;\"/>　　第二十九条　国务院林业主管部门会同国务院有关部门制定全国林地质量等级评定标准。<br style=\"box-sizing: border-box;\"/>　　县级以上人民政府林业主管部门根据林地普查结果，依据林地质量等级评定标准，对林地进行评等定级。<br style=\"box-sizing: border-box;\"/>　　第三十条　地方各级人民政府应当组织有关部门建立护林组织，负责护林工作；根据实际需要在大面积林区增加护林设施，加强森林保护；督促有林的和林区的基层单位，订立护林公约，组织群众护林，划定护林责任区，配备专职或者兼职护林员。<br style=\"box-sizing: border-box;\"/>　　护林员的主要职责是：巡护森林，制止破坏森林资源的行为。对造成森林资源破坏的，护林员有权要求当地有关部门处理。<br style=\"box-sizing: border-box;\"/>　　第三十一条　森林公安机关负责保护森林资源，依照职责分工查处涉及森林资源等的刑事、治安案件，并在国务院林业主管部门规定的范围内，行使林业行政处罚权，实施与行政处罚有关的行政强制措施。<br style=\"box-sizing: border-box;\"/>　　武警森林部队执行国家赋予的预防和扑救森林火灾的任务，协助林业主管部门保护森林资源。<br style=\"box-sizing: border-box;\"/>　　第三十二条　森林防火工作实行地方各级人民政府行政首长负责制。<br style=\"box-sizing: border-box;\"/>　　（一）规定森林防火期，在森林防火期内，禁止在林区野外用火；因特殊情况需要用火的，必须经过县级人民政府或者县级人民政府授权的机关批准；<br style=\"box-sizing: border-box;\"/>　　（二）在林区设置防火设施；<br style=\"box-sizing: border-box;\"/>　　（三）发生森林火灾，必须立即组织当地军民和有关部门扑救；<br style=\"box-sizing: border-box;\"/>　　（四）因扑救森林火灾负伤、致残、牺牲的，国家职工由所在单位给予医疗、抚恤；非国家职工由起火单位按照国务院有关主管部门的规定给予医疗、抚恤，起火单位对起火没有责任或者确实无力负担的，由当地人民政府给予医疗、抚恤。<br style=\"box-sizing: border-box;\"/>　　第三十三条　各级林业主管部门负责森林病虫害及其他林业有害生物灾害预防、应急防治和社会化防治的监督管理。<br style=\"box-sizing: border-box;\"/>　　森林经营单位和个人应当防治其经营管理范围内的森林病虫害及其他林业有害生物；发生暴发性、危险性森林病虫害及其他林业有害生物危害时，当地人民政府应当负责组织处置。<br style=\"box-sizing: border-box;\"/>　　省级以上林业主管部门负责确定林业植物及其产品的检疫性有害生物，划定疫区和保护区；林业主管部门所属的植物检疫机构负责对林业植物及其产品进行检疫。<br style=\"box-sizing: border-box;\"/>　　第三十四条　县级以上人民政府林业主管部门应当对林业生物物种资源、遗传资源实行重点保护；开展林木转基因工程活动，应当报国务院林业主管部门审批。<br style=\"box-sizing: border-box;\"/>　　第三十五条　进行勘查、开采矿藏和各项建设工程，应当不占或者少占林地；必须占用或者征收、征用林地的，经县级以上人民政府林业主管部门审核同意后，依照有关土地管理的法律、行政法规办理建设用地审批手续，并由用地单位依照国务院有关规定缴纳森林植被恢复费。森林植被恢复费专款专用，由林业主管部门依照有关规定统一安排植树造林，恢复森林植被，植树造林面积不得少于因占用、征收、征用林地而减少的森林植被面积。上级林业主管部门应当定期督促、检查下级林业主管部门组织植树造林、恢复森林植被的情况。<br style=\"box-sizing: border-box;\"/>　　任何单位和个人不得挪用森林植被恢复费。县级以上人民政府审计机关应当加强对森林植被恢复费使用情况的监督。<br style=\"box-sizing: border-box;\"/>　　第三十六条　建设项目施工、地质勘查、采矿、取土等需要临时使用林地的，应当经县级以上地方人民政府林业主管部门批准；临时使用林地的期限不得超过两年，确需延期使用的，可以延期一次，并不得在临时使用的林地上修建永久性建筑物及设施。<br style=\"box-sizing: border-box;\"/>　　经批准临时使用林地的，用地单位应当缴纳森林植被恢复费和恢复林业生产条件的保证金。临时使用林地期满后，用地单位应当恢复林业生产条件，经林业主管部门验收合格后返还保证金；用地单位未恢复林业生产条件，由林业主管部门用其所缴纳的保证金组织恢复。<br style=\"box-sizing: border-box;\"/>　　第三十七条　建设项目需要使用林地的，在项目可行性研究阶段，应当由县级以上人民政府国土资源主管部门商林业主管部门提出预审意见；未取得预审意见的，有关主管部门不得批准核准建设项目。<br style=\"box-sizing: border-box;\"/>　　第三十八条　国家实行天然林保护制度，对天然林只允许进行抚育和更新性质的采伐，保护和恢复天然林资源。<br style=\"box-sizing: border-box;\"/>　　第三十九条　禁止毁林开垦和毁林采石、采砂、采土以及其他毁林行为。<br style=\"box-sizing: border-box;\"/>　　禁止在幼林地和特种用途林内砍柴、放牧。<br style=\"box-sizing: border-box;\"/>　　进入森林和森林边缘地区的人员，不得擅自移动或者损坏为林业服务的标志。<br style=\"box-sizing: border-box;\"/>　　第四十条　　国务院林业主管部门和省、自治区、直辖市人民政府，应当在不同自然地带的典型森林生态地区、珍贵动物和植物生长繁殖的林区、天然热带雨林区和具有特殊保护价值的其他天然林区，划定自然保护区，加强保护管理。<br style=\"box-sizing: border-box;\"/>　　自然保护区的管理办法，由国务院林业主管部门制定，报国务院批准施行。<br style=\"box-sizing: border-box;\"/>　　对自然保护区以外的珍贵树木和林区内具有特殊价值的植物资源，应当认真保护；未经省、自治区、直辖市林业主管部门批准，不得采伐和采集。<br style=\"box-sizing: border-box;\"/>　　第四十一条　林区内列为国家保护的野生动物，禁止猎捕；因特殊需要猎捕的，按照国家有关规定办理。<br style=\"box-sizing: border-box;\"/>　　第四十二条　县级以上人民政府可以在森林植被良好、自然景观资源集中、生态区位重要的区域建立森林公园，加强自然资源保护，开展自然体验和生态教育活动。<br style=\"box-sizing: border-box;\"/>　　第四十三条　国家实行森林资源督察制度。国务院设立国家森林资源总督察，对各省、自治区、直辖市人民政府森林资源保护、利用和管理情况进行监督检查；国务院林业主管部门向地方派驻森林资源督察机构，对森林资源保护、利用、管理情况和县级以上地方人民政府任期目标管理责任制的建立、执行情况进行监督检查。<br style=\"box-sizing: border-box;\"/>　　省、自治区、直辖市人民政府林业主管部门可以根据需要向地方派驻森林资源督察机构，具体管理办法由省、自治区、直辖市规定。<br style=\"box-sizing: border-box;\"/>　　第四十四条　林业主管部门依法履行监督检查职责时，有权采取下列措施：<br style=\"box-sizing: border-box;\"/>　　（一）约谈有关负责人，询问有关单位和个人，要求其对与监督检查事项有关的情况作出说明；<br style=\"box-sizing: border-box;\"/>　　（二）进入当事人的住所、经营场所进行现场检查；对林木及其产品等进行取样测试、试验、检验或者检疫；<br style=\"box-sizing: border-box;\"/>　　（三）查阅、复制有关文件、资料，对可能被转移、销毁、隐匿或者篡改的文件、资料予以封存；<br style=\"box-sizing: border-box;\"/>　　（四）查封、扣押涉嫌违法活动的场所、设施或者财物。<br style=\"box-sizing: border-box;\"/>　　</span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"box-sizing: border-box;\"><span id=\"forestry_content\" style=\"box-sizing: border-box;\"><strong style=\"box-sizing: border-box;\">第四章　植树造林和森林经营</strong></span></span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"box-sizing: border-box;\">　　<br style=\"box-sizing: border-box;\"/>　　第四十五条　各级人民政府应当制定植树造林规划，因地制宜地确定该地区提高森林覆盖率的奋斗目标。<br style=\"box-sizing: border-box;\"/>　　各级人民政府应当组织各行各业和城乡居民完成造林绿化规划确定的任务。<br style=\"box-sizing: border-box;\"/>　　国家统筹城乡造林绿化，加强山区治理，发展平原绿化，建设森林城市，促进森林科学经营，修复和维护森林生态系统。<br style=\"box-sizing: border-box;\"/>　　第四十六条　宜林荒山荒地荒滩，属于国家所有的，由林业主管部门和其他主管部门组织造林绿化；属于集体所有的，由集体经济组织组织造林绿化。<br style=\"box-sizing: border-box;\"/>　　铁路公路两旁、江河两侧、湖泊水库周围，由各有关主管单位因地制宜地组织造林绿化；工矿区，机关、学校用地，部队营区以及农场、牧场、渔场经营地区，由各该单位负责造林绿化。<br style=\"box-sizing: border-box;\"/>　　国家所有和集体所有的宜林荒山荒地可以由单位或者个人承包造林绿化。<br style=\"box-sizing: border-box;\"/>　　造林绿化达到一定规模，生态效益突出的，允许适当比例的土地用于开发建设。<br style=\"box-sizing: border-box;\"/>　　第四十七条　国有林业单位造林应当有计划地营造储备林、木本粮油林、生物质能源林，按照规定使用林木良种、乡土树种。<br style=\"box-sizing: border-box;\"/>　　第四十八条　国家扶持林木良种培育与推广，建立重点林木良种基地，稳定林木良种生产供应。国家依法保护林木良种基地，任何单位和个人不得侵占和破坏。<br style=\"box-sizing: border-box;\"/>　　第四十九条　国家制定林业碳汇生产、计量、监测、核证、交易的有关规定。县级以上林业主管部门负责林业碳汇生产、计量、监测等监督管理。<br style=\"box-sizing: border-box;\"/>　　具体管理办法由国务院林业主管部门、发展改革部门另行规定。<br style=\"box-sizing: border-box;\"/>　　第五十条　新造幼林地和其他必须封山育林的地方，由当地人民政府组织封山育林。<br style=\"box-sizing: border-box;\"/>　　第五十一条　县级以上人民政府应当对25度以上坡耕地、重要水源地坡度15－25度的耕地、严重沙化耕地或者石漠化耕地和严重污染耕地等，有计划地组织实施退耕还林。<br style=\"box-sizing: border-box;\"/>　　县级以上人民政府应当对因自然灾害、人类活动等因素导致的荒废和受损山体，采用生物与工程相结合的林业治山措施，有计划地组织实施综合治理，恢复森林植被。<br style=\"box-sizing: border-box;\"/>　　第五十二条　县级以上人民政府林业主管部门应当编制森林经营规划，报同级人民政府批准后实施；下一级森林经营规划应当依据上级森林经营规划编制。未经原批准机关批准，不得修改、调整。<br style=\"box-sizing: border-box;\"/>　　第五十三条　国有林业单位应当根据森林经营规划，编制森林经营方案，报林业主管部门批准；其他单位和个人可以在林业主管部门指导下，编制森林经营方案，报林业主管部门备案。<br style=\"box-sizing: border-box;\"/>　　编制森林经营方案的单位和个人应当依据批准或备案的森林经营方案开展森林经营活动。<br style=\"box-sizing: border-box;\"/>　　第五十四条　国家实行森林认证制度，促进森林可持续经营。<br style=\"box-sizing: border-box;\"/>　　林产品生产经营者可以向具有资质的认证机构申请森林认证。经认证合格的，可以在包装上使用认证标识。<br style=\"box-sizing: border-box;\"/>　　</span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"box-sizing: border-box;\"><span id=\"forestry_content\" style=\"box-sizing: border-box;\"><strong style=\"box-sizing: border-box;\">第五章　森林采伐</strong></span></span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"box-sizing: border-box;\">　　<br style=\"box-sizing: border-box;\"/>　　第五十五条　国家实行森林限额采伐制度。<br style=\"box-sizing: border-box;\"/>　　国家所有的森林和林木以国有林业单位、农场、厂矿为单位，集体所有的森林和林木、个人所有的林木和其他单位经营的森林和林木以县或者以省、自治区、直辖市人民政府林业主管部门确定的森林经营主体为单位，制定年森林采伐限额，由省、自治区、直辖市人民政府林业主管部门汇总，经同级人民政府审核后，报国务院批准。<br style=\"box-sizing: border-box;\"/>　　经县级以上人民政府林业主管部门批准或者备案的森林经营方案确定的采伐量应当作为编制森林采伐限额的依据。<br style=\"box-sizing: border-box;\"/>　　第五十六条　采伐森林和林木必须遵守下列规定：<br style=\"box-sizing: border-box;\"/>　　（一）成熟的用材林应当根据不同情况，分别采取择伐、皆伐和渐伐方式，皆伐应当严格控制，并在采伐的当年或者次年内完成更新造林；<br style=\"box-sizing: border-box;\"/>　　（二）防护林和特种用途林只准进行抚育和更新性质的采伐；<br style=\"box-sizing: border-box;\"/>　　（三）自然保护区内的森林禁止采伐。因发生病虫害、火灾等灾害和维持主要保护对象的生存环境，以及生产生活等特殊情况需要采伐林木的，经省级以上林业主管部门组织专家论证后批准。<br style=\"box-sizing: border-box;\"/>　　第五十七条　采伐林木必须申请采伐许可证，按照许可证的规定进行采伐；采伐竹林、经济林、能源林，以及个人所有的零星林木、自留地及其他非林地上的林木除外。<br style=\"box-sizing: border-box;\"/>　　按照批准和备案的森林经营方案采伐林木的，采伐前应当向林业主管部门备案，不再办理采伐许可证。<br style=\"box-sizing: border-box;\"/>　　第五十八条　国有林业企业事业单位、机关、团体、部队、学校和其他企业事业单位采伐林木，由所在地县级以上林业主管部门审核发放采伐许可证。<br style=\"box-sizing: border-box;\"/>　　铁路、公路用地范围内的护路林和城镇林木的更新采伐，由有关主管部门审核发放采伐许可证。<br style=\"box-sizing: border-box;\"/>　　农村集体经济组织和个人采伐林木，由县级林业主管部门或者其委托的乡、镇人民政府（街道办事处）审核发放采伐许可证。<br style=\"box-sizing: border-box;\"/>　　第五十九条　申请采伐许可证时，应当提交有关采伐的地点、林种、数量、方式和更新措施等内容的材料。<br style=\"box-sizing: border-box;\"/>　　采伐作业不符合采伐许可证规定的，发放采伐许可证的林业主管部门、乡镇人民政府（街道办事处）可以责令停止采伐，直到纠正为止。<br style=\"box-sizing: border-box;\"/>　　第六十条　采伐林木的单位或者个人，应当按照有关规定，在采伐迹地上完成更新造林。更新造林的面积不得少于采伐的面积。<br style=\"box-sizing: border-box;\"/>　　第六十一条　从林区运出木材，必须持有县级以上人民政府林业主管部门发给的运输证件。<br style=\"box-sizing: border-box;\"/>　　依法取得采伐许可证或者其他合法采伐证明的木材，从林区运出时，林业主管部门应当发给运输证件。<br style=\"box-sizing: border-box;\"/>　　经省、自治区、直辖市人民政府批准，可以在林区的道路上设立木材检查站，负责检查木材运输。对未取得运输证件，木材检查站可以扣留其木材和运输工具，并报县级以上地方人民政府林业主管部门依法处理。<br style=\"box-sizing: border-box;\"/>　　</span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"box-sizing: border-box;\"><span id=\"forestry_content\" style=\"box-sizing: border-box;\"><strong style=\"box-sizing: border-box;\">第六章　法律责任</strong></span></span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"box-sizing: border-box;\">　　<br style=\"box-sizing: border-box;\"/>　　第六十二条　违反森林防火规定，过失引起森林火灾，尚不构成犯罪的，由森林公安机关依照《中华人民共和国消防法》第六十四条规定予以处罚。<br style=\"box-sizing: border-box;\"/>　　在森林高火险期，拒不执行县级以上人民政府依法发布的禁止野外用火命令，由森林公安机关依照《中华人民共和国治安管理处罚法》第五十条规定予以治安管理处罚。<br style=\"box-sizing: border-box;\"/>　　第六十三条　盗伐森林或者其他林木的，林木或变卖所得应当返还所有权人，并依法由违法者赔偿损失；由林业主管部门责令补种盗伐株数十倍的树木，并处盗伐林木价值三倍以上十倍以下的罚款。<br style=\"box-sizing: border-box;\"/>　　滥伐森林或者其他林木，由林业主管部门责令补种滥伐株数五倍的树木，并处滥伐林木价值二倍以上五倍以下的罚款。<br style=\"box-sizing: border-box;\"/>　　拒不补种树木或者补种不符合国家有关规定的，由林业主管部门代为补种，所需费用由违法者支付。<br style=\"box-sizing: border-box;\"/>　　盗伐、滥伐森林或者其他林木，构成犯罪的，依法追究刑事责任。<br style=\"box-sizing: border-box;\"/>　　第六十四条　违反本法规定，非法采伐、毁坏珍贵树木的，依法追究刑事责任。<br style=\"box-sizing: border-box;\"/>　　非法侵占国有森林资源的，由林业主管部门责令改正。造成森林资源损失的，处实际损失一倍以上五倍以下罚款。构成犯罪的，依法追究刑事责任。<br style=\"box-sizing: border-box;\"/>　　第六十五条　违反本法规定，超过批准的年采伐限额发放林木采伐许可证或者超越职权发放林木采伐许可证、木材运输证件、批准出口文件、允许进出口证明书的，由上一级人民政府林业主管部门责令纠正，对直接负责的主管人员和其他直接责任人员依法给予行政处分；有关人民政府林业主管部门未予纠正的，国务院林业主管部门可以直接处理；构成犯罪的，依法追究刑事责任。<br style=\"box-sizing: border-box;\"/>　　第六十六条　违反本法规定，买卖林木采伐许可证、木材运输证件、批准出口文件、允许进出口证明书的，由林业主管部门没收违法买卖的证件、文件和违法所得，并处违法买卖证件、文件的价款一倍以上三倍以下的罚款；构成犯罪的，依法追究刑事责任。<br style=\"box-sizing: border-box;\"/>　　伪造林木采伐许可证、木材运输证件、批准出口文件、允许进出口证明书、植物检疫证件的，依法追究刑事责任。<br style=\"box-sizing: border-box;\"/>　　第六十七条　在林区非法收购明知是盗伐、滥伐的林木的，由林业主管部门责令停止违法行为，没收违法收购的盗伐、滥伐的林木或者变卖所得，可以并处违法收购林木的价款一倍以上三倍以下的罚款；构成犯罪的，依法追究刑事责任。<br style=\"box-sizing: border-box;\"/>　　第六十八条　违反本法规定，进行开垦、采石、采砂、采土、采种、采脂和其他活动，致使森林、林木、林地受到毁坏的，依法赔偿损失；由林业主管部门责令停止违法行为，补种毁坏株数一倍以上三倍以下的树木，可以处毁坏林木价值一倍以上五倍以下的罚款。<br style=\"box-sizing: border-box;\"/>　　违反本法规定，在幼林地和特种用途林内砍柴、放牧致使森林、林木受到毁坏的，依法赔偿损失；由林业主管部门责令停止违法行为，补种毁坏株数一倍以上三倍以下的树木。<br style=\"box-sizing: border-box;\"/>　　拒不补种树木或者补种不符合国家有关规定的，由林业主管部门代为补种，所需费用由违法者支付。<br style=\"box-sizing: border-box;\"/>　　第六十九条　采伐林木的单位或者个人没有按照规定完成更新造林任务的，发放采伐许可证的部门有权不再发给采伐许可证，直到完成更新造林任务为止；情节严重的，可以由林业主管部门处以罚款，对直接责任人员由所在单位或者上级主管机关给予行政处分。<br style=\"box-sizing: border-box;\"/>　　第七十条　从事森林资源保护、林业监督管理工作的林业主管部门的工作人员和其他国家机关的有关工作人员滥用职权、玩忽职守、徇私舞弊，构成犯罪的，依法追究刑事责任；尚不构成犯罪的，依法给予行政处分。<br style=\"box-sizing: border-box;\"/>　　第七十一条　未经县级以上人民政府林业主管部门审核同意，非法占用林地，擅自改变林地用途的，由县级以上人民政府林业主管部门责令限期恢复原状，并处非法改变用途林地每平方米十元至三十元的罚款；构成犯罪的，依法追究刑事责任。<br style=\"box-sizing: border-box;\"/>　　</span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"box-sizing: border-box;\"><span id=\"forestry_content\" style=\"box-sizing: border-box;\"><strong style=\"box-sizing: border-box;\">第七章　附　则</strong></span></span></p><p style=\"box-sizing: border-box; margin-top: 10px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"box-sizing: border-box;\">　　<br style=\"box-sizing: border-box;\"/>　　第七十二条　古树名木、采脂、采种以及树木移植等的管理由省、自治区、直辖市自行规定。<br style=\"box-sizing: border-box;\"/>　　第七十三条　本法所指的林区为国务院确定的国有重点林区，以及省、自治区、直辖市人民政府划定的其他林区。<br style=\"box-sizing: border-box;\"/>　　第七十四条　民族自治地方不能全部适用本法规定的，自治机关可以根据本法的原则，结合民族自治地方的特点，制定变通或者补充规定，依照法定程序报省、自治区或者全国人民代表大会常务委员会批准施行。<br style=\"box-sizing: border-box;\"/>　　第七十五条　本法自　　年　　月　　日起施行。</span></p><p><br/></p>','1','1488520087','1') [ RunTime:0.2810s ]
+
+[ 2017-03-03T13:50:03+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('“共建国家森林城市 让绿色为城市添彩”——致广大市民的一封信','','0','','','0','','<p><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">尊敬的市民朋友们：</strong><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp; 森林城市是城市的绿色名片，森林激活城市焕发青春，绿色激励事业万象更新。近年来，市委、市政府高度重视林业生态建设，大力实施生态突破战略，城市生态环境明显改善。全市有林地面积达到357万亩，湿地保护面积达到228万亩，森林覆盖率达到 30.2%，城区人均公园绿地面积7.62平方米，城区绿化覆盖率达到41.3%，先后荣获中国优秀旅游城市、国家园林城市、全国绿化模范城市等荣誉称号。</strong><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp; 2016</strong><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">年，市委、市政府决定，在成功创建全国绿化模范城市基础上，乘势而上，再接再厉，全面启动国家森林城市创建。这是市委、市政府深入贯彻落实习近平总书记关于生态文明建设和森林生态安全的重要指示精神，推进生态文明建设的重大决策，也是全市人民的共同愿望。创建国家森林城市是我市深化大气污染治理、推动现代林业发展、改善城市生态环境、回应群众宜居家园需求、提高人民幸福指数的战略选择，对于改善城市人居环境、增进市民身心健康、发展低碳循环经济、促进人与自然和谐相处具有重要意义。力争2018年接受国家森林城市考评验收，要求高、任务重、时间紧，需要广大市民的关心、支持和参与。我们期望每一位生活在济宁这片热土上的市民，为共同营造蓝天、碧水、青山、绿地的生活和工作环境，主动投入到争创国家森林城市的实践中。&nbsp;</strong><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp; “让森林走进城市，让城市拥抱森林”是创建国家森林城市的宗旨，“绿染锦绣圣都，碧嵌美丽济宁”是我市的创建理念。我们要通过实施城区森林网络、环城森林、森林村镇、山区森林生态屏障、湿地生态环境、森林健康体系、林业产业体系、森林文化旅游体系、森林管护能力、科技支撑体系等10项重点建设任务，加快构建全市域城市森林生态体系、森林产业体系、森林生态文化体系、森林支撑保障体系战略布局,</strong><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">努力建设林城相依、林村相依、林水相依、林山相依的森林城市，塑造“孔孟之乡、水韵林城”的生态之城形象。</strong><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp; 创建国家森林城市是全社会的共同责任。让我们一起行动起来，积极参加森林城市建设，履行公民植树义务，认养林木绿地，多植一棵树，多种一片草，多养一盆花，争做绿色建设者；关心爱护绿色生命，自觉保护身边的一草一木，劝阻和制止破坏花草树木的行为，争做绿色护卫者；积极参加碳汇造林，主动节能减排、低碳消费，争做绿色先行者；大力宣传植树造林，倡导绿色生活，传播生态文明，争做绿色传播者。&nbsp;</strong><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp; 广大市民朋友们，建设美好家园、创建森林城市离不开每个市民的大力支持，让我们携起手来，共植一片林，共播一片绿，积极投身森林城市建设，以自己的实际行动，为建设“山更青、地更绿、天更蓝、水更碧”人与自然和谐相处的生态家园贡献自己一份力量！</strong><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;<br style=\"box-sizing: border-box;\"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br style=\"box-sizing: border-box;\"/><br style=\"box-sizing: border-box;\"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 济宁市建设国家森林城市工作领导小组办公室</strong></p>','1','1488520203','1') [ RunTime:0.2050s ]
+
+[ 2017-03-03T13:50:40+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('2016年度新型农业经营主体市级示范组织公示名单','','0','','','0','','<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">按照市农业局等七部门《关于印发&lt;济宁市农民合作社市级示范社评定及监测暂行办法&gt;的通知》（济农字〔2014〕114号）和《关于推荐2016年度新型农业经营主体市级示范组织的通知》（济农字〔2016〕119号）要求，经评审，认定“济宁市兖州区惠众粮食种植专业合作社”等80家农民合作社为2016年度市级示范社；“曲阜市金满园家庭农场” 等20家家庭农场为2016年度市级示范场，现予公示，公示期2016年10月9日—13日。</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">联系单位、联系电话、办公邮箱：</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">市农业局 经管处&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2967594</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">市财政局 农业科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2606063</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">市渔业局 渔业科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2348810</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">市林业局 林改办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2966758</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">市供销社 合作指导科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2212090</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">市畜牧兽医局 科技科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;3290138</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">市农业机械管理局 农机管理科&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;2317288</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">2016年市级示范社名单</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">农业（21家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区惠众粮食种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县金鱼洋芹菜种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市陶丰粮食种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市陈氏庄园农作物种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县亨通农业机械专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市臻品葡萄种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区运兴粮食种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市谊宏农作物种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">微山县仰辉种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市明珠种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县圣丰果树种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">梁山县万众种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县汇金种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市任城区喻司甜瓜种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">微山润福园农业种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">汶上县润旺种植农民专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市天缘草莓种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县润田农作物种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县昌健食用菌种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">邹城市旭臣农作物种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县旭峰林谷物种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">渔业（9家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市大启发泥鳅养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">梁山县龙韵养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县鹏统水产品养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区金池渔业专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市润发渔业养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市春桂渔业专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">梁山县汇丰源水产养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市龙腾渔业专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁太白湖新区新城渔业专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">林业（12家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">汶上县德惠农业服务农民专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">梁山县森汇苗木种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区春之源苗木种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县丰富水果种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">微山荥旺苗木种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县雨禾苗木种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县顺鑫苗木花卉种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市任城区凯喆苗木种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县兴华葡萄种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">邹城市绿野丰种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">邹城市弘合富林果专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区木易苗木种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">供销（10家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县孟铺玉米专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">邹城市龙水源蔬菜种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">邹城市书羽种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市丰源农资专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县金穗农业机械专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县亿乐水稻种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县永春苗木专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县恒兴农作物种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市新农合农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县秀兵种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">畜牧（16家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">梁山县大义和农民养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县圣地生猪专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县宝同养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁经济开发区鑫政养兔专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市任城区湖区养鸡专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县富民农业机械服务合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县金北养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">汶上县中旺蛋鸡养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁陈氏家禽养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县盛达养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县广军养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市鲁牛养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市防山乡马庄村德贵仁养猪专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">梁山县牧慧畜牧养殖农民专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县信诺生猪养殖专业合作社　</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区正大养猪专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">农机（12）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县光明农机作业服务专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">微山县宏达农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县维霞农业机械专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区金麦农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县惠祥农机作业服务专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区来顺农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县沃野农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">微山县银牛农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县天霖农机作业服务专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">汶上县大力农业机械农民专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市恒盛农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜恒兴农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">2016年市级示范农场名单</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">农业（12家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市金满园家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市大福地家底农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县润伟家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县胡集镇祥通家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区向阳花家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">邹城市石墙镇孙静东家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县杨柳镇凯利家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区运国家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县红旗家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">邹城市云秀家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">汶上县福星家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">梁山县云天家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">渔业（2家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县龙荷家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁萬家和家庭农场有限公司</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">林业（2家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜开心家庭农场有限公司</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县红苹果家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">畜牧（4家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县南山湾孟昭传家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县济河办润泽园家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县腾瑞家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市任城区梦心园家庭农场</span></p>','1','1488520240','1') [ RunTime:0.3140s ]
+
+[ 2017-03-03T13:52:11+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0070s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('济宁市2016年市级绿色生态屏障森林防火基础设施建设项目评审情况公示','','0','','','0','','<p><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;济宁市2016年市级绿色生态屏障森林防火基础设施建设项目，根据项目申报标准条件，通过材料审核、专家评审等环节，确定了2016年度拟扶持项目名单，现予以公示。如对公示项目有异议，可在公示期间通过电话、信函等方式反映。</strong><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;</span><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">公示时间：2016年9月22日-9月28日。</strong><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;</span><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">举报电话：2966739（济宁市纪委派驻三组）</strong><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2606063</strong><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">（济宁市财政局农业科）</strong><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2966815</strong><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">（济宁市林业局审计与规划财务科）</strong><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2568928</strong><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">（济宁市森林公安局森林消防科）</strong><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">附件：<a href=\"http://www.jnsly.gov.cn/picture/uploadfile/2016/0922/20160922075710120.xls\" style=\"box-sizing: border-box; background-color: transparent; text-decoration: none; transition: all 0.2s ease-out 0s; color: rgb(51, 51, 51);\"><strong style=\"box-sizing: border-box;\"><span style=\"font-size:16px;box-sizing: border-box;\">济宁市2016年度森林防火基础设施建设项目公示一览表</span></strong></a></strong><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><strong style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2016年9月22日</strong></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://127.0.0.30/Public/static/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_txt.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"/ueditor/php/upload/file/20170303/1488520301357981.txt\" title=\"海康威视连接方式.txt\">海康威视连接方式.txt</a></p><p><br/></p>','1','1488520331','1') [ RunTime:0.0570s ]
+
+[ 2017-03-03T14:01:24+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-03T15:07:18+08:00 ] 127.0.0.1 /admin.php/Test/Tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `iot_role` [ RunTime:0.0875s ]
+NOTIC: [8] Undefined offset: 0 E:\Zend Studio\iot\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `iot_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.355005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.355005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+

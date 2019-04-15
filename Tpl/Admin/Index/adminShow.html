@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<include file="Public/_meta"/>
+<title></title>
+</head>
+<body>
+<div class="cl pd-20" style=" background-color:#5bacb6">
+    <dl style="margin-left:80px; color:#fff">
+        <dt>
+            <span class="f-18">管理员名称：</span>
+            <span class="f-18">{$only['nick_name']}</span>
+        </dt>
+        
+        
+    </dl>
+</div>
+<div class="page-container">
+    <div class="pd-20">
+	<table class="table">
+            <tbody>
+                <tr>
+                        <th class="text-r" width="80">登录账号：</th>
+                        <td>{$only['login_name']}</td>
+                </tr>
+                <tr>
+                        <th class="text-r" width="80">真实姓名：</th>
+                        <td>{$only['name']}</td>
+                </tr>
+                <tr>
+                        <th class="text-r">手机号：</th>
+                        <td>{$only['mobile']}</td>
+                </tr>
+                <tr>
+                    <th class="text-r">邮箱：</th>
+                    <td>{$only['email']}</td>
+                </tr>
+                <tr>
+                    <th class="text-r">状态：</th>
+                    <td><if condition="$only['status'] eq 1">启用 <else/> 未启用</if></td>
+                </tr>
+                <tr>
+                    <th class="text-r">上次登录时间：</th>
+                    <td>{$only['login_time']|date='Y-m-d H:i:s',###}</td>
+                </tr>
+                <tr>
+                    <th class="text-r">上次登录ip：</th>
+                    <td>{$only['login_ip']}</td>
+                </tr>
+                <tr>
+                    <th class="text-r">创建时间：</th>
+                    <td>{$only['create_time'|date='Y-m-d H:i:s',###]}</td>
+                </tr>
+                
+            </tbody>
+	</table>
+    </div>
+    
+
+</div>
+
+</body>
+</html>

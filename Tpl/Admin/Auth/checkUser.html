@@ -1,0 +1,135 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<include file="Public/_meta"/>
+<title></title>
+</head>
+<body>
+    <div class="page-container">
+    <div class="text-c"> 
+        
+        <input type="text" class="input-text" style="width:250px" placeholder="输入用户组名称" id="" name="">
+        <button type="submit" class="btn btn-success" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 按名称</button>
+    </div>
+
+<div class="mt-20">
+<table id="tb1"class="table table-border table-bordered table-bg table-hover table-sort"  >
+    <thead>
+        <tr class="text-c">
+            <th>用户名</th>
+            <th>操作</th>
+	</tr>
+        </thead>
+        <tbody class="text-c">
+            <foreach name="result" item="v">
+                <tr class="text-c">
+                    <td>{$v['login_name']}</td>
+                    <td class="td-manage">
+                <if condition="in_array($v['admin_id'],$uids)">
+                    已经是{$group_name}
+                    <else/>
+                    <a  href="javascript:;" onclick="check(this,'{$group_id}','{$v[\'admin_id\']}')" class="ml-5" style="text-decoration:none">
+                        设为{$group_name}
+                    </a>
+                </if>
+                        
+                        
+                    </td>
+
+                </tr>
+            </foreach>
+        </tbody>
+
+</table>
+</div>
+</body>
+<include file="Public/_footer"/>
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript">
+function check(obj,group_id,uid){
+    var id = group_id;
+    var uid = uid;
+	layer.confirm('确认吗？',function(index){
+		$.ajax({
+			type: 'POST',
+			url: "{:U('Auth/checkUser')}",
+                        data:{
+                            "id":id,
+                            "uid":uid,
+                        },
+			success: function(data){
+				layer.msg(data,{icon:1,time:500});
+                            
+                                setTimeout(function () {
+                                    location.reload();                                           
+                                },500); 	
+                            },
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+	});
+}
+///*角色-停用（完成）*/
+//function role_stop(obj,id){
+//    var id = id;
+//	layer.confirm('确认要停用吗？',function(index){
+//		//此处请求后台程序，下方是成功后的前台处理……
+//		$.ajax({
+//			type: 'POST',
+//			url: "{:U('Admin/roleStop')}",
+//			dataType: 'json',
+//                        data:{
+//                          "id":id,  
+//                        },
+//			success: function(data){
+//                                if(data){
+//                                    $(obj).parents("tr").find(".td-manage").prepend('<a onClick="role_start(this,\'{$v[\'role_id\']}\')" href="javascript:;" title="启用" style="text-decoration:none">启用</a>');
+//                                    $(obj).parents("tr").find(".td-status").html('<span class="label label-default radius">已禁用</span>');
+//                                    $(obj).remove();
+//                                    layer.msg('已停用!',{icon: 5,time:1000});
+//                                }else{
+//                                    layer.msg('停用失败!',{icon:1,time:1000});
+//                                }	
+//			},
+//			error:function(data) {
+//				console.log(data.msg);
+//			},
+//		});		
+//		
+//	});
+//}
+//
+///*角色-启用（完成）*/
+//function role_start(obj,id){
+//    var id = id;
+//	layer.confirm('确认要启用吗？',function(index){
+//		//此处请求后台程序，下方是成功后的前台处理……
+//		$.ajax({
+//			type: 'POST',
+//			url: "{:U('Admin/roleStart')}",
+//			dataType: 'json',
+//                        data:{
+//                          "id":id,  
+//                        },
+//			success: function(data){
+//                                if(data){
+//                                    $(obj).parents("tr").find(".td-manage").prepend('<a onClick="role_stop(this,\'{$v[\'role_id\']}\')" href="javascript:;" title="停用" style="text-decoration:none">停用</a>');
+//                                    $(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已启用</span>');
+//                                    $(obj).remove();
+//                                    layer.msg('已启用!', {icon: 6,time:1000});
+//                                }else{
+//                                    layer.msg('启用失败!',{icon:1,time:1000});
+//                                }	
+//			},
+//			error:function(data) {
+//				console.log(data.msg);
+//			},
+//		});		
+//		
+//		
+//	});
+//}
+</script>
+
+</html>

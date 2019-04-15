@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<include file='Public/_meta'/>
+<title>修改会员 - 会员管理</title>
+</head>
+<body>
+<article class="page-container">
+	<form method="post" class="form form-horizontal" id="form-user-add">
+            <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>用户名：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                            <input type="text" class="input-text" value="{$only['uname']}" placeholder="" id="uname" name="uname">
+                            <input type="hidden" value="{$only['user_id']}" placeholder="" id="eid" name="eid">
+                    </div>
+            </div>
+            <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-3">密码：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                            <input type="text" class="input-text" value="" placeholder="" id="pwd" name="pwd">
+                    </div>
+            </div>
+            <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-3">确认密码：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                            <input type="text" class="input-text" value="" placeholder="" id="password1" name="password1">
+                    </div>
+            </div>
+             <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>单位名称：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                            <input type="text" class="input-text" value="{$only['unit_name']}" placeholder="" id="unit_name" name="unit_name">
+                    </div>
+            </div>
+            <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>名称：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                            <input type="text" class="input-text" value="{$only['name']}" placeholder="最大4个字符" id="name" name="name">
+                    </div>
+            </div>
+            <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>手机号码：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                            <input type="text" class="input-text" value="{$only['phone']}" placeholder="" id="phone" name="phone">
+                    </div>
+            </div>
+            <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>电子邮箱：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <input type="text" class="input-text" value="{$only['email']}" placeholder="@" name="email" id="email">
+                    </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>性别：</label>
+               <div class="formControls col-xs-8 col-sm-9 skin-minimal">
+                            <div class="radio-box">
+                                <input name="sex" value='男' type="radio" id="sex-1" <if condition="$only['sex'] eq '男'">checked</if> >
+                                    <label for="sex-1">男</label>
+                            </div>
+                            <div class="radio-box">
+                                <input type="radio" value="女" id="sex-2" <if condition="$only['sex'] eq '女'">checked</if> name="sex">
+                                    <label for="sex-2">女</label>
+                            </div>
+                            <div class="radio-box">
+                                    <input type="radio" value='保密' id="sex-3" <if condition="$only['sex'] eq '保密'">checked</if> name="sex">
+                                    <label for="sex-3">保密</label>
+                            </div>
+                    </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>区域：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <span class="select-box">
+                         <select id='region' name="region_id" class="select"  >
+                            <option value="0" selected>==请选择==</option>
+                            <foreach name="reg" item="v">
+                                <option value="{$v['region_id']}"<if condition="$only['region_id'] eq $v['region_id'] ">selected</if> >{$v['rnname']}</option>
+                            </foreach>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            
+           <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>详细地址：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                            <input type="text" class="input-text" value="{$only['address']}" placeholder="" name="address" id="address">
+                    </div>
+            </div>
+  
+            <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-3">备注：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                            <textarea name="remark" cols="" rows="" class="textarea" value=""  placeholder="说点什么...最少输入10个字符" onKeyUp="$.Huitextarealength(this,100)">{$only['remark']}</textarea>
+                            <p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p>
+                    </div>
+            </div>
+            <div class="row cl">
+                    <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                            <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+                    </div>
+            </div>
+	</form>
+</article>
+<include file='Public/_footer'/>
+<!--请在下方写此页面业务相关的脚本--> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript">
+
+        
+    
+$(function(){
+        
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+	
+	$("#form-user-add").validate({
+		rules:{
+			uname:{
+				required:true,
+				minlength:2,
+				maxlength:16
+			},
+			
+			password1:{
+                          equalTo:"#pwd"
+			},
+			
+                        region_id:{
+                            min:1,
+			},
+                       name:{
+                            required:true,
+       
+				maxlength:4
+			},
+                        address:{
+                            required:true,
+			},
+			phone:{
+                            required:true,
+                            isMobile:true,
+                          
+			},
+			email:{
+                            required:true,
+                            email:true,
+			},
+			
+                        unit_name:{
+                            required:true,
+                        },
+                        
+			
+		},
+                messages:{
+                  
+                    region_id:{
+                       min:"这是必填字段！",
+                    },
+                    
+                },
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){
+                    $(form).ajaxSubmit({
+                        type:'post',
+                        url:"{:U('User/userEdit')}",
+                        success:function(data){
+                            if("cf" == data){
+                                 layer.msg("用户名已存在",{icon:1,time:500});
+                            }else{
+                                layer.msg(data,{icon:1,time:500});
+                                var index = parent.layer.getFrameIndex(window.name);
+                                setTimeout(function(){
+                                    window.parent.location.reload(); //刷新父页面
+                                    parent.layer.close(index);   // 关闭layer  
+                                },500);
+                            }
+                        },
+                        error:function(XmlHttpRequest, textStatus, errorThrown){
+                            layer.msg("请联系管理员！！！",{icon:1,time:2000});
+                        },  
+                    });
+			
+			
+		}
+	});
+});
+</script> 
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

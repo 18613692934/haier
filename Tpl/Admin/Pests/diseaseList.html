@@ -1,0 +1,225 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<include file='Public/_meta'/>
+<style>
+
+#preview{ 
+    position: absolute;
+    padding:5px;
+    display:none;
+    color:#fff;
+   
+}
+#preview img{
+     width: 300px;
+    height: 300px;
+}
+</style>
+<title></title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 列表展示 <span class="c-gray en">&gt;</span> 病害列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<div class="text-c">
+            <span class="select-box inline">
+		<select id="region" name="region" class="select">
+                    <option value="">按区域</option>
+                    <foreach name='region' item='r'>
+                         <option value="{$r['region_id']}">{$r['rnname']}</option>
+                    </foreach>
+                   
+       
+		</select>
+            </span>
+            <span class="select-box inline">
+		<select id="level" name="level" class="select">
+			<option value="">按严重等级</option>
+                        <foreach name="level" item="v">
+                            <option value="{$v['dse_level']}">{$v['dse_level']}</option>
+                        </foreach>
+			
+		</select>
+            </span>
+            <span  class="select-box inline">
+		<select id="sType" name="sType" class="select">
+			<option value="">按树木种类</option>
+                        <foreach name="sType" item="v">
+                            <option value="{$v['stype']}">{$v['stype']}</option>
+                        </foreach>
+			
+			
+		</select>
+		</span>
+	 <span class="select-box inline">
+		<select id="bType" name="bType" class="select">
+			<option value="">按病害种类</option>
+                        <foreach name="bType" item="v">
+                            <option value="{$v['dse_type']}">{$v['dse_type']}</option>
+                        </foreach>
+			
+		</select>
+		</span> 日期范围：
+		<input type="text" name='statrTime' onfocus=<literal>"WdatePicker({ maxDate:'#F{$dp.$D(\'logmax\')||\'%y-%M-%d\'}' })"</literal> id="logmin" class="input-text Wdate" style="width:120px;">
+		-
+		<input type="text" name='endTime' onfocus=<literal>"WdatePicker({ minDate:'#F{$dp.$D(\'logmin\')}',maxDate:'%y-%M-%d' })"</literal> id="logmax" class="input-text Wdate" style="width:120px;">
+		<button name='btnType' id="btnType" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜病害</button>
+                <button onclick="reset()" class="btn btn-primary radius">重置</button>
+	</div>
+	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="r">共有数据：<strong>{$count}</strong> 条</span> </div>
+	<div class="mt-20">
+            <table class="table table-border table-bordered table-bg table-hover table-sort">
+                <thead>
+                    <tr class="text-c">
+                        <th width="5%">ID</th>
+                        <th width="8%">设备编号</th>
+                        <th width="12%">区域</th>
+                        <th width="10%">具体位置</th>
+                        <th width="4%">树木种类</th>
+                        <th width="10%">病害种类</th>
+                        <th  width="5%">病害严重程度</th>
+                        <th width="5%">温度</th>
+                        <th width="5%">湿度</th>
+                        <th width="8%">光照</th>
+                        <th width="12%">图片</th>
+                        <th width="16%">添加时间</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr class="text-c">
+                        <th >ID</th>
+                        <th>设备编号</th>
+                        <th >区域</th>
+                        <th>具体位置</th>
+                        <th>树木种类</th>
+                        <th >病害种类</th>
+                         <th>病害严重程度</th>
+                        <th>温度</th>
+                        <th>湿度</th>
+                        <th>光照</th>
+                        <th >图片</th>
+                        
+                        <th>添加时间</th>
+                    </tr>
+                </tfoot>
+            </table>
+	</div>
+</div>
+
+<include file='Public/_footer'/>
+
+    <!--请在下方写此页面业务相关的脚本-->
+    <script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script> 
+    <script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script> 
+    <script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+    <script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script> 
+    <script type="text/javascript" src="__PUBLIC_STATIC__/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+    <script type="text/javascript" src="__PUBLIC_STATIC__/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+     var table;
+    $("button[id='btnType']").bind("click", function () { //按钮 触发table重新请求服务器 
+        table.fnDraw();
+        });
+
+    table = $('.table-sort').dataTable({
+        
+	"aaSorting": [[ 1, "desc" ]],//默认第几个排序
+//	"bStateSave": false,//状态保存
+	"aoColumnDefs": [
+	  //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+	  {"orderable":false,"aTargets":[0]},// 不参与排序的列
+          {"targets":["_all"] , "sClass" : "text-c"},
+	],
+        "autoWidth": false,
+        "retrieve": true,
+        "processing": true,
+        "serverSide": true,
+        "searching": false, //关闭本地搜索
+        ajax:{
+            url:"{:U('Pests/diseaseList')}",
+            type:"post",
+            data:function(d){
+                d.startTime = $("#logmin").val();
+                d.endTime = $("#logmax").val();
+                d.sType =  $("#sType").val();
+                d.bType =  $("#bType").val();
+                d.level = $("#level").val();
+                d.region = $("#region").val();
+                },
+            },
+             "aoColumns": [ //这个属性下的设置会应用到所有列，按顺序没有是空
+                
+             //mData 表示发请求时候本列的列明，返回的数据中相同下标名字的数据会填充到这一列
+            {
+                "mData": 'de_id'
+            },
+            {"mData": 'device_code',},
+            {"mData": 'rnname' ,},
+            {"mData": 'deaddress' ,},
+            {"mData": 'stype' ,},
+            {
+               
+                "mData": 'dse_type',
+ 
+            },
+            {"mData": 'dse_level' ,},
+            {"mData": 'temp' ,},
+            {"mData": 'humidity' ,},
+            {"mData": 'lum' ,},
+            {
+               
+                "mData": 'image',
+ 
+                "render" : function(data,type,full,meta){
+                    return "<a href='javascript:' onmouseover='imagePreview()' rel='"+data+"' class='preview'><img  src='"+data+"' alt='暂无图片' width='40' height='40' /></a>";
+                }
+            },
+            
+            {
+               
+                "mData": 'addtime',
+                
+            },
+        ],
+});
+
+/*下拉菜单-时间控件 重置按钮*/
+this.reset = function(){
+    document.getElementById("logmin").value = "";
+    document.getElementById("logmax").value = "";
+    document.getElementById("bType").value = "";
+    document.getElementById("sType").value = "";
+    document.getElementById("region").value = "";
+    document.getElementById("level").value = "";
+}
+//缩略图的放大代码  js
+this.imagePreview = function(){
+    /* CONFIG */
+    xOffset = 250;
+    yOffset = -350;	
+    /* END CONFIG */
+    $("a.preview").hover(function(e){   
+            this.t = this.title;
+            this.title = "";	
+            var c = (this.t != "") ? "<br/>" + this.t : "";
+            $("body").append("<div id='preview'><img src='"+ this.rel +"' alt='Image preview' />"+ c +"</div>");								 
+            $("#preview")
+                    .css("top",(e.pageY - xOffset) + "px")
+                    .css("left",(e.pageX + yOffset) + "px")
+                    .fadeIn("fast");						
+    },
+    function(){
+            this.title = this.t;	
+            $("#preview").remove();
+    });	
+    $("a.preview").mousemove(function(e){
+            $("#preview")
+                    .css("top",(e.pageY - xOffset) + "px")
+                    .css("left",(e.pageX + yOffset)+ "px");
+    });			
+}; 
+</script> 
+
+
+</body>
+</html>

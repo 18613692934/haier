@@ -1,0 +1,128 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+{:W('Public/_meta')}
+<title>修改密码</title>
+</head>
+<body>
+    <section class="Hui-article-box">
+            <div class="Hui-article">
+                <article class="cl pd-20">
+                    <div class="bk-gray  radius  pd-10">
+                    <div class="bk-gray  radius  pd-10">
+                        <span class="f-20">修改用户密码</span> 
+                        <a id="btn-refresh" class="btn  btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+                    </div>
+                    <div class="bk-gray  radius  pd-10 mt-10">
+                        <form class="form form-horizontal" id="form-module-add">
+                            <div class="row cl" style="">
+                                        <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>原密码：</label>
+                                        <div class="formControls col-xs-3">
+                                                <input  type="password" class="input-text" value="" placeholder="" id="pwd" name="pwd">
+                                                <input type="hidden" name="eid" value="{$item['user_id']}"/>
+                                        </div>
+                                </div>
+                                <div class="row cl">
+                                    <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>新密码：</label>
+                                    <div class="formControls col-xs-3 ">
+                                            <input type="password" class="input-text"   id="newPwd" name="newPwd">
+
+                                    </div>
+                                </div>
+                                <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-2">重复新密码：</label>
+                                        <div class="formControls col-xs-3 ">
+                                                <input type="password" class="input-text"  id="newPwd2" name="newPwd2">
+                                        </div>
+                                </div>
+
+                                <div class="row cl">
+                                        <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                                                <button onClick="save();" class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+                                        </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    {:W('Header/footer')}
+    
+</body>
+{:W('Public/_footer')}
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+
+	//表单验证
+	$("#form-module-add").validate({
+                rules:{
+			pwd:{
+                            required:true,
+                            rangelength:[6,12]
+			},
+			newPwd:{
+                            required:true,
+                             rangelength:[6,12]
+			},
+                        newPwd2:{
+                            required:true,
+                              rangelength:[6,12]
+                        },
+		},
+                messages:{
+                    pwd:{
+                        required:"这是必填字段",
+                        rangelength: $.validator.format( "请输入长度在{0} 到{1}之间" ),
+                    },
+                    newPwd:{
+                        required:"这是必填字段",
+                        rangelength: $.validator.format( "请输入长度在{0} 到{1}之间" ),
+                    },
+                    newPwd2:{
+                        required:"这是必填字段",
+                        rangelength: $.validator.format( "请输入长度在{0} 到{1}之间" ),
+                    }
+                },
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){
+                    $(form).ajaxSubmit({
+                        type:'post',
+                        url:"{:U('User/pwdEdit')}",
+                        success:function(data){
+                            layer.msg(data,{icon:1,time:1000});
+                            setTimeout(function(){
+                                parent.location.reload(); //刷新父页面
+                            },1000);
+                        },
+                        error:function(XmlHttpRequest, textStatus, errorThrown){
+                            layer.msg('程序出错，请联系管理员',{icon:1,time:2000});
+                            console.log(XmlHttpRequest);
+                            console.log(textStatus);
+                            console.log(errorThrown);
+                        },
+                        
+                        
+                    });
+                        
+			
+		}
+	});
+	
+});
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</html>

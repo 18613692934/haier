@@ -1,0 +1,28 @@
+.slideGroup{  text-align:left;  }
+.slideGroup .slideBox{ overflow:hidden; zoom:1;  position:relative;   }
+
+.slideGroup .parBd {width:975px;margin:0 auto;}
+.slideGroup .parBd ul{ overflow:hidden; zoom:1;   }
+.slideGroup .parBd ul li{ margin:0 15px; float:left; _display:inline; overflow:hidden; text-align:center;  }
+
+.slideGroup .parBd ul li .pic {
+	text-align:center;
+	height:160px;
+	width:160px;
+        margin: 0 auto;
+        background: url(../img/header/yuan.png) no-repeat center;
+	background-size: cover;
+        direction: ltr;
+}
+
+ .slideGroup .parBd ul li .pic .circle-1 {
+    padding-top:25px;
+    font-size: 16px;
+}
+ .slideGroup .parBd ul li .pic .circle-2 {
+    font-size: 36px;
+	
+}
+.slideGroup .parBd ul li .pic .circle-3 {
+    font-size: 16px;
+}

@@ -1,0 +1,115 @@
+.pest-wrap {
+	width: 100%;
+}
+.pest_middle,.pest_middle .middle_center {
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+.middle_center .center {
+	width: 1070px;
+	margin: 0 auto;
+	float: left;
+}
+.LeftBotton {
+	height:210px;
+	width:65px;
+	background:url(../img/device_pest/sr.png) center center no-repeat ;
+	overflow:hidden;
+	float:left;
+	display:inline;
+	cursor:pointer;
+}
+.RightBotton {
+	height:210px;
+	width:65px;
+	background:url(../img/device_pest/sl.png) center center no-repeat ;
+	overflow:hidden;
+	float:left;
+	display:inline;
+	cursor:pointer;
+}
+.pic {
+	text-align:center;
+	height:190px;
+	width:190px;
+	margin:0 auto;
+}
+#circle {
+	width: 100%;
+	height: 100%;
+	background: url(../img/header/yuan.png) no-repeat center;
+	background-size: cover;
+}
+#circle span p {
+	margin-bottom: 0;
+	font-size: 14px;
+	text-align: center;
+}
+#circle img {
+	margin-top: 30px;
+	border-width:0;
+	width: 160px;
+	height: 80px;
+}
+.center_bottom {
+	width:1200px;
+	margin: 0 auto;
+	margin-top: 20px;
+	/*border: solid #000 1px;*/
+	
+}
+.tabBar {
+	width: 100%;
+	height: 30px ;
+	border-bottom: 0;
+}
+.tabBar span {
+	text-align: center;
+	width: 133.333px;
+	background-color: #d6eaf1;
+	cursor: pointer;
+	display: inline-block;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	padding:0 0;
+}
+.tabBar span.current {
+	background-color: #2993f7;
+	color: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.tabCon {
+	display: none;
+	width: 100%;
+}
+.table-bordered th, .table-bordered td {
+	border-left: 0;
+}
+.table-border th, .table-border td {
+	border-bottom: 0;
+}
+
+
+
+
+.center_bottom_table {
+	width: 100%;
+	height: 100%;
+	/*border: solid #000 1px;*/
+	
+}
+.table-bg thead th {
+	background-color:#85bfd7
+}
+.center_bottom_table .table {
+	width: 100%;
+}

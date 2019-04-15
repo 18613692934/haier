@@ -1,0 +1,185 @@
+<!DOCTYPE html> 
+    <head>
+        <title>{:C('WEB_TITLE')}</title>
+        <include file="Public/_meta"/>
+        <meta name=GENERATOR content="MShtml 8.00.7601.17514">
+        <link rel="stylesheet" type="text/css" href="__HOME_CSS__/index.css">
+    </head>
+    <body style="position: relative">
+        <div  class="index-wrap">
+           <include file="Public/header"/>
+           
+            
+           <include file="Public/footer"/>
+        </div>
+        
+</body>
+  
+<include file="Public/_footer"/> 
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=WkC72RXn71XyvV2emFZxg6p79XgjpuUU"></script> 
+<!--<script>
+function getContentSize() {
+            var wh = document.documentElement.clientWidth; 
+            var ht = document.documentElement.clientHeight; 
+            var eh = 100;
+            var hs = 50;
+            ch = (ht-eh)  + "px";
+            th = (wh-hs) +"px";
+            
+            document.getElementById( "allmap" ).style.height = ch;
+            document.getElementById("index-middle").style.width = th;
+        }
+        window.onload =  getContentSize;
+        window.onresize = getContentSize;
+</script>-->
+<script>
+function getContentSize1() {
+            
+        var _ch = $("#content").height();//这个就是你中间内容div的高度
+
+        var _wh = $(window).height();//整个窗口的高度
+//        alert(_ch);
+//        alert(_wh);
+
+
+            $("#content").css("min-height",(_wh-120)+"px");
+            $("#allmap").css("min-height",(_wh-120)+"px");
+            $("#table_dome").css("min-height",(_wh-300)+"px");
+
+           
+        
+}
+        window.onload =  getContentSize1;
+        window.onresize = getContentSize1;
+</script>
+
+
+
+
+<script type="text/javascript">  
+        var array = new Array();
+        var points = new Array();
+        $.ajax({
+            url:"{:U('Index/map')}",
+            type:"post",
+            success:function(data){
+                markerArr = data;
+                map_init();
+            },
+            error:function(){
+
+            }
+        }); 
+    function map_init() {
+        var map = new BMap.Map("allmap"); // 创建Map实例
+        for (var x = 0; x < markerArr.length; x++) {
+            
+           var point =  markerArr[x].degps;
+           
+           
+               var arr = point.split(",");
+                points[x] = new BMap.Point(arr[0],arr[1]);
+           
+           
+        }
+//                     window.console.log(points);
+        var view = map.getViewport(eval(points)); 
+
+        var mapZoom = view.zoom-2;   
+        var centerPoint = view.center;   
+        map.centerAndZoom(centerPoint,mapZoom);  
+
+        map.enableScrollWheelZoom();     
+        map.enableDoubleClickZoom();
+        map.enableKeyboard();//  
+//                    
+        //向地图中添加缩放控件
+        var ctrlNav = new window.BMap.NavigationControl({
+            anchor: BMAP_ANCHOR_TOP_LEFT,
+            type: BMAP_NAVIGATION_CONTROL_LARGE
+        });
+        map.addControl(ctrlNav);
+
+        //向地图中添加缩略图控件
+        var ctrlOve = new window.BMap.OverviewMapControl({
+            anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+            isOpen: 1
+        });
+        map.addControl(ctrlOve);
+
+        //向地图中添加比例尺控件
+        var ctrlSca = new window.BMap.ScaleControl({
+            anchor: BMAP_ANCHOR_BOTTOM_LEFT
+        });
+        map.addControl(ctrlSca);
+
+        var ids = new Array();
+        var baies = new Array();
+        var point = new Array(); //存放标注点经纬信息的数组
+        var marker = new Array(); //存放标注点对象的数组
+        var info = new Array(); //存放提示信息窗口对象的数组
+//                    var myIcon = new BMap.Icon("qq-2.png",new BMap.Size(30,24));
+        for (var i = 0; i < markerArr.length; i++) {
+            ids[i] = markerArr[i].device_id;
+//                        baies[i] = markerArr[i].baie;
+            var p0 = markerArr[i].degps.split(",")[0]; //
+            var p1 = markerArr[i].degps.split(",")[1]; //按照原数组的point格式将地图点坐标的经纬度分别提出来
+            point[i] = new window.BMap.Point(p0, p1); //循环生成新的地图点
+//                        marker[i] = new window.BMap.Marker(point[i],{icon:myIcon}); //按照地图点坐标生成标记
+            marker[i] = new window.BMap.Marker(point[i]); //按照地图点坐标生成标记
+            map.addOverlay(marker[i]);
+            marker[i].setAnimation(BMAP_ANIMATION_DROP); //坠落的动画
+//                        var label = new window.BMap.Label(markerArr[i].title, { offset: new window.BMap.Size(20, -10) });
+//                        marker[i].setLabel(label);
+//                        info[i] = new window.BMap.InfoWindow("haha"); // 创建信息窗口对象
+
+        }
+
+         for (var n = 0; n < marker.length; n++) {
+             var sbdt = document.getElementById("index-m-sbdt");
+            marker[n].value = n;
+            marker[n].onmouseover = function(){
+                sbdt.style.display = "";
+                 var de_id =  markerArr[this.value].device_id;
+                $.ajax({
+                    url:"{:U('Public/findDevice')}",
+                    "type":"post",
+                    data:{
+                        "device_id":de_id,
+                    },
+                    success:function(data){
+                        $("#baie").html(data.baie_num);
+                        $("#wde").html(data.wde_num);
+                        $("#clj").html(data.clj_num);
+                        $("#cch").html(data.cch_num);
+                        $("#yxz").html(data.yxz_num);
+                        $("#code").html(data.code);
+                    },
+                    error:function(){
+                    }
+                });
+                
+                
+            }
+            marker[n].onmouseout  = function(){
+                
+               sbdt.style.display = "none"; 
+            }
+            marker[n].onclick = function(){
+                var i =  this.value; 
+                // alert(marker[i]);
+                var de_id = markerArr[i].device_id;
+                var url = "{:U('Device/env',array(id=>'de_id'))}";
+                var url1 = url.replace("de_id",de_id);
+//                            
+//                            
+                // console.log(markerArr[i]);
+                // console.log(marker[i].value);
+                window.location.href=url1;
+//                            window.location.href=url;
+            }
+         }    
+    }  
+</script>
+
+

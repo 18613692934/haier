@@ -1,0 +1,121 @@
+
+<html>
+    <head>
+        <title>设备列表</title>
+        {:W('Public/_meta')}
+
+     <link rel="stylesheet" type="text/css" href="__HOME_CSS__/user_device.css">
+        <link rel="stylesheet" type="text/css" href="__HOME_ICON__/index-icon/font/flaticon.css">
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/TP_page.css" />
+<!--        <style>
+            td.details-control {
+                background: url('__HOME_IMG__/user/details_open.png') no-repeat center center;
+                cursor: pointer;
+                width:20px;
+                height:20px;
+            }
+            tr.shown td.details-control {
+                background: url('__HOME_IMG__/user/details_close.png') no-repeat center center;
+            }
+        </style>-->
+    </head>
+    <body>
+        <section class="Hui-article-box">
+            <div class="Hui-article">
+                <article class="cl pd-20">
+                    <div class="bk-gray  radius  pd-10">
+                    <div class="bk-gray  radius  pd-10">
+                        <span class="f-20">设备列表(客户端)</span> 
+                        <a id="btn-refresh" class="btn  btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+                        
+                    </div>
+                <div class="bk-gray  radius  pd-10 mt-5 text-r">
+                    共有数据：<strong>{$count}</strong> 条 
+                </div>
+
+                <div class="bk-gray  radius  pd-10 mt-10">
+                    <table id="example" class="display table table-border table-bordered table-bg table-hover table-sort" cellspacing="0" width="100%">
+                        <thead>
+                            <tr class="text-c">
+                                <th>设备自定义名称</th>
+                                <th>设备唯一编号</th>
+                                <th>设备型号</th>
+                                <th>购买日期</th>    
+                                <th>上线时间</th>
+                                <th>离线时间</th>
+                                <th>所属用户</th>
+                                <th width="10%">操作</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <if condition="$result">
+                                <foreach name="result" item="v">
+                                    <tr class="text-c">
+                                         <td>{$v['custom_name']}</td>
+                                        <td>{$v['device_code']}</td>
+                                        <td>{$v['demodel']}</td>
+                                        <td>{$v['depurchase_date']|date='Y-m-d H:i:s',###}</td>    
+                                        <td>{$v['last_online']}</td>
+                                        <td>{$v['last_offline']}</td>
+                                        <td>{$v['uname']}</td>
+                                        <td class="td-manage">  
+                                            <a title="查看" href="javascript:;" onclick="device_show('设备查看','deviceShow','{$v[\'device_id\']}')" class="ml-5" style="text-decoration:none">
+                                                查看
+                                            </a> 
+                                            <a title="编辑" href="javascript:;" onclick="device_edit('设备编辑','deviceEdit','{$v[\'device_id\']}')" class="ml-5" style="text-decoration:none">
+                                                编辑
+                                            </a> 
+                                        </td>
+
+                                    </tr>
+                                </foreach>
+                                <else/>
+                                暂无数据
+                            </if>
+
+
+                        </tbody>
+                    </table>
+                    <div class="b-page">{$page}</div>
+                </div>
+            </div>
+                </article>
+            </div>
+        </section>
+        {:W('Header/footer')}
+    </body>
+    {:W('Public/_footer')} 
+    <!--初始化代码-->
+<script>
+    /*设备-编辑*/
+function device_edit(title,url,id){
+        var id = id;
+        layer.open({
+            type: 2,
+            title: title,
+              offset: '20px',
+            content: url+"/id/"+id,
+            area: ['60%', '80%'],
+	});
+}
+/*设备-展示*/
+function device_show(title,url,id){
+    var id = id;
+    layer.open({
+            type: 2,
+            offset: '20px',
+            title: title,
+            content: url+"/id/"+id,
+            area: ['60%', '80%'],
+    });
+}  
+
+</script>
+</html>
+    
+
+
+
+
+

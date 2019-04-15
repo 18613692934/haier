@@ -1,0 +1,195 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<include file="Public/_meta"/>
+<title>用户组管理</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 权限控制 <span class="c-gray en">&gt;</span> 用户组管理 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+<!--    <div class="text-c"> 
+        <span style="width:110px" class="select-box">
+  <select class="select"  size="1" name="demo1">
+    <option value="" selected>默认select</option>
+    <option value="1">菜单一</option>
+    <option value="2">菜单二</option>
+    <option value="3">菜单三</option>
+  </select>
+</span>
+        <input type="text" class="input-text" style="width:250px" placeholder="输入用户组名称" id="" name="">
+        <button type="submit" class="btn btn-success" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 按名称</button>
+    </div>-->
+    <div class="cl pd-5 bg-1 bk-gray"> 
+        <span class="l"> 
+            <a class="btn btn-primary radius" href="javascript:;" onclick="group_add('添加用户组','groupAdd')">
+                <i class="Hui-iconfont">&#xe600;</i> 添加用户组
+            </a>
+        </span> 
+    </div>
+<div class="mt-20">
+<table id="tb1"class="table table-border table-bordered table-bg table-hover table-sort"  >
+    <thead>
+        <tr class="text-c">
+            <th>用户组名</th>
+            <th>用户组类别</th>
+            <th>操作</th>
+	</tr>
+        </thead>
+        <tbody class="text-c">
+            <foreach name="result" item="v">
+                <tr class="text-c">
+                    <td>{$v['title']}</td>
+                    <td>
+                        <if condition="$v['type'] eq 1">前台
+                            <elseif condition="$v['type'] eq 2"/>后台
+                            <else />-
+                        </if>
+                    </td>
+                    <td class="td-manage">
+                        <a title="修改" href="javascript:;" onclick="group_edit('修改','groupEdit','{$v[\'id\']}')" class="ml-5" style="text-decoration:none">
+                            修改
+                        </a>
+                        <a title="删除" href="javascript:;" onclick="group_del(this,'{$v[\'id\']}')" class="ml-5" style="text-decoration:none">
+                            删除
+                        </a>
+                        <a title="分配权限" href="javascript:;" onclick="group_rule('分配权限','groupRule','{$v[\'id\']}')" class="ml-5" style="text-decoration:none">
+                            分配权限
+                        </a>
+                        <a title="添加成员" href="javascript:;" onclick="check_user('添加成员','checkUser','{$v[\'id\']}')" class="ml-5" style="text-decoration:none">
+                            添加成员
+                        </a>
+                    </td>
+
+                </tr>
+            </foreach>
+        </tbody>
+
+</table>
+</div>
+</body>
+<include file="Public/_footer"/>
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript">
+function check_user(title,url,id){
+     var id = id;
+        layer.open({
+            type: 2,
+            title: title,
+            area: ['60%','80%'],
+            content: url+"/id/"+id
+	}); 
+}
+    
+    
+function group_rule(title,url,id){
+     var id = id;
+        layer.open({
+            type: 2,
+            title: title,
+            area: ['60%','80%'],
+            content: url+"/id/"+id
+	}); 
+}
+function group_add(title,url){
+	var id = id;
+        layer.open({
+            type: 2,
+            title: title,
+            area: ['60%','80%'],
+            content: url
+	}); 
+}
+function group_edit(title,url,id){
+        var id = id;
+        layer.open({
+            type: 2,
+            title: title,
+            area: ['60%','80%'],
+            content: url+"/id/"+id
+	}); 
+}
+function group_del(obj,id){
+    var id = id;
+	layer.confirm('确认要删除吗？',function(index){
+		$.ajax({
+			type: 'POST',
+			url: "{:U('Auth/groupDel')}",
+                        data:{
+                            "id":id,
+                        },
+			success: function(data){
+				layer.msg(data,{icon:1,time:500});
+                            
+                            setTimeout(function () {
+                                location.reload();                                           
+                            },500); 	
+                            },
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+	});
+}
+///*角色-停用（完成）*/
+//function role_stop(obj,id){
+//    var id = id;
+//	layer.confirm('确认要停用吗？',function(index){
+//		//此处请求后台程序，下方是成功后的前台处理……
+//		$.ajax({
+//			type: 'POST',
+//			url: "{:U('Admin/roleStop')}",
+//			dataType: 'json',
+//                        data:{
+//                          "id":id,  
+//                        },
+//			success: function(data){
+//                                if(data){
+//                                    $(obj).parents("tr").find(".td-manage").prepend('<a onClick="role_start(this,\'{$v[\'role_id\']}\')" href="javascript:;" title="启用" style="text-decoration:none">启用</a>');
+//                                    $(obj).parents("tr").find(".td-status").html('<span class="label label-default radius">已禁用</span>');
+//                                    $(obj).remove();
+//                                    layer.msg('已停用!',{icon: 5,time:1000});
+//                                }else{
+//                                    layer.msg('停用失败!',{icon:1,time:1000});
+//                                }	
+//			},
+//			error:function(data) {
+//				console.log(data.msg);
+//			},
+//		});		
+//		
+//	});
+//}
+//
+///*角色-启用（完成）*/
+//function role_start(obj,id){
+//    var id = id;
+//	layer.confirm('确认要启用吗？',function(index){
+//		//此处请求后台程序，下方是成功后的前台处理……
+//		$.ajax({
+//			type: 'POST',
+//			url: "{:U('Admin/roleStart')}",
+//			dataType: 'json',
+//                        data:{
+//                          "id":id,  
+//                        },
+//			success: function(data){
+//                                if(data){
+//                                    $(obj).parents("tr").find(".td-manage").prepend('<a onClick="role_stop(this,\'{$v[\'role_id\']}\')" href="javascript:;" title="停用" style="text-decoration:none">停用</a>');
+//                                    $(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已启用</span>');
+//                                    $(obj).remove();
+//                                    layer.msg('已启用!', {icon: 6,time:1000});
+//                                }else{
+//                                    layer.msg('启用失败!',{icon:1,time:1000});
+//                                }	
+//			},
+//			error:function(data) {
+//				console.log(data.msg);
+//			},
+//		});		
+//		
+//		
+//	});
+//}
+</script>
+
+</html>

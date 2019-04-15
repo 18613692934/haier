@@ -1,0 +1,43 @@
+
+@charset "utf-8";
+.HuiTab{
+    width:1200px;
+    margin: 0 auto;
+}
+.tabBar {
+	width: 100%;
+	height: 30px ;
+	border-bottom: 0;
+}
+.tabBar span {
+	text-align: center;
+	width: 133.333px;
+	background-color: #d6eaf1;
+	cursor: pointer;
+	display: inline-block;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	padding:0 0;
+}
+.tabBar span.current {
+	background-color: #2993f7;
+	color: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.tabCon {
+	display: none;
+	width: 100%;
+}
+img{
+    width:100%;
+    height:100%;
+}
+

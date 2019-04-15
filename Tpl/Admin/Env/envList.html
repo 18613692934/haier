@@ -1,0 +1,157 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<include file='Public/_meta'/>
+<title></title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 生产管理 <span class="c-gray en">&gt;</span> 环境数据列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+        <div class="text-c">
+            <div id="province"></div>
+             <span class="select-box inline">
+                <select id="address" name="address" class="select">
+                        <option value="">按具体位置</option>
+                        <foreach name='address' item='v'>
+                            <option value="{$v['deaddress']}">{$v['deaddress']}</option>
+                        </foreach>
+                        
+                </select>
+                 <select id="code" name="code" class="select">
+                        <option value="">按设备编号</option>
+                        <foreach name="code" item="v">
+                            <option value="{$v['device_id']}">{$v['device_code']}</option>
+                        </foreach>
+                </select>
+                 <select id="region" name="region" class="select">
+                        <option value="">按区域</option>
+                        <foreach name="region" item="v">
+                            <option value="{$v['region_id']}">{$v['rnname']}</option>
+                        </foreach>
+                </select>
+            </span> 
+            日期范围：
+            <input type="text" name='statrTime' onfocus=<literal>"WdatePicker({ maxDate:'#F{$dp.$D(\'logmax\')||\'%y-%M-%d\'}' })"</literal> id="logmin" class="input-text Wdate" style="width:120px;">
+            -
+            <input type="text" name='endTime' onfocus=<literal>"WdatePicker({ minDate: '#F{$dp.$D(\'logmin\')}',maxDate:'%y-%M-%d' })"</literal> id="logmax" class="input-text Wdate" style="width:120px;">
+
+            <button name="btnType" id="submit" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜环境数据</button>
+        </div>
+	<div class="cl pd-5 bg-1 bk-gray mt-20"><span class="r">共有数据：<strong>{$count}</strong> 条</span> </div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-hover table-sort">
+			<thead>
+				<tr class="text-c">
+					<th >自编号</th>
+                                        <th >设备编号</th>
+					<th>温度</th>
+					<th >湿度</th>
+                                        <th>光照</th>
+					<th>风力</th>
+                                        <th>风向</th>
+                                        <th>土壤温度</th>
+                                        <th>土壤湿度</th>
+                              
+                                        <th>区域</th>                     
+                                        <th>具体位置</th>
+                                        <th>发送时间</th>      
+				</tr>
+			</thead>
+
+                        <tfoot>
+				<tr class="text-c">
+					<th >自编号</th>
+                                        <th >设备编号</th>          
+					<th>温度</th>
+					<th >湿度</th>
+                                        <th>光照</th>
+					<th>风力</th>
+                                        <th>风向</th>
+                                        <th>土壤温度</th>
+                                        <th>土壤湿度</th>
+                              
+                                         <th>区域</th>
+                                        <th>具体位置</th>
+                                        <th>发送时间</th>    
+				</tr>
+			</tfoot>
+		</table>
+            
+	</div>
+</div>
+
+<include file='Public/_footer'/>
+
+    <!--请在下方写此页面业务相关的脚本-->
+    <script type="text/javascript" src="__PUBLIC_JS__/jquery.form.js"></script>  
+    <script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script> 
+    <script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script> 
+    <script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+    <script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script> 
+    <script type="text/javascript" src="__PUBLIC_STATIC__/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+    <script type="text/javascript" src="__PUBLIC_STATIC__/laypage/1.2/laypage.js"></script>
+
+<script type="text/javascript">
+    var table;
+    $("button[name='btnType']").bind("click", function () { //按钮 触发table重新请求服务器     
+        table.fnDraw();
+    });
+
+    $(function () { 
+        
+        
+        
+        table = $('.table-sort').dataTable({
+        "order": [[ 0, "asc" ]],//默认第几个排序
+//        "bStateSave": true,//状态保存
+        "aoColumnDefs": [
+          //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+            {"orderable":false,"aTargets":[10,11]},// 不参与排序的列
+            {"targets": "_all","sClass":"text-c"}, //统一设定列的属性
+        ],
+        "retrieve": true,   //检索已经存在的Datatables实例
+        "processing": true,  //显示处理状态
+        serverSide: true,   //服务器模式
+        "searching":false,
+        ajax:{
+            url:"{:U('Env/envList')}",
+            type:"post", 
+            data:function(d){
+                d.startDate = $("#logmin").val();
+                d.endDate = $("#logmax").val();
+                d.address =  $("#address").val();
+                d.code = $("#code").val();
+                d.region = $("#region").val();
+                },
+            },
+
+        "aoColumns": [ //这个属性下的设置会应用到所有列，按顺序没有是空
+            {    
+                "data": "env_id",
+                "bSortable": false
+             }, //mData 表示发请求时候本列的列明，返回的数据中相同下标名字的数据会填充到这一列
+            {"mData": 'device_code'},    
+            {"mData": 'temp', },
+            {"mData": 'humidity'},
+            {"mData": 'beam'},
+            {"mData": 'wind_speed'},
+            {"mData": 'wind_direction'},
+            {"mData": 'soil_temp'},
+            {"mData": 'soil_hum'},
+            {"mData": 'rnname'},
+            {"mData": 'deaddress'},
+            {
+                "mData": 'unix_addtime',
+                render:function(data, type, row, meta){
+                    return  new Date(parseInt(data) * 1000).toLocaleString().replace(/\//g, "-").replace(/上午|下午/g, " ");
+                }
+            },
+        ],
+    });
+}); 
+
+
+
+</script> 
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<include file='Public/_meta'/>
+<title></title>
+</head>
+<body>
+    <article class="page-container">
+            <form class="form form-horizontal" id="form-admin-group-add">
+                <input type="hidden" value="{$id}" name="id"/>
+    		<div class="row cl">
+                            
+                            <div class="formControls ">
+                                <volist name="arr" id="v" >
+                                    <dl class="permission-list">
+                                        <dt>
+                                            <label>
+                                                
+                                                <input type="checkbox" value="{$v['id']}" <if condition="in_array($v['id'],$rule)">checked</if> name="checkbox[]" id="checkbox-{$v['id']}">
+                                                {$v['title']}</label>
+                                        </dt>
+                                        <dd>
+                                           
+                                                <volist name="v['son']" id="va">
+                                                    <dl class="cl permission-list2">
+                                                        <dt>
+                                                            <label class="">
+                                                                <input type="checkbox" value="{$va['id']}" <if condition="in_array($va['id'],$rule)">checked</if> name="checkbox[]" id="checkbox-{$va['id']}">
+                                                                {$va['title']}
+                                                            </label>
+                                                        </dt>
+                                                        <dd>
+                                                            <volist name="va['son']" id="val">
+                                                                <label class="">
+                                                                    <input type="checkbox" value="{$val['id']}" <if condition="in_array($val['id'],$rule)">checked</if> name="checkbox[]" id="checkbox-{$val['id']}">
+                                                                    {$val['title']}
+                                                                </label>
+
+                                                            </volist>
+                                                        </dd>
+                                                    </dl>
+                                                </volist>
+                                          
+                                        </dd>
+                                    </dl>
+                                </volist>
+                            </div>
+                    </div>
+                    <div class="row cl">
+                            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                                    <button type="submit" class="btn btn-success radius" id="admin-role-save" ><i class="icon-ok"></i> 修改</button>
+                            </div>
+                    </div>
+            </form>
+    </article>
+
+<include file='Public/_footer'/>
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript">
+$(function(){
+        
+    
+    
+	$(".permission-list dt input:checkbox").click(function(){
+		$(this).closest("dl").find("dd input:checkbox").prop("checked",$(this).prop("checked"));
+	});
+	$(".permission-list2 dd input:checkbox").click(function(){
+		var l =$(this).parent().parent().find("input:checked").length;
+		var l2=$(this).parents(".permission-list").find(".permission-list2 dd").find("input:checked").length;
+		if($(this).prop("checked")){
+			$(this).closest("dl").find("dt input:checkbox").prop("checked",true);
+			$(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked",true);
+		}
+		else{
+			if(l==0){
+				$(this).closest("dl").find("dt input:checkbox").prop("checked",false);
+			}
+			if(l2==0){
+				$(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked",false);
+			}
+		}
+	});
+	
+	$("#form-admin-group-add").validate({
+		rules:{
+//			rname:{
+//				required:true,
+//			},
+		},
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){
+                   
+			$(form).ajaxSubmit({
+                            type: 'post',
+                            url: "{:U('Auth/groupRule')}" ,
+                            success: function(data){
+                               layer.msg(data,{icon:1,time:500});
+                                var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+                                setTimeout(function () {
+//                                    window.parent.location.reload(); //刷新父页面
+                                    parent.layer.close(index);   // 关闭layer  
+                                },500); 
+                            },
+                            error: function(XmlHttpRequest, textStatus, errorThrown){
+                                    layer.msg('操作失败-请联系管理员',{icon:1,time:2000});                                                           
+                            }
+                        });
+			
+		}
+	});
+});
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

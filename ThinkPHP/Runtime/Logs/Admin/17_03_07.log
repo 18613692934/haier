@@ -1,0 +1,1311 @@
+[ 2017-03-07T08:19:32+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`,`inform_modify_time`,`inform_pub_time`) VALUES ('关于公开征求《中华人民共和国森林法（2016年修改征求意见稿）》意见的公告','关于公开征求《中华人民共和国森林法（2016年修改征求意见稿）》意见的公告','','20','森林法','0','','','0','1488845972','1','1488845972','1488845972') [ RunTime:0.0880s ]
+
+[ 2017-03-07T08:19:48+08:00 ] 127.0.0.1 /admin.php/Inform/informList.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `iot_inform` WHERE `inform_is_delete` = 0 AND `inform_status` >= 0  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `iot_inform` WHERE `inform_is_delete` = 0 AND `inform_status` >= 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-03-07T08:19:49+08:00 ] 127.0.0.1 /admin.php/Inform/informList.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `iot_inform` WHERE `inform_is_delete` = 0 AND `inform_status` >= 0  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `iot_inform` WHERE `inform_is_delete` = 0 AND `inform_status` >= 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Undefined index:  E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 66 行.
+NOTIC: [8] Undefined index: inform_modeify_time E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 68 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' E:\NetBeans\news\Runtime\Cache\Admin\99935b8ddb9186bfc30540507c77cd9b.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-07T08:21:05+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='4' WHERE `inform_id` = 22 [ RunTime:0.0850s ]
+
+[ 2017-03-07T08:21:09+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='3' WHERE `inform_id` = 28 [ RunTime:0.0310s ]
+
+[ 2017-03-07T08:22:28+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='3' WHERE `inform_id` = 24 [ RunTime:0.0590s ]
+
+[ 2017-03-07T08:24:09+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='3' WHERE `inform_id` = 21 [ RunTime:0.1610s ]
+
+[ 2017-03-07T08:24:16+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0070s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='3' WHERE `inform_id` = 22 [ RunTime:0.5860s ]
+
+[ 2017-03-07T08:24:20+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='3' WHERE `inform_id` = 23 [ RunTime:0.0710s ]
+
+[ 2017-03-07T08:24:22+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='2' WHERE `inform_id` = 24 [ RunTime:0.2540s ]
+
+[ 2017-03-07T08:24:25+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='2' WHERE `inform_id` = 28 [ RunTime:0.3430s ]
+
+[ 2017-03-07T08:24:27+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='2' WHERE `inform_id` = 24 [ RunTime:0.1560s ]
+
+[ 2017-03-07T08:24:30+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='3' WHERE `inform_id` = 24 [ RunTime:0.1020s ]
+
+[ 2017-03-07T08:24:35+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='4' WHERE `inform_id` = 21 [ RunTime:0.0470s ]
+
+[ 2017-03-07T08:24:37+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='4' WHERE `inform_id` = 22 [ RunTime:0.2270s ]
+
+[ 2017-03-07T08:25:19+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`,`inform_modify_time`,`inform_pub_time`) VALUES ('','','','0','','0','','','1','1488846319','1','1488846319','1488846319') [ RunTime:0.0920s ]
+
+[ 2017-03-07T08:25:29+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`,`inform_modify_time`,`inform_pub_time`) VALUES ('','','','0','','0','','','0','1488846329','1','1488846329','1488846329') [ RunTime:0.0310s ]
+
+[ 2017-03-07T08:27:33+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`,`inform_modify_time`,`inform_pub_time`) VALUES ('','','','0','','0','','','1','1488846453','1','1488846453','1488846453') [ RunTime:0.0720s ]
+
+[ 2017-03-07T08:39:41+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-07T08:41:04+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-07T08:41:29+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-07T08:41:46+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-07T08:42:30+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-07T09:03:47+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-07T09:06:09+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0070s ]
+NOTIC: [2] array_combine(): Both parameters should have an equal number of elements E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 85 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\NetBeans\news\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8] Undefined variable: array E:\NetBeans\news\Application\Common\Common\function.php 第 71 行.
+
+[ 2017-03-07T09:07:12+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [2] array_combine(): Both parameters should have an equal number of elements E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 85 行.
+
+[ 2017-03-07T09:08:22+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [2] array_combine(): Both parameters should have an equal number of elements E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 85 行.
+
+[ 2017-03-07T09:09:48+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+NOTIC: [2] array_combine(): Both parameters should have an equal number of elements E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 86 行.
+
+[ 2017-03-07T09:10:07+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-07T09:10:48+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T09:12:13+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-07T09:13:32+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-07T09:33:07+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T09:33:38+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T09:34:10+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2017-03-07T09:34:26+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2017-03-07T09:35:03+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-07T09:36:16+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2017-03-07T09:37:02+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T09:37:23+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 81 行.
+NOTIC: [8] Array to string conversion E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 81 行.
+
+[ 2017-03-07T09:37:33+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2017-03-07T09:38:20+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-07T09:38:41+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-07T09:39:01+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in E:\NetBeans\news\Application\Admin\Controller\InformController.class.php on line 82 and defined E:\NetBeans\news\ThinkPHP\Library\Think\Controller.class.php 第 210 行.
+NOTIC: [8] Undefined variable: data E:\NetBeans\news\ThinkPHP\Library\Think\Controller.class.php 第 216 行.
+
+[ 2017-03-07T09:39:16+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T09:39:47+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in E:\NetBeans\news\Application\Admin\Controller\InformController.class.php on line 82 and defined E:\NetBeans\news\ThinkPHP\Library\Think\Controller.class.php 第 210 行.
+NOTIC: [8] Undefined variable: data E:\NetBeans\news\ThinkPHP\Library\Think\Controller.class.php 第 216 行.
+
+[ 2017-03-07T09:40:08+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in E:\NetBeans\news\Application\Admin\Controller\InformController.class.php on line 80 and defined E:\NetBeans\news\ThinkPHP\Library\Think\Controller.class.php 第 210 行.
+NOTIC: [8] Undefined variable: data E:\NetBeans\news\ThinkPHP\Library\Think\Controller.class.php 第 216 行.
+
+[ 2017-03-07T09:42:15+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in E:\NetBeans\news\Application\Admin\Controller\InformController.class.php on line 80 and defined E:\NetBeans\news\ThinkPHP\Library\Think\Controller.class.php 第 210 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+NOTIC: [8] Undefined variable: data E:\NetBeans\news\ThinkPHP\Library\Think\Controller.class.php 第 216 行.
+
+[ 2017-03-07T09:42:27+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2017-03-07T09:44:24+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T09:45:04+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T09:45:59+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T09:49:54+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+NOTIC: [2] array_combine(): Both parameters should have an equal number of elements E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 86 行.
+
+[ 2017-03-07T09:50:34+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+NOTIC: [2] array_combine(): Both parameters should have an equal number of elements E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 86 行.
+
+[ 2017-03-07T09:51:35+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T09:51:55+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T09:52:35+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T09:52:54+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T09:53:26+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T09:53:40+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T09:55:34+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T09:55:50+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T09:57:08+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T09:57:29+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T09:57:58+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T09:58:22+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T09:59:52+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-07T10:00:26+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T10:00:45+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T10:00:59+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-07T10:01:17+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T10:01:52+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: id E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 83 行.
+
+[ 2017-03-07T10:02:20+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T10:02:34+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-07T10:04:01+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T10:04:25+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T10:05:14+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T10:06:09+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T10:06:29+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-07T10:07:17+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-07T10:07:45+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T10:07:55+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T10:08:04+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T10:09:01+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T10:09:25+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T10:09:31+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T10:09:42+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T10:09:56+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T10:11:28+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+NOTIC: [2] array_combine(): Both parameters should have an equal number of elements E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 88 行.
+
+[ 2017-03-07T10:12:58+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0030s ]
+NOTIC: [2] array_combine(): Both parameters should have an equal number of elements E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 88 行.
+
+[ 2017-03-07T10:13:11+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T10:13:28+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+NOTIC: [2] array_combine(): Both parameters should have an equal number of elements E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 88 行.
+
+[ 2017-03-07T10:13:45+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [2] array_combine(): Both parameters should have an equal number of elements E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 88 行.
+
+[ 2017-03-07T10:21:17+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T10:21:35+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-07T10:21:47+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T10:22:15+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T10:24:00+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` () VALUES () [ RunTime:0.1750s ]
+
+[ 2017-03-07T10:24:21+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` () VALUES () [ RunTime:0.1050s ]
+
+[ 2017-03-07T10:24:34+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: INSERT INTO `iot_inform` () VALUES () [ RunTime:0.1660s ]
+
+[ 2017-03-07T10:24:56+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+ERR: Think\Model:addDat方法不存在！
+
+[ 2017-03-07T10:25:23+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` () VALUES () [ RunTime:0.1120s ]
+
+[ 2017-03-07T10:25:40+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: resul E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 89 行.
+
+[ 2017-03-07T10:32:49+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T10:33:51+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0070s ]
+SQL: INSERT INTO `iot_inform` () VALUES () [ RunTime:0.1080s ]
+
+[ 2017-03-07T10:36:03+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` () VALUES () [ RunTime:0.1250s ]
+
+[ 2017-03-07T11:30:04+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` () VALUES () [ RunTime:0.1350s ]
+
+[ 2017-03-07T11:32:58+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T11:33:42+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-07T11:38:05+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` () VALUES () [ RunTime:0.0940s ]
+
+[ 2017-03-07T11:39:05+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','','1','1','1','','1&nbsp;&nbsp;&nbsp;&nbsp;1<p><br/></p>','1','1488857945','1') [ RunTime:0.0810s ]
+
+[ 2017-03-07T11:39:18+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('2','2','','2','2','2','','','0','1488857958','1') [ RunTime:0.3550s ]
+
+[ 2017-03-07T11:41:23+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: UPDATE `iot_inform` SET `inform_title`='2',`inform_short`='2',`inform_abstract`='',`inform_sort`='2',`inform_keywords`='2',`inform_author`='2',`inform_source`='',`inform_content`='',`inform_status`='1',`inform_modify_time`='1488858083',`inform_modify_id`='1' WHERE `inform_id` = 34 [ RunTime:0.2210s ]
+
+[ 2017-03-07T11:41:39+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: UPDATE `iot_inform` SET `inform_title`='3',`inform_short`='3',`inform_abstract`='3',`inform_sort`='3',`inform_keywords`='3',`inform_author`='3',`inform_source`='',`inform_content`='3&nbsp;&nbsp;&nbsp;&nbsp;3<p><br/></p>',`inform_status`='1',`inform_modify_time`='1488858099',`inform_modify_id`='1' WHERE `inform_id` = 34 [ RunTime:0.0470s ]
+
+[ 2017-03-07T11:41:52+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_title`='35',`inform_short`='5',`inform_abstract`='35',`inform_sort`='5',`inform_keywords`='5',`inform_author`='5',`inform_source`='',`inform_content`='5&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;<p>3&nbsp;&nbsp;&nbsp;&nbsp;3</p><p><br/></p>',`inform_status`='1',`inform_modify_time`='1488858112',`inform_modify_id`='1' WHERE `inform_id` = 34 [ RunTime:0.0480s ]
+
+[ 2017-03-07T14:47:30+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-07T14:47:32+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-07T14:47:54+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-07T14:47:56+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-07T14:48:19+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-07T14:48:40+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-07T14:48:57+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-07T14:50:53+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: DELETE FROM `iot_inform` WHERE `inform_id` = 21 [ RunTime:0.0350s ]
+
+[ 2017-03-07T16:50:41+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','1','1','1','1','','1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1<p><br/></p>','1','1488876641','1') [ RunTime:0.1130s ]
+
+[ 2017-03-07T16:50:48+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='4' WHERE `inform_id` = 24 [ RunTime:0.0500s ]
+
+[ 2017-03-07T16:50:56+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='3' WHERE `inform_id` = 24 [ RunTime:0.0780s ]
+
+[ 2017-03-07T16:50:58+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='4' WHERE `inform_id` = 24 [ RunTime:0.0280s ]
+
+[ 2017-03-07T16:51:01+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='4' WHERE `inform_id` = 23 [ RunTime:0.0790s ]
+
+[ 2017-03-07T16:51:03+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='3' WHERE `inform_id` = 23 [ RunTime:0.0300s ]
+
+[ 2017-03-07T16:51:05+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0260s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='3' WHERE `inform_id` = 35 [ RunTime:0.1260s ]
+
+[ 2017-03-07T16:51:08+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='4' WHERE `inform_id` = 35 [ RunTime:0.0870s ]
+
+[ 2017-03-07T16:51:12+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: DELETE FROM `iot_inform` WHERE `inform_id` = 35 [ RunTime:0.0800s ]
+
+[ 2017-03-07T16:52:30+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','','1','1','1','','1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;<p><br/></p>','1','1488876750','1') [ RunTime:0.0690s ]
+
+[ 2017-03-07T16:52:40+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','1','1','','1','','1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;<p><br/></p>','0','1488876760','1') [ RunTime:0.0910s ]
+
+[ 2017-03-07T16:52:46+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: DELETE FROM `iot_inform` WHERE `inform_id` = 37 [ RunTime:0.0930s ]
+
+[ 2017-03-07T16:52:56+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: DELETE FROM `iot_inform` WHERE `inform_id` = 36 [ RunTime:0.0780s ]
+
+[ 2017-03-07T16:53:08+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','1','1','','1','','1&nbsp;&nbsp;&nbsp;&nbsp;<p><br/></p>','1','1488876788','1') [ RunTime:0.0490s ]
+
+[ 2017-03-07T16:53:17+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: wher E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 141 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-07T16:53:31+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: DELETE FROM `iot_inform` WHERE `inform_id` = 38 [ RunTime:0.1250s ]
+
+[ 2017-03-07T16:54:55+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: DELETE FROM `iot_inform` WHERE `inform_id` = 39 [ RunTime:0.0000s ]
+
+[ 2017-03-07T16:56:36+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: DELETE FROM `iot_inform` WHERE `inform_id` = 40 [ RunTime:0.0000s ]
+
+[ 2017-03-07T16:56:41+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: DELETE FROM `iot_inform` WHERE `inform_id` = 41 [ RunTime:0.0000s ]
+
+[ 2017-03-07T16:56:46+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: DELETE FROM `iot_inform` WHERE `inform_id` = 41 [ RunTime:0.0000s ]
+
+[ 2017-03-07T17:06:16+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_is_delete`='1' WHERE `inform_id` = 22 [ RunTime:0.1950s ]
+
+[ 2017-03-07T17:06:21+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0070s ]
+SQL: UPDATE `iot_inform` SET `inform_is_delete`='1' WHERE `inform_id` = 23 [ RunTime:0.0570s ]
+
+[ 2017-03-07T17:06:37+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_is_delete`='1' WHERE `inform_id` = 22 [ RunTime:0.0570s ]
+
+[ 2017-03-07T17:06:39+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_is_delete`='1' WHERE `inform_id` = 24 [ RunTime:0.0270s ]
+
+[ 2017-03-07T17:06:41+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_is_delete`='1' WHERE `inform_id` = 23 [ RunTime:0.0460s ]
+
+[ 2017-03-07T17:22:48+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='4' WHERE `inform_id` = 23 [ RunTime:0.0920s ]
+
+[ 2017-03-07T17:22:51+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='5' WHERE `inform_id` = 22 [ RunTime:0.1520s ]
+
+[ 2017-03-07T17:33:34+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','','1','1','1','','1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1<p><br/></p>','1','1488879214','1') [ RunTime:0.0910s ]
+
+[ 2017-03-07T17:33:44+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('2','2','2','2','2','2','','','1','1488879224','1') [ RunTime:0.1140s ]
+
+[ 2017-03-07T17:33:54+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('3','3','3','3','3','3','','3&nbsp;&nbsp;&nbsp;&nbsp;<p><br/></p>','1','1488879234','1') [ RunTime:0.1080s ]
+
+[ 2017-03-07T17:34:03+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('4','4','4','4','','4','','4<p><br/></p>','0','1488879243','1') [ RunTime:0.2370s ]
+
+[ 2017-03-07T17:37:00+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_abstract`,`inform_sort`,`inform_keywords`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('5','5','5','0','5','5','','5&nbsp;&nbsp;&nbsp;&nbsp;<p><br/></p>','2','1488879420','1') [ RunTime:0.1200s ]
+
+[ 2017-03-07T17:37:12+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_title`='33',`inform_short`='3',`inform_abstract`='33',`inform_sort`='3',`inform_keywords`='3',`inform_author`='3',`inform_source`='',`inform_content`='3&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;33&nbsp;&nbsp;&nbsp;&nbsp;<p>3&nbsp;&nbsp;&nbsp;&nbsp;</p><p><br/></p>',`inform_status`='1',`inform_modify_time`='1488879432',`inform_modify_id`='1' WHERE `inform_id` = 44 [ RunTime:0.0880s ]
+
+[ 2017-03-07T17:39:50+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: UPDATE `iot_inform` SET `inform_title`='33',`inform_short`='3',`inform_abstract`='33',`inform_sort`='3',`inform_keywords`='3',`inform_author`='3',`inform_source`='',`inform_content`='<p>3&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;33&nbsp;&nbsp;&nbsp;&nbsp;</p><p>3&nbsp;&nbsp;&nbsp;&nbsp;</p><p><br/></p>',`inform_status`='1',`inform_modify_time`='1488879590',`inform_modify_id`='1' WHERE `inform_id` = 44 [ RunTime:0.0760s ]
+
+[ 2017-03-07T17:40:12+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: UPDATE `iot_inform` SET `inform_title`='2',`inform_short`='2',`inform_abstract`='2',`inform_sort`='2',`inform_keywords`='2',`inform_author`='2',`inform_source`='',`inform_content`='',`inform_status`='2',`inform_modify_time`='1488879612',`inform_modify_id`='1' WHERE `inform_id` = 43 [ RunTime:0.0340s ]
+
+[ 2017-03-07T18:56:05+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_title`='33',`inform_short`='3',`inform_abstract`='33',`inform_sort`='3',`inform_keywords`='3',`inform_author`='3',`inform_source`='',`inform_content`='<p>3&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;33&nbsp;&nbsp;&nbsp;&nbsp;</p><p>3&nbsp;&nbsp;&nbsp;&nbsp;</p><p><br/></p>',`inform_status`='2',`inform_modify_time`='1488884165',`inform_modify_id`='1' WHERE `inform_id` = 44 [ RunTime:0.0260s ]
+
+[ 2017-03-07T18:56:11+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='4' WHERE `inform_id` = 44 [ RunTime:0.0320s ]
+
+[ 2017-03-07T18:56:15+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='3' WHERE `inform_id` = 43 [ RunTime:0.1190s ]
+
+[ 2017-03-07T18:56:17+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='5' WHERE `inform_id` = 44 [ RunTime:0.0920s ]
+
+[ 2017-03-07T18:56:20+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='4' WHERE `inform_id` = 44 [ RunTime:0.0880s ]
+
+[ 2017-03-07T19:14:57+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_title`='333333',`inform_short`='3',`inform_abstract`='33',`inform_sort`='3',`inform_keywords`='3',`inform_author`='3',`inform_source`='',`inform_content`='<p>3&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;33&nbsp;&nbsp;&nbsp;&nbsp;</p><p>3&nbsp;&nbsp;&nbsp;&nbsp;</p><p><br/></p>',`inform_status`='2',`inform_modify_time`='1488885297',`inform_modify_id`='1' WHERE `inform_id` = 44 [ RunTime:0.0650s ]
+
+[ 2017-03-07T19:15:05+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_title`='4444444',`inform_short`='4',`inform_abstract`='4',`inform_sort`='4',`inform_keywords`='',`inform_author`='4',`inform_source`='',`inform_content`='<p>4</p><p><br/></p>',`inform_status`='2',`inform_modify_time`='1488885305',`inform_modify_id`='1' WHERE `inform_id` = 45 [ RunTime:0.0690s ]
+
+[ 2017-03-07T19:15:13+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_title`='111111',`inform_short`='1',`inform_abstract`='',`inform_sort`='1',`inform_keywords`='1',`inform_author`='1',`inform_source`='',`inform_content`='<p>1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1</p><p><br/></p>',`inform_status`='2',`inform_modify_time`='1488885313',`inform_modify_id`='1' WHERE `inform_id` = 42 [ RunTime:0.1490s ]
+
+[ 2017-03-07T19:15:23+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_is_delete`='1' WHERE `inform_id` = 45 [ RunTime:0.0920s ]
+
+[ 2017-03-07T19:15:26+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: UPDATE `iot_inform` SET `inform_is_delete`='1' WHERE `inform_id` = 44 [ RunTime:0.0840s ]
+
+[ 2017-03-07T19:15:28+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_is_delete`='1' WHERE `inform_id` = 42 [ RunTime:0.0850s ]
+
+[ 2017-03-07T19:15:30+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_is_delete`='1' WHERE `inform_id` = 43 [ RunTime:0.0590s ]
+
+[ 2017-03-07T19:16:44+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: UPDATE `iot_inform` SET `inform_title`='2016年度新型农业经营主体市级示范组织公示名单',`inform_short`='',`inform_abstract`='',`inform_sort`='0',`inform_keywords`='',`inform_author`='0',`inform_source`='',`inform_content`='<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">按照市农业局等七部门《关于印发&lt;济宁市农民合作社市级示范社评定及监测暂行办法&gt;的通知》（济农字〔2014〕114号）和《关于推荐2016年度新型农业经营主体市级示范组织的通知》（济农字〔2016〕119号）要求，经评审，认定“济宁市兖州区惠众粮食种植专业合作社”等80家农民合作社为2016年度市级示范社；“曲阜市金满园家庭农场” 等20家家庭农场为2016年度市级示范场，现予公示，公示期2016年10月9日—13日。</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">联系单位、联系电话、办公邮箱：</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">市农业局 经管处&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2967594</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">市财政局 农业科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2606063</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">市渔业局 渔业科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2348810</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">市林业局 林改办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2966758</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">市供销社 合作指导科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2212090</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">市畜牧兽医局 科技科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;3290138</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">市农业机械管理局 农机管理科&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;2317288</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">2016年市级示范社名单</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">农业（21家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区惠众粮食种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县金鱼洋芹菜种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市陶丰粮食种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市陈氏庄园农作物种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县亨通农业机械专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市臻品葡萄种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区运兴粮食种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市谊宏农作物种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">微山县仰辉种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市明珠种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县圣丰果树种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">梁山县万众种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县汇金种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市任城区喻司甜瓜种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">微山润福园农业种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">汶上县润旺种植农民专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市天缘草莓种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县润田农作物种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县昌健食用菌种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">邹城市旭臣农作物种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县旭峰林谷物种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">渔业（9家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市大启发泥鳅养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">梁山县龙韵养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县鹏统水产品养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区金池渔业专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市润发渔业养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市春桂渔业专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">梁山县汇丰源水产养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市龙腾渔业专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁太白湖新区新城渔业专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">林业（12家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">汶上县德惠农业服务农民专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">梁山县森汇苗木种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区春之源苗木种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县丰富水果种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">微山荥旺苗木种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县雨禾苗木种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县顺鑫苗木花卉种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市任城区凯喆苗木种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县兴华葡萄种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">邹城市绿野丰种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">邹城市弘合富林果专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区木易苗木种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">供销（10家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县孟铺玉米专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">邹城市龙水源蔬菜种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">邹城市书羽种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市丰源农资专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县金穗农业机械专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县亿乐水稻种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县永春苗木专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县恒兴农作物种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市新农合农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县秀兵种植专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">畜牧（16家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">梁山县大义和农民养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县圣地生猪专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县宝同养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁经济开发区鑫政养兔专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市任城区湖区养鸡专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县富民农业机械服务合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县金北养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">汶上县中旺蛋鸡养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁陈氏家禽养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县盛达养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县广军养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市鲁牛养殖专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市防山乡马庄村德贵仁养猪专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">梁山县牧慧畜牧养殖农民专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县信诺生猪养殖专业合作社　</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区正大养猪专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">农机（12）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县光明农机作业服务专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">微山县宏达农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县维霞农业机械专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区金麦农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县惠祥农机作业服务专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区来顺农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县沃野农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">微山县银牛农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县天霖农机作业服务专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">汶上县大力农业机械农民专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市恒盛农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜恒兴农机专业合作社</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">2016年市级示范农场名单</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">农业（12家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市金满园家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜市大福地家底农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县润伟家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">金乡县胡集镇祥通家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区向阳花家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">邹城市石墙镇孙静东家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县杨柳镇凯利家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市兖州区运国家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县红旗家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">邹城市云秀家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">汶上县福星家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">梁山县云天家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">渔业（2家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县龙荷家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁萬家和家庭农场有限公司</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">林业（2家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">曲阜开心家庭农场有限公司</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县红苹果家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">&nbsp;</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">畜牧（4家）</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">嘉祥县南山湾孟昭传家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">泗水县济河办润泽园家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">鱼台县腾瑞家庭农场</span><br style=\"box-sizing: border-box; color: rgb(51, 51, 51); font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑; background-color: rgb(255, 255, 255);\">济宁市任城区梦心园家庭农场</span></p>',`inform_status`='1',`inform_modify_time`='1488885404',`inform_modify_id`='1' WHERE `inform_id` = 23 [ RunTime:0.0900s ]
+
+[ 2017-03-07T19:34:00+08:00 ] 127.0.0.1 /admin.php/Index/admin-permission.html
+ERR: 非法操作:admin-permission
+
+[ 2017-03-07T19:50:23+08:00 ] 127.0.0.1 /admin.php/Index/picture-list.html
+ERR: 非法操作:picture-list
+
+[ 2017-03-07T19:52:36+08:00 ] 127.0.0.1 /admin.php/Index/admin-permission.html
+ERR: 非法操作:admin-permission
+
+[ 2017-03-07T20:17:58+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='4' WHERE `inform_id` = 22 [ RunTime:0.0430s ]
+
+[ 2017-03-07T20:18:03+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='5' WHERE `inform_id` = 22 [ RunTime:0.0920s ]
+
+[ 2017-03-07T20:18:06+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='5' WHERE `inform_id` = 24 [ RunTime:0.0440s ]
+
+[ 2017-03-07T20:18:11+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='3' WHERE `inform_id` = 46 [ RunTime:0.0430s ]
+
+[ 2017-03-07T20:18:15+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='3' WHERE `inform_id` = 46 [ RunTime:0.0720s ]
+
+[ 2017-03-07T20:18:20+08:00 ] 127.0.0.1 /admin.php/Inform/editStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: UPDATE `iot_inform` SET `inform_status`='4' WHERE `inform_id` = 46 [ RunTime:0.0780s ]
+
+[ 2017-03-07T20:18:26+08:00 ] 127.0.0.1 /admin.php/Inform/informDel.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: UPDATE `iot_inform` SET `inform_is_delete`='1' WHERE `inform_id` = 46 [ RunTime:0.0900s ]
+
+[ 2017-03-07T20:35:56+08:00 ] 127.0.0.1 /admin.php/Index/article-add.html
+ERR: 非法操作:article-add
+
+[ 2017-03-07T20:41:01+08:00 ] 127.0.0.1 /admin.php/Index/picture-list.html
+ERR: 非法操作:picture-list
+
+[ 2017-03-07T20:51:24+08:00 ] 127.0.0.1 /admin.php/Pests/pestList
+ERR: 无法加载控制器:Pests
+
+[ 2017-03-07T21:00:50+08:00 ] 127.0.0.1 /admin.php/Pests/article-zhang.html
+ERR: 非法操作:article-zhang
+

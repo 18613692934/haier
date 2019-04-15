@@ -1,0 +1,122 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<include file="Public/_meta"/>
+<title>我的桌面</title>
+</head>
+<body>
+<div class="page-container">
+    <p class="f-20 text-success">  {$only['login_name']} <em>欢迎使用</em></p>
+	
+        <div class="cl" >
+            <div class="page-container" >
+                <div style="width: 45%;" class="panel panel-success ml-15 mr-15 f-l min-height-200   ">
+                    <div class="panel-header">我的信息</div>
+                    
+                
+                    <div class="panel-body">
+                        <table class="table">
+                            <tbody>
+                                <tr >
+                                    生活赋予我们一种巨大的和无限高贵的礼品，这就是青春：充满着力量，充满着期待志愿，充满着求知和斗争的志向，充满着希望信心和青春。 
+                            <p style="float: right">—— 奥斯特洛夫斯基</p>  
+                            <p> &nbsp;</p>
+                                </tr>  
+                                <tr>
+                                    <th>当前用户</th>
+                                    <td>{$only['login_name']}</td>
+                                </tr>
+                                <tr>
+                                    <th>上次登录IP</th>
+                                    <td>{$only['login_ip']}</td>
+                                </tr>
+                                <tr>
+                                    <th>上次登录时间</th>
+                                    <td>{$only['login_time']|date='Y-m-d H:i:s',###}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div style="width: 45%;" class="panel panel-success ml-15 mr-15 f-l">
+                    <div class="panel-header">最新文档</div>
+                    <div class="panel-body">面板内容</div>
+                </div>
+            </div>
+        </div>
+        <div class="cl" >
+            <div class="page-container" >
+                <div style="width: 45%;" class="panel panel-success ml-15 mr-15 f-l  ">
+                    <div class="panel-header">系统信息</div>
+                    <div class="panel-body">
+                        <table class="table  ">
+                            <tbody>
+                                <foreach name="info" item="v" key="k">
+                                    <tr>
+                                        <th width="30%">{$k}</th>
+                                        <td><span id="lbServerName">{$v}</span></td>
+                                    </tr>
+                                </foreach>	
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div style="width: 45%;" class="panel panel-success ml-15 mr-15 f-l  ">
+                    <div class="panel-header">开发团队</div>
+                    <div class="panel-body">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>产品设计及研发团队</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>界面及用户体验团队</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>官方网址</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>BUG反馈</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>联系我们</th>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<footer class="footer mt-20">
+	<div class="container">
+		<p>
+                    本后台系统由<a href="#" target="_blank" title="济宁北斗平台">济宁北斗平台</a>提供技术支持
+                </p>
+	</div>
+</footer>
+
+</body>
+<script type="text/javascript" src="__PUBLIC_JS__/jquery-1.9.1.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/h-ui/js/H-ui.min.js"></script> 
+<script>
+    $(function(){
+       
+            var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+        if(index){
+            setTimeout(function () {
+//                window.parent.location.reload(); //刷新父页面
+                parent.layer.close(index);   // 关闭layer  
+            },500); 
+        }
+            
+    });
+   
+</script>
+</html>

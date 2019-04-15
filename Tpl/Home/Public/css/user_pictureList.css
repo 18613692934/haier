@@ -1,0 +1,58 @@
+@charset "utf-8";
+.portfolio-area {
+    margin-right: -20px;
+}
+.portfolio-area li {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    width: 162px;
+    height: 162px;
+    margin-top: 20px;
+}
+.portfolio-area li .portfoliobox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 152px;
+    height: 152px;
+    padding: 5px;
+    border: solid 1px #eee;
+    background-color: #fff;
+}
+.portfolio-area li .checkbox {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    cursor: pointer;
+}
+input[type="radio"], input[type="checkbox"] {
+    line-height: normal;
+    margin-top: -4px;
+}
+.portfolio-area li .picbox {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    line-height: 150px;
+}
+.portfolio-area li .picbox img {
+    max-width: 150px;
+    max-height: 150px;
+    vertical-align: middle;
+    /*_margin-top: expression_r(( 150 - this.height ) / 2);*/
+}
+
+
+
+
+
+.portfolio-area li .textbox {
+    /*display: none;*/
+    /*margin-top: 5px;*/
+}
+
+

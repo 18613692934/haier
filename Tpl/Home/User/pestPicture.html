@@ -1,0 +1,428 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+{:W('Public/_meta')}
+
+<link rel="stylesheet" type="text/css" href="__HOME_CSS__/user_pestPicture.css">
+
+<title>{$arr['webname']['info_value']}</title>
+
+</head>
+<body>
+   
+    <div id=loading style="position:absolute;width:100%;z-index:9999">
+        {:W('Header/loading')}
+    </div>
+    
+    <section class="Hui-article-box">
+        <div class="Hui-article">
+            <article class="cl pd-20">
+                <div class="bk-gray  radius  pd-10">
+                <div class="bk-gray  radius  pd-10">
+                    <span class="f-20">虫害图片管理</span> 
+                    <a id="btn-refresh" class="btn  btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+                </div>
+                <div class="bk-gray  radius  pd-10 mt-10">
+                        <section class="Hui-article-box">
+                <div class="Hui-article">
+                    <article class="cl pd-20">
+                                                <div class="bk-gray  radius pb-10 pr-10 pl-10">
+                                                    <form>
+                                                        <div class="row cl">
+                                                            <div class="col-sm-4 mt-10">
+                                                                <label>开始时间</label>
+                                    <input autocomplete="off" type="text" name='startTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', maxDate:'#F{$dp.$D(\'pestinfoLogmax\')||\'%y-%M-%d %H:%m:%s\'}' })"</literal> id="pestinfoLogmin" class="input-text Wdate" style="width:150px;">
+                                                            </div>
+                                                            <div class="col-sm-4 mt-10">
+                                                                <label>结束时间</label>
+                                    <input autocomplete="off" type="text" name='endTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', minDate: '#F{$dp.$D(\'pestinfoLogmin\')}',maxDate:'%y-%M-%d %H:%m:%s' })"</literal> id="pestinfoLogmax" class="input-text Wdate" style="width:150px;">
+                                                            </div>
+                                                            <div class="col-sm-3 mt-10">
+                                                                <span class="select-box">
+                                                                    <select class="select" size="1" name="device_code" id='device_code'>
+                                                                      <option value="" selected>装置</option>
+                                                                      <foreach name="device_codes" item="v">
+                                                                           <option value="{$v['device_code']}">{$v['device_code']}-{$v['deaddress']}</option>
+                                                                      </foreach>
+                                                                     
+                                                                    </select>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-sm-3 mt-10">
+                                                                <button type="button" name="infoPest"  class="btn btn-primary radius" style="margin-left:25px;">执行</button>
+
+                                                                <button type="reset"   class="btn btn-warning radius">重置</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row cl">
+                                                        </div>
+                                                    </form> 
+                                                </div>
+                                            <div class="cl pd-5 bg-1 bk-gray mt-20"> 
+                                                <span class="l">
+                                                    <a href="javascript:;" onclick="datadel()" class="btn btn-danger radius">批量标记无虫害</a> 
+                                                     <a href="javascript:;" onclick="allSelect()" class="btn btn-danger radius">全选</a> 
+                                                     
+                                                </span>  </div>
+                                                    <div class="bk-gray  radius  pd-10 mt-10 cl history_list va-m ">
+                                                        <table  class="table table-border table-bordered table-bg table-hover table-history "> 
+                                                            <thead></thead>
+                                                        </table>
+                                                    </div>
+                           
+                            
+                       
+                            
+                            
+<!--                            <div class="bk-gray  radius  pd-10 mt-5">
+                                <form>
+                                    <div class="row cl">
+                                        
+                                        <div class="col-sm-3">
+                                            <label>开始时间</label>
+                                            <input autocomplete="off" type="text" name='startTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', maxDate:'#F{$dp.$D(\'listLogmax\')||\'%y-%M-%d %H:%m:%s\'}' })"</literal> id="listLogmin" class="input-text Wdate" style="width:150px;">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label>结束时间</label>
+                                            <input autocomplete="off" type="text" name='endTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', minDate: '#F{$dp.$D(\'listLogmin\')}',maxDate:'%y-%M-%d %H:%m:%s' })"</literal> id="listLogmax" class="input-text Wdate" style="width:150px;">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <button type="button" id="findInfo" class="btn btn-primary radius" style="margin-left:25px;">执行</button>
+                                        </div>
+                                    </div>
+                                </form> 
+                            </div>-->
+<!--                            <div class="bk-gray  radius  pd-10 mt-10 cl ">
+                                <empty name="result">
+                                    <include file="Public/noData"/>
+                                <else/>
+                                <div class="row cl">
+                                    <volist name="result" id="vo">
+                                    <div class="col-xs-2  " id="item-{$vo['pd_id']}">
+                                        <div class="row cl" >
+                                            <div class="col-xs-12">
+                                                <a href="javascript:;" onClick='picture_edit("图片查看","{:U(\'Device/infoImgShow\',array(\'id\'=>$vo[\'pd_id\']))}")'><img src="{$vo.thum_image}" alt="虫害图片" onerror="document.getElementById('item-{$vo[\'pd_id\']}').innerHTML='<div>暂无图片</div>'"></a>
+                                             
+                                            </div>
+                                             
+                                        </div>
+                                        <div class="row cl">
+                                            <div class="col-xs-12 mb-15 text-c">
+                                                {$vo['unix_createdate']|date='Y-m-d H:i:s',###}
+                                                &nbsp;  &nbsp;
+                                                <a href="javascript:;" onClick='picture_edit("图片查看","{:U(\'Device/infoImgShow\',array(\'id\'=>$vo[\'pd_id\']))}")' style="color: #6666ff">[详细]</a>
+                                             
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    </volist>
+                                </div>
+                                <div class="row cl">
+                                    <div class="col-xs-12">
+                                        <div class="b-page">{$page}</div>
+                                    </div>
+                                        
+                                </div>
+                                    <div class="portfolio-content">
+                                        <div class="site-demo-flow" >
+                                            <ul class="cl portfolio-area">
+                                                    <volist name="result" id="vo">
+                                                        <li class="item" >
+                                                           <div class="portfoliobox" id="item-{$vo['pd_id']}">
+                                                               <div class="time">{$vo['unix_createdate']|date='Y-m-d H:i:s',###}</div>
+
+                                                               <div class="picbox">
+                                                                   <a href="javascript:;" onClick='picture_edit("图片查看","{:U(\'Device/infoImgShow\',array(\'id\'=>$vo[\'pd_id\']))}")'><img src="{$vo.thum_image}" alt="虫害图片" onerror="document.getElementById('item-{$vo[\'pd_id\']}').innerHTML='<div>暂无图片</div>'"></a>
+                                                                </div>
+                                                           </div>
+                                                        </li>
+                                                    </volist>
+                                            </ul>
+                                        </div>
+                                        <div class="b-page">{$page}</div>
+                                    </div>
+
+
+                                </empty>
+                            </div>-->
+                       
+                    </article>
+                </div>
+            </section>
+                </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    
+    
+    
+    <div id="tab_demo" class="HuiTab">
+
+<!--        <div class="tabCon" >
+            <div class="page-container" id="loading" >
+                <h2 class="text-c">Sorry！功能暂且开发中……<br>
+              下一版本更新！</h2>
+            </div>
+<include file="Public/codeing"/>
+        </div>-->
+        <!--苗情信息处理结束-->
+        <!--虫害信息处理开始-->
+        <div class="tabCon">
+            
+            
+           
+            
+</div>
+        <!--虫害信息处理结束-->
+</div>
+
+ {:W('Header/footer')}
+</body>
+{:W('Public/_footer')}
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+ <script type="text/javascript">
+      $(window).on("scroll",backToTopFun);
+	backToTopFun()
+        //全选，全不选
+        function allSelect() {
+            if ($(":checkbox").attr("checked") != "checked") {
+                $(":checkbox").attr("checked", "checked");
+            }
+            else {
+                $(":checkbox").removeAttr("checked");
+            }
+        }
+        //反选
+        function otherSelect() {
+            $(":checkbox").each(function () {
+                if ($(this).attr("checked") == "checked") {
+                    $(this).removeAttr("checked");
+                }
+                else {
+                    $(this).attr("checked", "checked");
+                }
+            });
+        }
+    </script>
+<script type="text/javascript">
+
+        $(function() {
+            var infoPest;
+            $("button[name='infoPest']").bind("click", function () { //按钮 触发table重新请求服务器     
+             infoPest.fnDraw();
+             });
+            $.Huitab("#tab_demo .tabBar span", "#tab_demo .tabCon", "current", "click", "0");
+            infoPest = $('.table-history').dataTable({
+                "language": {
+                    "lengthMenu": "每页 _MENU_ 条记录",
+                    "zeroRecords": "没有找到记录",
+                    "info": "第 _PAGE_ 页 ( 总共 _PAGES_ 页 )",
+                    "infoEmpty": "无记录",
+                    "infoFiltered": "(从 _MAX_ 条记录过滤)",
+                    "processing": "正在处理中...",
+                    "paginate": {
+                        "previous": "上一页",
+                        "next": "下一页",
+                    }
+                },
+                "bFilter": false, //过滤功能
+                "bSort": false, //排序功能
+                "bAutoWidth": false,//自动宽度
+            "aLengthMenu": [[16,32,64,128], [16,32,64,128]],
+            "aaSorting": [[ 0, "desc" ]],//默认第几个排序
+            "bStateSave": false,//状态保存
+            serverSide: true,
+            ajax: {
+                url: "{:U('User/pestPictureList')}",
+                type: 'POST',
+                data:function(d){
+                    d.startTime = $("#pestinfoLogmin").val();
+                    d.endTime = $("#pestinfoLogmax").val();
+                    d.device_code = $("select option:selected").val();
+                },
+            },
+            "aoColumnDefs": [
+              //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+              // {"orderable":false,"aTargets":[0]}// 不参与排序的列
+            ],
+             "aoColumns": [ //这个属性下的设置会应用到所有列，按顺序没有是空
+            {
+                "sClass": "text-c",   
+                "data": {
+                    "pd_id":"pd_id",
+                    "createdate":"unix_createdate",
+                    " image":"thum_image",
+                    "baie_num":"baie_num", 
+                },
+                "render":function(data,type,full,meta){
+                    
+                    var newDate = new Date(data.unix_createdate);
+                    newDate.setTime(data.unix_createdate*1000);
+                    var createdate = formatDate(newDate);
+                    if(data.file_exists){
+                            var str = "<div id='item-pdid4' class='list_wrap cl'>"+
+                        "<input class='checkbox' name='pest[]' type='checkbox' value='pdid6'>"+
+                        "<div class='row cl'>"+
+                        "<div class='col-xs-12'>"+
+                          "<p>"+createdate+"</p>"+                        
+                        "<a onclick=picture_edit('图片查看','{:U(\'Device/infoImgShow\',array(\'id\'=>pdid1))}') href=javascript:;>"+
+                            "<img  src='"+data.thum_image+"' alt='虫害图片' />"+
+                        "</a>"+
+                        "<p>[<a onclick=picture_no(pdid5) href=javascript:;>无害虫</a>] | [<a onclick=picture_yes(pdid3) href=javascript:;>有害虫</a>]</p>"+                        
+                        
+                        "</div>"+
+                        "</div>"+
+                       
+                    "</div>";
+//                 
+                    str = str.replace("pdid1",data.pd_id); 
+                     str = str.replace("pdid2",data.pd_id); 
+                    str = str.replace("pdid3",data.pd_id); 
+                    str = str.replace("pdid4",data.pd_id);
+                     str = str.replace("pdid5",data.pd_id);
+                      str = str.replace("pdid6",data.pd_id);
+                    }else{
+                        var str = 
+                           "<div id='item-pdid4' class='list_wrap cl'>"+
+                           "<div class='text-c f-18 mb-10'>图片丢失</div>"+
+                         "<div class='text-c f-16'>[<a onclick=imgDel(pdid1) href=javascript:;>删除此数据</a>] </div>"+
+
+                            "</div>";  
+                                
+                                
+                         
+                    str = str.replace("pdid1",data.pd_id); 
+                    
+                    }
+                    
+                    return str; 
+                }
+             }, //mData 表示发请求时候本列的列明，返回的数据中相同下标名字的数据会填充到这一列
+            
+             ]
+            });
+        });
+        
+</script>
+<script type="text/javascript">
+    
+    function datadel(){
+        var pest = $('input[name="pest[]"]:checked').map(function(){
+        return this.value;
+        }).get().join(",");
+	layer.confirm('确认批量操作？',function(index){
+		$.ajax({
+			type: 'POST',
+			url: "{:U('User/datadel')}",
+			dataType: 'json',
+                        data:{
+                          "ids":pest,  
+                        },
+			success: function(data){
+                            layer.msg(data.info,{icon:data.state,time:500});
+                            $("button[name='infoPest']").click();
+//                            setTimeout(function(){
+//                                window.location.reload(location.href); //刷新
+//                            },500);
+			},
+			error:function(data) {
+				
+			},
+		});		
+	});
+    }
+    function picture_edit(title,url){
+	var index = layer.open({
+		type: 2,
+		title: title,
+		content: url,
+               maxmin: true, //开启最大化最小化按钮
+                shadeClose: true,
+                area: ['80%', '95%'],
+	});
+        
+}
+function picture_yes(id){
+    var id = id;
+	layer.confirm('确认有害虫？',function(index){
+		$.ajax({
+			type: 'POST',
+			url: "{:U('User/infoPestYes')}",
+			dataType: 'json',
+                        data:{
+                          "id":id,  
+                        },
+			success: function(data){
+                            layer.msg(data.info,{icon:data.state,time:500});
+                            $("button[name='infoPest']").click();
+//                            setTimeout(function(){
+//                                window.location.reload(location.href); //刷新
+//                            },500);
+			},
+			error:function(data) {
+				
+			},
+		});		
+	});
+}
+function picture_no(id){
+    var id = id;
+	layer.confirm('确认无害虫？',function(index){
+		$.ajax({
+			type: 'POST',
+			url: "{:U('User/infoPestNo')}",
+			dataType: 'json',
+                        data:{
+                          "id":id,  
+                        },
+			success: function(data){
+                            layer.msg(data.info,{icon:data.state,time:500});
+                            $("button[name='infoPest']").click();
+//                            setTimeout(function(){
+//                                window.location.reload(location.href); //刷新
+//                            },500);
+			},
+			error:function(data) {
+				
+			},
+		});		
+	});
+}
+function imgDel(id){
+   
+         var id = id;
+	layer.confirm('确认要删除吗？',function(index){
+		$.ajax({
+			type: 'POST',
+			url: "{:U('Device/infoPestImgDel')}",
+			dataType: 'json',
+                        data:{
+                          "id":id,  
+                        },
+			success: function(data){
+                            layer.msg(data.info,{icon:data.state,time:500});
+                            $("button[name='infoPest']").click();
+//                            setTimeout(function(){
+//                                window.location.reload(location.href); //刷新
+//                            },500);
+			},
+			error:function(data) {
+				
+			},
+		});		
+	});
+}
+</script>
+<script>
+        window.onload = setTimeout( function(){
+            $("#loading").hide();
+        },1);
+    </script>
+</html>

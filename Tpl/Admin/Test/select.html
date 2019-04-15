@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+        <select id="province" onchange="city('{:U(\'Test/select\')}','province','city','county')">
+            <option value="请选择省" selected="selected">==请选择省==</option>
+            <foreach name="province" item="v">
+                <option value="{$v['city_id']}">{$v['ccity']}</option>
+            </foreach>
+        </select>
+        <select id='city'  onchange="city('{:U(\'Test/select\')}','city','county')" >
+            <option value="请选择市" selected="selected">==请选择市==</option>      
+        </select>
+        
+        <select id='county'>
+            <option value="请选择县区" selected="selected" >==请选择县区==</option>
+        </select>
+        </div>    
+        
+        
+ 
+
+<script type="text/javascript" src="__PUBLIC_JS__/jquery-1.9.1.min.js"></script>     
+<script>
+/**
+ * 城市三级联动
+ * @param {string} ajaxUrl ajax后台处理路径
+ * @param {string} parent  省下拉菜单的id值
+ * @param {string} children 市下拉菜单的id值
+ * @param {string} grandson 县区下拉菜单的id值
+ * @returns {undefined}
+ */
+function city(ajaxUrl="",parent="",children="",grandson=""){
+    
+    var parent  = parent;
+    var children = children;
+    var grandson = grandson;
+    var ajaxUrl = ajaxUrl;
+    var p = document.getElementById(parent);
+    var pval = p.value;
+    if("province"==parent){
+        //省份更改后，城市，县城的情况都要被全部更新（先清除，再添加）
+        $("#"+children+"").children().remove(); //去除原来的城市列表
+        $("#"+children+"").append("<option value='city'>==请选择市==</option>");
+    }
+        $("#"+grandson+"").children().remove();     //去除原来的县级列表
+        $("#"+grandson+"").append("<option value='county'>==请选择县区==</option>");
+        $.ajax({
+            url:ajaxUrl,
+            type:"post",
+            data: {
+                "id" : pval ,
+                "name" : parent,
+            },
+            success : function(data){
+                 for(var i = 0;i < data.length;i ++){
+                    /*循环添加所有城市列表*/
+                    $("#"+children+"").append("<option value='"+data[i].city_id+"'>"+data[i].ccity+"</option>");
+                }
+            },
+            error:function(data){
+                window.console.info(data);
+            }
+        });
+    }
+    
+    
+    
+//function change(num){
+//    var city;
+//    var num = num;
+//    if(num==0){
+//       city = document.getElementById("shi");
+//    }
+//    var value = city.value;
+//    if(value==0){
+//        $("#xian").find("option").remove(); 
+//        var xian = "<option value='0'>县区</option>";
+//        $("#xian").append(xian);
+//        return;
+//    }
+//
+//    $.ajax({
+//        url:"{:U(Test/select)}",
+//        type:"post",
+//        data: {
+//          "id":value,  
+//          "level": num,
+//        },
+//        success : function(data){
+//            var song;
+//            $.each(data,function(i,n){
+//                song+="<option value='"+n['city_id']+"'>"+n['ccity']+"</option>";
+//            });
+//            $("#xian").find("option").remove(); 
+//            var xian = "<option value='0'>县区</option>";
+//            $("#xian").append(xian);
+//            $("#xian").append(song);   
+//        },
+//        error:function(data){
+//            window.console.info(data);
+//        }
+//    });
+//
+//}    
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+</script>
+
+
+        
+        
+</body>
+</html>

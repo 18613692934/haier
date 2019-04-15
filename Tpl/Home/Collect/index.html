@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{$arr['webname']['info_value']}</title>
+    {:W('Public/_meta')}
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/collect_index.css">
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/index-iframe.css">
+
+    <link rel="stylesheet" type="text/css" href="__HOME_ICON__/index-icon/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="__HOME_ICON__/index-nav-icon/font/flaticon.css"> 
+    <link rel="stylesheet" type="text/css" href="__HOME_ICON__/relation/font/flaticon.css"> 
+    <!--<link rel="stylesheet" href="__PUBLIC_STATIC__/select2-4.0.6/css/select2.css">-->
+
+</head>
+<body>       
+    <div id=loading style="position:absolute;width:100%;z-index:9999">
+        {:W('Header/loading')}
+    </div>
+    <div>{:W('Header/header')}</div>
+    <div class="dislpayArrow"><a class="pngfix" href="javascript:void(0);" id="resetSwiper" onClick="displaynavbar(this)"></a></div>
+    <aside class="Hui-aside">
+        <input runat="server" id="divScrollValue" type="hidden" value="" />
+        <div class="menu_dropdown bk_2">
+            <dl id="menu-article" class="text-c">
+                <div class="">统计数据截止</div>
+                <dt>{$time|date="Y-m-d H:i:s",###}</dt>
+            </dl>
+            <dl id="menu-product">
+                <dt><a data-href="home.html" data-title="汇总分析" href="javascript:void(0)"> 今日数据</a></dt>
+
+            </dl>
+            <!--            <dl id="menu-product">
+                                <dt> 汇总分析<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                                <dd>
+                                        <ul>
+                                        </ul>
+                                </dd>
+                        </dl>-->
+            <dl id="menu-article">
+                <dt> 虫害汇总<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd>
+                    <ul>
+                        <li><a data-href="pest.html" data-title="虫害汇总分析" href="javascript:void(0)">虫害汇总分析</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <!--                <dl id="menu-picture">
+                                <dt> 苗情汇总 <i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                                <dd>
+                                        <ul>
+                                                <li><a data-href="seed.html" data-title="苗情汇总分析" href="javascript:void(0)">苗情汇总分析</a></li>
+                                        </ul>
+                                </dd>
+                        </dl>-->
+            <dl id="menu-picture">
+                <dt> 环境汇总<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd>
+                    <ul>
+                        <li><a data-href="env.html" data-title="环境汇总分析" href="javascript:void(0)">环境汇总分析</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <!--            <dl id="menu-picture">
+                                <dt><i class="flaticon-link"></i> 关联分析<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                                <dd>
+                                        <ul>
+                                                <li><a data-href="env.html" data-title="虫害关联分析" href="javascript:void(0)">虫害关联分析</a></li>
+                                        </ul>
+                                </dd>
+                        </dl>-->
+        </div>
+    </aside>
+    <section class="Hui-article-box">
+        <div id="Hui-tabNav" class="hidden" >
+            <div class="Hui-tabNav-wp">
+                <ul id="min_title_list" class="acrossTab cl">
+                    <li class="active"><span title="我的桌面" data-href="welcome.html">我的桌面</span><em></em></li>
+                </ul>
+            </div>
+        </div>
+        <div id="iframe_box" class="Hui-article">
+            <div class="show_iframe">
+                <div style="display:none" class="loading"></div>
+                <iframe scrolling="yes" frameborder="0" src="home.html"></iframe>
+            </div>
+        </div>
+    </section>
+
+{:W('Public/_footer')} 
+</body>
+<script>
+    window.onload = setTimeout(function () {
+        $("#loading").hide();
+    }, 1);
+</script>
+</html>

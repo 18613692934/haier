@@ -1,0 +1,125 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <title>{$arr['webname']['info_value']}</title>
+    {:W('Public/_meta')}
+    <meta name=GENERATOR content="MShtml 8.00.7601.17514">
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/login.css">
+    <script>
+        if(window != top){
+            top.location.href = location.href;
+        }
+    </script>
+</head>
+    <body >
+         <div id=loading style="position:absolute;width:100%;z-index:999">
+        {:W('Header/loading')}
+    </div>
+    <input id=message type=hidden name=message> 
+    <div id="loginWrap" class="loginWrap cl">
+        <div id="loginBox" >
+            <div class="loginTitle">{$arr['webname']['info_value']}</div>
+            <div class="login_yunBox cl">
+            <div class="loginCont f-l">
+                <div class=loginTit>用户登录</div>
+                <div class=loginForm>
+                    <form id=loginForm method="post" action="">
+                        <table class=loginTable>
+                          <tbody>
+                          <tr>
+                              <td width=80 align=middle>用户名</td>
+                              <td><input id=username class=formipt placeholder="请输入用户名" type=text name=uname></td></tr>
+                          <tr>
+                            <td align=middle>密 码</td>
+                            <td><input id=password class=formipt placeholder="请输入密码" type=password name=password></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                        <div class=loginFormBtn>
+                            <button class=btn  type=submit>登录</button> 
+                            <button class=btn type=reset>重置</button> 
+                        </div>
+                    </form>
+                </div>
+                <p class=copyright>{$arr['copyright']['info_title']}：{$arr['copyright']['info_value']}
+                    <BR>{$arr['techsup']['info_title']}：{$arr['techsup']['info_value']}</p>
+            </div>
+            <div class="rightimg f-r"><img src="__HOME_IMG__/login/rightImg.png"></div>
+            <div class="cl"></div>
+        </div>
+        </div>
+      
+        
+    
+    </div>
+{:W('Public/_footer')}
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script> 
+</body>
+<script>
+function getContentSize1() {
+            
+        var _ch = $("#loginWrap").height();//这个就是你中间内容div的高度
+        var _wh = $(window).height();//整个窗口的高度
+            $("#loginWrap").css("min-height",(_wh)+"px");
+           $("#loginBox").css("padding-top",(_wh/2-250)+"px");
+
+           
+        
+}
+        window.onload =  getContentSize1;
+        window.onresize = getContentSize1;
+</script>
+
+    <script>
+        $(function(){
+	$("#loginForm").validate({
+                rules:{
+			username:{
+				required:true,
+				minlength:4,
+				maxlength:16,
+                                
+			},
+			password:{
+				required:true,
+			},
+		},
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){                   
+                    $(form).ajaxSubmit({
+                            type: 'post',
+                            url: "{:U('Login/login')}" ,
+                            success: function(data){
+                                if(!data){
+                                    layer.msg("账号密码错误",{icon:1,time:2000})
+                                }else{
+                                    layer.msg("登录成功",{icon:1,time:2000});
+                                    setTimeout(function(){
+                                        window.location.href="{:U('Index/index')}";
+                                    },2500);
+                                }  
+                            },
+                            error: function(XmlHttpRequest, textStatus, errorThrown){
+                                    layer.msg('程序出错，请联系管理员!',{icon:1,time:2000});                                                           
+                            }
+			});         
+                        return false;
+		},
+	});
+});
+    </script>
+<script type="text/javascript">
+ $(function(){
+           // 动态调整地图的高度以适应不同高度的显示器
+        $('#loginWrap').height($(window).height()-100);
+        setTimeout( function(){
+            $("#loading").hide();
+            slideOut();
+        },1);
+ })
+</script>
+</html>

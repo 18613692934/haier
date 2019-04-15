@@ -1,0 +1,12 @@
+[ 2017-02-21T09:13:07+08:00 ] 127.0.0.1 /index.php/Home/Produce/image/id/js/index.js
+ERR: 1054:Unknown column 'js' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `am_pest_data` WHERE (  pd_id=js ) LIMIT 1  
+
+[ 2017-02-21T21:36:23+08:00 ] 127.0.0.1 /index.php/Home/Produce/index
+ERR: 1146:Table 'forestry_iot.iot_pest_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iot_pest_data`
+
+[ 2017-02-21T21:39:05+08:00 ] 127.0.0.1 /index.php/Home/Produce/image/id/js/index.js
+ERR: 1054:Unknown column 'js' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `iot_pest_data` WHERE (  pd_id=js ) LIMIT 1  
+

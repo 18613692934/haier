@@ -1,0 +1,309 @@
+<!DOCTYPE html> 
+    <html>
+    <head>
+        <title>{$arr['webname']['info_value']}</title>
+        {:W('Public/_meta')}
+        
+        <link rel="stylesheet" type="text/css" href="__HOME_CSS__/device_manage.css">
+         <link rel="stylesheet" type="text/css" href="__HOME_ICON__/manage-icons/font/flaticon.css"> 
+         <style>
+            [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+                font-family: Flaticon;
+                font-size: 70px;
+                /*font-style: normal;*/
+                margin-left: 20px;
+                color: #333;
+            }
+         </style>
+    </head>
+    
+    <body>
+  
+    <div id=loading style="position:absolute;width:100%;z-index:9999">
+        {:W('Header/loading')}
+    </div>
+        {:W('Header/device_header')}
+          
+        <div id="content"  class="elements">
+            <div class="btn btn-primary radius">设备选项</div>
+            <section class="Hui-article-box">
+                                    <div class="Hui-article">
+                                        <article class="cl pd-20">
+
+                                            <div class="bk-gray  radius  pd-10">
+
+                                                <div class="bk-gray  radius  pd-10 mt-5 cl">
+                                                        <div class="col-sm-3">
+                                                            <form id="dataInterval" class="form">	
+                                                            <div class="bk-gray  radius ">
+                                                                <div class="row cl">
+                                                                    <div class="col-sm-6">
+                                                                        <i class="flaticon-cloud"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                         <div class="manage-title">环境采集</div>
+                                                                        <p>工作状态：正常</p>
+                                                                        <p>设备状态：正常</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row cl">
+                                                                    <div class="col-sm-12 text-c info">
+                                                                        <input class="input-text radius" value="{$dataInterval}" name="dataInterval" id="gather">分钟/次
+                                   
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row cl">
+                                                                    <div class="col-sm-12 text-c">
+                                                                        <!--<button class="btn btn-primary radius" type="submit" onclick="form_manage(this)" >发送命令</button>-->
+                                                                   
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            </form>
+                                                        </div>
+                                                    <div class="col-sm-3">
+                                                        <form id="switch" class="form">
+                                                            <div class="bk-gray  radius ">
+                                                                <div class="row cl">
+                                                                    <div class="col-sm-6">
+                                                                        <i class="flaticon-light"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                        
+                                                                        <div class="manage-title">诱杀装置</div>
+                                                                        <p>工作状态：正常</p>
+                                                                        <p>设备状态：正常</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row cl">
+                                                                    <div class="col-sm-12 text-c info">
+                                                                        <input type="text"  name='startTime' onfocus=<literal>"WdatePicker({dateFmt:' HH:mm'})"</literal> id="startTime" value="{$startTime}" class="input-text radius Wdate">
+                                                                        至<input type="text" name='endTime' onfocus=<literal>"WdatePicker({dateFmt:' HH:mm', minDate: '#F{$dp.$D(\'statrTime\')}' })"</literal> id="endTime" value="{$endTime}" class="input-text radius Wdate">
+                                 
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                                <div class="row cl">
+                                                                    <div class="col-sm-12 text-c">
+                                                                        <!--<button class="btn btn-primary radius" type="submit" onclick="form_manage(this)" >发送命令</button>-->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            </form>
+                                                        </div>
+                                                    <div class="col-sm-3">
+                                                        <form id="cameraInterval" class="form">	 
+                                                            <div class="bk-gray  radius ">
+                                                                <div class="row cl">
+                                                                    <div class="col-sm-6">
+                                                                      <i class="flaticon-technology"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                        <div class=" manage-title">内部拍照</div>
+                                                                        
+                                                                        <p>工作状态：正常</p>
+                                                                        <p>设备状态：正常</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row cl">
+                                                                    <div class="col-sm-12 text-c info">
+                                                                        <input class=" input-text radius" value="{$cameraInterval}" name="cameraInterval" id="test1">分钟/次
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row cl">
+                                                                    <div class="col-sm-12 text-c">
+                                                                        <!--<button class="btn btn-primary  " type="submit" onclick="form_manage(this)" >发送命令</button>-->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        </div>
+                                                    <div class="col-sm-3">
+                                                        <form id="onOff" class="form">
+                                                            <div class="bk-gray  radius ">
+                                                                <div class="row cl">
+                                                                    <div class="col-sm-6">
+                                                                     <i class="flaticon-technology-1"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                        <div class="manage-title">外部球机</div>
+                                                                        <p>工作状态：正常</p>
+                                                                        <p>设备状态：正常</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row cl">
+                                                                    <div class="col-sm-12 text-c info">
+                                                                        <div class=" skin-minimal ">
+                                                                            <div class=" radio-box">
+                                                                                <input name="onOff" type="radio" value="1"<if condition="$onOff eq 1">checked</if>  >
+                                                                                    <label for="sex-1">开</label>
+                                                                            </div>
+                                                                            <div class="radio-box">
+                                                                                    <input type="radio" value='0' name="onOff" <if condition="$onOff eq 0">checked</if>>
+                                                                                    <label for="sex-2">关</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row cl">
+                                                                    <div class="col-sm-12 text-c">
+                                                                        <!--<button class="btn btn-primary radius" type="submit" onclick="form_manage(this)" >发送命令</button>-->
+                                
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </section>
+            
+            
+        
+</div>
+ {:W('Header/footer')}
+
+</body> 
+    {:W('Public/_footer')}
+<script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+
+
+
+
+
+<script>
+$(function(){
+    $('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+});
+    </script>
+
+                               
+<script>
+    function hasClass( elements,cName ){  
+    return !!elements.className.match( new RegExp( "(\\s|^)" + cName + "(\\s|$)") ); // ( \\s|^ ) 判断前面是否有空格 （\\s | $ ）判断后面是否有空格 两个感叹号为转换为布尔值 以方便做判断  
+}; 
+    function addClass(){
+        buttons = document.getElementsByTagName("button");
+            for(var i=0;i<buttons.length;i++){
+                if( !hasClass( buttons[i],'disabled' ) ){  
+                    buttons[i].className += " disabled";  
+                }; 
+            }
+         
+        
+         
+    }
+    function removeClass(){
+        var cName = "disabled";
+         buttons = document.getElementsByTagName("button");
+            for(var i=0;i<buttons.length;i++){
+             if( hasClass( buttons[i],cName ) ){  
+                buttons[i].className = buttons[i].className.replace( cName ," " ); // replace方法是替换  
+            };  
+        }
+    }
+    
+    //表单验证
+        function form_manage(obj){
+          
+            var id = obj.form.id ;
+            $("#"+id+"").validate({
+                rules:{
+			statrTime:{
+				required:true,
+			},
+			endTime:{
+                            required:true,
+			},
+                           
+                        cameraInterval:{
+                           required:true,
+                           digits:true
+                        },
+                        
+                        dataInterval:{
+                           required:true,
+                           digits:true
+                        },
+//                        phone:{
+//                            required:true,
+//                            digits:true,
+//                           rangelength:[11,11]
+//                        },
+   
+		},
+                messages:{
+                    statrTime:{
+                            required:"这是必填字段",
+			},
+			endTime:{
+                          required:"这是必填字段",
+			},
+                        cameraInterval:{
+                           required:"这是必填字段",
+                           digits: "只能输入数字",
+                        },
+                        dataInterval:{
+                           required:"这是必填字段",
+                           digits: "只能输入数字",
+                        },
+//                        phone:{
+//                           required:"这是必填字段",
+//                           digits: "只能输入数字",
+//                           rangelength: $.validator.format("请输入11位的手机号"),
+//                        },
+                       
+                },
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){
+                     addClass();
+                    $(form).ajaxSubmit({
+                        type:'post',
+                        data:{'type':id},
+                        url:"{:U('Device/manage')}",
+                        success:function(data){
+                            layer.msg(data,{icon:1,time:1000});
+                            removeClass();
+                        },
+                        error:function(XmlHttpRequest, textStatus, errorThrown){
+                            console.log(XmlHttpRequest);
+                            console.log(textStatus);
+                            console.log(errorThrown);
+                            layer.msg('请联系管理员!',{icon:1,time:2000});
+                            removeClass();
+                        },
+                        
+                        
+                    });
+			
+                       
+                        
+//                        setTimeout(function(){
+//                            window.location.reload(); //刷新父页面
+//                        },1000);
+			
+		}
+	});
+         
+//                   
+            }
+        
+	
+</script>
+   <script>
+        window.onload = setTimeout( function(){
+            $("#loading").hide();
+        },1);
+    </script>
+</html>

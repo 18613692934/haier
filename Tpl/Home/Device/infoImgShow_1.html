@@ -1,0 +1,392 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+{:W('Public/_meta')}
+<link href="__PUBLIC_STATIC__/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="__PUBLIC_STATIC__/magnify/dist/jquery.magnify.css" rel="stylesheet">
+<style>
+    .magnify-modal {
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.3);
+}
+.magnify-header .magnify-toolbar {
+  background-color:rgba(0,0,0,.5);
+  width:40px;
+}
+.magnify-stage {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-width: 0;
+}
+.magnify-footer .magnify-toolbar {
+  display: inline-block;
+  height: 40px;
+  background-color:rgba(0,0,0,.5);
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+}
+.magnify-header,.magnify-footer{
+  pointer-events: none;
+}
+.magnify-button{
+  pointer-events: auto;
+}
+
+/* ---------------------------------
+   Example Styles 
+   --------------------------------- */
+.image-set{
+  margin-left:-5px;
+  margin-right:-5px;
+}
+.image-set img{
+  display:block;
+}
+.image-set a{
+  display:inline-block;
+  margin-left:5px;
+  margin-right:5px;
+  padding:2px;
+  border:1px solid #ddd;
+  transition:border-color .3s ease;
+}
+.image-set a:hover{
+  border-color:#aaa;
+}
+.table th{
+    width:25%;
+    text-align: center;
+}
+.table td{
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <div class="container-fluid container" >
+        <div class="row cl">
+            <div class="col-xs-12 col-sm-6" >
+                <article class="">
+                <div class="row cl">
+                    <a data-magnify="gallery" data-caption="可通过鼠标滑轮进行放大与缩小操作" href="{$item['image']}">
+                        <img width="100%"   src="{$item['image']}" alt="">
+                    </a>
+                </div>
+                    <div class="row cl">
+                         <div class="text-c f-14 c-red">点击图片可进行图片放大、缩小、旋转等操作</div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-xs-12 col-sm-6" >
+                <form class="form form-horizontal" id="form-pest-add">
+                <article class="page-container">
+                    <div class="row cl">
+                        
+                        <label class="form-label col-xs-4 col-sm-3">创建时间：</label>
+                        <div class="formControls col-xs-8 col-sm-7">
+                            <div  class="input-text">{$item['unix_createdate']|date='Y-m-d H:i:s',###}</div>
+                        </div>
+                    </div>
+            
+                    <div class="row cl">
+                        <input type="hidden" name='pd_id' value="{$item['pd_id']}"/>
+                        <input type="hidden" name='device_code' value="{$item['device_code']}"/>
+                        <input type="hidden" name='address' value="{$deItem['deaddress']}"/>
+                        <input type="hidden" name='unix_createdate' value="{$item['unix_createdate']}"/>
+                        <input type="hidden" name='region' value="{$reItem['rnname']}"/>
+                        <input type="hidden" name='province' value="{$reItem['rnprovince']}"/>
+                        <input type="hidden" name='city' value="{$reItem['rncity']}"/>
+                        <input type="hidden" name='county' value="{$reItem['rncounty']}"/>
+                    </div>
+<!--                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-3">美国白蛾：</label>
+                        <div class="formControls col-xs-8 col-sm-7">
+                            <input type="text" class="input-text" value="{$item['baie_num']}" placeholder="" id="baie_num" name="baie_num">
+                        </div>
+                    </div>
+            
+                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-3">舞毒蛾：</label>
+                        <div class="formControls col-xs-8 col-sm-7">
+                                <input type="text" class="input-text" value="{$item['wde_num']}" placeholder="" id="wde_num" name="wde_num">
+                        </div>
+                    </div>
+            
+                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-3">杨小舟蛾：</label>
+                        <div class="formControls col-xs-8 col-sm-7">
+                                <input type="text" class="input-text" value="{$item['yxz_num']}" placeholder="" id="yxz_num" name="yxz_num">
+                        </div>
+                    </div>
+            
+                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-3">草履蚧：</label>
+                        <div class="formControls col-xs-8 col-sm-7">
+                                <input type="text" class="input-text" value="{$item['clj_num']}" placeholder="" id="clj_num" name="clj_num">
+                        </div>
+                    </div>
+            
+                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-3">春尺蠖：</label>
+                        <div class="formControls col-xs-8 col-sm-7">
+                                <input type="text" class="input-text" value="{$item['cch_num']}" placeholder="" id="cch_num" name="cch_num">
+                        </div>
+                    </div>
+            
+                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-3">其他：</label>
+                        <div class="formControls col-xs-8 col-sm-7">
+                            <input type="text" class="input-text" value="{$item['other_num']}" placeholder="" id="other_num" name="other_num">
+                        </div>
+                    </div>-->
+
+<table cellspacing="0" cellpadding="0" border="0" class="normTbe table table-border table-bordered table-bg table-hover table-list table-sort  model1 hide">
+    <tbody>
+        <tr class="alonTr">
+            <td><select name=""><option value="1">美国白蛾</option><option value="2">杨小舟蛾</option></select></td>
+            <td><input type="text" class="input-text" /></td>
+            <!--<td><input type="text" class="input-text"  /></td>-->
+            <td><input type="text" class="input-text"  /></td>
+            
+            <td> 
+                <a class="text_a" href="javascript:;" onClick="deltr(this)">删除</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="itemInfo">
+    <table cellspacing="0" cellpadding="0" border="0" class=" table table-border table-bordered table-bg table-hover table-list table-sort  normTbe tabInfo">
+    <thead>
+        <tr>
+            <th><em>*</em>害虫名称 ：</th>
+            <th><em>*</em> 发育时期：</th>
+            <!--<th><em>*</em> 几代虫：</th>-->
+            <th><em>*</em> 数量(头)：</th>
+            
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody class="tbody1">
+        <tr>
+            <td><select name=""><option value="1">美国白蛾</option><option value="2">杨小舟蛾</option></select></td>
+            <td><input type="text" value="" class="input-text" /></td>
+            <!--<td><input type="text" value="" class="input-text" /></td>-->  
+            <td><input type="text" value="" class="input-text" /></td>  
+            
+            <td>
+                <a class="text_a" href="javascript:;" onClick="deltr(this)">删除</a>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+    <div class="copybtn">
+        <button class="btn btn-primary radius AddTr" type="button"> 新增</button>
+    </div>
+    </div>
+
+            
+                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-3">是否查看：</label>
+                        <div class="formControls col-xs-8 col-sm-9 skin-minimal">
+                            <div class="radio-box">
+                                <input name="imgstatus" type="radio" value='1'<if condition="$item['imgstatus'] eq 1">checked</if> >
+                                <label >是</label>
+                            </div>
+                            <div class="radio-box">
+                                <input type="radio"  value='2' name="imgstatus" <if condition="$item['imgstatus'] eq 2">checked</if>>
+                                <label>否</label>
+                            </div>
+                        </div>
+                    </div>	
+            
+                    <div class="row cl">
+                        <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                            <button class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 提交</button>
+                            <button onClick="remove();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                        </div>
+                    </div>
+            
+                </article>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    
+    
+    
+    
+    <!--javascript  start-->
+    {:W('Public/_footer')}
+<script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+<script src="__PUBLIC_STATIC__/magnify/dist/jquery.magnify.js"></script>
+<script>
+$(function(){
+
+// 新增表单
+    var show_count = 20;  
+    var count = 1;  
+    $(".AddTr").click(function () {
+        var length = $(".tabInfo .tbody1>tr").length;
+//        alert(length);
+        if (length < show_count) 
+        {
+            $(".model1 tbody .alonTr").clone().appendTo(".tabInfo .tbody1");  
+        }
+    });
+   
+});
+
+
+function deltr(opp) {
+    var length = $(".tabInfo .tbody1>tr").length;
+    //alert(length);
+    if (length <= 1) {
+        alert("至少保留一行");
+    } else {
+        $(opp).parent().parent().remove();//移除当前行
+        
+    }
+}
+
+
+function deltr3(opp) {
+    var length = $('.neijian .tbody2 tr').length;
+    //alert(length);
+    if (length <= 1) {
+        alert("至少保留一行");
+    } else {
+        $(opp).parent().parent().remove();//移除当前行
+        
+    }
+}
+// ----
+</script>
+<script>
+    $('[data-magnify]').magnify({
+        
+        headToolbar: [
+            'close'
+        ],
+        footToolbar: [
+            'zoomIn',
+            'zoomOut',
+            'actualSize',
+            'rotateRight'
+        ],
+        
+    });
+</script>
+<script type="text/javascript">
+    /**
+     * 取消按钮
+     */
+function remove() {
+    var index = parent.layer.getFrameIndex(window.name);
+    parent.layer.close(index); // 关闭layer  
+}
+$(function(){
+        //表单验证
+        $("#form-pest-add").validate({
+            rules: {
+                baie_num : {
+                    required: true,
+                    digits:true
+                },
+                wde_num: {
+                    required: true,
+                    digits:true
+                },
+                yxz_num: {
+                    required: true,
+                   digits:true
+                },
+                clj_num: {
+                    required: true,
+                   digits:true
+                },
+                cch_num: {
+                    required: true,
+                    digits:true
+                },
+                other_num: {
+                    required: true,
+                    digits:true
+                },
+            },
+            messages: {
+                baie_num : {
+                    required: "这是必填字段",
+                    digits: "只能输入数字",
+                },
+                wde_num: {
+                    required: "这是必填字段",
+                    digits: "只能输入数字",
+                },
+                yxz_num: {
+                    required: "这是必填字段",
+                    digits: "只能输入数字",
+                },
+                clj_num: {
+                    required: "这是必填字段",
+                    digits: "只能输入数字",
+                },
+                cch_num: {
+                    required: "这是必填字段",
+                    digits: "只能输入数字",
+                },
+                other_num: {
+                    required: "这是必填字段",
+                    digits: "只能输入数字",
+                },  
+            },
+            onkeyup: false,
+            focusCleanup: true,
+            success: "valid",
+            submitHandler: function(form) {
+                    $(form).ajaxSubmit({
+                        type: 'post',
+                        url: "{:U('Device/imgInfoAdd')}",
+                        success: function(data) {
+                            layer.msg(data, {icon: 1,time: 500});
+                             var index = parent.layer.getFrameIndex(window.name);
+                            setTimeout(function() {
+                                    window.parent.location.reload(); //刷新父页面
+                                    parent.layer.close(index); // 关闭layer  
+                            }, 1000);
+                        },
+                        error: function(XmlHttpRequest, textStatus, errorThrown) {
+                            layer.msg('请联系管理员!', {icon: 1,time: 1000});
+                            
+                        },
+                    });
+                   
+
+                }
+            });
+
+})
+         
+       
+</script>
+<script>
+   $('.skin-minimal input').iCheck({
+        checkboxClass: 'icheckbox-blue',
+        radioClass: 'iradio-blue',
+        increaseArea: '20%'
+    }); 
+</script>
+
+<!--/javascript end-->
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+{:W('Public/_meta')}
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" type="text/css" href="__PUBLIC_STATIC__/h-ui.admin/css/H-ui.login.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC_STATIC__/h-ui.admin/css/style.css" />
+<script>
+        if(window != top){
+            top.location.href = location.href;
+        }
+    </script>
+<title>{$arr['webname']['info_value']}</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+</head>
+<body>
+    <div id=loading style="position:absolute;width:100%;z-index:999">
+        {:W('Header/loading')}
+    </div>
+<input type="hidden" id="TenantId" name="TenantId" value="" />
+<div class="header">{$arr['webname']['info_value']}</div>
+<div class="loginWraper">
+  <div id="loginform" class="loginBox">
+    <form id=loginForm class="form form-horizontal" action="index.html" method="post">
+      <div class="row cl">
+        <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
+        <div class="formControls col-xs-8">
+          <input id="username"  name="uname"  type="text" placeholder="账户" class="input-text size-L">
+        </div>
+      </div>
+      <div class="row cl">
+        <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
+        <div class="formControls col-xs-8">
+          <input id="password" name="password" type="password" placeholder="密码" class="input-text size-L">
+        </div>
+      </div>
+      <div class="row cl">
+          
+
+      <div class="row cl">
+        <div class="formControls col-xs-8 col-xs-offset-3">
+          <input name="" type="submit" class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
+          <input name="" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="footer">{$arr['copyright']['info_value']} {$arr['company']['info_value']}</div>
+{:W('Public/_footer')}
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script> 
+
+</body>
+<script>
+        $(function(){
+	$("#loginForm").validate({
+                rules:{
+			username:{
+				required:true,
+				minlength:4,
+				maxlength:16,
+                                
+			},
+			password:{
+				required:true,
+			},
+		},
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){                   
+                    $(form).ajaxSubmit({
+                            type: 'post',
+                            url: "{:U('Login/login')}" ,
+                            success: function(data){
+                                if(!data){
+                                    layer.msg("账号密码错误",{icon:2,time:1000})
+                                }else{
+                                    layer.msg("登录成功",{icon:1,time:1000});
+                                    setTimeout(function(){
+                                        window.location.href="{:U('Index/index')}";
+                                    },1000);
+                                }  
+                            },
+                            error: function(XmlHttpRequest, textStatus, errorThrown){
+                                    layer.msg('程序出错，请联系管理员!',{icon:3,time:2000});                                                           
+                            }
+			});         
+                        return false;
+		},
+	});
+});
+    </script>
+<script type="text/javascript">
+ $(function(){
+        setTimeout( function(){
+            $("#loading").hide();
+            slideOut();
+        },1);
+ })
+</script>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<include file='Public/_meta'/>
+<title>人工校验 - 病害校验</title>
+</head>
+<style>
+    
+</style>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 人工校验 <span class="c-gray en">&gt;</span> 病害校验 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<article class="page-container">
+    <form method="post" class="form form-horizontal" id="form-member-add"> 
+        <div class="page-middle">
+            <div class="page-left">
+                <div id="box" class="f-l">
+                    <div style="text-align:center;color: red;font-size: 14px;">鼠标移动到右边小图上，即可显示大图</div>
+                    <ul class="list">
+                        <foreach name="all" item="v">
+                            <li class="" value="{$v['de_id']}" style="opacity: 0;"><img src="{$v['image']}" width="400" height="400"></li>
+                        </foreach>
+                    </ul>
+                </div>
+                <div id="box1" class="f-l">
+                    <ul class="count">
+                        <foreach name="all" item="a">
+                            <li class="" value="{$a['de_id']}"><img src="{$a['image']}" width="50" height="50"></li>
+                        </foreach>	
+                        <div class="cl"></div>
+                    </ul>
+                        <div class="cl"></div>
+                </div>
+            </div>
+            <div class="page-right">
+<!--                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-3">害虫种类：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <dl class="permission-list">
+                            <dd>
+                                <label class="">
+                                    <input type="checkbox" value="" name="user-Character-0-0-0" id="user-Character-0-0-0">
+                                    添加</label>
+                                <label class="">
+                                    <input type="checkbox" value="" name="user-Character-0-0-0" id="user-Character-0-0-1">
+                                    修改</label>
+                                <label class="">
+                                    <input type="checkbox" value="" name="user-Character-0-0-0" id="user-Character-0-0-2">
+                                    删除</label>
+                                <label class="">
+                                    <input type="checkbox" value="" name="user-Character-0-0-0" id="user-Character-0-0-3">
+                                    查看</label>
+                                <label class="">
+                                    <input type="checkbox" value="" name="user-Character-0-0-0" id="user-Character-0-0-4">
+                                    审核</label>
+                            </dd>	
+                        </dl>
+                    </div>
+		</div>-->
+                
+                
+<!--                <div class="row  cl">
+                    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>害虫种类：</label>
+                    <div class="formControls col-xs-4 col-sm-3">
+                        <span class="select-box">
+                             <select name="type" class="select">
+                                <option value="0" selected>请选择</option>
+                                <option value="1" selected>美国白蛾</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>-->
+                <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-4"><span class="c-red">*</span>树木种类：</label>
+                        <div class="formControls col-xs-4 col-sm-6">
+                                <input type="text" class="input-text" value="" placeholder="" name="sType" id="sType">
+                        </div>
+                </div>
+                <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-4"><span class="c-red">*</span>病害种类：</label>
+                        <div class="formControls col-xs-4 col-sm-6">
+                                <input type="text" class="input-text" value="" placeholder="" name="bType" id="bType">
+                        </div>
+                </div>
+                <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-4"><span class="c-red">*</span>严重等级：</label>
+                        <div class="formControls col-xs-4 col-sm-6">
+                                <input type="text" class="input-text" value="" placeholder="" name="level" id="level">
+                        </div>
+                </div>
+                <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-4">区域 - 详细位置：</label>
+                        <div class="formControls col-xs-4 col-sm-6">
+                            <div id='region'></div>
+                        </div>
+                </div>
+                <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-4">时间：</label>
+                        <div class="formControls col-xs-4 col-sm-6">
+                            <div id='addtime'></div>
+                        </div>
+                </div>
+
+                <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-4"><span class="c-red">*</span>图片查看状态：</label>
+                        <div class="formControls col-xs-4 col-sm-6 skin-minimal">
+                                <div class="radio-box" >
+                                    <input id="status1" name="status" value='1' type="radio"  >
+                                    <label for="status-1">已查看</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input id="status2" type="radio" value="2" checked="" name="status"  >
+                                        <label for="status-2">未查看</label>
+                                </div>
+                            <input type="hidden" id="hidden_img" name="img" value=""/>
+<!--                                <div class="radio-box">
+                                        <input id="status3" type="radio" value='3'  name="status">
+                                        <label for="status-3">待复查</label>
+                                </div>-->
+                        </div>
+                </div>
+                <div class="row cl">
+                        <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                            <input onclick="getImgNum()" class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+                        </div>
+                </div>
+            </div>
+        </div>  
+   </form>
+    <div class="cl"></div>
+</article>
+<include file='Public/_footer'/>
+<!--请在下方写此页面业务相关的脚本--> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+	
+	$("#form-member-add").validate({
+		rules:{
+//			uname:{
+//				required:true,
+//				minlength:2,
+//				maxlength:16
+//			},
+//			password:{
+//                          required:true,
+//			},
+//			password1:{
+//                          equalTo:"#password"
+//			},
+//			sex:{
+//				required:true,
+//			},
+//                        name:{
+//				required:true,
+//			},
+//			phone:{
+//				required:true,
+//				isMobile:true,
+//				range:[11,11],
+//			},
+//			email:{
+//				required:true,
+//				email:true,
+//			},
+//			unit:{
+//				required:true,
+//			},
+//                        unit_name:{
+//				required:true,
+//			},
+//                        branch:{
+//				required:true,
+//			},
+//                         title:{
+//                             required:true,
+//                         },
+			
+		},
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){
+                    $(form).ajaxSubmit({
+                        type:'post',
+                        url:"{:U('Pests/diseaseCheck')}",
+                        success:function(data){
+                               if(data){layer.msg('保存成功!',{icon:1,time:2000});}
+                                else{layer.msg('保存失败!',{icon:1,time:2000});}     
+                        },
+                        error:function(XmlHttpRequest, textStatus, errorThrown){
+           
+                            layer.msg('error!',{icon:1,time:2000});
+                        },  
+                    });
+                        setTimeout(function(){
+                            location.replace(location.href) 
+                        },2500);
+			
+		}
+	});
+});
+</script> 
+<script>
+    function getImgNum(){
+        var currents = document.getElementsByClassName("current");
+        var current = currents[0];
+        var va = current.value;
+        var img = document.getElementById("hidden_img");
+        img.value = va;
+    }
+    
+    
+    var box=document.getElementById('box');
+    var uls=document.getElementsByTagName('ul');
+    var imgs=uls[0].getElementsByTagName('li');
+    var btn=uls[1].getElementsByTagName('li');
+    var i=index=0; //中间量，统一声明；
+    var play=null;
+    //console.log(box,uls,imgs,btn);//获取正确
+
+    //图片切换, 淡入淡出效果（transition: opacity 0.8s linear）做的
+    function show(a){        //方法定义的是当传入一个下标时，按钮和图片做出对的反应
+            for(i=0;i<btn.length;i++ ){
+                    btn[i].className='';    //每个缩略图都先设置成看不见，然后把当前缩略图设置成可见。
+                    btn[a].className='current';
+            }
+            for(i=0;i<imgs.length;i++){ //把图片的效果设置和缩略图片相同
+                    imgs[i].style.opacity=0;
+                    imgs[a].style.opacity=1;
+            }
+    }
+    //切换按钮功能，响应对应图片
+    for(i=0;i<btn.length;i++){
+            btn[i].index=i;  
+            btn[i].onmouseover=function(){
+                    show(this.index);
+                    clearInterval(play); 
+            }
+    }
+    //div的鼠标移入移出事件
+    box1.onmouseover=function(){
+            
+            clearInterval(play);
+            var currents = document.getElementsByClassName("current");
+            var current = currents[0];
+            var va = current.value;
+            $.ajax({
+                url:"{:U('Pests/diseaseFind')}",
+                type:"post",
+                data:{"id" : va},
+                success:function(data){
+//                    alert(data);
+//                   var status = data['imgstatus'];
+                  //  window.console.log(data);
+                    document.getElementById("level").value = data['dse_level'];
+                    document.getElementById("bType").value = data['dse_type'];
+                    document.getElementById("sType").value = data['stype'];
+                    document.getElementById("addtime").innerText = data['addtime'];
+                    document.getElementById("region").innerText = data['rnname']+"-"+data['deaddress'];
+//                    document.getElementById("status1").setAttribute("checked","checked");
+                    
+                },
+                error:function(data){
+//                    alert(data);
+                    window.console.log(data);
+                }
+            });
+    };
+    box1.onmouseout=function(){
+            autoPlay();
+    };
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

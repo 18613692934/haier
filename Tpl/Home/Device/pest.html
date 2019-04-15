@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{$arr['webname']['info_value']}</title>
+        
+        {:W('Public/_meta')}
+        <meta name="keywords" />
+        <link rel="stylesheet" type="text/css" href="__HOME_CSS__/device_pest.css"/>
+        <link rel="stylesheet" type="text/css" href="__HOME_CSS__/device_pest_history.css"/>
+        <link rel="stylesheet" type="text/css" href="__HOME_CSS__/device_search.css"/>
+    </head>
+    <body>
+        
+         <div id=loading style="position:absolute;width:100%;z-index:9999">
+            {:W('Header/loading')}
+        </div>
+        {:W('Header/device_header')}
+        <div class="pest-wrap">
+          
+            <div class="pest_middle">
+                <div class="middle_center">
+
+                    
+                    <div class="center_bottom">
+                        <div style="font-size:20px;text-align: center">大蒜越冬期及生长期暂无虫害数据</div>
+<!--                        <div id="tab_demo" class="HuiTab">
+                            <div class="tabBar clearfix">
+                                <span>数据列表查看</span>
+                                <span>数据图表查看</span>
+                                <span>历史图片查看</span>
+                                <span>落叶数据查看</span>
+                            </div>
+                                虫害列表查看开始 
+                                <div class="tabCon">
+                                    <section class="Hui-article-box">
+                                        <div class="Hui-article">
+                                            <article class="cl pd-20">
+
+                                                <div class="bk-gray  radius  pd-10">
+
+                                                    <div class="bk-gray  radius  pd-10 mt-5">
+                                                        <form>
+                                                            <div class="row cl">
+                                                                <div class="col-sm-3">
+                                                                    <label>开始时间</label>
+                                                                    <input autocomplete="off" type="text" name='statrTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', maxDate:'#F{$dp.$D(\'listLogmax\')||\'%y-%M-%d %H:%m:%s\'}' })"</literal> id="listLogmin" class="input-text Wdate" style="width:150px;">
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <label>结束时间</label>
+                                                                    <input autocomplete="off" type="text" name='endTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', minDate: '#F{$dp.$D(\'listLogmin\')}',maxDate:'%y-%M-%d %H:%m:%s' })"</literal> id="listLogmax" class="input-text Wdate" style="width:150px;">
+                                                                </div>
+                                                                <div class="col-sm-5">
+                                                                    <label>汇总</label> 
+                                                                    <span id="listSumData" class=" btn-group  va-m">
+
+                                                                        <span class="btn   btn-secondary-outline radius active" >不汇总</span>
+                                                                        <span class="btn  btn-secondary-outline radius" id="hours">小时</span>
+                                                                        <span class="btn  btn-secondary-outline radius"  id="tian">天</span>
+                                                                        <span class="btn  btn-secondary-outline radius"  id="zhou">周</span>
+                                                                        <span class="btn  btn-secondary-outline radius"  id="yue">月</span>
+                                                                        <span class="btn  btn-secondary-outline radius"  id="nian">年</span>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <button type="button"  name="pestList"  class="btn btn-primary radius" style="margin-left:25px;">执行</button>
+                                                                    <button type="button" id="excel"  class="btn btn-warning radius">导出</button>
+                                                                    <button type="reset"   class="btn btn-warning radius">重置</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row cl">
+                                                            </div>
+                                                        </form> 
+                                                    </div>
+                                                    <div class="bk-gray  radius  pd-10 mt-10 cl">
+                                                        <table  class="table table-border table-bordered table-bg table-hover table-list table-sort ">
+                                                            <thead class="text-c">
+                                                              <tr>
+                                                                <th>编号</th>
+                                                                <th>温度℃</th>
+                                                                <th>湿度%</th>
+                                                                <th>害虫类型</th>
+                                                                 <th>发育时期</th>
+                                                                <th>数量</th>
+                                                                <th>雌虫数量</th>
+                                                                <th>杨小舟蛾/只</th>
+                                                                <th>舞毒蛾/只</th>
+                                                                <th>春尺蠖/只</th>
+                                                                <th>草履蚧/只</th>
+                                                                <th>其他/只</th>
+                                                                <th>设备号</th>
+                                                                <th>开始时间</th>
+                                                                <th>结束时间</th>
+                                                                <th>采集时间</th>
+                                                              </tr>
+                                                            </thead>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </section>    
+                                </div>
+                                虫害列表查看结束 
+                                虫害图表查看开始 
+                                <div class="tabCon">
+                                    <section class="Hui-article-box">
+                                    <div class="Hui-article">
+                                        <article class="cl pd-20">
+
+                                            <div class="bk-gray  radius  pd-10">
+
+                                                <div class="bk-gray  radius  pd-10 mt-5">
+                                                    <form>
+                                                        <div class="row cl">
+                                                            <div class="col-sm-3">
+                                                                <label>开始时间</label>
+                                                                <input autocomplete="off" value="{$date['beginTime']}"  type="text" name='startTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', maxDate:'#F{$dp.$D(\'chartsLogmax\')||\'%y-%M-%d %H:%m:%s\'}' })"</literal> id="chartsLogmin" class="input-text Wdate" style="width:150px;">
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <label>结束时间</label>
+                                                                <input autocomplete="off"  value="{$date['endTime']}" type="text" name='endTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', minDate: '#F{$dp.$D(\'chartsLogmin\')}',maxDate:'%y-%M-%d %H:%m:%s' })"</literal> id="chartsLogmax" class="input-text Wdate" style="width:150px;">
+                                                            </div>
+
+                                                            <div class="col-sm-5">
+                                                                <label>汇总</label> 
+                                                                <span id="historySumData" class=" btn-group  va-m">
+                                                                    <span class="button1 white active" style="width:42px;">不汇总</span>                         
+                                                                    <span class="button1 white" style="margin-left:-5px;width:30px;" id="hours">小时</span>       		
+                                                                    <span class="button1 white" style="margin-left:-5px" id="tian">天</span>
+                                                                    <span class="button1 white" style="margin-left:-5px" id="zhou">周</span>
+                                                                    <span class="button1 white" style="margin-left:-5px" id="yue">月</span>
+                                                                    <span class="button1 white" style="margin-left:-5px" id="nian">年</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <button type="button" id="pestChartsButton"  class="btn btn-primary radius" style="margin-left:25px;">执行</button>
+
+                                                                <button type="reset"   class="btn btn-warning radius">重置</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row cl">
+                                                        </div>
+                                                    </form> 
+                                                </div>
+                                                
+                                                    <div class="bk-gray  radius  pd-10 mt-10 ">
+                                                        <span class="f-20">虫害发生量趋势图</span> 
+                                                        <div class="f-14 c-error">
+                                                            <span>
+                                                                设备编号：{$device_code} 
+                                                            </span>
+                                                        </div>
+                                                        <div id="content" style="width:1120px;height:450px;"></div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </section>
+
+                                </div>
+                                虫害图表查看结束       
+                                虫害历史数据查看开始
+                                <div class="tabCon">
+
+                                    <section class="Hui-article-box">
+                                                <div class="Hui-article">
+                                                    <article class="cl pd-20">
+
+                                                        <div class="bk-gray  radius  pd-10">
+
+                                                            <div class="bk-gray  radius  pd-10 mt-5">
+                                                                <form>
+                                                                    <div class="row cl">
+                                                                        <div class="col-sm-3">
+                                                                            <label>开始时间</label>
+                                                <input autocomplete="off" type="text" name='startTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', maxDate:'#F{$dp.$D(\'historyLogmax\')||\'%y-%M-%d %H:%m:%s\'}' })"</literal> id="historyLogmin" class="input-text Wdate" style="width:150px;">
+                                                                        </div>
+                                                                        <div class="col-sm-3">
+                                                                            <label>结束时间</label>
+                                                <input autocomplete="off" type="text" name='endTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', minDate: '#F{$dp.$D(\'historyLogmin\')}',maxDate:'%y-%M-%d %H:%m:%s' })"</literal> id="historyLogmax" class="input-text Wdate" style="width:150px;">
+                                                                        </div>
+
+                                                                        <div class="col-sm-3">
+                                                                            <button type="button" name="pestHistory"  class="btn btn-primary radius" style="margin-left:25px;">执行</button>
+
+                                                                            <button type="reset"   class="btn btn-warning radius">重置</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row cl">
+                                                                    </div>
+                                                                </form> 
+                                                            </div>
+
+                                                                <div class="bk-gray  radius  pd-10 mt-10 cl history_list ">
+                                                                    <table  class="table table-border table-bordered table-bg table-hover table-history "> 
+                                                                        <thead></thead>
+                                                                    </table>
+                                                                </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </section>
+                                </div>
+                                虫害历史数据查看结束
+                                落叶数据列表查看开始
+                                <div class="tabCon">
+                                    <section class="Hui-article-box">
+                                        <div class="Hui-article">
+                                            <article class="cl pd-20">
+
+                                                <div class="bk-gray  radius  pd-10">
+
+                                                    <div class="bk-gray  radius  pd-10 mt-5">
+                                                        <form>
+                                                            <div class="row cl">
+                                                                <div class="col-sm-3">
+                                                                    <label>开始时间</label>
+                                                                    <input autocomplete="off" type="text" name='statrTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', maxDate:'#F{$dp.$D(\'listLogmax\')||\'%y-%M-%d %H:%m:%s\'}' })"</literal> id="listLogmin" class="input-text Wdate" style="width:150px;">
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <label>结束时间</label>
+                                                                    <input autocomplete="off" type="text" name='endTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', minDate: '#F{$dp.$D(\'listLogmin\')}',maxDate:'%y-%M-%d %H:%m:%s' })"</literal> id="listLogmax" class="input-text Wdate" style="width:150px;">
+                                                                </div>
+                                                                <div class="col-sm-5">
+                                                                    <label>汇总</label> 
+                                                                    <span id="listSumData" class=" btn-group  va-m">
+
+                                                                        <span class="btn   btn-secondary-outline radius active" >不汇总</span>
+                                                                        <span class="btn  btn-secondary-outline radius" id="hours">小时</span>
+                                                                        <span class="btn  btn-secondary-outline radius"  id="tian">天</span>
+                                                                        <span class="btn  btn-secondary-outline radius"  id="zhou">周</span>
+                                                                        <span class="btn  btn-secondary-outline radius"  id="yue">月</span>
+                                                                        <span class="btn  btn-secondary-outline radius"  id="nian">年</span>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <button type="button"  name="witheredLeaf"  class="btn btn-primary radius" style="margin-left:25px;">执行</button>
+                                                                    <button type="button" id="excel"  class="btn btn-warning radius">导出</button>
+                                                                    <button type="reset"   class="btn btn-warning radius">重置</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row cl">
+                                                            </div>
+                                                        </form> 
+                                                    </div>
+                                                    <div class="bk-gray  radius  pd-10 mt-10 cl">
+                                                        <table  class="table table-border table-bordered table-bg table-hover  table-sort withered-leaf ">
+                                                            <thead class="text-c">
+                                                              <tr>
+                                                                <th>设备编号</th>
+                                                                <th>落叶范围</th>
+                                                                <th>落叶厚度</th>
+                                                                <th>落叶重量</th>
+                                                                <th>统计时间</th>
+                                                                
+                                                              </tr>
+                                                            </thead>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </section> 
+                                </div>
+                                落叶数据列表查看结束
+                                
+                        </div>-->
+                            
+                </div>
+                    </div>
+                    
+                </div>
+            </div>
+           {:W('Header/footer')}
+ 
+        
+    </body>
+     {:W('Public/_footer')}
+<script type="text/javascript" src="__PUBLIC_STATIC__/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+ <script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script src="__PUBLIC_STATIC__/SuperSlide2.1/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/echarts/3.4.0/echarts.min.js"></script>
+ <script>
+        $("#excel").click(function(){  
+            listSumData = $("#listSumData").children(".active").attr("id");
+            startTime = $("#listLogmin").val();
+            endTime = $("#listLogmax").val();
+            post("{:U('Device/allPestExp')}",{"listSumData" :listSumData,"startTime":startTime,"endTime":endTime,});  
+        });  
+</script>
+<script type="text/javascript">
+    /*
+    SuperSlide
+    */
+    /* 图片滚动切换 */
+    jQuery(".slideGroup .slideBox").slide({ 
+        mainCell:"ul",
+        vis:5,
+        prevCell:".sPrev",
+        nextCell:".sNext",
+        effect:"leftLoop",
+        autoPlay:true,
+        interTime:2000,
+    });
+</script>
+ <!--echarts插件配置-->
+ <script type="text/javascript">
+        $(function(){
+            var myChart = echarts.init(document.getElementById('content'));
+            $('#pestChartsButton').click(function(){  
+                 myChart.showLoading({
+                        text : '数据量较大\n拼命刷新中',
+                        effect : 'bubble',
+                        textStyle : {
+                            fontSize : 30
+                        }
+                    });
+                $.ajax({
+                type:"post",
+                url:"{:U('Device/pestCharts')}",
+                data:{
+                    "startTime":$("#chartsLogmin").val(),
+                    "endTime":$("#chartsLogmax").val(),
+                },
+                success:function(data){
+                    
+                    if(!data.createdate){
+                         document.getElementById("content").style.height = "auto";
+                            document.getElementById('content').innerHTML = "<div class='text-c f-20'>暂无数据</div>";
+                        }else{
+                            document.getElementById("content").style.height = "450px";
+                            pestCharts(data,myChart);
+                        }
+                    
+                   
+
+                },
+                error:function(e){
+                    document.getElementById("content").style.height = "auto";
+                    document.getElementById('content').innerHTML = "<div class='text-c f-20'>请求出错，请重新刷新</div>";
+                    
+                }
+            });  
+            }); 
+            $('#pestChartsButton').click();
+
+        });
+function pestCharts(data,myChart){
+    
+
+    var createdate = data.createdate.map(function (str) {
+            return str.replace(' ', '\n');
+        });
+   option = {
+       tooltip : {
+           trigger: 'axis',
+           axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+               type : 'cross'        // 默认为直线，可选为：'line' | 'shadow'
+           }
+       },
+       legend: [
+            {
+                data:[]
+            }
+        ],
+        toolbox: {
+            showTile:true,
+            feature: {
+                dataView: {
+                    show: true, 
+                    readOnly: false,
+                },
+                restore: {show: true},
+                saveAsImage: {show: true},
+            },      
+        },
+        dataZoom: [{
+            type: 'inside',
+            start: 0,
+            end: 100
+        },
+        {
+            show: true,
+            type: 'slider',
+            start: 0,
+            end: 100
+        }],
+       xAxis : [
+           {
+               type : 'category',
+               axisTick: {
+                   alignWithLabel: true
+               },
+                boundaryGap : true,
+                axisLine: {onZero: false},
+               data : [],
+//               data : ["2017-06-10","2017-06-11","2017-06-12","2017-06-13","2017-06-14","2017-06-15","2017-06-16"]
+                
+           }
+       ],
+       yAxis : [{ type: 'value',},
+       ],
+       series : []
+   };
+var Item = function(){  
+            return {  
+                name:'',  
+                smooth:true, 
+                type:'line',                  
+                data:[]  
+            }  
+        };// series中的每一项为一个item,所有的属性均可以在此处定义  
+        var legends = [];// 准备存放图例数据  
+        var Series = []; // 准备存放图表数据  
+        var json = data.data;// 后台返回的json  
+        for(var i=0;i < json.length;i++){  
+            var it = new Item();  
+            it.name = json[i].name;// 先将每一项填充数据  
+            legends.push(json[i].name);// 将每一项的图例名称也放到图例的数组中  
+            it.data = json[i].data;  
+            Series.push(it);// 将item放在series中  
+        }  
+          
+        option.xAxis[0].data = createdate;// 这一步是设置X轴数据了，需要注意：option.xAxis.data = json.xcontent这样不行  
+                              // 折线图可设置上下两个X轴，所以必须是option.xAxis[0].data = json.xcontent  
+                              var legend={data:legends};  
+                                  
+                              option.legend = legend;// 设置图例  
+                              option.series = Series; // 设置图表  
+                            
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+
+    myChart.hideLoading();
+}
+   
+</script>
+<!--datatables插件配置-->
+<script>
+       var pestList;
+       var pestHistory;
+       var witheredLeaf;
+       $("button[name='pestHistory']").bind("click", function () { //按钮 触发table重新请求服务器     
+        pestHistory.fnDraw();
+        });
+        $("button[name='pestList']").bind("click", function () { //按钮 触发table重新请求服务器     
+        pestList.fnDraw();
+        });
+        $("button[name='witheredLeaf']").bind("click", function () { //按钮 触发table重新请求服务器     
+        witheredLeaf.fnDraw();
+        });
+          
+        $(function(){
+            $.Huitab("#tab_demo .tabBar span","#tab_demo .tabCon","current","click","0");
+            pestList = $('.table-list').dataTable({
+            "language": {
+                "lengthMenu": "每页 _MENU_ 条记录",
+                "zeroRecords": "没有找到记录",
+                "info": "第 _PAGE_ 页 ( 总共 _PAGES_ 页 )",
+                "infoEmpty": "无记录",
+                "infoFiltered": "(从 _MAX_ 条记录过滤)",
+                "processing": "正在处理中...",
+                "paginate": {
+                    "previous": "上一页",
+                    "next": "下一页",
+                  }
+            },
+                "bFilter": false, //过滤功能
+                "bSort": true, //排序功能
+                "bAutoWidth": true,//自动宽度
+            "aaSorting": [[ 9, "desc" ]],//默认第几个排序
+            "bStateSave": false,//状态保存
+            serverSide: true,
+            ajax: {
+                url: "{:U('Device/pestList')}",
+                type: 'POST',
+                data:function(d){
+                    d.listSumData = $("#listSumData").children(".active").attr("id");
+                    d.startTime = $("#listLogmin").val();
+                    d.endTime = $("#listLogmax").val();
+
+                },
+            },
+            "columnDefs": [
+                { "orderable": false, "targets": 0 }
+              ],
+            "aoColumns": [ //这个属性下的设置会应用到所有列，按顺序没有是空
+            {
+                "sClass": "text-c",   
+                "data": "pd_id",
+             }, //mData 表示发请求时候本列的列明，返回的数据中相同下标名字的数据会填充到这一列
+            {
+                "sClass": "text-c",
+                "data": "temp",
+                "render": function (data, type, full, meta) {
+                    if (!data) {
+                        return "-";
+                    } else {
+                        return data;
+                    }
+                }
+            },
+            {"sClass": "text-c","mData": 'humidity',
+                "render": function (data, type, full, meta) {
+                    if (!data) {
+                        return "-";
+                    } else {
+                        return data;
+                    }
+                }
+            },
+             {
+                "sClass": "text-c",
+                "mData": 'pn_category_name',
+                 "render":function(data,type,full,meta){
+                   
+                    if(!data ){
+                        return "-";
+                    }else{
+                        return data;
+                    }
+                }
+            },
+            {
+                "sClass": "text-c",
+                "mData": 'pn_period',
+            },
+            {
+                "sClass": "text-c",
+                "mData": 'pn_number',
+            },
+            {
+                "sClass": "text-c",
+                "mData": 'pn_female',
+            },
+            {
+              "sClass" : "text-c",
+              "mData": "device_code",
+            },
+            {
+                "sClass": "text-c",
+                "mData": 'unix_starttime',
+                "render":function(data,type,full,meta){
+                   
+                    if(0 == data ){
+                        return "-";
+                    }else{
+                        var newDate = new Date(data);
+                        newDate.setTime(data*1000);
+                        return formatDate(newDate);
+                    }
+                }
+            },
+            {
+                "sClass": "text-c",
+                "mData": 'unix_endtime',
+                "render":function(data,type,full,meta){
+                   
+                    if(0 ==data){
+                        return "-";
+                    }else{
+
+                        var newDate = new Date(data);
+                        newDate.setTime(data*1000);
+                        return formatDate(newDate);
+                    }
+                }
+            },
+            {
+                "sClass": "text-c",
+                "mData": 'unix_createdate',
+                "render":function(data,type,full,meta){
+                   
+                    if( 0 == data){
+                        return "-";
+                    }else{
+
+                        var newDate = new Date(data);
+                        newDate.setTime(data*1000);
+                        return formatDate(newDate);
+                    }
+                }
+            },
+        ],
+            });
+
+            pestHistory = $('.table-history').dataTable({
+                "language": {
+                    "lengthMenu": "每页 _MENU_ 条记录",
+                    "zeroRecords": "没有找到记录",
+                    "info": "第 _PAGE_ 页 ( 总共 _PAGES_ 页 )",
+                    "infoEmpty": "无记录",
+                    "infoFiltered": "(从 _MAX_ 条记录过滤)",
+                    "processing": "正在处理中...",
+                    "paginate": {
+                        "previous": "上一页",
+                        "next": "下一页",
+                    }
+                },
+                "bFilter": false, //过滤功能
+                "bSort": false, //排序功能
+                "bAutoWidth": false,//自动宽度
+            "aLengthMenu": [[15, 20,30,40], [15, 20,30,40]],
+            "aaSorting": [[ 0, "desc" ]],//默认第几个排序
+            "bStateSave": false,//状态保存
+            serverSide: true,
+            ajax: {
+                url: "{:U('Device/pestHistory')}",
+                type: 'POST',
+                data:function(d){
+                    d.startTime = $("#historyLogmin").val();
+                    d.endTime = $("#historyLogmax").val();
+                },
+            },
+            "aoColumnDefs": [
+              //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+              // {"orderable":false,"aTargets":[0]}// 不参与排序的列
+            ],
+             "aoColumns": [ //这个属性下的设置会应用到所有列，按顺序没有是空
+            {
+                "sClass": "text-c",   
+                "data": {
+                    "pd_id1":"pd_id",
+                    "pd_id2":"pd_id",
+                    "createdate":"unix_createdate",
+                    " thum_image":"thum_image",
+                    "pn_category_name":"pn_category_name", 
+                    "pn_number":"pn_number", 
+                },
+                "render":function(data,type,full,meta){
+                    console.log(data['category_name']);
+                    var newDate = new Date(data.unix_createdate);
+                    newDate.setTime(data.unix_createdate*1000);
+                    var createdate = formatDate(newDate);
+                    if(data.pn_category_name == ""){
+                        info = "无害虫"; 
+                    }else{
+                        info = data.pn_category_name+":"+data.pn_number+"头";
+                    }
+                    var str = "<div id='imgShow' class='list_wrap cl form'>"+
+                        "<div class='row cl list_top'><p>"+createdate+"</p></div>"+
+                        "<div class='row cl'>"+
+                        "<div class='col-xs-12'>"+
+                        "<a onclick=show('图片查看','{:U(\'Device/pestImgShow\',array(\'pd_id\'=>pdid1))}') href=javascript:;>"+
+                            "<img  src='"+data.thum_image+"'/>"+
+                            "</a>"+
+                        "</div>"+
+                        "</div>"+
+                        "<div class='row cl list_buttom'>"+
+                        "<div class='col-xs-12'>"+
+                        "<p>"+info+" ... [<a onclick=show('图片查看','{:U(\'Device/pestImgShow\',array(\'pd_id\'=>pdid2))}') href=javascript:;>详细</a>]</p>"+
+                        "</div>"+
+                        "</div>"+
+                    "</div>";
+//                 
+                    str = str.replace("pdid1",data.pd_id); 
+                    str = str.replace("pdid2",data.pd_id);  
+   
+                    return str; 
+                }
+             }, //mData 表示发请求时候本列的列明，返回的数据中相同下标名字的数据会填充到这一列
+            
+             ]
+            });
+            witheredLeaf = $('.withered-leaf').dataTable({
+    
+            "language": {
+                "lengthMenu": "每页 _MENU_ 条记录",
+                "zeroRecords": "没有找到记录",
+                "info": "第 _PAGE_ 页 ( 总共 _PAGES_ 页 )",
+                "infoEmpty": "无记录",
+                "infoFiltered": "(从 _MAX_ 条记录过滤)",
+                "processing": "正在处理中...",
+                "paginate": {
+                    "previous": "上一页",
+                    "next": "下一页",
+                  }
+            },
+                "bFilter": false, //过滤功能
+                "bSort": true, //排序功能
+                "bAutoWidth": false,//自动宽度
+            "aaSorting": [[ 4, "desc" ]],//默认第几个排序
+            "bStateSave": false,//状态保存
+            serverSide: true,
+            ajax: {
+                url: "{:U('Device/witheredLeaf')}",
+                type: 'POST',
+                data:function(d){
+                    d.listSumData = $("#listSumData").children(".active").attr("id");
+                    d.startTime = $("#listLogmin").val();
+                    d.endTime = $("#listLogmax").val();
+
+                },
+            },
+            "columnDefs": [
+                { "orderable": false, "targets": 0 }
+              ],
+            "aoColumns": [ //这个属性下的设置会应用到所有列，按顺序没有是空
+            {
+                "sClass": "text-c",   
+                "data": "device_code",
+             }, //mData 表示发请求时候本列的列明，返回的数据中相同下标名字的数据会填充到这一列
+            
+            
+             {
+                "sClass": "text-c",
+                "mData": 'wl_range',
+                 "render":function(data,type,full,meta){
+                   
+                    if(!data ){
+                        return "-";
+                    }else{
+                        return data;
+                    }
+                }
+            },
+            {
+                "sClass": "text-c",
+                "mData": 'wl_thickness',
+            },
+            {
+                "sClass": "text-c",
+                "mData": 'wl_weight',
+            },
+            
+
+            {
+                "sClass": "text-c",
+                "mData": 'unix_createdate',
+                "render":function(data,type,full,meta){
+                   
+                    if( 0 == data){
+                        return "-";
+                    }else{
+
+                        var newDate = new Date(data);
+                        newDate.setTime(data*1000);
+                        return formatDate(newDate);
+                    }
+                }
+            },
+        ],
+            });
+           
+        });
+        function hidden(){
+            
+            document.getElementById("imgShow").style.display='none';
+        }
+        function show(title,url){
+
+			layer.open({
+			  type: 2,
+			  skin: 'layui-layer-demo', //样式类名
+			  shadeClose: true, //开启遮罩关闭
+			  content: url,
+                           maxmin: true, //开启最大化最小化按钮
+                           
+                            area: ['80%', '95%'],
+			});
+	
+		}
+        
+       
+
+        $("#listSumData span").click(function(){
+            $('#listSumData span').removeClass("active");
+            $(this).addClass("active");
+        });
+        $("#historySumData span").click(function(){
+            $('#historySumData span').removeClass("active");
+            $(this).addClass("active");
+        })
+</script>
+<script>
+    window.onload = setTimeout( function(){
+        $("#loading").hide();
+    },1);
+</script>
+</html>

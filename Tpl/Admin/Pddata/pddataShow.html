@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<include file='Public/_meta'/>
+<title>查看</title>
+</head>
+<body>
+<div class="cl pd-20 text-c" style=" background-color:#5bacb6">
+	<dl style="margin-left:80px; color:#fff">
+		<dt>
+			<span class="f-20">{$only['title']}</span>
+			
+		</dt>
+                <dd class="pt-10 f-12" style="margin-left:0">作者:{$only['author']==''?'未知': $only['author']}</dd>
+                -
+                <dd class="pt-10 f-12" style="margin-left:0">发布时间:{$only['pubtime']|date='Y-m-d H:i:s',###}</dd>
+                
+	</dl>
+</div>
+<div class="pd-20 w-980 m-auto">
+    {$only[content]}
+	
+</div>
+<include file='Public/_footer'/>
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript">
+    $(function(){
+	$(window).on("scroll",backToTopFun);
+	backToTopFun()
+    });
+</script>
+</body>
+</html>

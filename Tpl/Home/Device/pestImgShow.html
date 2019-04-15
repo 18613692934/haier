@@ -1,0 +1,184 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+{:W('Public/_meta')}
+<link href="__PUBLIC_STATIC__/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="__PUBLIC_STATIC__/magnify/dist/jquery.magnify.css" rel="stylesheet">
+<style>
+    .magnify-modal {
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.3);
+}
+.magnify-header .magnify-toolbar {
+  background-color:rgba(0,0,0,.5);
+  width:40px;
+}
+.magnify-stage {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-width: 0;
+}
+.magnify-footer .magnify-toolbar {
+  display: inline-block;
+  height: 40px;
+  background-color:rgba(0,0,0,.5);
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+}
+.magnify-header,.magnify-footer{
+  pointer-events: none;
+}
+.magnify-button{
+  pointer-events: auto;
+}
+
+/* ---------------------------------
+   Example Styles 
+   --------------------------------- */
+.image-set{
+  margin-left:-5px;
+  margin-right:-5px;
+}
+.image-set img{
+  display:block;
+}
+.image-set a{
+  display:inline-block;
+  margin-left:5px;
+  margin-right:5px;
+  padding:2px;
+  border:1px solid #ddd;
+  transition:border-color .3s ease;
+}
+.image-set a:hover{
+  border-color:#aaa;
+}
+.table th{
+    width:25%;
+    text-align: center;
+}
+.table td{
+    text-align: center;
+}
+.error{
+	color:red;
+}
+</style>
+</head>
+<body>
+    <div class="container-fluid container" >
+        <div class="row cl">
+            <div class="col-xs-12 col-sm-6" >
+                <article class="">
+                <div class="row cl">
+                    <a data-magnify="gallery" data-caption="可通过鼠标滑轮进行放大与缩小操作" href="{$item[0]['image']}">
+                        <img width="100%"   src="{$item[0]['image']}" alt="">
+                    </a>
+                </div>
+                    <div class="row cl">
+                         <div class="text-c f-14 c-red">点击图片可进行图片放大、缩小、旋转等操作</div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-xs-12 col-sm-6" >
+
+                <form class="form form-horizontal" id="form-pest-add">
+                <article class="page-container">
+                    <div class="row cl">
+                        
+                        <label class="form-label col-xs-4 col-sm-3">创建时间：</label>
+                        <div class="formControls col-xs-8 col-sm-7">
+                            <div  class="input-text">{$item[0]['unix_createdate']|date='Y-m-d H:i:s',###}</div>
+                        </div>
+                    </div>
+            
+                   
+<div class="row cl">
+    <div class="col-xs-12">
+        <table cellspacing="0" cellpadding="0" border="0" class=" table table-border table-bordered table-bg table-hover table-list table-sort  normTbe tabInfo">
+            <thead>
+                <tr>
+                    <th>害虫名称</th>
+                    <th>发育时期</th>
+                    <!--<th><em>*</em> 几代虫：</th>-->
+                    
+                    <th>数量(头)</th>
+                    <th>雌虫数量</th>
+                   
+                </tr>
+            </thead>
+            <tbody class="tbody1">
+            <foreach name="item" item="v">
+                <tr>
+                    <td>
+                    <empty name="v['pn_category_name']">
+                        无害虫
+                        <else/>
+                        {$v['pn_category_name']}
+                    </empty>
+                        </td>
+                    <td>{$v['pn_period']}</td>
+                    <td>{$v['pn_number']}</td>  
+                    <td>{$v['pn_female']}</td>  
+                </tr>
+            </foreach>
+                
+            </tbody>
+        </table>
+
+    </div>
+    
+    </div>
+
+            
+                    <div class="row cl">
+                        
+                    </div>	
+            
+                    <div class="row cl">
+                        <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                            
+                        </div>
+                    </div>
+            
+                </article>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    
+    
+    
+    
+    <!--javascript  start-->
+{:W('Public/_footer')}
+<script src="__PUBLIC_STATIC__/magnify/dist/jquery.magnify.js"></script>
+<script>
+    $('[data-magnify]').magnify({
+        
+        headToolbar: [
+            'close'
+        ],
+        footToolbar: [
+            'zoomIn',
+            'zoomOut',
+            'actualSize',
+            'rotateRight'
+        ],
+        
+    });
+</script>
+
+
+
+<!--/javascript end-->
+    
+    
+    
+</body>
+</html>

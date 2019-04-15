@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<include file="Public/_meta"/>
+<title>添加管理员 - 管理员管理</title>
+</head>
+<body>
+<article class="page-container">
+	<form class="form form-horizontal" id="form-admin-add" >
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-3">用户组：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <dl class="cl permission-list2">
+                        <dd>
+                        <foreach name="result" item="v">
+                            <label class="">
+                                <input type="checkbox" value="{$v['id']}" name="groups[]" id="checkbox-{$v['id']}">
+                                {$v['title']}
+                            </label>
+                        </foreach>
+                            
+                            
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>登录名称：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" value="" placeholder="" id="login_name" name="login_name" onBlur="verify()">
+<!--                    <strong style="color: red;">登录名称不能为空，长度为4~16个字符</stron>-->
+            </div>
+           
+            
+	</div>
+        
+            
+        
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3">昵称：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="text" class="input-text" value="" placeholder="" id="nick_name" name="nick_name">
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>初始密码：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="password" class="input-text" autocomplete="off" value="" placeholder="密码" id="password" name="password">
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>确认密码：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="password" class="input-text" autocomplete="off"  placeholder="确认新密码" id="password2" name="password2">
+		</div>
+	</div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>真实姓名：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" placeholder="" id="name" name="name">
+            </div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>性别：</label>
+		<div class="formControls col-xs-8 col-sm-9 skin-minimal">
+			<div class="radio-box">
+                            <input name="sex" type="radio" id="sex-1" value="男">
+				<label for="sex-1">男</label>
+			</div>
+			<div class="radio-box">
+				<input type="radio" id="sex-2" value='女' name="sex">
+				<label for="sex-2">女</label>
+			</div>
+                        <div class="radio-box">
+				<input type="radio" id="sex-3" value='保密' name="sex"  checked>
+				<label for="sex-2">保密</label>
+			</div>
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>手机号：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="text" class="input-text" value="" placeholder="" id="mobile" name="mobile">
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>邮箱：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="text" class="input-text" placeholder="@" name="email" id="email">
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3">备注：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<textarea name="remark" cols="" rows="" class="textarea"  placeholder="说点什么...100个字符以内" dragonfly="true" onKeyUp="$.Huitextarealength(this,100)"></textarea>
+			<p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p>
+		</div>
+	</div>
+	<div class="row cl">
+		<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+			<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+		</div>
+	</div>
+	</form>
+</article>
+<include file="Public/_footer"/>
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script> 
+<script type="text/javascript">
+    /**
+     * 验证登录名是否重复
+     * @returns {undefined}
+     */
+    function verify(){
+        var logObj = document.getElementById("login_name");
+        var logVal = logObj.value;
+        if(logVal!=""){
+            $.ajax({
+               url:"{:U('Admin/adminVerify')}",
+               type:"post",
+               data:{
+                   login_name:logVal,
+               },
+               success:function(data){
+                  if(data){
+                       layer.msg('登录名已存在',{icon:1,time:1000});
+                       
+                  }
+               },
+               error:function(data){
+                   window.console.log(log);
+               }
+            });
+        }else{
+            layer.msg('登录名不为空',{icon:1,time:1000});
+
+        }
+        
+    }
+    
+        
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+	
+	$("#form-admin-add").validate({
+		rules:{
+			login_name:{
+				required:true,
+	
+			},
+                        password:{
+                            required:true,
+                        },
+			
+			password2:{
+				required:true,
+				equalTo: "#password"
+			},
+			mobile:{
+				required:true,
+				isPhone:true,
+			},
+			email:{
+				required:true,
+				email:true,
+			},
+			rid:{
+                            min:1,
+			},
+                        
+		},
+                messages:{
+                    rid:"这是必填字段",
+                },
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){                   
+                    $(form).ajaxSubmit({
+                            type: 'post',
+                            url: "{:U('Admin/adminAdd')}" ,
+                            success: function(data){
+                                if(data=="cf"){
+                                    layer.msg('登录名已存在!',{icon:1,time:500});
+                                }else{
+                                    layer.msg(data,{icon:1,time:500});
+                                    var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+                                    setTimeout(function () {
+                                        window.parent.location.reload(); //刷新父页面
+                                        parent.layer.close(index);   // 关闭layer  
+                                    },500);  
+                                }
+                                   
+                            },
+                            error: function(XmlHttpRequest, textStatus, errorThrown){
+                                    layer.msg(textStatus,{icon:1,time:1000});                                                           
+                            }
+			});         
+		},
+	});
+});
+</script> 
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

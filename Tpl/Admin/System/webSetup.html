@@ -1,0 +1,174 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<include file='Public/_meta'/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC_STATIC__/bootstrap-fileinput/bootstrap-fileinput.css">
+<title>基本设置</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页
+	<span class="c-gray en">&gt;</span>
+	系统管理
+	<span class="c-gray en">&gt;</span>
+	基本设置
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div class="page-container">
+	<form class="form form-horizontal" id="form-base-add">
+		<div id="tab-system" class="HuiTab">
+                   
+                            <div class="row cl">
+                                <label class="form-label col-xs-4 col-sm-2">
+                                        <span class="c-red">*</span>
+                                        {$v['phone']['info_title']}：</label>
+                                <div class="formControls col-xs-8 col-sm-9">
+                                        <input type="text" name="{$v['phone']['info_name']}" placeholder="控制在25个字、50个字节以内" value="{$v['phone']['info_value']}" class="input-text">
+                                </div>
+                            </div>
+                            <div class="row cl">
+                                <label class="form-label col-xs-4 col-sm-2">
+                                        <span class="c-red">*</span>
+                                        {$v['address']['info_title']}：</label>
+                                <div class="formControls col-xs-8 col-sm-9">
+                                        <input type="text" name="{$v['address']['info_name']}" placeholder="控制在25个字、50个字节以内" value="{$v['address']['info_value']}" class="input-text">
+                                </div>
+                            </div>
+                    <div class="row cl">
+                                <label class="form-label col-xs-4 col-sm-2">
+                                        <span class="c-red">*</span>
+                                        {$v['phone']['info_title']}：</label>
+                                <div class="formControls col-xs-8 col-sm-9">
+                                        <input type="text" name="phone" placeholder="控制在25个字、50个字节以内" value="{$v['phone']['info_value']}" class="input-text">
+                                </div>
+                            </div>
+                    <div class="row cl">
+                                <label class="form-label col-xs-4 col-sm-2">
+                                        <span class="c-red">*</span>
+                                        {$v['copyright']['info_title']}：</label>
+                                <div class="formControls col-xs-8 col-sm-9">
+                                        <input type="text" name="copyright" placeholder="控制在25个字、50个字节以内" value="{$v['copyright']['info_value']}" class="input-text">
+                                </div>
+                            </div>
+                    <div class="row cl">
+                                <label class="form-label col-xs-4 col-sm-2">
+                                        <span class="c-red">*</span>
+                                        {$v['techsup']['info_title']}：</label>
+                                <div class="formControls col-xs-8 col-sm-9">
+                                        <input type="text" name="techsup" placeholder="控制在25个字、50个字节以内" value="{$v['techsup']['info_value']}" class="input-text">
+                                </div>
+                            </div>
+                    <div class="row cl">
+                                <label class="form-label col-xs-4 col-sm-2">
+                                        <span class="c-red">*</span>
+                                        {$v['icp']['info_title']}：</label>
+                                <div class="formControls col-xs-8 col-sm-9">
+                                        <input type="text" name="icp" placeholder="控制在25个字、50个字节以内" value="{$v['icp']['info_value']}" class="input-text">
+                                </div>
+                            </div>
+                    <div class="row cl">
+                                <label class="form-label col-xs-4 col-sm-2">
+                                        <span class="c-red">*</span>
+                                        {$v['url']['info_title']}：</label>
+                                <div class="formControls col-xs-8 col-sm-9">
+                                        <input type="text" name="url" placeholder="控制在25个字、50个字节以内" value="{$v['url']['info_value']}" class="input-text">
+                                </div>
+                            </div>
+                    <div class="row cl">
+                                <label class="form-label col-xs-4 col-sm-2">
+                                        <span class="c-red">*</span>
+                                        {$v['webname']['info_title']}：</label>
+                                <div class="formControls col-xs-8 col-sm-9">
+                                        <input type="text" name="webname" placeholder="控制在25个字、50个字节以内" value="{$v['webname']['info_value']}" class="input-text">
+                                </div>
+                            </div>
+                    <div class="row cl">
+                                <label class="form-label col-xs-4 col-sm-2">
+                                        <span class="c-red">*</span>
+                                        {$v['CSH']['info_title']}：</label>
+                                <div class="formControls col-xs-8 col-sm-9">
+                                        <input type="text" name="CSH" placeholder="控制在25个字、50个字节以内" value="{$v['CSH']['info_value']}" class="input-text">
+                                </div>
+                            </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-2">
+                                <span class="c-red">*</span>
+                                {$v['logo']['info_title']}：</label>
+                        <div class="formControls col-xs-8 col-sm-9">
+                            <div class="fileinput fileinput-new" data-provides="fileinput"  id="exampleInputUpload">
+                                <div class="fileinput-new thumbnail" style="width: 200px;height: auto;max-height:150px;">
+                                    <img src="{$v['logo']['info_value']}"/>
+                                </div>
+                                
+                                <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+                                <span>请上传100*100的png图片</span>
+                                <div>
+                                    <span class="btn btn-primary btn-file">
+                                        <span class="fileinput-new">选择图片</span>
+                                        <span class="fileinput-exists">换一张</span>
+                                        <input type="file" name="pic1" id="picID" accept="image/gif,image/jpeg,image/x-png"/>
+                                    </span>
+                                    <a href="javascript:;" class="btn btn-warning fileinput-exists" data-dismiss="fileinput">移除</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="row cl">
+                        <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                            <button class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+                        </div>
+                    </div>
+		</div>
+		
+	</form>
+</div>
+
+<include file='Public/_footer'/>
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/bootstrap-fileinput/bootstrap-fileinput.js"></script>
+
+<script type="text/javascript">
+   $(function () {
+        //表单验证
+	$("#form-base-add").validate({
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){
+                    $(form).ajaxSubmit({
+                        type:'post',
+                        url:"{:U('System/webSetup')}",
+                        success:function(data){
+                                  layer.msg(data.info,{icon:data.status,time:500});
+                                  
+                                    setTimeout(function(){
+                                        window.location.reload(); //刷新父页面
+                                       
+                                    },500);
+                        },
+                        error:function(XmlHttpRequest, textStatus, errorThrown){
+                            layer.msg(textStatus,{icon:2,time:1000});
+                            window.console.log(errorThrown);
+                             window.console.log(XmlHttpRequest);
+                              window.console.log(textStatus);
+                        },
+                        
+                        
+                    });
+			
+			
+		}
+	});
+    })
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

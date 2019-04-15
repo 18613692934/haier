@@ -1,0 +1,185 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<include file='Public/_meta'/>
+<title>新增区域 - 系统管理</title>
+</head>
+<body>
+<article class="page-container">
+	<form class="form form-horizontal" id="form-module-add">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>区域名称：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="区域名称" id="rnname" name="rnname">
+			</div>
+		</div>
+		<div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>省市县区：</label>
+                        <div class="formControls col-xs-8 col-sm-9">
+                            <span class="select-box" style="width:150px;">  
+                                <select name="sheng" id="sheng" class="select" >
+                                    <option selected value="0">请选择所在省份</option>
+                                    <volist name="sheng" id="vo1">
+                                        <option value="{$vo1.city_id}" id="sheng">{$vo1.ccity}</option>
+                                    </volist>
+                                </select>
+                                <div style="margin:5px;"></div>
+                                <select name="city" id="city" style="display: none;" class="select">
+
+                                </select>
+                                <div style="margin:5px;"></div>
+                                <select name="xian" id="xian" style="display: none;" class="select">
+
+                                </select>
+                            </span>
+                        </div>
+                </div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">区域范围描述：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="简述区域范围，可留空" id="rndescription" name="rndescription">
+			</div>
+		</div>
+              
+                <div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<button onClick="device_save();" class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+                                <button onClick="remove();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+			</div>
+		</div>
+	</form>
+</article>
+</body>
+
+
+<include file="Public/_footer"/>
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+<script>
+    $(function () {
+        $('#sheng').change(function () {
+            //省份更改后，城市，县城的情况都要被全部更新（先清除，再添加）
+            $("#city").css('display','none');
+            $("#city").children().remove();     //去除原来的城市列表
+            $("#xian").css('display','none');
+            $("#xian").children().remove();     //去除原来的县级列表
+
+
+            var value = this.value;            //获取省份value作为城市的parent_id
+            var url = '__CONTROLLER__/region';
+            $.ajax({                            //jquery ajax
+                type:'post',
+                url:url,
+                data:{'value':value},
+                success:function (data) {
+                    var result = data;
+                    //为了防止直辖市情况下，change条件无法触发
+                    $("#city").append("<option value='请选择所在城市'>请选择所在城市</option>");
+                    for(var i = 0;i < result.length;i ++){
+                        /*循环添加所有城市列表*/
+                        $("#city").append("<option value='"+result[i].city_id+"'>"+result[i].ccity+"</option>");
+                        $("#city").css('display','inline');
+                    }
+                }
+            });
+        });
+        /*同上*/
+        $('#city').change(function () {
+            //城市更改后，更新县级数据
+            $("#xian").css('display','none');
+            $("#xian").children().remove();
+
+
+　　　　//这里的value不要和上面的重复，否则变量提升机制会覆盖掉前面的变量值
+            var valueCity = this.value;
+            var urlCity = '__CONTROLLER__/region';
+            $.ajax({
+                type:'post',
+                url:urlCity,
+                data:{'value':valueCity},
+                success:function (data) {
+                    var result = data;
+                    for(var i = 0;i < result.length;i ++){
+                        /*alert(result[i].region_id + ' '+result[i].region_name);*/
+                        $("#xian").append("<option  value='"+result[i].city_id+"'>"+result[i].ccity+"</option>");
+                        $("#xian").css('display','inline');
+                    }
+                }
+            })
+
+        });
+    });
+</script>
+<script type="text/javascript">
+/**
+ * 取消按钮
+ */
+function remove(){
+    var index = parent.layer.getFrameIndex(window.name);              
+    parent.layer.close(index);   // 关闭layer  
+}
+
+$(function(){
+	//表单验证
+	$("#form-module-add").validate({
+		rules:{
+                    rnname:{
+                        required:true,
+                    },
+
+                    sheng:{
+                        min:1,
+                    },
+                    city:{
+                        min:1,
+                    },
+                    xian:{
+                        min:1,
+                    },
+		},
+                messages:{
+                    sheng:{
+                        min:"这是必填字段",
+                    },
+                    city:{
+                        min:"这是必填字段",
+                    },
+                    xian:{
+                        min:"这是必填字段",
+                    }
+                },
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){
+                    $(form).ajaxSubmit({
+                        type:'post',
+                        url:"{:U('System/regionAdd')}",
+                        success:function(data){
+                                  layer.msg(data,{icon:1,time:500});
+                                  var index = parent.layer.getFrameIndex(window.name);
+                                    setTimeout(function(){
+                                        window.parent.location.reload(); //刷新父页面
+                                        parent.layer.close(index);   // 关闭layer  
+                                    },500);
+                        },
+                        error:function(XmlHttpRequest, textStatus, errorThrown){
+                            layer.msg(textStatus,{icon:1,time:1000});
+                            window.console.log(errorThrown);
+                             window.console.log(XmlHttpRequest);
+                              window.console.log(textStatus);
+                        },
+                        
+                        
+                    });
+			
+			
+		}
+	});
+	
+});
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</html>

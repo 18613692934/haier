@@ -1,0 +1,328 @@
+<meta charset='utf-8'>
+<?php
+
+$database  = include 'db.php';
+
+$mysql_dsn=$database['dsn']; //数据库服务器  
+$mysql_server_name=$database['mysql_server_name']; //数据库服务器   
+$mysql_username=$database['mysql_username']; //数据库用户名  
+$mysql_password=$database['mysql_password']; //数据库密码   
+$mysql_database=$database['mysql_database']; //数据库名 
+
+
+//连接
+$options = array(
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, //默认是PDO::ERRMODE_SILENT, 0, (忽略错误模式)
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // 默认是PDO::FETCH_BOTH, 4
+);
+
+try{
+    $pdo = new PDO($mysql_dsn, $mysql_username, $mysql_password, $options);
+}catch(PDOException $e){
+    die('数据库连接失败:' . $e->getMessage());
+}
+
+
+// print_r($min_time);
+// print_r($max_time);
+
+// $min_date= date("Y-m-d",$min_time);
+// $max_date= date("Y-m-d",$max_time);
+
+// $hours = getTime($min_time,"hours");
+// $day = getTime($min_time,"day");
+// $week = getTime($min_time,"week");
+// $month = getTime($min_time,"month");
+// $year = getTime($min_time,"year");
+
+
+// $array = array(
+// 	"hours_begin"=> date("Y-m-d H:i:s",$hours['beginTime']),
+// 	"hours_end"=> date("Y-m-d H:i:s",$hours['endTime']),
+// 	"day_begin"=> date("Y-m-d H:i:s",$day['beginTime']),
+// 	"day_end"=> date("Y-m-d H:i:s",$day['endTime']),
+// 	"week_begin"=> date("Y-m-d H:i:s",$week['beginTime']),
+// 	"week_end"=> date("Y-m-d H:i:s",$week['endTime']),
+// 	"month_begin"=> date("Y-m-d H:i:s",$month['beginTime']),
+// 	"month_end"=> date("Y-m-d H:i:s",$month['endTime']),
+// 	"year_begin"=> date("Y-m-d H:i:s",$year['beginTime']),
+// 	"year_end"=> date("Y-m-d H:i:s",$year['endTime']),
+
+// 	);
+// 	
+// print_r($pdo);
+// var_dump($pdo);
+// exit;
+envCollect($pdo,"hours",-1);
+// envCollect($pdo,"day",-2);
+// envCollect($pdo,"week",-3);
+// envCollect($pdo,"month",-4);
+// envCollect($pdo,"year",-5);
+
+/**
+ * 环境数据汇总（按小时、天、星期、月、年）
+ * @param  [obj] $pdo [数据库连接对象]
+ * @param  [string] $type     [hours,day,week,month,year分别代表小时、天、星期、月、年]
+ * @param  [string] $flag [标识符]
+ * @return [type]           [description]
+ */
+function envCollect($pdo,$type,$flag){
+	switch ($type) {
+		case 'hours':
+			
+			$num = 3600;
+			$tableName = "iot_env_collect_hours";
+			$flagName = "flag_hours";
+		break;
+		case 'day':
+			
+			$num = 86400;
+			$tableName = "iot_env_collect_day";
+			$flagName = "flag_day";
+		break;
+		case 'week':
+			
+			$num = 604800;
+			$tableName = "iot_env_collect_week";
+			$flagName = "flag_week";
+		break;
+		case 'month':
+			
+			$num = 2592000;
+			$tableName = "iot_env_collect_month";
+			$flagName = "flag_month";
+		break;
+		case 'year':
+			
+			$num = 31104000;
+			$tableName = "iot_env_collect_year";
+			$flagName = "flag_year";
+		break;
+		
+		default:
+			# code...
+			break;
+	}
+$table = "iot_env";
+$flag = $pdo->prepare("select * from ".$table." 
+						where ".$flagName." = ".$flag."
+				       ");
+$flag->execute();
+$item = $flag->fetch();
+if($item){
+	$min_time = $item['unix_createdate'];
+}else{
+	$stmt = $pdo->prepare("select * from ".$table." 
+				       order by unix_createdate asc");
+	$stmt->execute();
+	$min = $stmt->fetch();
+	if(!$min){
+		return;
+	}
+	//最小时间戳
+	$min_time = $min['unix_createdate'];
+}
+
+$stmt = $pdo->prepare("select * from ".$table."   
+					
+				       order by unix_createdate desc");
+$stmt->execute();
+$max = $stmt->fetch();
+//最大时间戳
+$max_time = $max['unix_createdate'];
+
+
+$time = getTime($min_time,$type);
+// print_r($time);
+
+
+$beginTime = $time['beginTime'];
+$endTime = $time['endTime'];
+$select = $pdo->prepare("select uid, device_code, TRUNCATE(avg(temp),2) as avg_temp,TRUNCATE(avg(humidity),2) as avg_hum,TRUNCATE(avg(beam),2)  as avg_beam ,TRUNCATE(avg(wind_speed),2)  as avg_wind_speed,region,province,city,county,address from iot_env  
+				       where unix_createdate between ? and ?
+				       group by device_code order by env_id asc");
+$startSave = $pdo->prepare("update iot_env set ".$flagName." = 0 where ".$flagName." = ".$flag." ");
+$endSave = $pdo->prepare("update iot_env set ".$flagName." = ".$flag." where unix_createdate = ? ");
+$insert = $pdo->prepare("insert into ".$tableName." (uid,device_code,temp,humidity,beam,wind_speed,region,province,city,county,address,unix_starttime,unix_endtime,unix_createdate) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+for ($i = $beginTime; $i < $max_time ; $i+=$num) { 
+		
+		$select->bindValue(1,$i);
+
+		$select->bindValue(2,$endTime);
+		
+		$select->execute();
+		while($row = $select->fetch()){
+			$row['starttime'] = $i;
+			$row['endtime'] = $endTime;
+			// array_push($arrM,$row);
+
+		if( 0 == $row['avg_temp']){
+		$row['avg_temp'] = "";
+		}
+		if( 0 == $row['avg_hum']){
+			$row['avg_hum'] = "";
+		}
+
+		if( 0 == $row['avg_beam']){
+			$row['avg_beam'] = "";
+		}
+		if( 0 == $row['avg_wind_speed']){
+			$row['avg_wind_speed'] = "";
+		}
+
+
+		
+			$insert->bindValue(1,$row['uid']);
+			$insert->bindValue(2,$row['device_code']);
+			$insert->bindValue(3,$row['avg_temp']);
+			$insert->bindValue(4,$row['avg_hum']);
+			$insert->bindValue(5,$row['avg_beam']);
+			$insert->bindValue(6,$row['avg_wind_speed']);
+			$insert->bindValue(7,$row['region']);
+			$insert->bindValue(8,$row['province']);
+			$insert->bindValue(9,$row['city']);
+			$insert->bindValue(10,$row['county']);
+			$insert->bindValue(11,$row['address']);
+			$insert->bindValue(12,$row['starttime']);
+			$insert->bindValue(13,$row['endtime']);
+			$insert->bindValue(14,time());
+			$insert->execute();
+
+
+		};
+		
+		
+		$endTime+=$num;
+		
+
+}
+$startSave->execute();
+$endSave->bindValue(1,$max_time);
+$endSave->execute();
+
+
+
+
+
+
+
+} 
+
+
+
+
+
+/**
+ *
+ * 按小时汇总
+ * 
+ *
+$beginTime = $hours['beginTime'];
+$endTime = $hours['endTime'];
+$select = $pdo->prepare("select uid, device_code, TRUNCATE(avg(temp),2) as avg_temp,TRUNCATE(avg(humidity),2) as avg_hum,TRUNCATE(avg(beam),2)  as avg_beam ,TRUNCATE(avg(wind_speed),2)  as avg_wind_speed,region,province,city,county,address from iot_env  
+				       where unix_createdate between ? and ?
+				       group by device_code order by env_id asc");
+$startSave = $pdo->prepare("update iot_env set unix_starttime = 0 where unix_starttime = -1 ");
+$endSave = $pdo->prepare("update iot_env set unix_starttime = -1 where unix_createdate = ? ");
+$insert = $pdo->prepare("insert into iot_env_collect_hours (uid,device_code,temp,humidity,beam,wind_speed,region,province,city,county,address,unix_starttime,unix_endtime,unix_createdate) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+for ($i = $beginTime; $i < $max_time ; $i+=3600) { 
+		
+		$select->bindValue(1,$i);
+
+		$select->bindValue(2,$endTime);
+		
+		$select->execute();
+		while($row = $select->fetch()){
+			$row['starttime'] = $i;
+			$row['endtime'] = $endTime;
+			// array_push($arrM,$row);
+
+		if( 0 == $row['avg_temp']){
+		$row['avg_temp'] = "";
+		}
+		if( 0 == $row['avg_hum']){
+			$row['avg_hum'] = "";
+		}
+
+		if( 0 == $row['avg_beam']){
+			$row['avg_beam'] = "";
+		}
+		if( 0 == $row['avg_wind_speed']){
+			$row['avg_wind_speed'] = "";
+		}
+
+
+		
+			$insert->bindValue(1,$row['uid']);
+			$insert->bindValue(2,$row['device_code']);
+			$insert->bindValue(3,$row['avg_temp']);
+			$insert->bindValue(4,$row['avg_hum']);
+			$insert->bindValue(5,$row['avg_beam']);
+			$insert->bindValue(6,$row['avg_wind_speed']);
+			$insert->bindValue(7,$row['region']);
+			$insert->bindValue(8,$row['province']);
+			$insert->bindValue(9,$row['city']);
+			$insert->bindValue(10,$row['county']);
+			$insert->bindValue(11,$row['address']);
+			$insert->bindValue(12,$row['starttime']);
+			$insert->bindValue(13,$row['endtime']);
+			$insert->bindValue(14,time());
+			$insert->execute();
+
+
+		};
+		
+		
+		$endTime+=3600;
+		
+
+}
+$startSave->execute();
+$endSave->bindValue(1,$max_time);
+$endSave->execute();
+ *
+ *
+ *
+ * 
+ */
+
+
+
+
+/**
+ * php根据时间戳获取整点时间、一天开始和结束时间、一周开始和结束时间、一月开始和结束时间、一年开始和结束时间。
+ * auth:635465650@qq.com
+ * date:2017-10-24 11:40:12
+ * $time:时间戳
+ * 
+ */
+function getTime($now,$q){
+	date_default_timezone_set('PRC');
+    switch ($q) {
+        case "hours":
+            $beginTime = strtotime(date('Y-m-d H:00:00', $now)); 
+            $endTime = strtotime(date('Y-m-d H:59:59',$now));
+            break;
+        case "day":
+            $beginTime = strtotime(date('Y-m-d 00:00:00', $now));    
+            $endTime = strtotime(date('Y-m-d 23:59:59', $now));
+        break;
+        case "week":
+            $time = '1' == date('w') ? strtotime('last Monday', $now) : strtotime('Monday', $now);    
+            // $time = strtotime('last Monday', $now);
+            $beginTime = strtotime(date('Y-m-d 00:00:00', $time)); 
+            // $beginTime = date('Y-m-d 00:00:00', $time);   
+            $endTime = strtotime(date('Y-m-d 23:59:59', strtotime('Sunday', $now))); 
+        break;
+        case "month":
+            $beginTime = strtotime(date('Y-m-d 00:00:00', mktime(0, 0, 0, date('m', $now), '1', date('Y', $now))));    
+            $endTime = strtotime(date('Y-m-d 23:59:59', mktime(0, 0, 0, date('m', $now), date('t', $now), date('Y', $now))));
+        break;
+        case "year":
+            $beginTime = strtotime(date('Y-m-d 00:00:00', mktime(0, 0,0, 1, 1, date('Y', $now))));    
+            $endTime = strtotime(date('Y-m-d 23:59:59', mktime(0, 0, 0, 12, 31, date('Y', $now))));  
+        break;
+        
+    }
+    return array('beginTime'=>$beginTime,'endTime'=>$endTime);
+}

@@ -1,0 +1,822 @@
+[ 2017-03-09T10:41:18+08:00 ] 127.0.0.1 /admin.php/Test/demo1
+ERR: Think\Model:editData方法不存在！
+
+[ 2017-03-09T10:41:18+08:00 ] 127.0.0.1 /admin.php/Test/demo1
+ERR: Think\Model:editData方法不存在！
+
+[ 2017-03-09T10:43:05+08:00 ] 127.0.0.1 /admin.php/Test/demo1
+ERR: Think\Model:editData方法不存在！
+
+[ 2017-03-09T10:43:05+08:00 ] 127.0.0.1 /admin.php/Test/demo1
+ERR: Think\Model:editData方法不存在！
+
+[ 2017-03-09T10:43:30+08:00 ] 127.0.0.1 /admin.php/Test/demo1
+ERR: Think\Model:editData方法不存在！
+
+[ 2017-03-09T10:49:48+08:00 ] 127.0.0.1 /admin.php/Test/demo1
+ERR: :
+ [ SQL语句 ] : update iot_pest set pest_add_time=1473652129 where pest_id=1
+
+[ 2017-03-09T10:51:06+08:00 ] 127.0.0.1 /admin.php/Test/demo1
+ERR: :
+ [ SQL语句 ] : update iot_pest set pest_add_time=1473652129 where pest_id=1
+
+[ 2017-03-09T10:54:12+08:00 ] 127.0.0.1 /admin.php/Test/demo1
+ERR: :
+ [ SQL语句 ] : update iot_pest set pest_add_time=1473652129 where pest_id = 1
+
+[ 2017-03-09T14:34:25+08:00 ] 127.0.0.1 /admin.php/Pests/showList.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: result E:\NetBeans\news\Runtime\Cache\Admin\aeb7141ad2d4c9b5ff7fc1994d184e48.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-03-09T14:34:32+08:00 ] 127.0.0.1 /admin.php/Pests/showList.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: result E:\NetBeans\news\Runtime\Cache\Admin\aeb7141ad2d4c9b5ff7fc1994d184e48.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-09T14:34:36+08:00 ] 127.0.0.1 /admin.php/Pests/showList.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: result E:\NetBeans\news\Runtime\Cache\Admin\aeb7141ad2d4c9b5ff7fc1994d184e48.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-09T16:24:18+08:00 ] 127.0.0.1 /admin.php/Test.demo1
+ERR: 无法加载控制器:Test.demo1
+
+[ 2017-03-09T17:21:41+08:00 ] 127.0.0.1 /admin.php/resources/server_processing_custom.php?draw=1&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=10&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1489051301250
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Resources
+
+[ 2017-03-09T17:22:17+08:00 ] 127.0.0.1 /admin.php/resources/server_processing_custom.php?draw=1&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=10&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1489051336759
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 无法加载控制器:Resources
+
+[ 2017-03-09T17:22:39+08:00 ] 127.0.0.1 /admin.php/resources/server_processing_custom.php?draw=1&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=10&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1489051357706
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Resources
+
+[ 2017-03-09T17:22:53+08:00 ] 127.0.0.1 /admin.php/resources/server_processing_custom.php?draw=1&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=10&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1489051373107
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Resources
+
+[ 2017-03-09T17:23:15+08:00 ] 127.0.0.1 /admin.php/resources/server_processing_custom.php?draw=1&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=10&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1489051395014
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Resources
+
+[ 2017-03-09T17:23:53+08:00 ] 127.0.0.1 /admin.php/resources/server_processing_custom.php?draw=1&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=10&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1489051432718
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Resources
+
+[ 2017-03-09T17:24:28+08:00 ] 127.0.0.1 /admin.php/resources/server_processing_custom.php?draw=2&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=3&order%5B0%5D%5Bdir%5D=asc&start=0&length=10&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1489051432719
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Resources
+
+[ 2017-03-09T17:24:29+08:00 ] 127.0.0.1 /admin.php/resources/server_processing_custom.php?draw=1&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=10&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1489051469256
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Resources
+
+[ 2017-03-09T17:24:52+08:00 ] 127.0.0.1 /admin.php/resources/server_processing_custom.php?draw=1&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=10&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1489051492049
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Resources
+
+[ 2017-03-09T17:25:49+08:00 ] 127.0.0.1 /admin.php/Test/Pests/informList?draw=1&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=10&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1489051548683
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Pests
+
+[ 2017-03-09T17:26:20+08:00 ] 127.0.0.1 /admin.php/Test/informList?draw=1&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=10&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1489051579796
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: list E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 54 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 75 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 78 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 81 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 91 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 94 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 97 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 107 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 110 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 113 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 121 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 124 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 127 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 135 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 138 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 141 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 149 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 152 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 155 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 163 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 166 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 169 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 177 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 180 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 183 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 240 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-09T17:26:53+08:00 ] 127.0.0.1 /admin.php/Test/informList?draw=1&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=10&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1489051613331
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: list E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 54 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 75 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 78 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 81 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 91 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 94 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 97 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 107 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 110 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 113 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 121 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 124 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 127 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 135 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 138 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 141 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 149 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 152 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 155 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 163 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 166 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 169 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 177 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 180 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 183 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 240 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-09T17:28:43+08:00 ] 127.0.0.1 /admin.php/Test/informList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: list E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 54 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 75 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 78 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 81 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 91 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 94 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 97 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 107 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 110 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 113 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 121 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 124 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 127 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 135 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 138 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 141 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 149 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 152 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 155 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 163 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 166 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 169 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 177 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 180 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 183 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 246 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-09T17:29:41+08:00 ] 127.0.0.1 /admin.php/Test/informList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: list E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 54 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 75 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 78 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 81 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 91 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 94 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 97 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 107 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 110 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 113 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 121 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 124 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 127 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 135 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 138 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 141 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 149 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 152 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 155 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 163 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 166 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 169 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 177 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 180 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 183 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 246 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-09T17:31:13+08:00 ] 127.0.0.1 /admin.php/Test/informList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: list E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 54 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 75 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 78 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 81 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 91 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 94 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 97 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 107 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 110 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 113 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 121 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 124 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 127 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 135 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 138 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 141 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 149 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 152 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 155 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 163 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 166 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 169 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 177 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 180 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 183 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 246 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-09T17:33:58+08:00 ] 127.0.0.1 /admin.php/Test/informList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_pest` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `iot_pest` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: list E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 54 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 75 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 78 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 81 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 91 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 94 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 97 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 107 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 110 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 113 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 121 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 124 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 127 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 135 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 138 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 141 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 149 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 152 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 155 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 163 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 166 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 169 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 177 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 180 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 183 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 246 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-09T17:34:40+08:00 ] 127.0.0.1 /admin.php/Test/informList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_pest` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `iot_pest` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: list E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 54 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 75 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 78 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 81 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 91 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 94 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 97 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 107 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 110 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 113 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 121 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 124 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 127 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 135 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 138 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 141 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 149 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 152 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 155 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 163 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 166 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 169 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 177 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 180 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 183 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 246 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-09T17:34:56+08:00 ] 127.0.0.1 /admin.php/Test/informList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_pest` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `iot_pest` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: list E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 54 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 75 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 78 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 81 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 91 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 94 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 97 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 107 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 110 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 113 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 121 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 124 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 127 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 135 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 138 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 141 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 149 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 152 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 155 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 163 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 166 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 169 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 177 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 180 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 183 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 246 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-09T17:35:29+08:00 ] 127.0.0.1 /admin.php/Test/informList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `iot_pest` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: list E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 54 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 75 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 78 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 81 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 91 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 94 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 97 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 107 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 110 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 113 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 121 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 124 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 127 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 135 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 138 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 141 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 149 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 152 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 155 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 163 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 166 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 169 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 177 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 180 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 183 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 246 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\NetBeans\news\Application\Common\Common\function.php:21) E:\NetBeans\news\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-03-09T17:35:46+08:00 ] 127.0.0.1 /admin.php/Test/informList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_pest` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `iot_pest` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: list E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 54 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 75 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 78 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 81 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 91 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 94 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 97 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 107 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 110 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 113 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 121 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 124 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 127 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 135 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 138 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 141 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 149 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 152 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 155 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 163 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 166 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 169 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 177 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 180 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 183 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 246 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-09T17:36:19+08:00 ] 127.0.0.1 /admin.php/Test/informList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_pest` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `iot_pest` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: list E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 54 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 75 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 78 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 81 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 83 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 91 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 94 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 97 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 99 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 107 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 110 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 113 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 115 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 121 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 124 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 127 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 129 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 135 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 138 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 141 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 143 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 149 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 152 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 155 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 157 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 163 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 166 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 169 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 171 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 177 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 180 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 183 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Undefined variable: li E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 185 行.
+NOTIC: [8] Use of undefined constant delete - assumed 'delete' E:\NetBeans\news\Runtime\Cache\Admin\5153664661f8348e465c43d097b83a5c.php 第 246 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+

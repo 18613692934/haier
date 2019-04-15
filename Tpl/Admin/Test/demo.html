@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <script src="__PUBLIC_STATIC__/kindeditor/kindeditor.js"></script>
+        <link href="__PUBLIC_STATIC__/kindeditor/themes/default/default.css" rel="stylesheet"/>	
+        <script src="__PUBLIC_STATIC__/kindeditor/lang/zh_CN.js"></script>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    </head>
+    <body>
+        <p><input type="text" id="url" value=""> <input type="button" id="image" value="选择图片">（网络图片 + 本地上传）</p>
+        
+        
+        
+        <script type="text/javascript">
+    
+
+KindEditor.ready(function(K) {
+
+    var editor = K.editor({
+
+        allowFileManager : true //允许图片管理 开启后再挑选图片的时候可以直接从图片空间内挑选
+
+    });
+    
+    K('#image').click(function() {
+        
+    
+
+        editor.loadPlugin('image', function() {
+
+    //图片弹窗的基本参数配置
+
+    editor.plugin.imageDialog({
+
+    imageUrl : K('#url').val(), //如果图片路径框内有内容直接赋值于弹出框的图片地址文本框
+
+    //点击弹窗内”确定“按钮所执行的逻辑
+
+    clickFn : function(url, title, width, height, border, align) {
+
+    K('#url').val(url);//获取图片地址
+
+    editor.hideDialog(); //隐藏弹窗
+
+    }
+
+    });
+
+});
+
+        });
+    
+    
+    });
+
+//给按钮添加click事件
+
+    
+</script>
+    </body>
+    
+    
+</html>

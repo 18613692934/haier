@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <title>js图片轮播手动切换效果</title> 
+        <script type="text/javascript" src="js/ScrollPicLeft.js">
+            
+        </script> 
+        <style> 
+            html,body,ul,li{margin:0; padding:0;} 
+            ul,li{ list-style:none;} 
+            .dd_main{ width:520px;} 
+            .zl_left { width:35px; float:left; text-align:left; padding-top:60px} 
+            .zl_right { width:35px; float:right; text-align:right; padding-top:60px} 
+            .zl_content { width:450px; height:153px; float:left; overflow:hidden;} 
+            .zl_content ul li { width:130px; padding:0 10px; text-align:center; float:left;} 
+            .welcome{ position:fixed; width:100%; text-align:center; bottom:30px;} 
+            .welcome a{ color:#0350B8;} </style> 
+    </head>   
+    <body> 
+        <div class="dd_main">   
+            <div class="zl_left" id="Left_Photo">
+                <a href="javascript:void(0)">
+                    <img src="images/zl_tb1.jpg" width="24" height="32" />
+                </a>
+            </div> 
+            <div class="zl_content">  
+                <ul id="ISL_Photo">  
+                    <li><img src="images/zl_tp.jpg" width="130" height="153" /></li>  
+                    <li><img src="images/zl_tp.jpg" width="130" height="153" /></li> 
+                    <li><img src="images/zl_tp.jpg" width="130" height="153" /></li>  
+                    <li><img src="images/zl_tp.jpg" width="130" height="153" /></li> 
+                    <li><img src="images/zl_tp.jpg" width="130" height="153" /></li>  
+                    <li><img src="images/zl_tp.jpg" width="130" height="153" /></li>  
+                    <li><img src="images/zl_tp.jpg" width="130" height="153" /></li>  
+                </ul>  
+            </div>  
+            <div class="zl_right" id="Right_Photo">
+                <a href="javascript:void(0)"><img src="images/zl_tb2.jpg" width="24" height="32" /></a>
+            </div> 
+        </div> 
+        <script type="text/javascript">  
+            var scrollPhoto = new ScrollPicleft();  
+            scrollPhoto.scrollContId = "ISL_Photo"; // 内容容器ID""  scrollPhoto.arrLeftId = "Left_Photo";//左箭头ID  scrollPhoto.arrRightId = "Right_Photo"; //右箭头ID  scrollPhoto.frameWidth = 450;//显示框宽度  scrollPhoto.pageWidth = 150; //翻页宽度  scrollPhoto.speed = 10; //移动速度(单位毫秒，越小越快)  scrollPhoto.space = 10; //每次移动像素(单位px，越大越快)  scrollPhoto.autoPlay = false; //自动播放  scrollPhoto.autoPlayTime = 3; //自动播放间隔时间(秒)  scrollPhoto.initialize(); //初始化  </script> </body> </html> 
+

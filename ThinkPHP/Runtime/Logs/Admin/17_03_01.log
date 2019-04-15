@@ -1,0 +1,926 @@
+[ 2017-03-01T09:24:38+08:00 ] 127.0.0.1 /admin.php/Admin/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:informAdd
+
+[ 2017-03-01T09:25:50+08:00 ] 127.0.0.1 /admin.php/Admin/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:informAdd
+
+[ 2017-03-01T09:26:20+08:00 ] 127.0.0.1 /admin.php/Admin/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:informAdd
+
+[ 2017-03-01T09:27:29+08:00 ] 127.0.0.1 /admin.php/Admin/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:informAdd
+
+[ 2017-03-01T09:54:05+08:00 ] 127.0.0.1 /admin.php/Admin/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:informAdd
+
+[ 2017-03-01T09:54:54+08:00 ] 127.0.0.1 /admin.php/Admin/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:informAdd
+
+[ 2017-03-01T09:55:13+08:00 ] 127.0.0.1 /admin.php/Admin/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:informAdd
+
+[ 2017-03-01T09:56:12+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T09:56:44+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T09:57:22+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T09:58:20+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T10:00:37+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-01T10:00:49+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T10:01:13+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T10:07:17+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T10:15:03+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T10:15:08+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T10:16:06+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T10:16:36+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-03-01T10:17:12+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T10:17:39+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T10:17:53+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T10:29:14+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T10:29:47+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T10:42:37+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T10:44:32+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T10:44:36+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T10:45:03+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T10:45:06+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T10:56:27+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T10:56:33+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-03-01T11:03:15+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T11:07:32+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T11:07:38+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T11:07:47+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T11:07:54+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T11:11:04+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T11:11:07+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T11:12:01+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T11:12:16+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T11:16:34+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T11:16:53+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T11:17:18+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T11:29:11+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T11:31:49+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('','','0','','','0','','-1','1488339109','1') [ RunTime:0.0940s ]
+
+[ 2017-03-01T11:31:56+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('','','0','','','0','','-1','1488339116','1') [ RunTime:0.0810s ]
+
+[ 2017-03-01T11:32:10+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('','','0','','','0','','-1','1488339129','1') [ RunTime:0.0840s ]
+
+[ 2017-03-01T11:36:48+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('','','0','','','0','','-1','1488339407','1') [ RunTime:0.1430s ]
+
+[ 2017-03-01T11:37:30+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('','','0','','','0','','-1','1488339449','1') [ RunTime:0.2000s ]
+
+[ 2017-03-01T11:38:35+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T11:38:53+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-03-01T11:39:22+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('','','0','','','0','','-1','1488339562','1') [ RunTime:0.0560s ]
+
+[ 2017-03-01T11:40:43+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T11:41:15+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T11:41:38+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-03-01T11:42:52+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-01T12:03:41+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('1','1','1','1','1','1','','1','1488341021','1') [ RunTime:0.1250s ]
+
+[ 2017-03-01T12:03:58+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('1','1','1','1','1','1','','0','1488341038','1') [ RunTime:0.0930s ]
+
+[ 2017-03-01T12:41:45+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0290s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('1','1','1','1','1','0','','1','1488343305','1') [ RunTime:0.1190s ]
+
+[ 2017-03-01T12:41:54+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0650s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('','','0','','','0','','0','1488343314','1') [ RunTime:0.0430s ]
+
+[ 2017-03-01T12:42:02+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T12:46:48+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 51 行.
+
+[ 2017-03-01T12:47:23+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-01T12:47:31+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+
+[ 2017-03-01T12:47:48+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('','','0','','','0','','1','1488343668','1') [ RunTime:0.0250s ]
+
+[ 2017-03-01T12:48:03+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 51 行.
+
+[ 2017-03-01T12:49:47+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 51 行.
+
+[ 2017-03-01T12:50:01+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 51 行.
+
+[ 2017-03-01T12:50:30+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.1200s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 51 行.
+
+[ 2017-03-01T12:50:35+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T12:54:08+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+
+[ 2017-03-01T12:54:52+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 50 行.
+
+[ 2017-03-01T12:54:59+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 50 行.
+
+[ 2017-03-01T12:55:05+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-01T12:56:34+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 50 行.
+
+[ 2017-03-01T13:22:17+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0730s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 50 行.
+
+[ 2017-03-01T13:22:25+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0190s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 50 行.
+
+[ 2017-03-01T13:22:39+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0390s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 50 行.
+
+[ 2017-03-01T13:23:05+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 50 行.
+
+[ 2017-03-01T13:23:35+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 50 行.
+
+[ 2017-03-01T13:24:04+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 50 行.
+
+[ 2017-03-01T13:24:11+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 50 行.
+
+[ 2017-03-01T13:24:17+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: dat E:\NetBeans\news\Application\Admin\Controller\InformController.class.php 第 50 行.
+
+[ 2017-03-01T13:41:37+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('1','1','0','1','1','1','&lt;p&gt;1hkjdklsjkl&lt;br/&gt;&lt;/p&gt;','1','1488346897','1') [ RunTime:0.1380s ]
+
+[ 2017-03-01T14:14:22+08:00 ] 127.0.0.1 /admin.php/Inform/informList
+ERR: Think\Model:selectData方法不存在！
+
+[ 2017-03-01T14:15:04+08:00 ] 127.0.0.1 /admin.php/Inform/informList
+ERR: Think\Model:selectData方法不存在！
+
+[ 2017-03-01T14:16:10+08:00 ] 127.0.0.1 /admin.php/Inform/informList
+ERR: Think\Model:selectData方法不存在！
+
+[ 2017-03-01T14:38:10+08:00 ] 127.0.0.1 /admin.php/Inform/informList
+ERR: 表达式错误:-1
+
+[ 2017-03-01T14:38:21+08:00 ] 127.0.0.1 /admin.php/Inform/informList
+ERR: 表达式错误:0
+
+[ 2017-03-01T16:36:42+08:00 ] 127.0.0.1 /admin.php/Inform/informZhang.html
+ERR: 非法操作:informZhang
+
+[ 2017-03-01T17:06:52+08:00 ] 127.0.0.1 /admin.php/Inform/lib/jquery/1.9.1/jquery.min.js
+ERR: 非法操作:lib
+
+[ 2017-03-01T17:06:52+08:00 ] 127.0.0.1 /admin.php/Inform/static/h-ui/js/H-ui.min.js
+ERR: 非法操作:static
+
+[ 2017-03-01T17:06:52+08:00 ] 127.0.0.1 /admin.php/Inform/lib/layer/2.4/layer.js
+ERR: 非法操作:lib
+
+[ 2017-03-01T17:06:52+08:00 ] 127.0.0.1 /admin.php/Inform/static/h-ui/js/H-ui.min.js
+ERR: 非法操作:static
+
+[ 2017-03-01T17:06:53+08:00 ] 127.0.0.1 /admin.php/Inform/static/h-ui.admin/js/H-ui.admin.js
+ERR: 非法操作:static
+
+[ 2017-03-01T17:07:10+08:00 ] 127.0.0.1 /admin.php/Inform/lib/jquery/1.9.1/jquery.min.js
+ERR: 非法操作:lib
+
+[ 2017-03-01T17:07:10+08:00 ] 127.0.0.1 /admin.php/Inform/lib/layer/2.4/layer.js
+ERR: 非法操作:lib
+
+[ 2017-03-01T17:07:10+08:00 ] 127.0.0.1 /admin.php/Inform/static/h-ui/js/H-ui.min.js
+ERR: 非法操作:static
+
+[ 2017-03-01T17:07:10+08:00 ] 127.0.0.1 /admin.php/Inform/static/h-ui.admin/js/H-ui.admin.js
+ERR: 非法操作:static
+
+[ 2017-03-01T17:07:31+08:00 ] 127.0.0.1 /admin.php/Inform/lib/jquery/1.9.1/jquery.min.js
+ERR: 非法操作:lib
+
+[ 2017-03-01T17:07:31+08:00 ] 127.0.0.1 /admin.php/Inform/static/h-ui/js/H-ui.min.js
+ERR: 非法操作:static
+
+[ 2017-03-01T17:07:31+08:00 ] 127.0.0.1 /admin.php/Inform/lib/layer/2.4/layer.js
+ERR: 非法操作:lib
+
+[ 2017-03-01T17:07:31+08:00 ] 127.0.0.1 /admin.php/Inform/static/h-ui.admin/js/H-ui.admin.js
+ERR: 非法操作:static
+
+[ 2017-03-01T17:07:31+08:00 ] 127.0.0.1 /admin.php/Inform/lib/layer/2.4/layer.js
+ERR: 非法操作:lib
+
+[ 2017-03-01T17:07:31+08:00 ] 127.0.0.1 /admin.php/Inform/static/h-ui/js/H-ui.min.js
+ERR: 非法操作:static
+
+[ 2017-03-01T17:07:31+08:00 ] 127.0.0.1 /admin.php/Inform/static/h-ui.admin/js/H-ui.admin.js
+ERR: 非法操作:static
+
+[ 2017-03-01T17:16:25+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022002s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0070s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('关于转发国家林业局《“森林城市·绿色家园”摄影主题大赛活动》的通知','','20','森林城市|绿色家园','','0','','0','1488359785','1') [ RunTime:0.1010s ]
+
+[ 2017-03-01T17:16:31+08:00 ] 127.0.0.1 /admin.php/Inform/informZhang.html
+ERR: 非法操作:informZhang
+
+[ 2017-03-01T17:18:47+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0080s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('山东省林业厅关于成立山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知','','19','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省林业厅关于成立&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;各市林业局，各有关单位：&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;由全国绿化委员会、财政部、海关总署、国家质检总局、国家林业局五部委会签，国家林业局、中国花卉协会、宁夏回族自治区人民政府共同主办的第九届中国花卉博览会将于2017年9月在银川市举办，主题为“花儿绽放新丝路”。这是我国首次在西北地区举办的国家级花事盛会，期间还将举办中国-阿拉伯国家博览会。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;为做好此次参展工作，积极推进各项工作有序开展，经研究，决定成立山东省参加第九届中国花卉博览会工作领导小组和技术专家组（具体名单见附件）。请各市成立相应的组织机构，做好参展展品的筹备工作。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;附件：1．山东省参加第九届中国花卉博览会工作领导小组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;2．山东省参加第九届中国花卉博览会技术专家组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: %E','0','1488359927','1') [ RunTime:0.0870s ]
+
+[ 2017-03-01T17:21:15+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('1','1','1','1','','11','1','','1','1488360075','1') [ RunTime:0.1300s ]
+
+[ 2017-03-01T17:22:39+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('1','1','1','1','1','1','1','&lt;p&gt;1&lt;br/&gt;&lt;/p&gt;','1','1488360159','1') [ RunTime:0.1220s ]
+
+[ 2017-03-01T17:23:02+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('什么人啊 ','','0','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省林业厅关于成立&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;各市林业局，各有关单位：&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;由全国绿化委员会、财政部、海关总署、国家质检总局、国家林业局五部委会签，国家林业局、中国花卉协会、宁夏回族自治区人民政府共同主办的第九届中国花卉博览会将于2017年9月在银川市举办，主题为“花儿绽放新丝路”。这是我国首次在西北地区举办的国家级花事盛会，期间还将举办中国-阿拉伯国家博览会。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;为做好此次参展工作，积极推进各项工作有序开展，经研究，决定成立山东省参加第九届中国花卉博览会工作领导小组和技术专家组（具体名单见附件）。请各市成立相应的组织机构，做好参展展品的筹备工作。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;附件：1．山东省参加第九届中国花卉博览会工作领导小组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;2．山东省参加第九届中国花卉博览会技术专家组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-c','0','1488360182','1') [ RunTime:0.1870s ]
+
+[ 2017-03-01T17:23:44+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('你到底是谁啊','','0','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省林业厅关于成立&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;各市林业局，各有关单位：&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;由全国绿化委员会、财政部、海关总署、国家质检总局、国家林业局五部委会签，国家林业局、中国花卉协会、宁夏回族自治区人民政府共同主办的第九届中国花卉博览会将于2017年9月在银川市举办，主题为“花儿绽放新丝路”。这是我国首次在西北地区举办的国家级花事盛会，期间还将举办中国-阿拉伯国家博览会。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;为做好此次参展工作，积极推进各项工作有序开展，经研究，决定成立山东省参加第九届中国花卉博览会工作领导小组和技术专家组（具体名单见附件）。请各市成立相应的组织机构，做好参展展品的筹备工作。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;附件：1．山东省参加第九届中国花卉博览会工作领导小组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;2．山东省参加第九届中国花卉博览会技术专家组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0p','0','1488360224','1') [ RunTime:0.1400s ]
+
+[ 2017-03-01T17:25:15+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('是你','','0','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;各市林业局，各有关单位：&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;由全国绿化委员会、财政部、海关总署、国家质检总局、国家林业局五部委会签，国家林业局、中国花卉协会、宁夏回族自治区人民政府共同主办的第九届中国花卉博览会将于2017年9月在银川市举办，主题为“花儿绽放新丝路”。这是我国首次在西北地区举办的国家级花事盛会，期间还将举办中国-阿拉伯国家博览会。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;为做好此次参展工作，积极推进各项工作有序开展，经研究，决定成立山东省参加第九届中国花卉博览会工作领导小组和技术专家组（具体名单见附件）。请各市成立相应的组织机构，做好参展展品的筹备工作。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;附件：1．山东省参加第九届中国花卉博览会工作领导小组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;2．山东省参加第九届中国花卉博览会技术专家组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1','1488360314','1') [ RunTime:0.2430s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('是你','','0','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;各市林业局，各有关单位：&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;由全国绿化委员会、财政部、海关总署、国家质检总局、国家林业局五部委会签，国家林业局、中国花卉协会、宁夏回族自治区人民政府共同主办的第九届中国花卉博览会将于2017年9月在银川市举办，主题为“花儿绽放新丝路”。这是我国首次在西北地区举办的国家级花事盛会，期间还将举办中国-阿拉伯国家博览会。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;为做好此次参展工作，积极推进各项工作有序开展，经研究，决定成立山东省参加第九届中国花卉博览会工作领导小组和技术专家组（具体名单见附件）。请各市成立相应的组织机构，做好参展展品的筹备工作。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;附件：1．山东省参加第九届中国花卉博览会工作领导小组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;2．山东省参加第九届中国花卉博览会技术专家组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1','1488360314','1') [ RunTime:0.1360s ]
+
+[ 2017-03-01T17:25:32+08:00 ] 127.0.0.1 /admin.php/Inform/informZhang.html
+ERR: 非法操作:informZhang
+
+[ 2017-03-01T17:26:47+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('1','1','1','1','1','1','1','&lt;p&gt;1&lt;br/&gt;&lt;/p&gt;','1','1488360407','1') [ RunTime:0.0920s ]
+
+[ 2017-03-01T17:27:25+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('是谁啊','','0','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;各市林业局，各有关单位：&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;由全国绿化委员会、财政部、海关总署、国家质检总局、国家林业局五部委会签，国家林业局、中国花卉协会、宁夏回族自治区人民政府共同主办的第九届中国花卉博览会将于2017年9月在银川市举办，主题为“花儿绽放新丝路”。这是我国首次在西北地区举办的国家级花事盛会，期间还将举办中国-阿拉伯国家博览会。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;为做好此次参展工作，积极推进各项工作有序开展，经研究，决定成立山东省参加第九届中国花卉博览会工作领导小组和技术专家组（具体名单见附件）。请各市成立相应的组织机构，做好参展展品的筹备工作。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;附件：1．山东省参加第九届中国花卉博览会工作领导小组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;2．山东省参加第九届中国花卉博览会技术专家组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','0','1488360445','1') [ RunTime:0.1040s ]
+
+[ 2017-03-01T17:27:40+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('我到底谁','','0','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;各市林业局，各有关单位：&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;由全国绿化委员会、财政部、海关总署、国家质检总局、国家林业局五部委会签，国家林业局、中国花卉协会、宁夏回族自治区人民政府共同主办的第九届中国花卉博览会将于2017年9月在银川市举办，主题为“花儿绽放新丝路”。这是我国首次在西北地区举办的国家级花事盛会，期间还将举办中国-阿拉伯国家博览会。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;为做好此次参展工作，积极推进各项工作有序开展，经研究，决定成立山东省参加第九届中国花卉博览会工作领导小组和技术专家组（具体名单见附件）。请各市成立相应的组织机构，做好参展展品的筹备工作。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;附件：1．山东省参加第九届中国花卉博览会工作领导小组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;2．山东省参加第九届中国花卉博览会技术专家组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1','1488360460','1') [ RunTime:0.1630s ]
+
+[ 2017-03-01T17:28:02+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('哈哈哈啊','','0','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0%2','0','1488360482','1') [ RunTime:0.0560s ]
+
+[ 2017-03-01T17:28:30+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('吼吼','','0','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;各市林业局，各有关单位：&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;由全国绿化委员会、财政部、海关总署、国家质检总局、国家林业局五部委会签，国家林业局、中国花卉协会、宁夏回族自治区人民政府共同主办的第九届中国花卉博览会将于2017年9月在银川市举办，主题为“花儿绽放新丝路”。这是我国首次在西北地区举办的国家级花事盛会，期间还将举办中国-阿拉伯国家博览会。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;为做好此次参展工作，积极推进各项工作有序开展，经研究，决定成立山东省参加第九届中国花卉博览会工作领导小组和技术专家组（具体名单见附件）。请各市成立相应的组织机构，做好参展展品的筹备工作。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;附件：1．山东省参加第九届中国花卉博览会工作领导小组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;2．山东省参加第九届中国花卉博览会技术专家组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1','1488360510','1') [ RunTime:0.0970s ]
+
+[ 2017-03-01T17:29:03+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('你真的哈哈啊了 ','','0','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;各市林业局，各有关单位：&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;由全国绿化委员会、财政部、海关总署、国家质检总局、国家林业局五部委会签，国家林业局、中国花卉协会、宁夏回族自治区人民政府共同主办的第九届中国花卉博览会将于2017年9月在银川市举办，主题为“花儿绽放新丝路”。这是我国首次在西北地区举办的国家级花事盛会，期间还将举办中国-阿拉伯国家博览会。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;为做好此次参展工作，积极推进各项工作有序开展，经研究，决定成立山东省参加第九届中国花卉博览会工作领导小组和技术专家组（具体名单见附件）。请各市成立相应的组织机构，做好参展展品的筹备工作。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;附件：1．山东省参加第九届中国花卉博览会工作领导小组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;2．山东省参加第九届中国花卉博览会技术专家组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1','1488360543','1') [ RunTime:0.0940s ]
+
+[ 2017-03-01T17:29:34+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('dsjhlkdjklsdjal','1','0','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;各市林业局，各有关单位：&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;由全国绿化委员会、财政部、海关总署、国家质检总局、国家林业局五部委会签，国家林业局、中国花卉协会、宁夏回族自治区人民政府共同主办的第九届中国花卉博览会将于2017年9月在银川市举办，主题为“花儿绽放新丝路”。这是我国首次在西北地区举办的国家级花事盛会，期间还将举办中国-阿拉伯国家博览会。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;为做好此次参展工作，积极推进各项工作有序开展，经研究，决定成立山东省参加第九届中国花卉博览会工作领导小组和技术专家组（具体名单见附件）。请各市成立相应的组织机构，做好参展展品的筹备工作。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;附件：1．山东省参加第九届中国花卉博览会工作领导小组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;2．山东省参加第九届中国花卉博览会技术专家组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','0','1488360574','1') [ RunTime:0.1080s ]
+
+[ 2017-03-01T17:30:36+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('大胜靠德吉林省会计的脸孔睡觉奥刻录机','','0','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;各市林业局，各有关单位：&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;由全国绿化委员会、财政部、海关总署、国家质检总局、国家林业局五部委会签，国家林业局、中国花卉协会、宁夏回族自治区人民政府共同主办的第九届中国花卉博览会将于2017年9月在银川市举办，主题为“花儿绽放新丝路”。这是我国首次在西北地区举办的国家级花事盛会，期间还将举办中国-阿拉伯国家博览会。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;为做好此次参展工作，积极推进各项工作有序开展，经研究，决定成立山东省参加第九届中国花卉博览会工作领导小组和技术专家组（具体名单见附件）。请各市成立相应的组织机构，做好参展展品的筹备工作。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;附件：1．山东省参加第九届中国花卉博览会工作领导小组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;2．山东省参加第九届中国花卉博览会技术专家组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','0','1488360636','1') [ RunTime:0.0820s ]
+
+[ 2017-03-01T17:30:58+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('的数据库来得及索拉卡几点啦','','0','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; pad','0','1488360658','1') [ RunTime:0.1040s ]
+
+[ 2017-03-01T17:32:20+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('的萨拉的空间啊链接打开拉大锯','','0','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;各市林业局，各有关单位：&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;由全国绿化委员会、财政部、海关总署、国家质检总局、国家林业局五部委会签，国家林业局、中国花卉协会、宁夏回族自治区人民政府共同主办的第九届中国花卉博览会将于2017年9月在银川市举办，主题为“花儿绽放新丝路”。这是我国首次在西北地区举办的国家级花事盛会，期间还将举办中国-阿拉伯国家博览会。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;为做好此次参展工作，积极推进各项工作有序开展，经研究，决定成立山东省参加第九届中国花卉博览会工作领导小组和技术专家组（具体名单见附件）。请各市成立相应的组织机构，做好参展展品的筹备工作。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;附件：1．山东省参加第九届中国花卉博览会工作领导小组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;2．山东省参加第九届中国花卉博览会技术专家组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1','1488360739','1') [ RunTime:0.2750s ]
+
+[ 2017-03-01T17:33:04+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('电视剧啊栏点击量刷卡机的啦','','0','','','0','0','&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong style=&quot;font-style: normal;&quot;&gt;山东省参加第九届中国花卉博览会工作领导小组和技术专家组的通知&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: center; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;鲁林种字〔2017〕46号&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;各市林业局，各有关单位：&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;由全国绿化委员会、财政部、海关总署、国家质检总局、国家林业局五部委会签，国家林业局、中国花卉协会、宁夏回族自治区人民政府共同主办的第九届中国花卉博览会将于2017年9月在银川市举办，主题为“花儿绽放新丝路”。这是我国首次在西北地区举办的国家级花事盛会，期间还将举办中国-阿拉伯国家博览会。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;为做好此次参展工作，积极推进各项工作有序开展，经研究，决定成立山东省参加第九届中国花卉博览会工作领导小组和技术专家组（具体名单见附件）。请各市成立相应的组织机构，做好参展展品的筹备工作。&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;附件：1．山东省参加第九届中国花卉博览会工作领导小组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;2．山东省参加第九届中国花卉博览会技术专家组名单&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; text-align: left; line-height: 28px; color: rgb(0, 0, 0); font-family: 宋体; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1','1488360783','1') [ RunTime:0.1350s ]
+
+[ 2017-03-01T17:33:20+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('','','0','','','0','0','','0','1488360800','1') [ RunTime:0.1170s ]
+
+[ 2017-03-01T17:33:57+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0070s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('','','0','','','0','0','','0','1488360836','1') [ RunTime:0.2140s ]
+
+[ 2017-03-01T17:35:03+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+
+[ 2017-03-01T17:36:34+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0070s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('dsjldkas','','0','','','0','0','&lt;p&gt;&amp;nbsp;p(11);&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; exit();&lt;/p&gt;','0','1488360994','1') [ RunTime:0.1550s ]
+
+[ 2017-03-01T18:46:33+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0130s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('','','0','','','0','0','','0','1488365193','1') [ RunTime:0.0970s ]
+
+[ 2017-03-01T18:47:38+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('','','0','','','0','0','','0','1488365258','1') [ RunTime:0.0850s ]
+
+[ 2017-03-01T18:56:20+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0130s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('1','1','1','1','1','0','1','','1','1488365780','1') [ RunTime:0.1310s ]
+
+[ 2017-03-01T18:56:35+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0150s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`create_time`,`create_id`) VALUES ('11','','0','1','1','0','1','','0','1488365795','1') [ RunTime:0.1140s ]
+
+[ 2017-03-01T19:11:49+08:00 ] 127.0.0.1 /admin.php/Admin/addPrefix
+ERR: 参数错误或者未定义:arr
+
+[ 2017-03-01T19:28:26+08:00 ] 127.0.0.1 /admin.php/Admin/addPrefix
+ERR: 非法操作:addPrefix
+
+[ 2017-03-01T19:28:40+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','0','1','1','1','1','','1','1488367720','1') [ RunTime:0.1530s ]
+
+[ 2017-03-01T19:28:50+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','1','','11','1','1','','0','1488367730','1') [ RunTime:0.0950s ]
+
+[ 2017-03-01T19:31:10+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T19:32:23+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T19:32:38+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T19:40:33+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T19:41:13+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-01T19:45:58+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0040s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_status`) VALUES ('1','1','0','1','1','0','1','1') [ RunTime:0.1640s ]
+
+[ 2017-03-01T19:48:04+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('','','0','1','1','1','','&lt;p&gt;hfdasklfjdaskldjlaksjdkasjdlkajdkljaskldjklasjdljsdkljalkdjskldjsadjlkasjdklsa&lt;br/&gt;&lt;/p&gt;','1','1488368884','1') [ RunTime:0.1420s ]
+
+[ 2017-03-01T19:48:51+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('11111','11','1','1','1','1','','','1','1488368931','1') [ RunTime:0.0870s ]
+
+[ 2017-03-01T19:52:33+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','0','1','1','1','','','1','1488369153','1') [ RunTime:0.1470s ]
+
+[ 2017-03-01T19:53:03+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','0','1','1','1','','','1','1488369183','1') [ RunTime:0.1250s ]
+
+[ 2017-03-01T20:00:00+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0070s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','1','1','1','0','','','1','1488369600','1') [ RunTime:0.7050s ]
+
+[ 2017-03-01T20:00:33+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0070s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','1','1','1','0','','','1','1488369633','1') [ RunTime:0.2030s ]
+
+[ 2017-03-01T20:01:13+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','0','1','1','1','','','1','1488369673','1') [ RunTime:0.1460s ]
+
+[ 2017-03-01T20:02:27+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','1','1','1','0','','','1','1488369747','1') [ RunTime:0.0700s ]
+
+[ 2017-03-01T20:03:02+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0050s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','1','1','1','1','','','1','1488369782','1') [ RunTime:0.0650s ]
+
+[ 2017-03-01T20:03:57+08:00 ] 127.0.0.1 /admin.php/Inform/informAdd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `iot_inform` [ RunTime:0.0060s ]
+SQL: INSERT INTO `iot_inform` (`inform_title`,`inform_short`,`inform_sort`,`inform_keywords`,`inform_abstract`,`inform_author`,`inform_source`,`inform_content`,`inform_status`,`inform_create_time`,`inform_create_id`) VALUES ('1','1','1','1','1','1','','','1','1488369837','1') [ RunTime:0.1120s ]
+
+[ 2017-03-01T20:07:23+08:00 ] 127.0.0.1 /admin.php/Index/admin-permission.html
+ERR: 非法操作:admin-permission
+
+[ 2017-03-01T20:07:26+08:00 ] 127.0.0.1 /admin.php/Index/admin-role.html
+ERR: 非法操作:admin-role
+
+[ 2017-03-01T20:08:45+08:00 ] 127.0.0.1 /admin.php/Admin/static/h-ui/css/H-ui.min.css
+ERR: 非法操作:static
+
+[ 2017-03-01T20:08:45+08:00 ] 127.0.0.1 /admin.php/Admin/static/h-ui.admin/css/H-ui.admin.css
+ERR: 非法操作:static
+
+[ 2017-03-01T20:08:45+08:00 ] 127.0.0.1 /admin.php/Admin/static/h-ui.admin/skin/default/skin.css
+ERR: 非法操作:static
+
+[ 2017-03-01T20:08:45+08:00 ] 127.0.0.1 /admin.php/Admin/lib/layer/2.4/layer.js
+ERR: 非法操作:lib
+
+[ 2017-03-01T20:08:45+08:00 ] 127.0.0.1 /admin.php/Admin/lib/jquery/1.9.1/jquery.min.js
+ERR: 非法操作:lib
+
+[ 2017-03-01T20:08:45+08:00 ] 127.0.0.1 /admin.php/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js
+ERR: 非法操作:lib
+
+[ 2017-03-01T20:08:45+08:00 ] 127.0.0.1 /admin.php/Admin/static/h-ui.admin/css/style.css
+ERR: 非法操作:static
+
+[ 2017-03-01T20:08:45+08:00 ] 127.0.0.1 /admin.php/Admin/static/h-ui.admin/js/H-ui.admin.js
+ERR: 非法操作:static
+
+[ 2017-03-01T20:08:45+08:00 ] 127.0.0.1 /admin.php/Admin/static/h-ui/js/H-ui.min.js
+ERR: 非法操作:static
+
+[ 2017-03-01T20:08:45+08:00 ] 127.0.0.1 /admin.php/Admin/lib/Hui-iconfont/1.0.8/iconfont.css
+ERR: 非法操作:lib
+
+[ 2017-03-01T20:08:45+08:00 ] 127.0.0.1 /admin.php/Admin/static/h-ui.admin/js/H-ui.admin.js
+ERR: 非法操作:static
+
+[ 2017-03-01T20:08:46+08:00 ] 127.0.0.1 /admin.php/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js
+ERR: 非法操作:lib
+
+[ 2017-03-01T20:12:13+08:00 ] 127.0.0.1 /admin.php/Index/admin-permission.html
+ERR: 非法操作:admin-permission
+
+[ 2017-03-01T20:20:25+08:00 ] 127.0.0.1 /admin.php/Index/member-list.html
+ERR: 非法操作:member-list
+
+[ 2017-03-01T20:20:32+08:00 ] 127.0.0.1 /admin.php/Index/admin-permission.html
+ERR: 非法操作:admin-permission
+

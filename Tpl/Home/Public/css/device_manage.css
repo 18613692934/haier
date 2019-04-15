@@ -1,0 +1,23 @@
+/* 基础外框 */
+    .elements{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        /*padding: 0 auto;*/
+        font-size: 14px;
+    }
+
+    .manage-title{
+        font-size:16px;
+        color:#2993f7;
+    }
+    
+    .info{
+        height:35px;
+    }
+
+
+.input-text{
+    width:40%;
+    background-color: #fff;
+}

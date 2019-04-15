@@ -1,0 +1,155 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+{:W('Public/_meta')}
+<title>修改落叶信息</title>
+ <style>
+    .form-horizontal .form-label {
+        text-align: right;
+    }
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+</style>
+</head>
+<body>
+<article class="page-container">
+	<form class="form form-horizontal" id="form-module-add">
+		
+		<div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>设备编号：</label>
+                        <div class="formControls col-xs-8 col-sm-9">
+                            <span class="select-box" style="width:150px;">  
+                                <select name="device_code"  class="select" >
+                                    <option selected value="0">==请选择==</option>
+                                    <foreach name="data" item="v">
+                                        <option value="{$v['device_code']}" <if condition="$item['device_code'] eq $v['device_code']">selected</if> >{$v['device_code']}</option>
+                                    </foreach>
+                                </select>
+                                
+                            </span>
+                        </div>
+                </div>
+            <input type='hidden' value="{$item['wl_id']}" name="eid"/>
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>落叶范围（㎡）：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$item['wl_range']}" placeholder="" id="wl_range" name="wl_range">
+			</div>
+		</div>
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>落叶厚度（cm）：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$item['wl_thickness']}" placeholder="" id="wl_thickness" name="wl_thickness">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>落叶重量（KG）：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$item['wl_weight']}" placeholder="" id="wl_weight" name="wl_weight">
+			</div>
+		</div>
+                <div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>落叶下地表温度（℃）：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$item['wl_surface_temp']}" placeholder="" id="wl_surface_temp" name="wl_surface_temp">
+			</div>
+		</div>
+                <div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>统计时间：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+                            <input type="text"  id="unix_createdate" value="{$item['unix_createdate']||date='Y-m-d H:i:s',###}" name="unix_createdate" onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm' })"</literal> class="input-text Wdate" style="width:150px;">
+
+				
+			</div>
+		</div>
+                <div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<button onClick="device_save();" class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+                                <button onClick="remove();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+			</div>
+		</div>
+	</form>
+</article>
+</body>
+
+
+{:W('Public/_footer')}
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript">
+/**
+ * 取消按钮
+ */
+function remove(){
+    var index = parent.layer.getFrameIndex(window.name);              
+    parent.layer.close(index);   // 关闭layer  
+}
+
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+
+	//表单验证
+	$("#form-module-add").validate({
+		rules:{
+			wl_range:{
+				required:true,
+			},
+                        wl_thickness:{
+				required:true,
+			},
+                        wl_weight:{
+				required:true,
+			},
+                        wl_surface_temp:{
+				required:true,
+			},
+			device_code:{
+                            min:1,
+			},
+                        unix_createdate:{
+                            required:true,
+                        }
+                        
+		},
+                messages:{
+                    
+                },
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(form){
+                    $(form).ajaxSubmit({
+                        type:'post',
+                        url:"{:U('User/leafEdit')}",
+                        success:function(data){
+                            layer.msg(data.info,{icon:data.state,time:500});
+                        },
+                        error:function(XmlHttpRequest, textStatus, errorThrown){
+                            layer.msg('添加失败，请重新操作',{icon:2,time:1000});
+                            
+                        },
+                        
+                        
+                    });
+			var index = parent.layer.getFrameIndex(window.name);
+                        setTimeout(function(){
+                            window.parent.location.reload(); //刷新父页面
+                            parent.layer.close(index);   // 关闭layer  
+                        },500);
+			
+		}
+	});
+	
+});
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</html>

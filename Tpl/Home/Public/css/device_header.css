@@ -1,0 +1,141 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-5-18, 10:04:35
+    Author     : zhang
+*/
+.index-head{
+    min-width: 1200px;
+    height:auto;
+    background: url(../img/header/head.png) no-repeat center;
+    
+    background-size:cover;
+    
+}
+.con{
+    width:150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.dropDown {
+    width:110px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+    display:block;
+    
+}
+.dropDown a{
+    color:#f0f0f0;
+    
+}
+.dropDown.open > .dropDown-menu {
+   
+    background-color: #2993f7;
+    border:  0;
+}
+.right-top .menu > li > a {
+    text-align: center;
+}
+
+ .index-h-center{
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+.index-h-logo{
+    width: 60px;
+    height:35px;
+
+}
+.index-h-title{
+    width:1200px;
+    margin: 0 auto;
+}
+.index-h-title .wrap{
+    width: 1200px;
+    display: table-cell;
+    vertical-align: middle;	
+    *position:absolute;
+    *top: 50%;
+    *left: 0;
+}
+.index-h-title .wrap .top{
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    color:#2275D3;
+    *position: relative;
+    *top: -50%;
+    *left: 0;    
+}
+ .device_code{
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+.index-h-nav{
+   width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.index-h-nav ul li{
+    float:left!important;
+    _display:inline;
+}
+.index-h-nav ul li{
+    width: 125px;
+    height: 80px;
+     background: url(../img/header/pingxing.png) no-repeat ;
+    background-size: cover;
+    margin-right: -20px;
+}
+.index-h-nav ul li div{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 14px;  
+}
+.index-h-nav ul li div img{
+   width: 50px;
+   height: 50px;
+}
+.index-h-nav ul li p{
+    letter-spacing:3px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.index-h-nav ul li.hl{
+   background: url(../img/header/pingxing-blue.png) no-repeat ;
+    background-size: cover;
+}
+.index-h-nav ul li.hl p{
+    color: #ffffff;
+}
+
+/*.index-h-right{
+    width: 15%;
+    height: 100%;
+    position: relative;
+    border: solid #000 1px;
+}*/
+
+
+
+.menu > li > a:hover, .menu > li > a:focus, .menu > li.open > a {
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color:#000;
+}
+
+
+
+
+

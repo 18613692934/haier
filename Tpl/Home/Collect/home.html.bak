@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <include file="Public/_meta"/>
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/collect_home.css">
+ <link rel="stylesheet" href="__PUBLIC_STATIC__/Swiper/3.4.2/css/swiper.min.css">
+</head>
+<body>
+   <section class="Hui-article-box">
+    <div class="Hui-article">
+        <article class="cl pd-20">
+            <div class="bk-gray  radius  pd-10">
+            <div class="bk-gray  radius  pd-10">
+                <span class="f-20">今日数据</span> 
+                <a id="btn-refresh" class="hidden-xs btn  btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+                 <a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
+                <div class="f-14 c-error">
+                    <span>区域:<foreach name="region" item="vo" >
+                                [ {$vo} ] 
+                                </foreach>
+                    </span>
+                </div>
+            </div>
+            <div class="bk-gray  radius  pd-10 mt-10">
+                <div class="slideGroup" style="margin:0 auto">
+                    <div class="parBd">
+                        <div class="slideBox">
+
+                            <ul>
+                                <li>
+                                    <div class="pic">
+                                        <div class="circle-1">今日平均温度</div>
+                                        <div class="circle-2">{$avg_temp}℃</div>
+                                        <if condition="$temp_lv eq 0">
+                                            <div class="circle-3">与昨日持平</div>
+                                            <else/>
+                                                <div class="circle-3">比昨日
+                                                    <if condition="$temp_lv lt 0">下降{-$temp_lv}
+                                                    <else/>上升{$temp_lv}
+                                                    </if>
+                                                </div>
+                                        </if>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <div id="circle">
+
+                                            <div class="circle-1">今日平均光照</div>
+
+                                            <div class="circle-2">{$avg_beam}Lx</div>
+                                            <if condition="$beam_lv eq 0">
+                                                <div class="circle-3">与昨日持平</div>
+                                                <else/>
+                                                    <div class="circle-3">比昨日
+                                                        <if  condition="$beam_lv lt 0">下降{-$beam_lv}
+                                                        <else/>上升{$beam_lv}
+                                                        </if>
+                                                    </div>
+                                            </if>
+                                        </div>
+                                    
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <div id="circle">
+
+                                            <div class="circle-1">今日平均湿度</div>
+
+                                            <div class="circle-2">{$avg_humidity}%</div>
+                                            <if condition="$humidity_lv eq 0">
+                                                <div class="circle-3">与昨日持平</div>
+                                                <else/>
+                                                    <div class="circle-3">比昨日
+                                                         <if condition="$humidity_lv lt 0">下降{-$humidity_lv}
+                                                <else/>上升{$humidity_lv}
+                                                        </if>
+                                                    </div>
+                                            </if>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <div id="circle">
+
+                                            <div class="circle-1">今日虫害数量</div>
+
+                                            <div class="circle-2">{$sum_pest}只</div>
+                                           <if condition="$pest_lv eq 0">
+                                                <div class="circle-3">与昨日持平</div>
+                                                <else/>
+                                                    <div class="circle-3">比昨日
+                                                        <if condition="$pest_lv lt 0">下降{-$pest_lv}
+                                        <else/>上升{$pest_lv}
+                                                        </if>
+                                                    </div>
+                                            </if>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <div id="circle">
+
+                                            <div class="circle-1">苗木健康程度</div>
+
+                                            <div class="circle-2">{$health}%</div>
+                                            <if condition="$health_lv eq 0">
+                                                <div class="circle-3">与昨日持平</div>
+                                                <else/>
+                                                    <div class="circle-3">比昨日
+                                                         <if condition="$health_lv lt 0">下降{-$health_lv}
+                                    <else/>上升{$health_lv}
+                                                        </if>
+                                                    </div>
+                                            </if>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div><!-- slideBox End -->
+                    </div><!-- parBd End -->
+                </div>           
+            </div>
+                 <!--<div class="RightBotton hidden-xs"></div>-->
+<!--                <div class="bk-gray  radius  pd-10 mt-5">
+                   <form method="post" action="{:U('Collect/home')}">
+                            <div class="row cl">
+                                <div class="col-sm-3">
+                                    <label>开始时间</label>
+                                    <input type="text" name='statrTime' value="{$time['firstTime']}" onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', maxDate:'#F{$dp.$D(\'chartsLogmax\')||\'%y-%M-%d %H:%m:%s\'}' })"</literal> id="chartsLogmin" class="input-text radius Wdate" style="width:170px;">
+                                
+                                </div>
+                                <div class="col-sm-3">
+                                    <label>结束时间</label>
+                                    <input type="text" name='endTime' value="{$time['lastTime']}" onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', minDate: '#F{$dp.$D(\'chartsLogmin\')}',maxDate:'%y-%M-%d %H:%m:%s' })"</literal> id="chartsLogmax" class="input-text radius Wdate" style="width:170px;">
+                                
+                                </div>
+                                <div class="col-sm-5">
+                                    <label>区域选择</label>
+                                            <select  id="selectClass" class="selectClass" name="region[]" multiple="multiple">
+                                                <foreach name='region' item='v'>
+                                                    <option value="{$v}">{$v}</option>
+                                                </foreach>
+                                            </select>
+                                </div>
+                            </div>
+                            <div class="row cl">
+                                <div class="col-sm-4">
+                                    <label>汇总</label> 
+                                <span id="listSumData" class=" btn-group va-m">
+                                    <span class="btn   btn-secondary-outline radius active" id="" >不汇总</span>
+                                    <span class="btn  btn-secondary-outline radius" id="hours">小时</span>
+                                    <span class="btn  btn-secondary-outline radius"  id="day">天</span>
+                                    <span class="btn  btn-secondary-outline radius"  id="week">周</span>
+                                    <span class="btn  btn-secondary-outline radius"  id="month">月</span>
+                                    <span class="btn  btn-secondary-outline radius"  id="year">年</span>
+                                </span>
+                                </div>
+                                <div class="col-sm-2">
+                                   <button type="submit" id="homeButton"  class="btn btn-primary radius" style="margin-left:25px;">执行</button>
+                                    <button type="button" id="homeReset"  class="btn btn-warning radius">重置</button>
+                
+                                </div>
+                            </div>
+                                
+                                   
+                        </form>
+                    </div>   -->  
+                    <div class="bk-gray  radius  pd-10 mt-10">
+                        <div id="main" style="width:100%;height:400px;"></div>
+                    </div>
+               
+        </div>
+            
+        </article>
+    </div>
+     
+</section>
+{:W('Header/footer')}
+       
+        
+        
+       
+        
+</body>
+<include file="Public/_footer"/> 
+<script type="text/javascript" src="__PUBLIC_STATIC__/echarts/3.4.0/echarts.min.js"></script>
+<script src="__PUBLIC_STATIC__/SuperSlide2.1/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+			/*
+			SuperSlide
+			*/
+			/* 图片滚动切换 */
+			jQuery(".slideGroup .slideBox").slide({ 
+                            mainCell:"ul",
+                            vis:5,
+                            prevCell:".sPrev",
+                            nextCell:".sNext",
+                            effect:"leftLoop",
+                            autoPlay:true,
+                            interTime:2000,
+                        });
+		</script>
+
+
+    <script type="text/javascript">
+        function homeCharts(data,myChart){
+            
+             // 基于准备好的dom，初始化echarts实例
+        var colors = ['#5793f3', '#d14a61', '#675bba'];
+            option = {
+                color: colors,
+                title: {
+                    text: "七日综合信息走势图",
+                    subtext:"病虫害及生长环境7日数据",
+                     left: 'center',
+                      top:"50",
+                    textStyle: {
+                        fontWeight:'200',
+                        color: '#000',
+
+                    },
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {type: 'cross'}
+                },
+                grid: {
+                    right: '5%',
+                    left:'5%',
+                    top:"30%"
+
+                },
+                toolbox: {
+//                    itemSize:20,
+                    right:30,
+                    top:40,
+                    feature: {
+                        dataView: {show: true, readOnly: false},
+                        magicType: {show: true, type: ['line', 'bar']},
+                        restore: {show: true},
+                        saveAsImage: {show: true}
+                    }
+                },
+                legend: {
+                    data:[],
+                },
+                xAxis: [
+                    {
+                        type: 'category',
+                        axisTick: {
+                            alignWithLabel: true
+                        },
+//                        data: ['2017-10-21','2017-10-22','2017-10-23','2017-10-24','2017-10-25','2017-10-26','2017-10-27']
+                        data:[],
+                        axisPointer: {
+                            type: 'shadow'
+                        }
+                }
+                ],
+//                yAxis: [{type: 'value',},],    原始代码
+                yAxis:[
+                    {
+                        type: 'value',
+                        name: '数量(头)',
+                    },
+                    {
+                        type: 'value',
+                        name: '平均温度(℃)\n平均湿度(%)',
+                    }
+                ],
+                series: []
+            };
+            
+var Item = function(){  
+            return {  
+                name:'',  
+                smooth:true, 
+                yAxisIndex:0,
+                type:'',                  
+                data:[]  
+            }  
+        };// series中的每一项为一个item,所有的属性均可以在此处定义  
+       
+        
+        var legends = [];// 准备存放图例数据  
+        var Series = []; // 准备存放图表数据  
+        var json = data.data;// 后台返回的json  
+        
+        for(var i=0;i < json.length;i++){  
+            var it = new Item();  
+            it.name = json[i].name;// 先将每一项填充数据 
+            it.type = json[i].type;
+            it.yAxisIndex = json[i].yAxisIndex;
+            legends.push(json[i].name);// 将每一项的图例名称也放到图例的数组中  
+            it.data = json[i].data; 
+            Series.push(it);// 将item放在series中  
+            
+        }  
+        option.xAxis[0].data = data.time;// 这一步是设置X轴数据了，需要注意：option.xAxis.data = json.xcontent这样不行  
+                              // 折线图可设置上下两个X轴，所以必须是option.xAxis[0].data = json.xcontent  
+                              var legend={data:legends};  
+                                  
+                              option.legend = legend;// 设置图例  
+                              option.series = Series; // 设置图表  
+                           
+    
+    
+         // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        window.onresize = myChart.resize;
+        myChart.hideLoading();
+}
+       
+    </script>
+<script>
+        $(function () {
+          
+                    var myChart = echarts.init(document.getElementById('main'));
+                    myChart.showLoading({
+                        text : '数据量较大\n拼命刷新中',
+                        effect : 'bubble',
+                        textStyle : {
+                            fontSize : 30
+                        }
+                    });
+                    
+                $.ajax({
+                    type: "post",
+                    url: "{:U('Collect/homeCharts')}",
+                    data: {
+                        "time":Math.round(new Date().getTime()/1000),
+                    },
+                    success: function (data) {
+                       
+                        if(!data.data){
+                         document.getElementById("main").style.height = "auto";
+                            document.getElementById('main').innerHTML = "<div class='text-c f-20'>暂无数据</div>";
+                        }else{
+                            homeCharts(data,myChart);
+                        }
+                    },
+                     error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        document.getElementById("main").style.height = "auto";
+                        document.getElementById('main').innerHTML = "<div class='text-c f-20'>请求出错，请重新刷新</div>";
+                    
+                    }
+                });
+
+            
+        });
+
+    </script>
+
+
+</html>
+    
+
+
+
+
+

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            {$arr['webname']['info_value']}
+        </title>
+        {:W('Public/_meta')}
+        <meta name="keywords" />
+        <link rel="stylesheet" type="text/css" href="__HOME_CSS__/device_seed.css">
+        <link rel="stylesheet" type="text/css" href="__HOME_CSS__/device_seed_history.css">
+        
+    </head>
+    
+    <body>
+        <div id=loading style="position:absolute;width:100%;z-index:9999">
+            {:W('Header/loading')}
+        </div>
+        {:W('Header/device_header')}
+        <div class="pest-wrap">
+            <div class="pest_middle">
+                <div class="middle_center">
+                    <div class="center_top">
+                        
+<!--                        <notempty name="seed_res">
+                            <div class="LeftBotton"></div>
+                        <div class="center">
+                            <div class="swiper-container" dir="rtl" style="height:200px;">
+                                <div class="swiper-wrapper">
+                                    
+                                    
+                                    <foreach name="seed_res" item="v">
+                                        <div class="swiper-slide">
+                                            <div class="pic">
+                                        <div id="circle">
+                                        <p>设备实时数据</p>
+                                        <img alt="" src="{$v['image']}" />
+                                        <span>
+                                        <p>{$v['dse_type']}<br/>{$v['dse_level']}</p> 
+                                        </span>
+                                        </div>
+                                        </div>
+                                        </div>
+                                    </foreach>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="RightBotton"></div>
+                         
+                            
+              
+                                 
+                        </notempty>-->
+                       <div class="cl">
+                        </div>
+                       
+                    </div>
+                        
+                        <div class="center_bottom">
+                            <div id="tab_demo" class="HuiTab">
+                                <div class="tabBar clearfix">
+                                    <span>
+                                        苗情图片
+                                    </span>
+                                    <span>
+                                        历史图片查看
+                                    </span>
+                                </div>
+                                <div class="tabCon">
+                                    <section class="Hui-article-box">
+                                    <div class="Hui-article">
+                                        <article class="cl pd-20">
+
+                                            <div class="bk-gray  radius  pd-10">
+                                                <div class="bk-gray  radius  pd-10 mt-5">
+                                                    <form>
+                                                        <div class="row cl">
+                                                            <div class="col-sm-3">
+                                                                <label>开始时间</label>
+                                    <input autocomplete="off" type="text" name='startTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', maxDate:'#F{$dp.$D(\'diseaseInfoLogmax\')||\'%y-%M-%d %H:%m:%s\'}' })"</literal> id="diseaseInfoLogmin" class="input-text Wdate" style="width:150px;">
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <label>结束时间</label>
+                                    <input autocomplete="off" type="text" name='endTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', minDate: '#F{$dp.$D(\'diseaseInfoLogmin\')}',maxDate:'%y-%M-%d %H:%m:%s' })"</literal> id="diseaseInfoLogmax" class="input-text Wdate" style="width:150px;">
+                                                            </div>
+
+                                                            <div class="col-sm-3">
+                                                                <button type="button" name="infoDisease"  class="btn btn-primary radius" style="margin-left:25px;">执行</button>
+
+                                                                <button type="reset"   class="btn btn-warning radius">重置</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row cl">
+                                                        </div>
+                                                    </form> 
+                                                </div>
+                                                    
+                                                    <div class="bk-gray  radius  pd-10 mt-10 cl history_list va-m ">
+                                                        <table  class="table table-border table-bordered table-bg table-hover table-disease "> 
+                                                            <thead></thead>
+                                                        </table>
+                                                    </div>
+                                                
+                                                
+                                            </div>
+                                        </article>
+                                    </div>
+                                </section>
+                                </div>
+                                <div class="tabCon">
+                                    <section class="Hui-article-box">
+                                    <div class="Hui-article">
+                                        <article class="cl pd-20">
+
+                                            <div class="bk-gray  radius  pd-10">
+
+                                                <div class="bk-gray  radius  pd-10 mt-5">
+                                                    <form>
+                                                        <div class="row cl">
+                                                            <div class="col-sm-3">
+                                                                <label>开始时间</label>
+                                                <input type="text" name='startTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', maxDate:'#F{$dp.$D(\'historyLogmax\')||\'%y-%M-%d %H:%m:%s\'}' })"</literal>id="historyLogmin" class="input-text Wdate" style="width:150px;">
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <label>结束时间</label>
+                                                <input type="text" name='endTime' onfocus=<literal>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm', minDate: '#F{$dp.$D(\'historyLogmin\')}',maxDate:'%y-%M-%d %H:%m:%s' })"</literal> id="historyLogmax" class="input-text Wdate" style="width:150px;">
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <button type="button"  name="seedHistory"  class="btn btn-primary radius" style="margin-left:25px;">执行</button>
+                                                                <button type="reset"   class="btn btn-warning radius">重置</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row cl">
+                                                        </div>
+                                                    </form> 
+                                                </div>
+                                                <div class="bk-gray  radius  pd-10 mt-10 cl">
+                                                        <div class="history_list">
+                                        <table class="table table-border table-bordered table-bg table-hover table-sort">
+                                            <tbody>
+                                                <foreach name='disease_all' item='disease'>
+                                                    <tr class="text-c">
+                                                        <td>
+                                                            <div class="list_wrap cl">
+                                                                <div class="list_top">
+                                                                    <p>
+                                                                        预置点:
+                                                                    </p>
+                                                                    <p>
+                                                                        采集时间:{$disease['addtime']|date='Y-m-d H:i:s',###}
+                                                                    </p>
+                                                                </div>
+                                                                <div class="list_left f-l">
+                                                                    <img src="{$disease['image']}" />
+                                                                </div>
+                                                                <div class="list_right f-l">
+                                                                    <p>
+                                                                        杨树溃疡病:
+                                                                        <if condition="$disease['dse_type'] eq '溃疡病'">
+                                                                            {$disease['dse_level']}
+                                                                            <else/>
+                                                                            无
+                                                                        </if>
+                                                                    </p>
+                                                                    <p>
+                                                                        杨树黑斑病:
+                                                                        <if condition="$disease['dse_type'] eq '黑斑病'">
+                                                                            {$disease['dse_level']}
+                                                                            <else/>
+                                                                            无
+                                                                        </if>
+                                                                    </p>
+                                                                    <p>
+                                                                        法桐白粉病:
+                                                                        <if condition="$disease['dse_type'] eq '白粉病'">
+                                                                            {$disease['dse_level']}
+                                                                            <else/>
+                                                                            无
+                                                                        </if>
+                                                                    </p>
+                                                                    <p>
+                                                                        法桐霉斑病:
+                                                                        <if condition="$disease['dse_type'] eq '霉斑病'">
+                                                                            {$disease['dse_level']}
+                                                                            <else/>
+                                                                            无
+                                                                        </if>
+                                                                    </p>
+                                                                    <p>
+                                                                        杨树黄叶病:
+                                                                        <if condition="$disease['dse_type'] eq '黄叶病'">
+                                                                            {$disease['dse_level']}
+                                                                            <else/>
+                                                                            无
+                                                                        </if>
+                                                                    </p>
+                                                                    <p>
+                                                                        防治:是
+                                                                    </p>
+                                                                    <p>
+                                                                        <a style="color:red" href="">
+                                                                            查看详情 >>>
+                                                                        </a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </foreach>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </section>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<include file="Public/codeing"/>
+                -->
+            </div>
+            <style>
+                .odd { width: 280px; float: left; margin: 9px } .even { width: 280px;
+                float: left; margin: 9px; } .table-bordered { border: 0; }
+            </style>
+            {:W('Header/footer')}
+    </body>
+    {:W('Public/_footer')}
+    <script type="text/javascript" src="__PUBLIC_STATIC__/datatables/1.10.0/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script>
+    <script>
+         function picture_edit(title,url){
+	var index = layer.open({
+		type: 2,
+		title: title,
+		content: url,
+               maxmin: true, //开启最大化最小化按钮
+                shadeClose: true,
+                area: ['80%', '95%'],
+	});
+        
+}
+        
+    </script>
+    <script type="text/javascript">
+    
+
+
+
+        $(function() {
+            var infoDisease;
+            $("button[name='infoDisease']").bind("click", function () { //按钮 触发table重新请求服务器     
+             infoDisease.fnDraw();
+             });
+             
+            infoDisease = $('.table-disease').dataTable({
+                "language": {
+                    "lengthMenu": "每页 _MENU_ 条记录",
+                    "zeroRecords": "没有找到记录",
+                    "info": "第 _PAGE_ 页 ( 总共 _PAGES_ 页 )",
+                    "infoEmpty": "无记录",
+                    "infoFiltered": "(从 _MAX_ 条记录过滤)",
+                    "processing": "正在处理中...",
+                    "paginate": {
+                        "previous": "上一页",
+                        "next": "下一页",
+                    }
+                },
+                "bFilter": false, //过滤功能
+                "bSort": false, //排序功能
+                "bAutoWidth": false,//自动宽度
+            "aLengthMenu": [[15, 20,30,40], [15, 20,30,40]],
+            "aaSorting": [[ 0, "desc" ]],//默认第几个排序
+            "bStateSave": false,//状态保存
+            serverSide: true,
+            ajax: {
+                url: "{:U('Device/infoDisease')}",
+                type: 'POST',
+                data:function(d){
+                    d.startTime = $("#diseaseInfoLogmin").val();
+                    d.endTime = $("#diseaseInfoLogmax").val();
+                },
+            },
+            "aoColumnDefs": [
+              //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+              // {"orderable":false,"aTargets":[0]}// 不参与排序的列
+            ],
+             "aoColumns": [ //这个属性下的设置会应用到所有列，按顺序没有是空
+            {
+                "sClass": "text-c",   
+                "data": {
+                    "de_id":"de_id",
+                    "createdate":"unix_addtime",
+                    " image":"image", 
+                },
+                "render":function(data,type,full,meta){
+                    
+                    var newDate = new Date(data.unix_addtime);
+                    newDate.setTime(data.unix_addtime*1000);
+                    var createdate = formatDate(newDate);
+
+//                    if(data.file_exists){
+                        var str = "<div id='item-pdid4' class='list_wrap cl'>"+
+                        "<div class='row cl'>"+
+                        "<div class='col-xs-12'>"+
+                          "<p>"+createdate+"</p>"+                        
+                        "<a onclick=picture_edit('图片查看','{:U(\'Device/diseaseImgShow\',array(\'id\'=>deid1))}') href=javascript:;>"+
+                            "<img style='width:225px;height:187px'  src='"+data.image+"' alt='虫害图片' />"+
+                        "</a>"+
+                        "<p>点击图片，人工校验</p>"+                        
+                        "</div>"+
+                        "</div>"+
+                       
+                    "</div>";
+//                 
+                    str = str.replace("deid1",data.de_id); 
+                    
+//                    }
+//                    else{
+//                        var str = 
+//                         "<div class='text-c f-18 mb-10'>图片丢失</div>"+
+//                         "<div class='text-c f-16'>[<a onclick=imgDel(deid1) href=javascript:;>删除此数据</a>] | 忽略本提示</div>";
+//
+//                    str = str.replace("deid1",data.de_id); 
+//                    
+//                    }
+                    
+                    return str; 
+                }
+             }, //mData 表示发请求时候本列的列明，返回的数据中相同下标名字的数据会填充到这一列
+            
+             ]
+            });
+        });
+        
+</script>
+    
+    
+    <script>
+        var seedHistory;
+        $("button[name='seedHistory']").bind("click",
+        function() { //按钮 触发table重新请求服务器     
+            seedHistory.fnDraw();
+        });
+        $(function() {
+            $.Huitab("#tab_demo .tabBar span", "#tab_demo .tabCon", "current", "click", "0");
+
+            seedHistory = $('.table-sort').dataTable({
+                "language": {
+                    "lengthMenu": "每页 _MENU_ 条记录",
+                    "zeroRecords": "没有找到记录",
+                    "info": "第 _PAGE_ 页 ( 总共 _PAGES_ 页 )",
+                    "infoEmpty": "无记录",
+                    "infoFiltered": "(从 _MAX_ 条记录过滤)",
+                    "processing": "正在处理中...",
+                    "paginate": {
+                        "previous": "上一页",
+                        "next": "下一页",
+                    }
+                },
+
+                "bFilter": false,
+                //过滤功能
+                "bSort": false,
+                //排序功能
+                "bAutoWidth": true,
+                //自动宽度
+                "aLengthMenu": [[8, 16, 32, -1], [8, 16, 32, "All"]],
+                "aaSorting": [[0, "desc"]],
+                //默认第几个排序
+                "bStateSave": false,
+                //状态保存
+                "serverSide": true,
+                "ajax": {
+                    url: "{:U('Device/seedHistory')}",
+                    type: "post",
+                    data: function(d) {
+                        d.startTime = $("#historyLogmin").val();
+                        d.endTime = $("#historyLogmax").val();
+                    },
+                },
+                "aoColumns": [ //这个属性下的设置会应用到所有列，按顺序没有是空
+                {
+                    "sClass": "text-c",
+                    "data": {
+                        "de_id": "de_id",
+                        "addtime": "addtime",
+                        " image": "image",
+                        "dse_type": "dse_type",
+                        "dse_level": "dse_level",
+                        "imgstatus": "imgstatus"
+
+                    },
+                    "render": function(data, type, full, meta) {
+                        var newDate = new Date(data.addtime);
+                        newDate.setTime(data.addtime * 1000);
+                        var addtime = formatDate(newDate);
+                        
+                        return "<div class='list_wrap cl'>" + "<div class='list_top'><p>预置点:" + data.de_id + "</p><p>采集时间:" + addtime + "</p></div>" + "<div class='list_left f-l'>" + "<img src='" + data.image + "'/>" + "</div>" + "<div class='list_right f-l'>" + "<p>" + data.dse_type + ":" + data.dse_level + "</p>" +
+                        //                            "<p>杨树黑斑病:</p>"+
+                        //                            "<p>法桐白粉病:</p>"+
+                        //                            "<p>法桐霉斑病:</p>"+
+                        //                            "<p>杨树黄叶病:</p>"+
+                        "</div>" + "</div>"
+                    }
+                },
+                //mData 表示发请求时候本列的列明，返回的数据中相同下标名字的数据会填充到这一列
+                ]
+            });
+        });
+    </script>
+    <script>
+        window.onload = setTimeout(function() {
+            $("#loading").hide();
+        },
+        1);
+    </script>
+
+</html>

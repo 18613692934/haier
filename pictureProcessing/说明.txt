@@ -1,0 +1,10 @@
+
+picPro.bat 此批处理作用为处理ftp上传来的图片，移动位置，生成缩略图，并将路径及相关信息存入数据库中
+
+数据库参数修改在db.php中
+$mysql_server_name='localhost'; //数据库服务器   
+$mysql_username='root'; //数据库用户名  
+$mysql_password='root'; //数据库密码   
+$mysql_database='new_forestry'; //数据库名
+
+可根据自身需要进行修改
