@@ -12,11 +12,12 @@ class HeaderWidget extends Controller{
     }
     public function device_header(){
         $user_id = cookie("user");
+        $device_code = session("device_code");
          $logo = D("web_info")->where(array("info_name"=>"logo"))->find();
         $item = D("user")->where(array("user_id"=>$user_id))->find();
-        $device_data = D("device")->where(array("device_id" => I("id")))->find();
-        $pest_count = D("pest_data")->where(array("device_code"=>$device_data['device_code'],"imgstatus"=>4))->count();
-        $dis_count = D("disease")->where(array("device_code"=>$device_data['device_code'],"imgstatus"=>2))->count();
+        $device_data = D("device")->where(array("device_code" => $device_code))->find();
+        $pest_count = D("pest_data")->where(array("device_code"=>$device_code,"imgstatus"=>4))->count();
+        $dis_count = D("disease")->where(array("device_code"=>$device_code,"imgstatus"=>2))->count();
         $count = $pest_count+$dis_count;
         $this->assign("count",$count);
         $this->assign("user",$item);

@@ -114,7 +114,7 @@
         var mapZoom = view.zoom;   
         var centerPoint = view.center;   
         map.centerAndZoom(centerPoint,mapZoom);  
-        map.enableScrollWheelZoom();     
+//        map.enableScrollWheelZoom();   启用滚轮放大缩小，默认禁用    
         map.enableDoubleClickZoom();
         //地图、卫星、混合模式切换
         map.addControl( new BMap.MapTypeControl({mapTypes: [BMAP_NORMAL_MAP,BMAP_HYBRID_MAP]}));
@@ -162,7 +162,7 @@
             map.addOverlay(marker[i]);
             addClickHandler(infoWindow,marker[i],code)  ;
         }
-      
+//      map.addEventListener("tilesloaded",function(){alert("地图加载完毕");});
     }
     function addClickHandler(infoWindow,marker,code){
         marker.addEventListener("click", function(){          
@@ -176,6 +176,7 @@
 </script>
 <script>
     window.onload = function(){
+        
         setTimeout( function(){
             var mapLoading =  document.getElementById("mapLoading");
 //            mapLoading.text = "";

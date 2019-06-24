@@ -86,4 +86,9 @@
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
+.tabBar span.current a{
+    color:#fff;
+}
+
+
 

@@ -758,26 +758,7 @@ class DeviceController extends HomeDeviceBaseController {
     }
     
      function env() {
-        $device_code = $this->deviceData['device_code'];
-//        p($device_code);
-        $region_id = $this->deviceData['re_id'];
-        $rnname = D("region")->where(array("region_id"=>$region_id))->field("rnname")->find();
-        $time = time() - 10800;  //获取当前时间2小时之前的时间戳
-        /* 设置1小时内的条件参数 */
-//        $where['unix_addtime'] = array(array('gt', $time), array('lt', time()));
-        $where['unix_createdate'] = array(array('gt', $time), array('lt', time()));
-        $where['device_code'] = $device_code;
-        if($this->sex != "all"){
-            $where['temp&humidity&beam&wind_direction&wind_speed'] = array("neq", "");
-        }
-        /* 查找到1小时内的环境数据 */
-        $env_res = $this->env
-                ->where($where)
-                ->order("unix_createdate desc")
-                ->find();
-        $env_res['wind_direction'] = getWindDirection($env_res['wind_direction']);
-
-        $this->assign(array("env" => $env_res,"rnname"=>$rnname));
+         
         $this->display();
     }
     
@@ -929,7 +910,7 @@ class DeviceController extends HomeDeviceBaseController {
         $order_name = I("columns")[$order_num][data];
         $order = $order_name." ".$order_dir;
         /* 获取设备唯一编码 */
-        $device_code = $this->deviceData['device_code'];
+        $device_code = session("device_code");
         /* 前台搜索栏中的数据 */
         $startTime = strtotime(I("startTime"));   //开始时间
         $endTime = strtotime(I("endTime"));      //结束时间
@@ -1042,10 +1023,11 @@ class DeviceController extends HomeDeviceBaseController {
     
 
     public function envCharts() {
-        $env = D("env");  //实例化环境表
-        $device_code = $this->deviceData['device_code'];  //获取设备唯一编码
+
+        $device_code = session("device_code");  //获取设备唯一编码
         $startTime = strtotime(I("startTime"));
         $endTime = strtotime(I("endTime"));
+        $type = I("type");
         $where = array("device_code" => $device_code);
         if($this->sex != "all"){
             $where['temp&humidity&beam&wind_direction&wind_speed'] = array("neq", "");
@@ -1067,7 +1049,7 @@ class DeviceController extends HomeDeviceBaseController {
             $where["unix_createdate"] = array(array("gt", $date['beginTime']), array("lt", $date['endTime']));
         }
          
-         $env_res = $this->env
+         $env_res = D("env")
                 ->where($where)
                 ->field('uid,region,province,city,county,address',true)
                 ->order("unix_createdate")
@@ -1085,16 +1067,44 @@ class DeviceController extends HomeDeviceBaseController {
         $time = array("firstTime" => $firstTime, "lastTime" => $lastTime);
         if (IS_AJAX) {
             $arr = array();
+            switch ($type) {
+                case "temp":
+                    foreach ($env_res as $key => $value) {
+                        $arr["addtime"][] = date("Y-m-d H:i:s", $value["unix_createdate"]);
+                        $arr["temp"][] = $value["temp"];
+                    }
+                    break;
+                case "hum":
+                    foreach ($env_res as $key => $value) {
+                        $arr["addtime"][] = date("Y-m-d H:i:s", $value["unix_createdate"]);
+                        $arr["hum"][] = $value["humidity"];
+                    }
+                break;   
+                case "beam":
+                    foreach ($env_res as $key => $value) {
+                        $arr["addtime"][] = date("Y-m-d H:i:s", $value["unix_createdate"]);
+                        $arr["beam"][] = $value["beam"];
+                    }
+                break; 
+                case "wind_speed":
+                    foreach ($env_res as $key => $value) {
+                        $arr["addtime"][] = date("Y-m-d H:i:s", $value["unix_createdate"]);
+                        $arr["wind_speed"][] = $value["wind_speed"];
+                    }
+                break; 
+                
+            }
+            
 //            $pest_res['firstTime'] = date("Y-m-d H:i:s",$firstTime);
 //            $pest_res['lastTime'] =  date("Y-m-d H:i:s",$lastTime);
-            foreach ($env_res as $key => $value) {
-                $arr["addtime"][] = date("Y-m-d H:i:s", $value["unix_createdate"]);
-                $arr["temp"][] = $value["temp"];
-                $arr["humidity"][] = $value["humidity"];
-                $arr["beam"][] = $value["beam"];
-                $arr["wind_speed"][] = $value["wind_speed"];
-                $arr["precipitation"][] = $value["precipitation"];
-            }
+//            foreach ($env_res as $key => $value) {
+//                $arr["addtime"][] = date("Y-m-d H:i:s", $value["unix_createdate"]);
+//                $arr["temp"][] = $value["temp"];
+//                $arr["humidity"][] = $value["humidity"];
+//                $arr["beam"][] = $value["beam"];
+//                $arr["wind_speed"][] = $value["wind_speed"];
+//                $arr["precipitation"][] = $value["precipitation"];
+//            }
             $this->ajaxReturn($arr);
         }
         $this->assign(array("env" => $env_res));
@@ -1102,21 +1112,28 @@ class DeviceController extends HomeDeviceBaseController {
         $this->display();
     }
 
-    public function view() {
-        $d = $_SERVER['DOCUMENT_ROOT'];
-        $path = $d."/video.json";
-      $jsonClass = new \Home\Controller\JsonController();
-      $data = $jsonClass->getJsonDoc($path);
-            
-            foreach ($data['video'] as $key => $value) {
-               if(session('device_code')==$value['device_code']){
-                   $rtmp = $value['rtmp-gq'];
-               }
-            }
-             $this->assign("rtmp",$rtmp);
-             
-        $this->display();
-    }
+//    public function view() {
+//        $d = $_SERVER['DOCUMENT_ROOT'];
+//        $path = $d."/video.json";
+//      $jsonClass = new \Home\Controller\JsonController();
+//      $data = $jsonClass->getJsonDoc($path);
+//            
+//            foreach ($data['video'] as $key => $value) {
+//               if(session('device_code')==$value['device_code']){
+//                   $rtmp = $value['rtmp-gq'];
+//               }
+//            }
+//             $this->assign("rtmp",$rtmp);
+//             
+//        $this->display();
+//    }
+                function view(){
+                    $yuming = C("DOMAIN");
+                    $device_code = session("device_code");
+                    $src = $yuming.":".$device_code."0";
+                    $this->assign("src",$src);
+                    $this->display();
+                }
 
     public function info(){
         $id = I("id");

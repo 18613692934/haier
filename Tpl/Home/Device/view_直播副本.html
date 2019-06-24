@@ -16,14 +16,29 @@
         <div class="pest-wrap">
             <div class="pest_middle">
                 <div class="middle_center">
-                    
-                    <iframe src="{$src}"></iframe>
+                    <style>
+            #myPlayer{
+                
+                width:700px;
+                height:400px;
+                margin-top:50px;
+                margin-right: auto;
+                margin-left: auto;
+                
+            }
+            
+        </style>
+               <script src="__PUBLIC_STATIC__/EZUIKit-1.4/ezuikit.js"></script>
         
             
 
-        
+        <video id="myPlayer" poster="[这里可以填入封面图片URL]" controls playsInline webkit-playsinline autoplay>
+            <source src="{$rtmp}" type="" />
+        </video>
 
-                    
+        <script>
+            var player = new EZUIPlayer('myPlayer');
+        </script>
                 </div>   
             </div>
             <!--<include file="Public/codeing"/>-->

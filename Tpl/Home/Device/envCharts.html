@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>{$arr['webname']['info_value']}</title>
     {:W('Public/_meta')}
+    {:W('Public/_footer')}
     <meta name="keywords" />
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/device_env.css">
+        <link rel="stylesheet" type="text/css" href="__HOME_CSS__/device_envCharts.css">
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/device_search.css">
+    <!--<link rel="stylesheet" type="text/css" href="__HOME_CSS__/pagination.css" />-->
 </head>
 <body>
     <div id=loading style="position:absolute;width:100%;z-index:9999">
-            {:W('Header/loading')} 
-    </div>
- 
+            {:W('Header/loading')}
+        </div>
+   {:W('Header/device_header')}
+
+   
+   
+    <div class="pest-wrap">
+        <div class="pest_middle" id='pest_middle'>
+            <div class="middle_center">
+                <div class="center_top">
+                    {:W('Device/envSlide')}
+                <div class="cl"></div>
+                </div>
+                <div class="cl"></div>
+                <div class="center_bottom">
+                    <div id="tab_demo" class="HuiTab">
+                        <div class="tabBar clearfix">
+                            <span id="envList"><a target="_self" href="{:U('Device/env')}" >数据列表查看</a></span>
+                            <span id="envCharts" class='current'><a target="_self" href="{:U('Device/env')}" >数据图表查看</a></span></div>
+                        
+
                             <section class="Hui-article-box">
                                 <div class="Hui-article">
                                     <article class="cl pd-20">
@@ -48,211 +72,55 @@
                      
                                             <div class="bk-gray  radius  pd-10 mt-10 ">
                                                 <span class="f-20">日气象趋势图</span> 
-                                                <div id="content" style="width:1120px;height:450px;"></div>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li id='temp'></li>
+                                                        <li id='hum'></li>
+                                                        <li id='beam'></li>
+                                                        <li id='ws'></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </article>
                                 </div>
                              </section>   
-                    
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     {:W('Header/footer')}
 </body>
-{:W('Public/_footer')}
-<script type="text/javascript" src="__PUBLIC_STATIC__/echarts/3.4.0/echarts.js"></script>
+
+<script type="text/javascript" src="__PUBLIC_STATIC__/echarts/3.4.0/echarts.min.js"></script>
 <script type="text/javascript" src="__PUBLIC_STATIC__/My97DatePicker/4.8/WdatePicker.js"></script>
- <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        // 如果需要前进后退按钮
-        nextButton: '.LeftBotton',
-        prevButton: '.RightBotton',
-        paginationClickable: true,
-        loop: true,
-        slidesPerView: 5,
-//        autoplayDisableOnInteraction: false,
-    });
-    setInterval("swiper.slidePrev()", 2000);
-</script>
+
 <script>
     $(function () {
-        
-       envChartsAjax();
+       envChartsAjax("temp","温度","℃");
+       envChartsAjax("hum","湿度","%");
+       envChartsAjax("beam","光照","lux");
+       envChartsAjax("ws","风力","m/s");
     });
 </script>
 <script type="text/javascript">
     var envList;
-        
-    envList = $('#example').DataTable({
-            "language": {
-                "lengthMenu": "每页 _MENU_ 条记录",
-                "zeroRecords": "没有找到记录",
-                "info": "第 _PAGE_ 页 ( 总共 _PAGES_ 页 )",
-                "infoEmpty": "无记录",
-                "infoFiltered": "(从 _MAX_ 条记录过滤)",
-                "processing": "正在处理中...",
-                "paginate": {
-
-                    "previous": "上一页",
-                    "next": "下一页",
-                  }
-            },
-            "bFilter": false, //过滤功能
-            "bSort": true, //排序功能
-            "bAutoWidth": true, //自动宽度
-             "aaSorting": [[ 8, "desc" ]],//默认第几个排序
-            "bStateSave": false, //状态保存
-            serverSide: true, //服务器模式
-            "processing": true,
-            ajax: {
-                url: "{:U('Device/envList')}",
-                type: 'POST',
-                data: function (d) {
-                    d.listSumData = $("#listSumData").children(".active").attr("id");
-                    d.startTime = $("#listLogmin").val();
-                    d.endTime = $("#listLogmax").val();
-                },
-            },
-               
-            "aoColumns": [//这个属性下的设置会应用到所有列，按顺序没有是空
-                    {
-                       "sClass": "text-c",
-                       "mData": "device_code",
-                   },
-                {
-                    "sClass": "text-c",
-                    "data": "temp",
-                    "render": function (data, type, full, meta) {
-                        if (!data) {
-                            return "-";
-                        } else {
-                            return data;
-                        }
-                    }
-                },
-                {
-                    "sClass": "text-c",
-                    "mData": 'humidity',
-                    "render": function (data, type, full, meta) {
-                        if (!data) {
-                            return "-";
-                        } else {
-                            return data;
-                        }
-                    }
-                },
-
-                {
-                    "sClass": "text-c",
-                    "mData": 'wind_speed',
-                    "render": function (data, type, full, meta) {
-                        if (!data) {
-                            return "-";
-                        } else {
-                            return data;
-                        }
-                    }
-                },
-                {
-                    "sClass": "text-c",
-                    "mData": 'wind_direction',
-                    "render": function (data, type, full, meta) {
-                        if (!data) {
-                            return "-";
-                        } else {
-                            return data;
-                        }
-                    }
-                },
-                {
-                    "sClass": "text-c",
-                    "mData": 'beam',
-                    "render": function (data, type, full, meta) {
-                        if (!data) {
-                            return "-";
-                        } else {
-                            return data;
-                        }
-                    }
-                },
-                
-
-                {
-                    "sClass": "text-c",
-                    "mData": 'unix_starttime',
-                    "render": function (data, type, full, meta) {
-
-                        if (0 == data) {
-                            return "-";
-                        } else {
-                            var newDate = new Date(data);
-                            newDate.setTime(data * 1000);
-                            return formatDate(newDate);
-                        }
-                    }
-                },
-                {
-                    "sClass": "text-c",
-                    "mData": 'unix_endtime',
-                    "render": function (data, type, full, meta) {
-
-                        if ( 0 == data ) {
-                            return "-";
-                        } else {
-                            var newDate = new Date(data);
-                            newDate.setTime(data * 1000);
-                            return formatDate(newDate);
-                        }
-                    }
-                },
-               
-                {
-                    "sClass": "text-c",
-                    "mData": 'unix_addtime',
-                    "render": function (data, type, full, meta) {
-                        if (0 == data) {
-                            return "-";
-                        } else {
-                            var newDate = new Date(data);
-                            newDate.setTime(data * 1000);
-                            return formatDate(newDate);
-                        }
-                    }
-                },
-                {
-                    "sClass": "text-c",
-                    "mData": 'unix_createdate',
-                    "render": function (data, type, full, meta) {
-                        if (0 == data) {
-                            return "-";
-                        } else {
-                            var newDate = new Date(data);
-                            newDate.setTime(data * 1000);
-                            return formatDate(newDate);
-                        }
-                    }
-                },
-            ],
-        });
-    $("button[name='envList']").bind("click", function () { //按钮 触发table重新请求服务器     
-            envList.draw();
-        });
     $('#envChartsButton').click(function () {
-        envChartsAjax();
+        envChartsAjax("temp","温度","℃");
+       envChartsAjax("hum","湿度","%");
+       envChartsAjax("beam","光照","lux");
+       envChartsAjax("ws","风力","m/s");
     });
 //    $('#envCharts').click(function () {
 //        envChartsAjax();
 //    });
-    function envChartsAjax(){
+    function envChartsAjax(type,name,unit){
           
-            var mainContainer = document.getElementById('content');
-              console.log(mainContainer);
-            var resizeMainContainer = function () {
-            mainContainer.style.width = '1120px';
-            mainContainer.style.height = '450px';
-        };
-         resizeMainContainer();
-            var myChart = echarts.init(mainContainer);
-            
-            
+            var object = document.getElementById(type); 
+            var myChart = echarts.init(object);
+
             myChart.showLoading({
                 text : '数据量较大\n拼命刷新中',
                 effect : 'bubble',
@@ -267,33 +135,36 @@
                 data: {
                     "startTime": $("#chartsLogmin").val(),
                     "endTime": $("#chartsLogmax").val(),
+                    "type": type,
                 },
                 success: function (data) {
                    
                      if("" == data){
-                         document.getElementById("content").style.height = "auto";
-                            document.getElementById('content').innerHTML = "<div class='text-c f-20'>暂无数据</div>";
+                         document.getElementById(type).style.width = "360px";
+                            document.getElementById(type).style.height = "300px";
+                            document.getElementById(type).innerHTML = "<div class='text-c f-20' style='margin-top:180px;'>"+name+"数据暂无</div>";
                         }else{
-                            document.getElementById("content").style.width = "1120px";
-                            document.getElementById("content").style.height = "450px";
+                            document.getElementById(type).style.width = "360px";
+                            document.getElementById(type).style.height = "300px";
                                 
-                            envCharts(data,myChart);
+                            envCharts(data,myChart,name,type,unit);
                         }
 
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
-                     document.getElementById("content").style.height = "auto";
-                     document.getElementById('content').innerHTML = "<div class='text-c f-20'>请求出错，请重新刷新</div>";
+                     document.getElementById(type).style.height = "auto";
+                     document.getElementById(type).innerHTML = "<div class='text-c f-20'>请求出错，请重新刷新</div>";
                     
                 }
             });
     }   
-    function envCharts(data,myChart) {
+    function envCharts(data,myChart,name,type,unit) {
         
         
         var addtime = data.addtime.map(function (str) {
             return str.replace(' ', '\n');
         });
+        var data = data[type];
         option = {
             tooltip: {
                 trigger: 'axis',
@@ -302,7 +173,7 @@
                 }
             },
             legend: {
-                data: ['温度', '湿度', '光照', '风力',],
+                data: [name],
 
             },
     //        grid: {
@@ -331,86 +202,27 @@
                 start: 0,
                 end: 100,
             }, 
-            {
-                type: 'inside',
-                realtime: true,
-                start: 0,
-                end: 100,
-
-            }],
-            xAxis: [{
-                type: 'category',
-                axisTick: {
-                    alignWithLabel: true
-                },
-                boundaryGap : true,
-                axisLine: {onZero: false},
-                data: addtime,
-            }],
-            yAxis: [
-                {
-                    type: 'value',
-                    name: '温度(℃)',
-
-                    position: 'left',
-                    axisLabel: {},
-                    splitLine: {
-                        show: false
-                    }
-                },
-                {
-                    type: 'value',
-                    name: '湿度(%)',
-
-                    position: 'left',
-                    offset: 45,
-                    axisLabel: {}
-                },
-                {
-                    type: 'value',
-                    name: '光照(lux)',
-
-                    position: 'right',
-                    offset: 55,
-                    axisLabel: {},
-                },
-                {
-                    type: 'value',
-                    name: '风力(m/s)',
-
-                    position: 'right',
-                    axisLabel: {},
-                },
             ],
+            xAxis: {
+                type: 'category',
+//                axisTick: {
+//                    alignWithLabel: true
+//                },
+                boundaryGap : false,
+//                axisLine: {onZero: false},
+                data: addtime,
+            },
+            yAxis: 
+                {
+                    type: 'value',
+                    name:name+unit,
+                    
+                },
             series: [
                 {
-                    name: '温度',
+                    name: name,
                     type: 'line',
-                    symbolSize: 8,
-                    smooth:true, 
-                    hoverAnimation: false,
-                    data: data.temp
-                },
-                {
-                    name: '湿度',
-                    type: 'line',
-                    yAxisIndex: 1,
-                    smooth:true, 
-                    data: data.humidity
-                },
-                {
-                    name: '光照',
-                    type: 'line',
-                    yAxisIndex: 2,
-                    smooth:true, 
-                    data: data.beam
-                },
-                {
-                    name: '风力',
-                    type: 'line',
-                    smooth:true, 
-                    yAxisIndex: 3,
-                    data: data.wind_speed
+                    data: data
                 },
             ]
         };
@@ -439,12 +251,7 @@
         $("#loading").hide();
        
     },1);
-    $("#excel").click(function(){  
-        listSumData = $("#listSumData").children(".active").attr("id");
-        startTime = $("#listLogmin").val();
-        endTime = $("#listLogmax").val();
-        post("{:U('Device/allEnvExp')}",{"listSumData" :listSumData,"startTime":startTime,"endTime":endTime,});  
-    });  
+
 </script>
 
 </html>

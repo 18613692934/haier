@@ -13,7 +13,6 @@ class HomeDeviceBaseController extends HomeBaseController {
                  "is_delete" => 0,
                      );
            $device_res =  $device  = D("device")->where($where)->find();
-           
             if($device_res){
                 cookie("device",$id);
                 session("device_code",$device_res['device_code']);
