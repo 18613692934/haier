@@ -1,9 +1,0 @@
-[ 2017-03-04T15:31:05+08:00 ] 127.0.0.1 /index.php/Home/Inform/informContent].html/id/22
-ERR: 非法操作:informContent].html
-
-[ 2017-03-04T15:34:04+08:00 ] 127.0.0.1 /index.php/Home/Inform/informContent.html/id/1
-ERR: 非法操作:informContent.html
-
-[ 2017-03-04T16:07:39+08:00 ] 127.0.0.1 /index.php/Home/Inform
-ERR: 非法操作:index
-
